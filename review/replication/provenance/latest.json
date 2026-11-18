@@ -1,7 +1,7 @@
 {
-  "built_at_utc": "2026-11-18T01:33:14-05:00",
+  "built_at_utc": "2026-11-18T01:41:43-05:00",
   "python": "3.12.11",
-  "git_commit": "48447b7b4c909788f4f1a34a9d7daed4c8168b81",
+  "git_commit": "e52643d2f298ba856402a4759181c17636a10031",
   "settings": {
     "baseline_end_year": 2022,
     "baseline_strip_months": 324,
@@ -67,7 +67,7 @@
     "src/p22/sector/data.py": "c00223458ec379ea3a7ea28250b04bcb9c2849faf32c5cf8574a698d92f4d904",
     "src/p22/sector/estimate.py": "ae57186efb641cb5f15dc9fb644c8bd2022e2664b92b02bac3add5fb5cc4686f",
     "src/p22/sector/investigate.py": "0c6884f5494934dd8778bc4145630c38630c5d02530a8fb5ed0dfbf272a090ef",
-    "src/p22/sector/report.py": "b7220afe1b2b81fa92b3dd9d671d7e130bdfd8c34aa0f489fb6437fc24a3792b",
+    "src/p22/sector/report.py": "8eec0bf3eeff268312a87b7503deaff69bc27b4b4de1788e1e1ba2daa6c876a6",
     "src/p22/sector/robustness.py": "c2c647a9cf1e2defde85486e32fb664e63b45a7a76a54a86dcfc482680f6c831",
     "src/p22/strip_construction.py": "f7b0df9a0fd28b0276a9ded26d4528b63c154d1f40041f65c6e2dad55caff83e",
     "src/p22/strips.py": "bed7d9e389cdcdb6bcfb2c87fa705d85b267c7447a146116f9c5d8d6783a4f4e",

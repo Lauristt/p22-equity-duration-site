@@ -1,6 +1,6 @@
 {
   "schema": "chartbook/index/v1",
-  "generated_at": "2026-11-18T06:35:12Z",
+  "generated_at": "2026-11-18T06:41:46Z",
   "generator": {
     "name": "chartbook",
     "version": "0.4.0"
@@ -81,7 +81,7 @@
         "index_toc.md",
         "project_overview.md"
       ],
-      "code_changed_at": "2026-11-18T06:33:14Z"
+      "code_changed_at": "2026-11-18T06:41:43Z"
     },
     {
       "kind": "Dataframe",
