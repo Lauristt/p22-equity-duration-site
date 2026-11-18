@@ -14,12 +14,20 @@ An ID is `pipeline:name` for a dataframe, `pipeline:chart/name` for a chart, `pi
 
 ## Dataframes
 
+- [Annual portfolio coverage ledger](cb/dataframes/lauristt--p22_golez_koudijs_2025/annual_coverage.html): `lauristt/p22_golez_koudijs_2025:annual_coverage`. “Annual portfolio coverage ledger”
+- [Supplied author Figure 3 points](cb/dataframes/lauristt--p22_golez_koudijs_2025/author_summary.html): `lauristt/p22_golez_koudijs_2025:author_summary`. “Supplied author Figure 3 points”
 - [Baseline decomposition](cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html): `lauristt/p22_golez_koudijs_2025:baseline_decomposition`.
 - [Cash reconciliation](cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html): `lauristt/p22_golez_koudijs_2025:cash_reconciliation`.
 - [Coverage](cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.html): `lauristt/p22_golez_koudijs_2025:coverage`.
 - [Data checks](cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html): `lauristt/p22_golez_koudijs_2025:data_checks`.
+- [Legacy forecast ledger](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_ledger.html): `lauristt/p22_golez_koudijs_2025:forecast_ledger`. “Legacy forecast ledger”
+- [Legacy paired forecast loss differences](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_loss_comparisons.html): `lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons`. “Legacy paired forecast loss differences”
+- [Legacy forecast scores](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_metrics.html): `lauristt/p22_golez_koudijs_2025:forecast_metrics`. “Legacy forecast scores”
+- [Legacy forecast timing checks](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_validation.html): `lauristt/p22_golez_koudijs_2025:forecast_validation`. “Legacy forecast timing checks”
+- [Industry code reference](cb/dataframes/lauristt--p22_golez_koudijs_2025/industry_reference.html): `lauristt/p22_golez_koudijs_2025:industry_reference`. “Industry code reference”
 - [Payout history](cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html): `lauristt/p22_golez_koudijs_2025:payout_history`.
 - [Portfolio overlap](cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html): `lauristt/p22_golez_koudijs_2025:portfolio_overlap`.
+- [Cell-by-cell replication comparison](cb/dataframes/lauristt--p22_golez_koudijs_2025/published_comparison.html): `lauristt/p22_golez_koudijs_2025:published_comparison`. “Cell-by-cell replication comparison”
 - [Sector annual](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html): `lauristt/p22_golez_koudijs_2025:sector_annual`.
 - [Sector comparison](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html): `lauristt/p22_golez_koudijs_2025:sector_comparison`.
 - [Sector estimates](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html): `lauristt/p22_golez_koudijs_2025:sector_estimates`.
@@ -37,12 +45,19 @@ An ID is `pipeline:name` for a dataframe, `pipeline:chart/name` for a chart, `pi
 - [Updated table 5](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html): `lauristt/p22_golez_koudijs_2025:updated_table_5`.
 - [Updated table 6](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html): `lauristt/p22_golez_koudijs_2025:updated_table_6`.
 - [Updated table 7](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html): `lauristt/p22_golez_koudijs_2025:updated_table_7`.
+- [Published replication validation summary](cb/dataframes/lauristt--p22_golez_koudijs_2025/validation_summary.html): `lauristt/p22_golez_koudijs_2025:validation_summary`. “Published replication validation summary”
+- [Two-state VAR sensitivity](cb/dataframes/lauristt--p22_golez_koudijs_2025/var_sensitivity.html): `lauristt/p22_golez_koudijs_2025:var_sensitivity`. “Two-state VAR sensitivity”
 
 ## Charts
 
+- [Author-summary sensitivity](cb/charts/lauristt--p22_golez_koudijs_2025.author_summary.html): `lauristt/p22_golez_koudijs_2025:chart/author_summary`.
 - [Baseline decomposition](cb/charts/lauristt--p22_golez_koudijs_2025.baseline_decomposition.html): `lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition`.
 - [Baseline payout](cb/charts/lauristt--p22_golez_koudijs_2025.baseline_payout.html): `lauristt/p22_golez_koudijs_2025:chart/baseline_payout`.
+- [Baseline validation](cb/charts/lauristt--p22_golez_koudijs_2025.baseline_validation.html): `lauristt/p22_golez_koudijs_2025:chart/baseline_validation`.
 - [Data validation](cb/charts/lauristt--p22_golez_koudijs_2025.data_validation.html): `lauristt/p22_golez_koudijs_2025:chart/data_validation`.
+- [Legacy forecast loss](cb/charts/lauristt--p22_golez_koudijs_2025.forecast_loss.html): `lauristt/p22_golez_koudijs_2025:chart/forecast_loss`.
+- [Legacy forecast comparison](cb/charts/lauristt--p22_golez_koudijs_2025.forecast_predictions.html): `lauristt/p22_golez_koudijs_2025:chart/forecast_predictions`.
+- [Legacy forecast validation](cb/charts/lauristt--p22_golez_koudijs_2025.forecast_validation.html): `lauristt/p22_golez_koudijs_2025:chart/forecast_validation`.
 - [Sector comparison](cb/charts/lauristt--p22_golez_koudijs_2025.sector_comparison.html): `lauristt/p22_golez_koudijs_2025:chart/sector_comparison`.
 - [Updated decomposition](cb/charts/lauristt--p22_golez_koudijs_2025.updated_decomposition.html): `lauristt/p22_golez_koudijs_2025:chart/updated_decomposition`.
 - [Updated payout](cb/charts/lauristt--p22_golez_koudijs_2025.updated_payout.html): `lauristt/p22_golez_koudijs_2025:chart/updated_payout`.

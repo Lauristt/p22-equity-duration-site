@@ -1,6 +1,6 @@
 {
   "schema": "chartbook/index/v1",
-  "generated_at": "2026-11-18T06:41:46Z",
+  "generated_at": "2026-11-18T07:05:31Z",
   "generator": {
     "name": "chartbook",
     "version": "0.4.0"
@@ -36,12 +36,20 @@
         "test": "doit replicate checks"
       },
       "assets": [
+        "lauristt/p22_golez_koudijs_2025:annual_coverage",
+        "lauristt/p22_golez_koudijs_2025:author_summary",
         "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
         "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
         "lauristt/p22_golez_koudijs_2025:coverage",
         "lauristt/p22_golez_koudijs_2025:data_checks",
+        "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+        "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+        "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+        "lauristt/p22_golez_koudijs_2025:forecast_validation",
+        "lauristt/p22_golez_koudijs_2025:industry_reference",
         "lauristt/p22_golez_koudijs_2025:payout_history",
         "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+        "lauristt/p22_golez_koudijs_2025:published_comparison",
         "lauristt/p22_golez_koudijs_2025:sector_annual",
         "lauristt/p22_golez_koudijs_2025:sector_comparison",
         "lauristt/p22_golez_koudijs_2025:sector_estimates",
@@ -59,9 +67,16 @@
         "lauristt/p22_golez_koudijs_2025:updated_table_5",
         "lauristt/p22_golez_koudijs_2025:updated_table_6",
         "lauristt/p22_golez_koudijs_2025:updated_table_7",
+        "lauristt/p22_golez_koudijs_2025:validation_summary",
+        "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+        "lauristt/p22_golez_koudijs_2025:chart/author_summary",
         "lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition",
         "lauristt/p22_golez_koudijs_2025:chart/baseline_payout",
+        "lauristt/p22_golez_koudijs_2025:chart/baseline_validation",
         "lauristt/p22_golez_koudijs_2025:chart/data_validation",
+        "lauristt/p22_golez_koudijs_2025:chart/forecast_loss",
+        "lauristt/p22_golez_koudijs_2025:chart/forecast_predictions",
+        "lauristt/p22_golez_koudijs_2025:chart/forecast_validation",
         "lauristt/p22_golez_koudijs_2025:chart/sector_comparison",
         "lauristt/p22_golez_koudijs_2025:chart/updated_decomposition",
         "lauristt/p22_golez_koudijs_2025:chart/updated_payout",
@@ -72,7 +87,7 @@
       ],
       "docs": {
         "path": "./README.md",
-        "content_hash": "sha256:a6b013138b9582fb7585d251cd943223d3f95dac171aaa9f8775e952b23fee27"
+        "content_hash": "sha256:d6e43f3e76dcff217ca2f57bfca62f73d5a664cc8601a77d709d7eec2144d4b2"
       },
       "site_dir": {
         "path": "docs_src/site"
@@ -81,7 +96,278 @@
         "index_toc.md",
         "project_overview.md"
       ],
-      "code_changed_at": "2026-11-18T06:41:43Z"
+      "code_changed_at": "2026-11-18T07:05:21Z"
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Annual portfolio coverage ledger",
+      "description": "Annual portfolio coverage ledger",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/annual_coverage.csv",
+        "modified_at": "2026-11-18T07:04:35Z"
+      },
+      "content_hash": "sha256:eebb2ecf3b42f5150d95b4345e0e7d77dc588951d22a14679c793241417e4a0e",
+      "size_bytes": 106014,
+      "row_count": 2576,
+      "columns": [
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "industry_name",
+          "dtype": "string"
+        },
+        {
+          "name": "portfolio",
+          "dtype": "string"
+        },
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "observed_months",
+          "dtype": "int64"
+        },
+        {
+          "name": "invalid_months",
+          "dtype": "int64"
+        },
+        {
+          "name": "included",
+          "dtype": "boolean"
+        },
+        {
+          "name": "reason",
+          "dtype": "string"
+        }
+      ],
+      "sources": [
+        "WRDS CRSP/Compustat; French industry mapping; FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "sector monthly/annual artifacts -> coverage.py; each portfolio-year has an inclusion or omission reason.",
+        "content_hash": "sha256:f3d33eab0d7c8ea8150a167ccde0d179696b15ce5709a18b5df1b4e2d289b625"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#industry_name",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "industry_name"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "industry_name",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#portfolio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "portfolio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "portfolio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#observed_months",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "observed_months"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "observed_months",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#invalid_months",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "invalid_months"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "invalid_months",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#included",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "included"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "included",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:annual_coverage#reason",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "annual_coverage",
+        "part": "reason"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:annual_coverage",
+      "column": "reason",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:author_summary",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "author_summary"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Supplied author Figure 3 points",
+      "description": "Supplied author Figure 3 points",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/author_summary.csv",
+        "modified_at": "2026-11-18T07:02:28Z"
+      },
+      "content_hash": "sha256:ab6ee2f4323bd2ca41d9f53c0d43fa474c26ceb167e74ea6c8c2ba07cf30e482",
+      "size_bytes": 383,
+      "row_count": 9,
+      "columns": [
+        {
+          "name": "Payout",
+          "dtype": "float64"
+        },
+        {
+          "name": "Source",
+          "dtype": "string"
+        },
+        {
+          "name": "ER",
+          "dtype": "float64"
+        }
+      ],
+      "sources": [
+        "Mendeley v1 Data_Summary.xlsx"
+      ],
+      "docs": {
+        "text": "Data_Summary.xlsx -> ingest.py -> figures.py; supplied points are a sensitivity, not an independent replication.",
+        "content_hash": "sha256:81d8302e61977957996428fa9641d9c627acfbd9b5ca1eb8d7960eb9f3cf033e"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:author_summary#Payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "author_summary",
+        "part": "Payout"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:author_summary",
+      "column": "Payout",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:author_summary#Source",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "author_summary",
+        "part": "Source"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:author_summary",
+      "column": "Source",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:author_summary#ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "author_summary",
+        "part": "ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:author_summary",
+      "column": "ER",
+      "declared": false
     },
     {
       "kind": "Dataframe",
@@ -98,7 +384,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_decomposition.csv",
-        "modified_at": "2026-11-18T06:34:48Z"
+        "modified_at": "2026-11-18T07:02:28Z"
       },
       "content_hash": "sha256:43b1bd1d9331d7c4d53ecbf6678bc094ea90e6480e3dc981ccf86ed718d6ae1e",
       "size_bytes": 463,
@@ -210,7 +496,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/cash_reconciliation.csv",
-        "modified_at": "2026-11-18T06:34:52Z"
+        "modified_at": "2026-11-18T07:04:35Z"
       },
       "content_hash": "sha256:346d6c2fee97086312356b5dd4aa93cc6bb9b047175087ba6f29f3b23324cd56",
       "size_bytes": 4606,
@@ -332,7 +618,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/coverage.csv",
-        "modified_at": "2026-11-18T06:34:52Z"
+        "modified_at": "2026-11-18T07:04:35Z"
       },
       "content_hash": "sha256:4485e5c3d9537969a41b012e3c117f59658821e4aed7e1824d0028c8307c46a6",
       "size_bytes": 1952,
@@ -473,11 +759,11 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_checks.csv",
-        "modified_at": "2026-11-18T06:34:52Z"
+        "modified_at": "2026-11-18T07:04:35Z"
       },
-      "content_hash": "sha256:d0a11e3533a9c159364575a3b911acf3f66d51282e8673682c48988b2ebec86a",
-      "size_bytes": 886,
-      "row_count": 7,
+      "content_hash": "sha256:310090ecb16cfc81fa4f1e0ae5af713e1799349eb8e48ba526d7cee883d458fc",
+      "size_bytes": 1018,
+      "row_count": 8,
       "columns": [
         {
           "name": "check",
@@ -603,6 +889,731 @@
     {
       "kind": "Dataframe",
       "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast ledger",
+      "description": "Legacy forecast ledger",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_ledger.csv",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:514d1d9f7523a05452cf3d087a345b8a782c7fd41804073fe52887a938840bde",
+      "size_bytes": 14040,
+      "row_count": 126,
+      "columns": [
+        {
+          "name": "model",
+          "dtype": "string"
+        },
+        {
+          "name": "origin_year",
+          "dtype": "int64"
+        },
+        {
+          "name": "target_year",
+          "dtype": "int64"
+        },
+        {
+          "name": "train_start",
+          "dtype": "int64"
+        },
+        {
+          "name": "train_end",
+          "dtype": "int64"
+        },
+        {
+          "name": "train_n",
+          "dtype": "int64"
+        },
+        {
+          "name": "actual",
+          "dtype": "float64"
+        },
+        {
+          "name": "forecast",
+          "dtype": "float64"
+        },
+        {
+          "name": "error",
+          "dtype": "float64"
+        },
+        {
+          "name": "payout_first_year",
+          "dtype": "int64"
+        },
+        {
+          "name": "payout_last_year",
+          "dtype": "int64"
+        }
+      ],
+      "sources": [
+        "Mendeley v1 Data_US_1871_2022.xls"
+      ],
+      "docs": {
+        "text": "Clean annual U.S. source -> extension_inputs.py -> expanding-window extension.py; annual aggregate observations only.",
+        "content_hash": "sha256:17fc52f6161b3e1a431400f044013c40c2d5acffe402a416cd0c2eaf410eb23c"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#model",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "model"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "model",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#origin_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "origin_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "origin_year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#target_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "target_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "target_year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#train_start",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "train_start"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "train_start",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#train_end",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "train_end"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "train_end",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#train_n",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "train_n"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "train_n",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#actual",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "actual"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "actual",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#forecast",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "forecast"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "forecast",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#error",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "error"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "error",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#payout_first_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "payout_first_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "payout_first_year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_ledger#payout_last_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_ledger",
+        "part": "payout_last_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_ledger",
+      "column": "payout_last_year",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy paired forecast loss differences",
+      "description": "Legacy paired forecast loss differences",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_loss_comparisons.csv",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:2b3dc91df0fab6969dd945299dacfe1edcca3ccc0ca38566052c4b360f6f8e65",
+      "size_bytes": 409,
+      "row_count": 4,
+      "columns": [
+        {
+          "name": "model",
+          "dtype": "string"
+        },
+        {
+          "name": "benchmark",
+          "dtype": "string"
+        },
+        {
+          "name": "mse_gain_log_pp_squared",
+          "dtype": "float64"
+        },
+        {
+          "name": "lower",
+          "dtype": "float64"
+        },
+        {
+          "name": "upper",
+          "dtype": "float64"
+        }
+      ],
+      "sources": [
+        "Mendeley v1 Data_US_1871_2022.xls"
+      ],
+      "docs": {
+        "text": "Forecast ledger -> extension.py paired uncertainty; no trading claim.",
+        "content_hash": "sha256:387c99627b436783403d731c337fa27f57dbeb35813cbb817189dd4ae3092cb6"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons#model",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons",
+        "part": "model"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "column": "model",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons#benchmark",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons",
+        "part": "benchmark"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "column": "benchmark",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons#mse_gain_log_pp_squared",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons",
+        "part": "mse_gain_log_pp_squared"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "column": "mse_gain_log_pp_squared",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons#lower",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons",
+        "part": "lower"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "column": "lower",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons#upper",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_loss_comparisons",
+        "part": "upper"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons",
+      "column": "upper",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast scores",
+      "description": "Legacy forecast scores",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_metrics.csv",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:f00f502bf4dbe77c6b753825c3a4e43cc761da2af6f19dd5d9394bc4cb62a928",
+      "size_bytes": 317,
+      "row_count": 3,
+      "columns": [
+        {
+          "name": "model",
+          "dtype": "string"
+        },
+        {
+          "name": "n",
+          "dtype": "int64"
+        },
+        {
+          "name": "rmse_log_pp",
+          "dtype": "float64"
+        },
+        {
+          "name": "mae_log_pp",
+          "dtype": "float64"
+        },
+        {
+          "name": "r2_vs_mean",
+          "dtype": "float64"
+        },
+        {
+          "name": "r2_vs_yield",
+          "dtype": "float64"
+        }
+      ],
+      "sources": [
+        "Mendeley v1 Data_US_1871_2022.xls"
+      ],
+      "docs": {
+        "text": "Forecast ledger -> extension.py scoring; unchanged out-of-sample loss definitions.",
+        "content_hash": "sha256:39a18d2b6c782dede146cf8a60c6613ab2da54dbe12c72a8c8f7e6574da43a77"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#model",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "model"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "model",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#n",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "n"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "n",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#rmse_log_pp",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "rmse_log_pp"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "rmse_log_pp",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#mae_log_pp",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "mae_log_pp"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "mae_log_pp",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#r2_vs_mean",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "r2_vs_mean"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "r2_vs_mean",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_metrics#r2_vs_yield",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_metrics",
+        "part": "r2_vs_yield"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_metrics",
+      "column": "r2_vs_yield",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_validation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_validation"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast timing checks",
+      "description": "Legacy forecast timing checks",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_validation.csv",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:4f7092278515dad35e1a4ed3a1417e85bb57ff4c6f974d548219d47f22911668",
+      "size_bytes": 791,
+      "row_count": 10,
+      "columns": [
+        {
+          "name": "check",
+          "dtype": "string"
+        },
+        {
+          "name": "passed",
+          "dtype": "boolean"
+        },
+        {
+          "name": "blocking",
+          "dtype": "boolean"
+        },
+        {
+          "name": "detail",
+          "dtype": "string"
+        }
+      ],
+      "sources": [
+        "Mendeley v1 Data_US_1871_2022.xls"
+      ],
+      "docs": {
+        "text": "Clean U.S. inputs -> extension_inputs.py data and timing checks.",
+        "content_hash": "sha256:c3fbcf1252cc01f931d9f33fedaba71e8feca4dd5aac3643c245ad66808bdbdf"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_validation#check",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_validation",
+        "part": "check"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_validation",
+      "column": "check",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_validation#passed",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_validation",
+        "part": "passed"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_validation",
+      "column": "passed",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_validation#blocking",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_validation",
+        "part": "blocking"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_validation",
+      "column": "blocking",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:forecast_validation#detail",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "forecast_validation",
+        "part": "detail"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:forecast_validation",
+      "column": "detail",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:industry_reference",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "industry_reference"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Industry code reference",
+      "description": "Industry code reference",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/industry_reference.csv",
+        "modified_at": "2026-11-18T07:04:37Z"
+      },
+      "content_hash": "sha256:aa8c63c7040e62b60554243b0965e71a3a4ebdca5855a7abcd0d4043137e33a3",
+      "size_bytes": 1063,
+      "row_count": 12,
+      "columns": [
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "industry_code",
+          "dtype": "string"
+        },
+        {
+          "name": "industry_name",
+          "dtype": "string"
+        },
+        {
+          "name": "definition",
+          "dtype": "string"
+        }
+      ],
+      "sources": [
+        "Kenneth French SIC 12 industry definitions"
+      ],
+      "docs": {
+        "text": "French SIC definition headers -> sector/report.py; identifiers, names and definitions.",
+        "content_hash": "sha256:ef0645ee40788e239eed9a9638c9c401d2af607f219efdc5c1bce8ba63ca49fd"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:industry_reference#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "industry_reference",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:industry_reference",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:industry_reference#industry_code",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "industry_reference",
+        "part": "industry_code"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:industry_reference",
+      "column": "industry_code",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:industry_reference#industry_name",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "industry_reference",
+        "part": "industry_name"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:industry_reference",
+      "column": "industry_name",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:industry_reference#definition",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "industry_reference",
+        "part": "definition"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:industry_reference",
+      "column": "definition",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
       "id": "lauristt/p22_golez_koudijs_2025:payout_history",
       "ref": {
         "scope": "lauristt",
@@ -615,7 +1626,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/payout_history.csv",
-        "modified_at": "2026-11-18T06:33:58Z"
+        "modified_at": "2026-11-18T07:02:26Z"
       },
       "content_hash": "sha256:c9df3c063411904c5fc68eb2039307364788ddf584851787019a26484674f632",
       "size_bytes": 6343,
@@ -708,7 +1719,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/portfolio_overlap.csv",
-        "modified_at": "2026-11-18T06:35:05Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:518295571fac1440bbc28c25de3e3928ef0531eec287f32dd9b89895332e8449",
       "size_bytes": 728,
@@ -914,6 +1925,227 @@
     {
       "kind": "Dataframe",
       "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Cell-by-cell replication comparison",
+      "description": "Cell-by-cell replication comparison",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/published_comparison.csv",
+        "modified_at": "2026-11-18T07:04:27Z"
+      },
+      "content_hash": "sha256:a83467aeb59928bb2ec846471d986e309994a73cc4a1638458dfe769c66f67ee",
+      "size_bytes": 29103,
+      "row_count": 278,
+      "columns": [
+        {
+          "name": "table",
+          "dtype": "int64"
+        },
+        {
+          "name": "statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "sample",
+          "dtype": "string"
+        },
+        {
+          "name": "python",
+          "dtype": "float64"
+        },
+        {
+          "name": "published",
+          "dtype": "float64"
+        },
+        {
+          "name": "difference",
+          "dtype": "float64"
+        },
+        {
+          "name": "tolerance",
+          "dtype": "float64"
+        },
+        {
+          "name": "within_tolerance",
+          "dtype": "boolean"
+        },
+        {
+          "name": "independent",
+          "dtype": "boolean"
+        },
+        {
+          "name": "status",
+          "dtype": "string"
+        }
+      ],
+      "sources": [
+        "Golez and Koudijs (2025), published tables and Mendeley package v1"
+      ],
+      "docs": {
+        "text": "Generated baseline table cells compared with config/published_benchmarks.json using its fixed tolerance.",
+        "content_hash": "sha256:1f269bf1db0d30fefb2a1ea312c9b12c316b93501dad3081b2ee3594ecd5536c"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#table",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "table"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "table",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#sample",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "sample"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "sample",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#python",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "python"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "python",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#published",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "published"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "published",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#difference",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "difference"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "difference",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#tolerance",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "tolerance"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "tolerance",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#within_tolerance",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "within_tolerance"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "within_tolerance",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#independent",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "independent"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "independent",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:published_comparison#status",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "published_comparison",
+        "part": "status"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:published_comparison",
+      "column": "status",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
       "id": "lauristt/p22_golez_koudijs_2025:sector_annual",
       "ref": {
         "scope": "lauristt",
@@ -926,7 +2158,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_annual.csv",
-        "modified_at": "2026-11-18T06:34:47Z"
+        "modified_at": "2026-11-18T07:04:26Z"
       },
       "content_hash": "sha256:532a296489e821c4154b477e026e52edf0add95c8f5aa7a17640417c09954663",
       "size_bytes": 753309,
@@ -1333,7 +2565,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_comparison.csv",
-        "modified_at": "2026-11-18T06:34:59Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:95efe427238a5353415cdbb8b5a4395d87f29a9592687334dbcb48269e74a8d5",
       "size_bytes": 339,
@@ -1569,7 +2801,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_estimates.csv",
-        "modified_at": "2026-11-18T06:34:59Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:dd2fca995386e374003de2511b2082a097c6cf575405dc09005a0eca600925a8",
       "size_bytes": 1392008,
@@ -2166,7 +3398,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_1.csv",
-        "modified_at": "2026-11-18T06:33:59Z"
+        "modified_at": "2026-11-18T07:05:22Z"
       },
       "content_hash": "sha256:0a40ca6e4e0eb306da5f81c1e93cb91d07278a8c4f5a0e58a01994c6733d643d",
       "size_bytes": 329,
@@ -2244,7 +3476,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_2.csv",
-        "modified_at": "2026-11-18T06:33:59Z"
+        "modified_at": "2026-11-18T07:05:23Z"
       },
       "content_hash": "sha256:5331b4118e6b5031792d0abed3ceb1f00457178aee8b2a5acef50510101c0d97",
       "size_bytes": 877,
@@ -2322,10 +3554,10 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_4.csv",
-        "modified_at": "2026-11-18T06:33:55Z"
+        "modified_at": "2026-11-18T07:05:21Z"
       },
-      "content_hash": "sha256:3b0893adb242a6efc15a8e3b45c3f82ec6361ed90f955c66172f4bda17c214de",
-      "size_bytes": 700,
+      "content_hash": "sha256:31504ad93793edcc011fda38a8b34507839796504737b5ea569349fc50a4abaa",
+      "size_bytes": 713,
       "row_count": 10,
       "columns": [
         {
@@ -2389,7 +3621,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_5.csv",
-        "modified_at": "2026-11-18T06:33:56Z"
+        "modified_at": "2026-11-18T07:05:21Z"
       },
       "content_hash": "sha256:93a1db307086abba864aa5ae8d85f89e8c3d1f372b8f1b96d24ab551c7b97cf6",
       "size_bytes": 1137,
@@ -2456,7 +3688,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_6.csv",
-        "modified_at": "2026-11-18T06:33:58Z"
+        "modified_at": "2026-11-18T07:05:22Z"
       },
       "content_hash": "sha256:31100790efa803530f7641b1d993a2b6e46bff47305693b025740c06b463822d",
       "size_bytes": 1473,
@@ -2595,7 +3827,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_7.csv",
-        "modified_at": "2026-11-18T06:33:58Z"
+        "modified_at": "2026-11-18T07:05:22Z"
       },
       "content_hash": "sha256:a6d7e75a161df268556f2e4ccf493257694481073c0e47efd996f5cacbf1f051",
       "size_bytes": 1704,
@@ -2734,7 +3966,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_decomposition.csv",
-        "modified_at": "2026-11-18T06:35:05Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:d84e52cb5202113ea36500fe3596abac0a1468077c437938b7146eb4e568b692",
       "size_bytes": 464,
@@ -2857,7 +4089,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_payout_history.csv",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
       "content_hash": "sha256:7139e966febedcb8547e38e5de20748983ff3ed6f17090c50e659c8cb5b6e0aa",
       "size_bytes": 6477,
@@ -2957,7 +4189,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_1.csv",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
       "content_hash": "sha256:58eb9b16ad45a54c34f142d2be02427bb75755d6fb7d47c458bfdda8b857718a",
       "size_bytes": 328,
@@ -3048,7 +4280,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_2.csv",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
       "content_hash": "sha256:1b974d04259a8f93bb305d901563b3459321359aa30341096d94401b4f75200d",
       "size_bytes": 874,
@@ -3139,10 +4371,10 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_4.csv",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
-      "content_hash": "sha256:a8b9b12d5022949dd1b0fed898853a254cd880e9d36ad61afcfea8d1f9a99ac5",
-      "size_bytes": 693,
+      "content_hash": "sha256:7bfecd0ba401d3b9154b6db6c266593777d6e3f41e64802abd87d3e507de36eb",
+      "size_bytes": 709,
       "row_count": 10,
       "columns": [
         {
@@ -3219,7 +4451,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_5.csv",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
       "content_hash": "sha256:6f28c7bd301789bc835cb00858f43b560e681431ce8780960deddd1b96411b7f",
       "size_bytes": 1131,
@@ -3299,7 +4531,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_6.csv",
-        "modified_at": "2026-11-18T06:35:05Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:7eda3f3e0b129f246a99d0420c831140ae4afc965ca8597e158c226032faa5c7",
       "size_bytes": 1481,
@@ -3451,7 +4683,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_7.csv",
-        "modified_at": "2026-11-18T06:35:05Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:0a57d0ce65bd1ccb9289ea5f3f40f5d7c594600e017eb76763eb2514ffd2121a",
       "size_bytes": 1691,
@@ -3589,6 +4821,380 @@
       "declared": false
     },
     {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Published replication validation summary",
+      "description": "Published replication validation summary",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/validation_summary.csv",
+        "modified_at": "2026-11-18T07:04:27Z"
+      },
+      "content_hash": "sha256:be402928a03f0f44e3c2b976c99c437083c8fbf75773d242d48b00f021622b7f",
+      "size_bytes": 141,
+      "row_count": 6,
+      "columns": [
+        {
+          "name": "table",
+          "dtype": "int64"
+        },
+        {
+          "name": "recomputed_cells",
+          "dtype": "int64"
+        },
+        {
+          "name": "within_tolerance",
+          "dtype": "int64"
+        },
+        {
+          "name": "differences",
+          "dtype": "int64"
+        },
+        {
+          "name": "source_constants",
+          "dtype": "int64"
+        }
+      ],
+      "sources": [
+        "Golez and Koudijs (2025), published tables and Mendeley package v1"
+      ],
+      "docs": {
+        "text": "Baseline table CSVs + frozen published benchmarks -> validation.py; counts exclude supplied constants.",
+        "content_hash": "sha256:d03419c5ce9aebee87af76cb51f1094c18b1b23486ed90502b66ebc68cc5fa19"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary#table",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary",
+        "part": "table"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "column": "table",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary#recomputed_cells",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary",
+        "part": "recomputed_cells"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "column": "recomputed_cells",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary#within_tolerance",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary",
+        "part": "within_tolerance"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "column": "within_tolerance",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary#differences",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary",
+        "part": "differences"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "column": "differences",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:validation_summary#source_constants",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "validation_summary",
+        "part": "source_constants"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:validation_summary",
+      "column": "source_constants",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Two-state VAR sensitivity",
+      "description": "Two-state VAR sensitivity",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/var_sensitivity.csv",
+        "modified_at": "2026-11-18T07:04:33Z"
+      },
+      "content_hash": "sha256:5863a128a720811a88ff89779e1e595e87ad09611752202d30e0c3dc13dcf690",
+      "size_bytes": 5573,
+      "row_count": 46,
+      "columns": [
+        {
+          "name": "n_obs",
+          "dtype": "int64"
+        },
+        {
+          "name": "start",
+          "dtype": "int64"
+        },
+        {
+          "name": "end",
+          "dtype": "int64"
+        },
+        {
+          "name": "ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "EDG",
+          "dtype": "float64"
+        },
+        {
+          "name": "discounted_spectral_radius",
+          "dtype": "float64"
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string"
+        },
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "industry_name",
+          "dtype": "string"
+        },
+        {
+          "name": "portfolio",
+          "dtype": "string"
+        }
+      ],
+      "sources": [
+        "WRDS CRSP/Compustat; FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "sector/annual.csv -> sector/robustness.py; aggregate cash portfolio states from CRSP, Compustat and FRED.",
+        "content_hash": "sha256:4238a9f78af9bf7400704078fa06bc8ef32f7c8bcb0e87e4e316b558439cf084"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#n_obs",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "n_obs"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "n_obs",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#start",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "start"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "start",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#end",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "end"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "end",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#EDG",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "EDG"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "EDG",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#discounted_spectral_radius",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "discounted_spectral_radius"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "discounted_spectral_radius",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#quality_flags",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "quality_flags"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "quality_flags",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#industry_name",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "industry_name"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "industry_name",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:var_sensitivity#portfolio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "var_sensitivity",
+        "part": "portfolio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:var_sensitivity",
+      "column": "portfolio",
+      "declared": false
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/author_summary",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "author_summary"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Author-summary sensitivity",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/author_summary.svg",
+        "modified_at": "2026-11-18T07:02:28Z"
+      },
+      "content_hash": "sha256:e82ee2e3d9cbb28eab70df605025c14dad9f8cb89f33a1563fb14b6a80cb83e7",
+      "size_bytes": 13451,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:author_summary"
+      ],
+      "docs": {
+        "text": "Generated from the linked registered dataframe; see its source lineage and the report caption.",
+        "content_hash": "sha256:81f21e19a1d68c3f39e85272094d6ca27c603d79ad99da602c0a8adfa1493f2b"
+      }
+    },
+    {
       "kind": "Chart",
       "version": "chartbook/v1",
       "id": "lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition",
@@ -3603,7 +5209,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_decomposition.svg",
-        "modified_at": "2026-11-18T06:34:49Z"
+        "modified_at": "2026-11-18T07:02:28Z"
       },
       "content_hash": "sha256:ffa820f2a93cf51c90c10d9c035187e24e3fe9ee9421dbb47d55616578b37a61",
       "size_bytes": 13437,
@@ -3630,7 +5236,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_payout.svg",
-        "modified_at": "2026-11-18T06:33:58Z"
+        "modified_at": "2026-11-18T07:02:26Z"
       },
       "content_hash": "sha256:bfaa8877a166de32daa8589efde902560b83c2ce4bd45ec2feab372f09608c8a",
       "size_bytes": 22944,
@@ -3640,6 +5246,33 @@
       "docs": {
         "text": "Original Figure 1: trailing payout and dividend-price history.",
         "content_hash": "sha256:9491e47a7cc523966fe97563bc809fd03672f13bc587727e0a8f5302d69365d7"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/baseline_validation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "baseline_validation"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Baseline validation",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/baseline_validation.svg",
+        "modified_at": "2026-11-18T07:04:27Z"
+      },
+      "content_hash": "sha256:b32e225a907dc6956e7ce785880b7b2ad3b67a3af905dc9177b4ebb0c0dd9c5c",
+      "size_bytes": 11042,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:validation_summary"
+      ],
+      "docs": {
+        "text": "Generated from the linked registered dataframe; see its source lineage and the report caption.",
+        "content_hash": "sha256:81f21e19a1d68c3f39e85272094d6ca27c603d79ad99da602c0a8adfa1493f2b"
       }
     },
     {
@@ -3657,7 +5290,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_validation.svg",
-        "modified_at": "2026-11-18T06:34:52Z"
+        "modified_at": "2026-11-18T07:04:36Z"
       },
       "content_hash": "sha256:c4da7bdfcacf242d58b34d6c91fdcac4f6d3c2542d04e2912409915577641486",
       "size_bytes": 24975,
@@ -3667,6 +5300,87 @@
       "docs": {
         "text": "Coverage attrition and cash-event reconciliation against independent return fields.",
         "content_hash": "sha256:f534ff3b616cf4da9a7fd68551ff555ca40fd7ec80c1d0069d873d041b2fc929"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/forecast_loss",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "forecast_loss"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast loss",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_loss.svg",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:8039dabf45dfa2d9398bf24dc6c3be118b5cb2b0bc87f934f77a2c3d6374e73b",
+      "size_bytes": 24960,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:forecast_metrics"
+      ],
+      "docs": {
+        "text": "Generated from the linked registered dataframe; see its source lineage and the report caption.",
+        "content_hash": "sha256:81f21e19a1d68c3f39e85272094d6ca27c603d79ad99da602c0a8adfa1493f2b"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/forecast_predictions",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "forecast_predictions"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast comparison",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_predictions.svg",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:bd580d94b7ba8648d527f7b89195d618e11c92047281b71a92967e437ea13483",
+      "size_bytes": 34104,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:forecast_ledger"
+      ],
+      "docs": {
+        "text": "Generated from the linked registered dataframe; see its source lineage and the report caption.",
+        "content_hash": "sha256:81f21e19a1d68c3f39e85272094d6ca27c603d79ad99da602c0a8adfa1493f2b"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/forecast_validation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "forecast_validation"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Legacy forecast validation",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/forecast_validation.svg",
+        "modified_at": "2026-11-18T07:02:24Z"
+      },
+      "content_hash": "sha256:1d6b65213f97f56702d7792665a458119e34e98b44439c92383160997ef0039b",
+      "size_bytes": 32663,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:forecast_validation"
+      ],
+      "docs": {
+        "text": "Generated from the linked registered dataframe; see its source lineage and the report caption.",
+        "content_hash": "sha256:81f21e19a1d68c3f39e85272094d6ca27c603d79ad99da602c0a8adfa1493f2b"
       }
     },
     {
@@ -3684,7 +5398,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_comparison.svg",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:04:37Z"
       },
       "content_hash": "sha256:50210a7218b7b35dacf82ae5fec82a037a112464bf97f0dbd04397798aa3ab09",
       "size_bytes": 7362,
@@ -3711,7 +5425,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_decomposition.svg",
-        "modified_at": "2026-11-18T06:35:05Z"
+        "modified_at": "2026-11-18T07:04:33Z"
       },
       "content_hash": "sha256:330ae4670e2da241c777b43dff4394ae08819cf23f5a9ecbc085b84aecafa9eb",
       "size_bytes": 12977,
@@ -3738,7 +5452,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_payout.svg",
-        "modified_at": "2026-11-18T06:35:04Z"
+        "modified_at": "2026-11-18T07:03:38Z"
       },
       "content_hash": "sha256:381d599515d602a896d3963939302428b2b1d48ed75862d47fd45e81fa48cd6a",
       "size_bytes": 23049,
@@ -3766,10 +5480,10 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_tour.ipynb",
-        "modified_at": "2026-11-18T06:35:08Z"
+        "modified_at": "2026-11-18T07:05:26Z"
       },
-      "content_hash": "sha256:b4197fda0076ddcca41852d8624da75e01771c796ce42c1aa53bc13e28095b6f",
-      "size_bytes": 19802
+      "content_hash": "sha256:d15a3016521e4b605d02b9e49e89c3fb89120af179414517895080e738193c58",
+      "size_bytes": 20283
     },
     {
       "kind": "Note",
@@ -3832,10 +5546,10 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/report.pdf",
-        "modified_at": "2026-11-18T06:35:12Z"
+        "modified_at": "2026-11-18T07:05:30Z"
       },
-      "content_hash": "sha256:dcce018dd2e805cefdbefe2c6b86009968733ad60802a197d904b9aa246e8b45",
-      "size_bytes": 984312,
+      "content_hash": "sha256:805eca94786feb2a9ab292d0de3d863de94dba4ce9c81a827050a8613f5ee442",
+      "size_bytes": 999842,
       "file_count": 1,
       "extensions": {
         ".pdf": 1
@@ -3843,8 +5557,8 @@
       "files": [
         {
           "path": "report.pdf",
-          "size_bytes": 984312,
-          "content_hash": "sha256:dcce018dd2e805cefdbefe2c6b86009968733ad60802a197d904b9aa246e8b45"
+          "size_bytes": 999842,
+          "content_hash": "sha256:805eca94786feb2a9ab292d0de3d863de94dba4ce9c81a827050a8613f5ee442"
         }
       ],
       "sources": [

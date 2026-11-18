@@ -1,11 +1,19 @@
 Name,Metadata Complete,Object Type,Identifier,Pipeline,Missing Fields,Page Link
 P22: Equity Duration and Predictability,True,pipeline,lauristt/p22_golez_koudijs_2025,lauristt/p22_golez_koudijs_2025,,../index.html
+Annual portfolio coverage ledger,False,dataframe,annual_coverage,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/annual_coverage.html
+Supplied author Figure 3 points,False,dataframe,author_summary,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/author_summary.html
 Baseline decomposition,False,dataframe,baseline_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html
 Cash reconciliation,False,dataframe,cash_reconciliation,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html
 Coverage,False,dataframe,coverage,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/coverage.html
 Data checks,False,dataframe,data_checks,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html
+Legacy forecast ledger,False,dataframe,forecast_ledger,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/forecast_ledger.html
+Legacy paired forecast loss differences,False,dataframe,forecast_loss_comparisons,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/forecast_loss_comparisons.html
+Legacy forecast scores,False,dataframe,forecast_metrics,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/forecast_metrics.html
+Legacy forecast timing checks,False,dataframe,forecast_validation,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/forecast_validation.html
+Industry code reference,False,dataframe,industry_reference,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/industry_reference.html
 Payout history,False,dataframe,payout_history,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html
 Portfolio overlap,False,dataframe,portfolio_overlap,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html
+Cell-by-cell replication comparison,False,dataframe,published_comparison,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/published_comparison.html
 Sector annual,False,dataframe,sector_annual,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html
 Sector comparison,False,dataframe,sector_comparison,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html
 Sector estimates,False,dataframe,sector_estimates,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html
@@ -23,9 +31,16 @@ Updated table 4,False,dataframe,updated_table_4,lauristt/p22_golez_koudijs_2025,
 Updated table 5,False,dataframe,updated_table_5,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html
 Updated table 6,False,dataframe,updated_table_6,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html
 Updated table 7,False,dataframe,updated_table_7,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html
+Published replication validation summary,False,dataframe,validation_summary,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/validation_summary.html
+Two-state VAR sensitivity,False,dataframe,var_sensitivity,lauristt/p22_golez_koudijs_2025,"providers, provider_links, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/var_sensitivity.html
+Author-summary sensitivity,False,chart,author_summary,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.author_summary.html
 Baseline decomposition,False,chart,baseline_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.baseline_decomposition.html
 Baseline payout,False,chart,baseline_payout,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.baseline_payout.html
+Baseline validation,False,chart,baseline_validation,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.baseline_validation.html
 Data validation,False,chart,data_validation,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.data_validation.html
+Legacy forecast loss,False,chart,forecast_loss,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.forecast_loss.html
+Legacy forecast comparison,False,chart,forecast_predictions,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.forecast_predictions.html
+Legacy forecast validation,False,chart,forecast_validation,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.forecast_validation.html
 Sector comparison,False,chart,sector_comparison,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.sector_comparison.html
 Updated decomposition,False,chart,updated_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.updated_decomposition.html
 Updated payout,False,chart,updated_payout,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.updated_payout.html

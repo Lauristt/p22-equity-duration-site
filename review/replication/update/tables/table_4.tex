@@ -1,5 +1,5 @@
 % Generated; requires booktabs.
-% Real annual series. Payout coverage is incomplete before 1945. Smoothing* is copied from constants in the authors’ script, whose separate estimation file is not supplied; it is NOT independently recomputed. Update through 2025: U.S. data after 2022 from Goyal (Data2025.xlsx); smoothing is blank where the sample changed.
+% Real annual series. Payout coverage is incomplete before 1945. Smoothing*: the postwar nominal-growth ratio is calculated, with real-growth sensitivity in diagnostics. The two historical values remain supplied constants because early earnings and the separate estimation file are missing. Update through 2025: U.S. data after 2022 from Goyal (Data2025.xlsx); smoothing is blank where the sample changed. Post-1945 smoothing is recomputed from nominal growth, matching the printed entry; real-growth sensitivity is in diagnostics. Early/full-history earnings inputs are unavailable.
 \begin{table}
 \caption{Table 4: Historical market: summary statistics.}
 \label{tab:replication_4}
@@ -17,7 +17,7 @@ Dividend growth SD (\%) & 6.55 & 13.29 & 12.24 \\
 Dividend-price mean (\%) & 3.17 & 4.86 & 4.51 \\
 Dividend-price SD (\%) & 1.45 & 1.27 & 1.47 \\
 Dividend-price AR(1) & 0.91 & 0.69 & 0.80 \\
-Smoothing* & -- & 0.32 & -- \\
+Smoothing* & 0.21 & 0.32 & -- \\
 \bottomrule
 \end{tabular}
 \end{table}

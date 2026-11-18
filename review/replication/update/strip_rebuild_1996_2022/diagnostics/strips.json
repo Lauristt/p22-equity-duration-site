@@ -1,6 +1,10 @@
 {
   "monthly_levels": 324,
   "overlapping_12_month_outcomes": 312,
+  "complete_market_return_windows": 312,
+  "complete_strip_return_windows": 261,
+  "missing_strip_prices": 25,
+  "missing_strip_returns": 13,
   "first_month": "1996-01-31",
   "last_month": "2022-12-30",
   "non_overlap_hac_lags": 1

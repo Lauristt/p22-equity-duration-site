@@ -34,7 +34,7 @@
   },
   "code_sha256": {
     "config/extension.json": "13aa987421a132a894898f802b616a1c4a5f429f798b3128e29c8585ec6d0ffa",
-    "dodo.py": "be83a5a2a2541332d1ee19677df5c476226890190e1da30e5f5bca86ae35b8d1",
+    "dodo.py": "4f371bb2281c0d031466704bfaa0a2702620918f3bcab8fe602d72880ae8adc7",
     "src/settings.py": "0f999e18751aeace82ab980e74639449538f1ea33640cfb24875c63608df1e07",
     "src/p22/extension.py": "ee57b16d34586582018f9e4507f959578d8137cc2644fdfb5eb2c7ce473c4132",
     "src/p22/extension_inputs.py": "c97a9d83784e4927c84a3bf2564ddfe4b33d60718c9c4a285a1147ce5152688e",

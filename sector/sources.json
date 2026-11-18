@@ -176,7 +176,6 @@
     "first_accounting_year": 1950,
     "retrieval_cutoff": "2026-11-17",
     "stock_end_month": "2026-09",
-    "annual_end_year": 2025,
     "accounting_lag_months": 6,
     "payout_window_years": 10,
     "minimum_firms_per_side": 5,
@@ -196,7 +195,8 @@
     "stock_formation": "annual January; terminal proceeds reinvested pro rata",
     "industry_sleeve_weights": "equal each month on both sides",
     "payer_screen": "positive dividends in all ten preceding calendar years and ten available fiscal years",
-    "uncertainty": "stationary bootstrap of joint annual pairs; gaps force block restarts"
+    "uncertainty": "stationary bootstrap of joint annual pairs; gaps force block restarts",
+    "annual_end_year": 2025
   },
   "cash_adjustment_hashes": {
     "cash_adjustments_1960.parquet": "f943d62963cb532670b65147ba77695fc525fd5b8ad1300080a99e1f70e8d727",

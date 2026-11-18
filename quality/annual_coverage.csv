@@ -1,0 +1,2577 @@
+industry_id,industry_name,portfolio,year,observed_months,invalid_months,included,reason
+-2,Paper-aligned market,Above 0.5,1970,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1971,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1972,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1973,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1974,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1975,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1976,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1977,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1978,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1979,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1980,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1981,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1982,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1983,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1984,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1985,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1986,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1987,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1988,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1989,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1990,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1991,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1992,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1993,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1994,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1995,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1996,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1997,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1998,12,0,True,included
+-2,Paper-aligned market,Above 0.5,1999,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2000,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2001,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2002,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2003,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2004,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2005,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2006,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2007,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2008,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2009,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2010,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2011,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2012,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2013,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2014,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2015,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2016,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2017,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2018,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2019,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2020,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2021,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2022,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2023,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2024,12,0,True,included
+-2,Paper-aligned market,Above 0.5,2025,12,0,True,included
+-2,Paper-aligned market,All,1970,12,0,True,included
+-2,Paper-aligned market,All,1971,12,0,True,included
+-2,Paper-aligned market,All,1972,12,0,True,included
+-2,Paper-aligned market,All,1973,12,0,True,included
+-2,Paper-aligned market,All,1974,12,0,True,included
+-2,Paper-aligned market,All,1975,12,0,True,included
+-2,Paper-aligned market,All,1976,12,0,True,included
+-2,Paper-aligned market,All,1977,12,0,True,included
+-2,Paper-aligned market,All,1978,12,0,True,included
+-2,Paper-aligned market,All,1979,12,0,True,included
+-2,Paper-aligned market,All,1980,12,0,True,included
+-2,Paper-aligned market,All,1981,12,0,True,included
+-2,Paper-aligned market,All,1982,12,0,True,included
+-2,Paper-aligned market,All,1983,12,0,True,included
+-2,Paper-aligned market,All,1984,12,0,True,included
+-2,Paper-aligned market,All,1985,12,0,True,included
+-2,Paper-aligned market,All,1986,12,0,True,included
+-2,Paper-aligned market,All,1987,12,0,True,included
+-2,Paper-aligned market,All,1988,12,0,True,included
+-2,Paper-aligned market,All,1989,12,0,True,included
+-2,Paper-aligned market,All,1990,12,0,True,included
+-2,Paper-aligned market,All,1991,12,0,True,included
+-2,Paper-aligned market,All,1992,12,0,True,included
+-2,Paper-aligned market,All,1993,12,0,True,included
+-2,Paper-aligned market,All,1994,12,0,True,included
+-2,Paper-aligned market,All,1995,12,0,True,included
+-2,Paper-aligned market,All,1996,12,0,True,included
+-2,Paper-aligned market,All,1997,12,0,True,included
+-2,Paper-aligned market,All,1998,12,0,True,included
+-2,Paper-aligned market,All,1999,12,0,True,included
+-2,Paper-aligned market,All,2000,12,0,True,included
+-2,Paper-aligned market,All,2001,12,0,True,included
+-2,Paper-aligned market,All,2002,12,0,True,included
+-2,Paper-aligned market,All,2003,12,0,True,included
+-2,Paper-aligned market,All,2004,12,0,True,included
+-2,Paper-aligned market,All,2005,12,0,True,included
+-2,Paper-aligned market,All,2006,12,0,True,included
+-2,Paper-aligned market,All,2007,12,0,True,included
+-2,Paper-aligned market,All,2008,12,0,True,included
+-2,Paper-aligned market,All,2009,12,0,True,included
+-2,Paper-aligned market,All,2010,12,0,True,included
+-2,Paper-aligned market,All,2011,12,0,True,included
+-2,Paper-aligned market,All,2012,12,0,True,included
+-2,Paper-aligned market,All,2013,12,0,True,included
+-2,Paper-aligned market,All,2014,12,0,True,included
+-2,Paper-aligned market,All,2015,12,0,True,included
+-2,Paper-aligned market,All,2016,12,0,True,included
+-2,Paper-aligned market,All,2017,12,0,True,included
+-2,Paper-aligned market,All,2018,12,0,True,included
+-2,Paper-aligned market,All,2019,12,0,True,included
+-2,Paper-aligned market,All,2020,12,0,True,included
+-2,Paper-aligned market,All,2021,12,0,True,included
+-2,Paper-aligned market,All,2022,12,0,True,included
+-2,Paper-aligned market,All,2023,12,0,True,included
+-2,Paper-aligned market,All,2024,12,0,True,included
+-2,Paper-aligned market,All,2025,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1970,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1971,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1972,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1973,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1974,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1975,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1976,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1977,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1978,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1979,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1980,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1981,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1982,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1983,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1984,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1985,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1986,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1987,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1988,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1989,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1990,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1991,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1992,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1993,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1994,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1995,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1996,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1997,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1998,12,0,True,included
+-2,Paper-aligned market,Below 0.5,1999,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2000,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2001,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2002,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2003,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2004,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2005,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2006,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2007,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2008,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2009,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2010,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2011,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2012,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2013,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2014,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2015,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2016,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2017,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2018,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2019,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2020,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2021,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2022,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2023,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2024,12,0,True,included
+-2,Paper-aligned market,Below 0.5,2025,12,0,True,included
+-2,Paper-aligned market,High,1970,12,0,True,included
+-2,Paper-aligned market,High,1971,12,0,True,included
+-2,Paper-aligned market,High,1972,12,0,True,included
+-2,Paper-aligned market,High,1973,12,0,True,included
+-2,Paper-aligned market,High,1974,12,0,True,included
+-2,Paper-aligned market,High,1975,12,0,True,included
+-2,Paper-aligned market,High,1976,12,0,True,included
+-2,Paper-aligned market,High,1977,12,0,True,included
+-2,Paper-aligned market,High,1978,12,0,True,included
+-2,Paper-aligned market,High,1979,12,0,True,included
+-2,Paper-aligned market,High,1980,12,0,True,included
+-2,Paper-aligned market,High,1981,12,0,True,included
+-2,Paper-aligned market,High,1982,12,0,True,included
+-2,Paper-aligned market,High,1983,12,0,True,included
+-2,Paper-aligned market,High,1984,12,0,True,included
+-2,Paper-aligned market,High,1985,12,0,True,included
+-2,Paper-aligned market,High,1986,12,0,True,included
+-2,Paper-aligned market,High,1987,12,0,True,included
+-2,Paper-aligned market,High,1988,12,0,True,included
+-2,Paper-aligned market,High,1989,12,0,True,included
+-2,Paper-aligned market,High,1990,12,0,True,included
+-2,Paper-aligned market,High,1991,12,0,True,included
+-2,Paper-aligned market,High,1992,12,0,True,included
+-2,Paper-aligned market,High,1993,12,0,True,included
+-2,Paper-aligned market,High,1994,12,0,True,included
+-2,Paper-aligned market,High,1995,12,0,True,included
+-2,Paper-aligned market,High,1996,12,0,True,included
+-2,Paper-aligned market,High,1997,12,0,True,included
+-2,Paper-aligned market,High,1998,12,0,True,included
+-2,Paper-aligned market,High,1999,12,0,True,included
+-2,Paper-aligned market,High,2000,12,0,True,included
+-2,Paper-aligned market,High,2001,12,0,True,included
+-2,Paper-aligned market,High,2002,12,0,True,included
+-2,Paper-aligned market,High,2003,12,0,True,included
+-2,Paper-aligned market,High,2004,12,0,True,included
+-2,Paper-aligned market,High,2005,12,0,True,included
+-2,Paper-aligned market,High,2006,12,0,True,included
+-2,Paper-aligned market,High,2007,12,0,True,included
+-2,Paper-aligned market,High,2008,12,0,True,included
+-2,Paper-aligned market,High,2009,12,0,True,included
+-2,Paper-aligned market,High,2010,12,0,True,included
+-2,Paper-aligned market,High,2011,12,0,True,included
+-2,Paper-aligned market,High,2012,12,0,True,included
+-2,Paper-aligned market,High,2013,12,0,True,included
+-2,Paper-aligned market,High,2014,12,0,True,included
+-2,Paper-aligned market,High,2015,12,0,True,included
+-2,Paper-aligned market,High,2016,12,0,True,included
+-2,Paper-aligned market,High,2017,12,0,True,included
+-2,Paper-aligned market,High,2018,12,0,True,included
+-2,Paper-aligned market,High,2019,12,0,True,included
+-2,Paper-aligned market,High,2020,12,0,True,included
+-2,Paper-aligned market,High,2021,12,0,True,included
+-2,Paper-aligned market,High,2022,12,0,True,included
+-2,Paper-aligned market,High,2023,12,0,True,included
+-2,Paper-aligned market,High,2024,12,0,True,included
+-2,Paper-aligned market,High,2025,12,0,True,included
+-2,Paper-aligned market,Low,1970,12,0,True,included
+-2,Paper-aligned market,Low,1971,12,0,True,included
+-2,Paper-aligned market,Low,1972,12,0,True,included
+-2,Paper-aligned market,Low,1973,12,0,True,included
+-2,Paper-aligned market,Low,1974,12,0,True,included
+-2,Paper-aligned market,Low,1975,12,0,True,included
+-2,Paper-aligned market,Low,1976,12,0,True,included
+-2,Paper-aligned market,Low,1977,12,0,True,included
+-2,Paper-aligned market,Low,1978,12,0,True,included
+-2,Paper-aligned market,Low,1979,12,0,True,included
+-2,Paper-aligned market,Low,1980,12,0,True,included
+-2,Paper-aligned market,Low,1981,12,0,True,included
+-2,Paper-aligned market,Low,1982,12,0,True,included
+-2,Paper-aligned market,Low,1983,12,0,True,included
+-2,Paper-aligned market,Low,1984,12,0,True,included
+-2,Paper-aligned market,Low,1985,12,0,True,included
+-2,Paper-aligned market,Low,1986,12,0,True,included
+-2,Paper-aligned market,Low,1987,12,0,True,included
+-2,Paper-aligned market,Low,1988,12,0,True,included
+-2,Paper-aligned market,Low,1989,12,0,True,included
+-2,Paper-aligned market,Low,1990,12,0,True,included
+-2,Paper-aligned market,Low,1991,12,0,True,included
+-2,Paper-aligned market,Low,1992,12,0,True,included
+-2,Paper-aligned market,Low,1993,12,0,True,included
+-2,Paper-aligned market,Low,1994,12,0,True,included
+-2,Paper-aligned market,Low,1995,12,0,True,included
+-2,Paper-aligned market,Low,1996,12,0,True,included
+-2,Paper-aligned market,Low,1997,12,0,True,included
+-2,Paper-aligned market,Low,1998,12,0,True,included
+-2,Paper-aligned market,Low,1999,12,0,True,included
+-2,Paper-aligned market,Low,2000,12,0,True,included
+-2,Paper-aligned market,Low,2001,12,0,True,included
+-2,Paper-aligned market,Low,2002,12,0,True,included
+-2,Paper-aligned market,Low,2003,12,0,True,included
+-2,Paper-aligned market,Low,2004,12,0,True,included
+-2,Paper-aligned market,Low,2005,12,0,True,included
+-2,Paper-aligned market,Low,2006,12,0,True,included
+-2,Paper-aligned market,Low,2007,12,0,True,included
+-2,Paper-aligned market,Low,2008,12,0,True,included
+-2,Paper-aligned market,Low,2009,12,0,True,included
+-2,Paper-aligned market,Low,2010,12,0,True,included
+-2,Paper-aligned market,Low,2011,12,0,True,included
+-2,Paper-aligned market,Low,2012,12,0,True,included
+-2,Paper-aligned market,Low,2013,12,0,True,included
+-2,Paper-aligned market,Low,2014,12,0,True,included
+-2,Paper-aligned market,Low,2015,12,0,True,included
+-2,Paper-aligned market,Low,2016,12,0,True,included
+-2,Paper-aligned market,Low,2017,12,0,True,included
+-2,Paper-aligned market,Low,2018,12,0,True,included
+-2,Paper-aligned market,Low,2019,12,0,True,included
+-2,Paper-aligned market,Low,2020,12,0,True,included
+-2,Paper-aligned market,Low,2021,12,0,True,included
+-2,Paper-aligned market,Low,2022,12,0,True,included
+-2,Paper-aligned market,Low,2023,12,0,True,included
+-2,Paper-aligned market,Low,2024,12,0,True,included
+-2,Paper-aligned market,Low,2025,12,0,True,included
+-2,Paper-aligned market,Medium,1970,12,0,True,included
+-2,Paper-aligned market,Medium,1971,12,0,True,included
+-2,Paper-aligned market,Medium,1972,12,0,True,included
+-2,Paper-aligned market,Medium,1973,12,0,True,included
+-2,Paper-aligned market,Medium,1974,12,0,True,included
+-2,Paper-aligned market,Medium,1975,12,0,True,included
+-2,Paper-aligned market,Medium,1976,12,0,True,included
+-2,Paper-aligned market,Medium,1977,12,0,True,included
+-2,Paper-aligned market,Medium,1978,12,0,True,included
+-2,Paper-aligned market,Medium,1979,12,0,True,included
+-2,Paper-aligned market,Medium,1980,12,0,True,included
+-2,Paper-aligned market,Medium,1981,12,0,True,included
+-2,Paper-aligned market,Medium,1982,12,0,True,included
+-2,Paper-aligned market,Medium,1983,12,0,True,included
+-2,Paper-aligned market,Medium,1984,12,0,True,included
+-2,Paper-aligned market,Medium,1985,12,0,True,included
+-2,Paper-aligned market,Medium,1986,12,0,True,included
+-2,Paper-aligned market,Medium,1987,12,0,True,included
+-2,Paper-aligned market,Medium,1988,12,0,True,included
+-2,Paper-aligned market,Medium,1989,12,0,True,included
+-2,Paper-aligned market,Medium,1990,12,0,True,included
+-2,Paper-aligned market,Medium,1991,12,0,True,included
+-2,Paper-aligned market,Medium,1992,12,0,True,included
+-2,Paper-aligned market,Medium,1993,12,0,True,included
+-2,Paper-aligned market,Medium,1994,12,0,True,included
+-2,Paper-aligned market,Medium,1995,12,0,True,included
+-2,Paper-aligned market,Medium,1996,12,0,True,included
+-2,Paper-aligned market,Medium,1997,12,0,True,included
+-2,Paper-aligned market,Medium,1998,12,0,True,included
+-2,Paper-aligned market,Medium,1999,12,0,True,included
+-2,Paper-aligned market,Medium,2000,12,0,True,included
+-2,Paper-aligned market,Medium,2001,12,0,True,included
+-2,Paper-aligned market,Medium,2002,12,0,True,included
+-2,Paper-aligned market,Medium,2003,12,0,True,included
+-2,Paper-aligned market,Medium,2004,12,0,True,included
+-2,Paper-aligned market,Medium,2005,12,0,True,included
+-2,Paper-aligned market,Medium,2006,12,0,True,included
+-2,Paper-aligned market,Medium,2007,12,0,True,included
+-2,Paper-aligned market,Medium,2008,12,0,True,included
+-2,Paper-aligned market,Medium,2009,12,0,True,included
+-2,Paper-aligned market,Medium,2010,12,0,True,included
+-2,Paper-aligned market,Medium,2011,12,0,True,included
+-2,Paper-aligned market,Medium,2012,12,0,True,included
+-2,Paper-aligned market,Medium,2013,12,0,True,included
+-2,Paper-aligned market,Medium,2014,12,0,True,included
+-2,Paper-aligned market,Medium,2015,12,0,True,included
+-2,Paper-aligned market,Medium,2016,12,0,True,included
+-2,Paper-aligned market,Medium,2017,12,0,True,included
+-2,Paper-aligned market,Medium,2018,12,0,True,included
+-2,Paper-aligned market,Medium,2019,12,0,True,included
+-2,Paper-aligned market,Medium,2020,12,0,True,included
+-2,Paper-aligned market,Medium,2021,12,0,True,included
+-2,Paper-aligned market,Medium,2022,12,0,True,included
+-2,Paper-aligned market,Medium,2023,12,0,True,included
+-2,Paper-aligned market,Medium,2024,12,0,True,included
+-2,Paper-aligned market,Medium,2025,12,0,True,included
+-1,Market-wide,High,1970,12,0,True,included
+-1,Market-wide,High,1971,12,0,True,included
+-1,Market-wide,High,1972,12,0,True,included
+-1,Market-wide,High,1973,12,0,True,included
+-1,Market-wide,High,1974,12,0,True,included
+-1,Market-wide,High,1975,12,0,True,included
+-1,Market-wide,High,1976,12,0,True,included
+-1,Market-wide,High,1977,12,0,True,included
+-1,Market-wide,High,1978,12,0,True,included
+-1,Market-wide,High,1979,12,0,True,included
+-1,Market-wide,High,1980,12,0,True,included
+-1,Market-wide,High,1981,12,0,True,included
+-1,Market-wide,High,1982,12,0,True,included
+-1,Market-wide,High,1983,12,0,True,included
+-1,Market-wide,High,1984,12,0,True,included
+-1,Market-wide,High,1985,12,0,True,included
+-1,Market-wide,High,1986,12,0,True,included
+-1,Market-wide,High,1987,12,0,True,included
+-1,Market-wide,High,1988,12,0,True,included
+-1,Market-wide,High,1989,12,0,True,included
+-1,Market-wide,High,1990,12,0,True,included
+-1,Market-wide,High,1991,12,0,True,included
+-1,Market-wide,High,1992,12,0,True,included
+-1,Market-wide,High,1993,12,0,True,included
+-1,Market-wide,High,1994,12,0,True,included
+-1,Market-wide,High,1995,12,0,True,included
+-1,Market-wide,High,1996,12,0,True,included
+-1,Market-wide,High,1997,12,0,True,included
+-1,Market-wide,High,1998,12,0,True,included
+-1,Market-wide,High,1999,12,0,True,included
+-1,Market-wide,High,2000,12,0,True,included
+-1,Market-wide,High,2001,12,0,True,included
+-1,Market-wide,High,2002,12,0,True,included
+-1,Market-wide,High,2003,12,0,True,included
+-1,Market-wide,High,2004,12,0,True,included
+-1,Market-wide,High,2005,12,0,True,included
+-1,Market-wide,High,2006,12,0,True,included
+-1,Market-wide,High,2007,12,0,True,included
+-1,Market-wide,High,2008,12,0,True,included
+-1,Market-wide,High,2009,12,0,True,included
+-1,Market-wide,High,2010,12,0,True,included
+-1,Market-wide,High,2011,12,0,True,included
+-1,Market-wide,High,2012,12,0,True,included
+-1,Market-wide,High,2013,12,0,True,included
+-1,Market-wide,High,2014,12,0,True,included
+-1,Market-wide,High,2015,12,0,True,included
+-1,Market-wide,High,2016,12,0,True,included
+-1,Market-wide,High,2017,12,0,True,included
+-1,Market-wide,High,2018,12,0,True,included
+-1,Market-wide,High,2019,12,0,True,included
+-1,Market-wide,High,2020,12,0,True,included
+-1,Market-wide,High,2021,12,0,True,included
+-1,Market-wide,High,2022,12,0,True,included
+-1,Market-wide,High,2023,12,0,True,included
+-1,Market-wide,High,2024,12,0,True,included
+-1,Market-wide,High,2025,12,0,True,included
+-1,Market-wide,Low,1970,12,0,True,included
+-1,Market-wide,Low,1971,12,0,True,included
+-1,Market-wide,Low,1972,12,0,True,included
+-1,Market-wide,Low,1973,12,0,True,included
+-1,Market-wide,Low,1974,12,0,True,included
+-1,Market-wide,Low,1975,12,0,True,included
+-1,Market-wide,Low,1976,12,0,True,included
+-1,Market-wide,Low,1977,12,0,True,included
+-1,Market-wide,Low,1978,12,0,True,included
+-1,Market-wide,Low,1979,12,0,True,included
+-1,Market-wide,Low,1980,12,0,True,included
+-1,Market-wide,Low,1981,12,0,True,included
+-1,Market-wide,Low,1982,12,0,True,included
+-1,Market-wide,Low,1983,12,0,True,included
+-1,Market-wide,Low,1984,12,0,True,included
+-1,Market-wide,Low,1985,12,0,True,included
+-1,Market-wide,Low,1986,12,0,True,included
+-1,Market-wide,Low,1987,12,0,True,included
+-1,Market-wide,Low,1988,12,0,True,included
+-1,Market-wide,Low,1989,12,0,True,included
+-1,Market-wide,Low,1990,12,0,True,included
+-1,Market-wide,Low,1991,12,0,True,included
+-1,Market-wide,Low,1992,12,0,True,included
+-1,Market-wide,Low,1993,12,0,True,included
+-1,Market-wide,Low,1994,12,0,True,included
+-1,Market-wide,Low,1995,12,0,True,included
+-1,Market-wide,Low,1996,12,0,True,included
+-1,Market-wide,Low,1997,12,0,True,included
+-1,Market-wide,Low,1998,12,0,True,included
+-1,Market-wide,Low,1999,12,0,True,included
+-1,Market-wide,Low,2000,12,0,True,included
+-1,Market-wide,Low,2001,12,0,True,included
+-1,Market-wide,Low,2002,12,0,True,included
+-1,Market-wide,Low,2003,12,0,True,included
+-1,Market-wide,Low,2004,12,0,True,included
+-1,Market-wide,Low,2005,12,0,True,included
+-1,Market-wide,Low,2006,12,0,True,included
+-1,Market-wide,Low,2007,12,0,True,included
+-1,Market-wide,Low,2008,12,0,True,included
+-1,Market-wide,Low,2009,12,0,True,included
+-1,Market-wide,Low,2010,12,0,True,included
+-1,Market-wide,Low,2011,12,0,True,included
+-1,Market-wide,Low,2012,12,0,True,included
+-1,Market-wide,Low,2013,12,0,True,included
+-1,Market-wide,Low,2014,12,0,True,included
+-1,Market-wide,Low,2015,12,0,True,included
+-1,Market-wide,Low,2016,12,0,True,included
+-1,Market-wide,Low,2017,12,0,True,included
+-1,Market-wide,Low,2018,12,0,True,included
+-1,Market-wide,Low,2019,12,0,True,included
+-1,Market-wide,Low,2020,12,0,True,included
+-1,Market-wide,Low,2021,12,0,True,included
+-1,Market-wide,Low,2022,12,0,True,included
+-1,Market-wide,Low,2023,12,0,True,included
+-1,Market-wide,Low,2024,12,0,True,included
+-1,Market-wide,Low,2025,12,0,True,included
+0,Industry-neutral,High,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,1972,12,0,True,included
+0,Industry-neutral,High,1973,12,0,True,included
+0,Industry-neutral,High,1974,12,0,True,included
+0,Industry-neutral,High,1975,12,0,True,included
+0,Industry-neutral,High,1976,12,0,True,included
+0,Industry-neutral,High,1977,12,0,True,included
+0,Industry-neutral,High,1978,12,0,True,included
+0,Industry-neutral,High,1979,12,0,True,included
+0,Industry-neutral,High,1980,12,0,True,included
+0,Industry-neutral,High,1981,12,0,True,included
+0,Industry-neutral,High,1982,12,0,True,included
+0,Industry-neutral,High,1983,12,0,True,included
+0,Industry-neutral,High,1984,12,0,True,included
+0,Industry-neutral,High,1985,12,0,True,included
+0,Industry-neutral,High,1986,12,0,True,included
+0,Industry-neutral,High,1987,12,0,True,included
+0,Industry-neutral,High,1988,12,0,True,included
+0,Industry-neutral,High,1989,12,0,True,included
+0,Industry-neutral,High,1990,12,0,True,included
+0,Industry-neutral,High,1991,12,0,True,included
+0,Industry-neutral,High,1992,12,0,True,included
+0,Industry-neutral,High,1993,12,0,True,included
+0,Industry-neutral,High,1994,12,0,True,included
+0,Industry-neutral,High,1995,12,0,True,included
+0,Industry-neutral,High,1996,12,0,True,included
+0,Industry-neutral,High,1997,12,0,True,included
+0,Industry-neutral,High,1998,12,0,True,included
+0,Industry-neutral,High,1999,12,0,True,included
+0,Industry-neutral,High,2000,12,0,True,included
+0,Industry-neutral,High,2001,12,0,True,included
+0,Industry-neutral,High,2002,12,0,True,included
+0,Industry-neutral,High,2003,12,0,True,included
+0,Industry-neutral,High,2004,12,0,True,included
+0,Industry-neutral,High,2005,7,0,False,incomplete calendar months or missing industry sleeve
+0,Industry-neutral,High,2006,12,0,True,included
+0,Industry-neutral,High,2007,12,0,True,included
+0,Industry-neutral,High,2008,12,0,True,included
+0,Industry-neutral,High,2009,12,0,True,included
+0,Industry-neutral,High,2010,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2011,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2012,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2013,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2014,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2015,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2016,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2017,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2018,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2019,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2020,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2021,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2022,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2023,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,High,2024,12,0,True,included
+0,Industry-neutral,High,2025,12,0,True,included
+0,Industry-neutral,Low,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,1972,12,0,True,included
+0,Industry-neutral,Low,1973,12,0,True,included
+0,Industry-neutral,Low,1974,12,0,True,included
+0,Industry-neutral,Low,1975,12,0,True,included
+0,Industry-neutral,Low,1976,12,0,True,included
+0,Industry-neutral,Low,1977,12,0,True,included
+0,Industry-neutral,Low,1978,12,0,True,included
+0,Industry-neutral,Low,1979,12,0,True,included
+0,Industry-neutral,Low,1980,12,0,True,included
+0,Industry-neutral,Low,1981,12,0,True,included
+0,Industry-neutral,Low,1982,12,0,True,included
+0,Industry-neutral,Low,1983,12,0,True,included
+0,Industry-neutral,Low,1984,5,0,False,incomplete calendar months or missing industry sleeve
+0,Industry-neutral,Low,1985,12,0,True,included
+0,Industry-neutral,Low,1986,12,0,True,included
+0,Industry-neutral,Low,1987,12,0,True,included
+0,Industry-neutral,Low,1988,12,0,True,included
+0,Industry-neutral,Low,1989,12,0,True,included
+0,Industry-neutral,Low,1990,12,0,True,included
+0,Industry-neutral,Low,1991,12,0,True,included
+0,Industry-neutral,Low,1992,12,0,True,included
+0,Industry-neutral,Low,1993,12,0,True,included
+0,Industry-neutral,Low,1994,12,0,True,included
+0,Industry-neutral,Low,1995,12,0,True,included
+0,Industry-neutral,Low,1996,12,0,True,included
+0,Industry-neutral,Low,1997,12,0,True,included
+0,Industry-neutral,Low,1998,12,0,True,included
+0,Industry-neutral,Low,1999,12,0,True,included
+0,Industry-neutral,Low,2000,12,0,True,included
+0,Industry-neutral,Low,2001,1,0,False,incomplete calendar months or missing industry sleeve
+0,Industry-neutral,Low,2002,12,0,True,included
+0,Industry-neutral,Low,2003,12,0,True,included
+0,Industry-neutral,Low,2004,12,0,True,included
+0,Industry-neutral,Low,2005,12,0,True,included
+0,Industry-neutral,Low,2006,5,0,False,incomplete calendar months or missing industry sleeve
+0,Industry-neutral,Low,2007,12,0,True,included
+0,Industry-neutral,Low,2008,12,0,True,included
+0,Industry-neutral,Low,2009,12,0,True,included
+0,Industry-neutral,Low,2010,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2011,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2012,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2013,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2014,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2015,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2016,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2017,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2018,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2019,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2020,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2021,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2022,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2023,0,0,False,no January portfolio under eligibility/minimum-firm rules
+0,Industry-neutral,Low,2024,12,0,True,included
+0,Industry-neutral,Low,2025,12,0,True,included
+1,NoDur,All,1970,12,0,True,included
+1,NoDur,All,1971,12,0,True,included
+1,NoDur,All,1972,12,0,True,included
+1,NoDur,All,1973,12,0,True,included
+1,NoDur,All,1974,12,0,True,included
+1,NoDur,All,1975,12,0,True,included
+1,NoDur,All,1976,12,0,True,included
+1,NoDur,All,1977,12,0,True,included
+1,NoDur,All,1978,12,0,True,included
+1,NoDur,All,1979,12,0,True,included
+1,NoDur,All,1980,12,0,True,included
+1,NoDur,All,1981,12,0,True,included
+1,NoDur,All,1982,12,0,True,included
+1,NoDur,All,1983,12,0,True,included
+1,NoDur,All,1984,12,0,True,included
+1,NoDur,All,1985,12,0,True,included
+1,NoDur,All,1986,12,0,True,included
+1,NoDur,All,1987,12,0,True,included
+1,NoDur,All,1988,12,0,True,included
+1,NoDur,All,1989,12,0,True,included
+1,NoDur,All,1990,12,0,True,included
+1,NoDur,All,1991,12,0,True,included
+1,NoDur,All,1992,12,0,True,included
+1,NoDur,All,1993,12,0,True,included
+1,NoDur,All,1994,12,0,True,included
+1,NoDur,All,1995,12,0,True,included
+1,NoDur,All,1996,12,0,True,included
+1,NoDur,All,1997,12,0,True,included
+1,NoDur,All,1998,12,0,True,included
+1,NoDur,All,1999,12,0,True,included
+1,NoDur,All,2000,12,0,True,included
+1,NoDur,All,2001,12,0,True,included
+1,NoDur,All,2002,12,0,True,included
+1,NoDur,All,2003,12,0,True,included
+1,NoDur,All,2004,12,0,True,included
+1,NoDur,All,2005,12,0,True,included
+1,NoDur,All,2006,12,0,True,included
+1,NoDur,All,2007,12,0,True,included
+1,NoDur,All,2008,12,0,True,included
+1,NoDur,All,2009,12,0,True,included
+1,NoDur,All,2010,12,0,True,included
+1,NoDur,All,2011,12,0,True,included
+1,NoDur,All,2012,12,0,True,included
+1,NoDur,All,2013,12,0,True,included
+1,NoDur,All,2014,12,0,True,included
+1,NoDur,All,2015,12,0,True,included
+1,NoDur,All,2016,12,0,True,included
+1,NoDur,All,2017,12,0,True,included
+1,NoDur,All,2018,12,0,True,included
+1,NoDur,All,2019,12,0,True,included
+1,NoDur,All,2020,12,0,True,included
+1,NoDur,All,2021,12,0,True,included
+1,NoDur,All,2022,12,0,True,included
+1,NoDur,All,2023,12,0,True,included
+1,NoDur,All,2024,12,0,True,included
+1,NoDur,All,2025,12,0,True,included
+1,NoDur,High,1970,12,0,True,included
+1,NoDur,High,1971,12,0,True,included
+1,NoDur,High,1972,12,0,True,included
+1,NoDur,High,1973,12,0,True,included
+1,NoDur,High,1974,12,0,True,included
+1,NoDur,High,1975,12,0,True,included
+1,NoDur,High,1976,12,0,True,included
+1,NoDur,High,1977,12,0,True,included
+1,NoDur,High,1978,12,0,True,included
+1,NoDur,High,1979,12,0,True,included
+1,NoDur,High,1980,12,0,True,included
+1,NoDur,High,1981,12,0,True,included
+1,NoDur,High,1982,12,0,True,included
+1,NoDur,High,1983,12,0,True,included
+1,NoDur,High,1984,12,0,True,included
+1,NoDur,High,1985,12,0,True,included
+1,NoDur,High,1986,12,0,True,included
+1,NoDur,High,1987,12,0,True,included
+1,NoDur,High,1988,12,0,True,included
+1,NoDur,High,1989,12,0,True,included
+1,NoDur,High,1990,12,0,True,included
+1,NoDur,High,1991,12,0,True,included
+1,NoDur,High,1992,12,0,True,included
+1,NoDur,High,1993,12,0,True,included
+1,NoDur,High,1994,12,0,True,included
+1,NoDur,High,1995,12,0,True,included
+1,NoDur,High,1996,12,0,True,included
+1,NoDur,High,1997,12,0,True,included
+1,NoDur,High,1998,12,0,True,included
+1,NoDur,High,1999,12,0,True,included
+1,NoDur,High,2000,12,0,True,included
+1,NoDur,High,2001,12,0,True,included
+1,NoDur,High,2002,12,0,True,included
+1,NoDur,High,2003,12,0,True,included
+1,NoDur,High,2004,12,0,True,included
+1,NoDur,High,2005,12,0,True,included
+1,NoDur,High,2006,12,0,True,included
+1,NoDur,High,2007,12,0,True,included
+1,NoDur,High,2008,12,0,True,included
+1,NoDur,High,2009,12,0,True,included
+1,NoDur,High,2010,12,0,True,included
+1,NoDur,High,2011,12,0,True,included
+1,NoDur,High,2012,12,0,True,included
+1,NoDur,High,2013,12,0,True,included
+1,NoDur,High,2014,12,0,True,included
+1,NoDur,High,2015,12,0,True,included
+1,NoDur,High,2016,12,0,True,included
+1,NoDur,High,2017,12,0,True,included
+1,NoDur,High,2018,12,0,True,included
+1,NoDur,High,2019,12,0,True,included
+1,NoDur,High,2020,12,0,True,included
+1,NoDur,High,2021,12,0,True,included
+1,NoDur,High,2022,12,0,True,included
+1,NoDur,High,2023,12,0,True,included
+1,NoDur,High,2024,12,0,True,included
+1,NoDur,High,2025,12,0,True,included
+1,NoDur,Low,1970,12,0,True,included
+1,NoDur,Low,1971,12,0,True,included
+1,NoDur,Low,1972,12,0,True,included
+1,NoDur,Low,1973,12,0,True,included
+1,NoDur,Low,1974,12,0,True,included
+1,NoDur,Low,1975,12,0,True,included
+1,NoDur,Low,1976,12,0,True,included
+1,NoDur,Low,1977,12,0,True,included
+1,NoDur,Low,1978,12,0,True,included
+1,NoDur,Low,1979,12,0,True,included
+1,NoDur,Low,1980,12,0,True,included
+1,NoDur,Low,1981,12,0,True,included
+1,NoDur,Low,1982,12,0,True,included
+1,NoDur,Low,1983,12,0,True,included
+1,NoDur,Low,1984,12,0,True,included
+1,NoDur,Low,1985,12,0,True,included
+1,NoDur,Low,1986,12,0,True,included
+1,NoDur,Low,1987,12,0,True,included
+1,NoDur,Low,1988,12,0,True,included
+1,NoDur,Low,1989,12,0,True,included
+1,NoDur,Low,1990,12,0,True,included
+1,NoDur,Low,1991,12,0,True,included
+1,NoDur,Low,1992,12,0,True,included
+1,NoDur,Low,1993,12,0,True,included
+1,NoDur,Low,1994,12,0,True,included
+1,NoDur,Low,1995,12,0,True,included
+1,NoDur,Low,1996,12,0,True,included
+1,NoDur,Low,1997,12,0,True,included
+1,NoDur,Low,1998,12,0,True,included
+1,NoDur,Low,1999,12,0,True,included
+1,NoDur,Low,2000,12,0,True,included
+1,NoDur,Low,2001,12,0,True,included
+1,NoDur,Low,2002,12,0,True,included
+1,NoDur,Low,2003,12,0,True,included
+1,NoDur,Low,2004,12,0,True,included
+1,NoDur,Low,2005,12,0,True,included
+1,NoDur,Low,2006,12,0,True,included
+1,NoDur,Low,2007,12,0,True,included
+1,NoDur,Low,2008,12,0,True,included
+1,NoDur,Low,2009,12,0,True,included
+1,NoDur,Low,2010,12,0,True,included
+1,NoDur,Low,2011,12,0,True,included
+1,NoDur,Low,2012,12,0,True,included
+1,NoDur,Low,2013,12,0,True,included
+1,NoDur,Low,2014,12,0,True,included
+1,NoDur,Low,2015,12,0,True,included
+1,NoDur,Low,2016,12,0,True,included
+1,NoDur,Low,2017,12,0,True,included
+1,NoDur,Low,2018,12,0,True,included
+1,NoDur,Low,2019,12,0,True,included
+1,NoDur,Low,2020,12,0,True,included
+1,NoDur,Low,2021,12,0,True,included
+1,NoDur,Low,2022,12,0,True,included
+1,NoDur,Low,2023,12,0,True,included
+1,NoDur,Low,2024,12,0,True,included
+1,NoDur,Low,2025,12,0,True,included
+2,Durbl,All,1970,12,0,True,included
+2,Durbl,All,1971,12,0,True,included
+2,Durbl,All,1972,12,0,True,included
+2,Durbl,All,1973,12,0,True,included
+2,Durbl,All,1974,12,0,True,included
+2,Durbl,All,1975,12,0,True,included
+2,Durbl,All,1976,12,0,True,included
+2,Durbl,All,1977,12,0,True,included
+2,Durbl,All,1978,12,0,True,included
+2,Durbl,All,1979,12,0,True,included
+2,Durbl,All,1980,12,0,True,included
+2,Durbl,All,1981,12,0,True,included
+2,Durbl,All,1982,12,0,True,included
+2,Durbl,All,1983,12,0,True,included
+2,Durbl,All,1984,12,0,True,included
+2,Durbl,All,1985,12,0,True,included
+2,Durbl,All,1986,12,0,True,included
+2,Durbl,All,1987,12,0,True,included
+2,Durbl,All,1988,12,0,True,included
+2,Durbl,All,1989,12,0,True,included
+2,Durbl,All,1990,12,0,True,included
+2,Durbl,All,1991,12,0,True,included
+2,Durbl,All,1992,12,0,True,included
+2,Durbl,All,1993,12,0,True,included
+2,Durbl,All,1994,12,0,True,included
+2,Durbl,All,1995,12,0,True,included
+2,Durbl,All,1996,12,0,True,included
+2,Durbl,All,1997,12,0,True,included
+2,Durbl,All,1998,12,0,True,included
+2,Durbl,All,1999,12,0,True,included
+2,Durbl,All,2000,12,0,True,included
+2,Durbl,All,2001,12,0,True,included
+2,Durbl,All,2002,12,0,True,included
+2,Durbl,All,2003,12,0,True,included
+2,Durbl,All,2004,12,0,True,included
+2,Durbl,All,2005,12,0,True,included
+2,Durbl,All,2006,12,0,True,included
+2,Durbl,All,2007,12,0,True,included
+2,Durbl,All,2008,12,0,True,included
+2,Durbl,All,2009,12,0,True,included
+2,Durbl,All,2010,12,0,True,included
+2,Durbl,All,2011,12,0,True,included
+2,Durbl,All,2012,12,0,True,included
+2,Durbl,All,2013,12,0,True,included
+2,Durbl,All,2014,12,0,True,included
+2,Durbl,All,2015,12,0,True,included
+2,Durbl,All,2016,12,0,True,included
+2,Durbl,All,2017,12,0,True,included
+2,Durbl,All,2018,12,0,True,included
+2,Durbl,All,2019,12,0,True,included
+2,Durbl,All,2020,12,0,True,included
+2,Durbl,All,2021,12,0,True,included
+2,Durbl,All,2022,12,0,True,included
+2,Durbl,All,2023,12,0,True,included
+2,Durbl,All,2024,12,0,True,included
+2,Durbl,All,2025,12,0,True,included
+2,Durbl,High,1970,12,0,True,included
+2,Durbl,High,1971,12,0,True,included
+2,Durbl,High,1972,12,0,True,included
+2,Durbl,High,1973,12,0,True,included
+2,Durbl,High,1974,12,0,True,included
+2,Durbl,High,1975,12,0,True,included
+2,Durbl,High,1976,12,0,True,included
+2,Durbl,High,1977,12,0,True,included
+2,Durbl,High,1978,12,0,True,included
+2,Durbl,High,1979,12,0,True,included
+2,Durbl,High,1980,12,0,True,included
+2,Durbl,High,1981,12,0,True,included
+2,Durbl,High,1982,12,0,True,included
+2,Durbl,High,1983,12,0,True,included
+2,Durbl,High,1984,12,0,True,included
+2,Durbl,High,1985,12,0,True,included
+2,Durbl,High,1986,12,0,True,included
+2,Durbl,High,1987,12,0,True,included
+2,Durbl,High,1988,12,0,True,included
+2,Durbl,High,1989,12,0,True,included
+2,Durbl,High,1990,12,0,True,included
+2,Durbl,High,1991,12,0,True,included
+2,Durbl,High,1992,12,0,True,included
+2,Durbl,High,1993,12,0,True,included
+2,Durbl,High,1994,12,0,True,included
+2,Durbl,High,1995,12,0,True,included
+2,Durbl,High,1996,12,0,True,included
+2,Durbl,High,1997,12,0,True,included
+2,Durbl,High,1998,12,0,True,included
+2,Durbl,High,1999,12,0,True,included
+2,Durbl,High,2000,12,0,True,included
+2,Durbl,High,2001,12,0,True,included
+2,Durbl,High,2002,12,0,True,included
+2,Durbl,High,2003,12,0,True,included
+2,Durbl,High,2004,12,0,True,included
+2,Durbl,High,2005,12,0,True,included
+2,Durbl,High,2006,12,0,True,included
+2,Durbl,High,2007,12,0,True,included
+2,Durbl,High,2008,12,0,True,included
+2,Durbl,High,2009,12,0,True,included
+2,Durbl,High,2010,12,0,True,included
+2,Durbl,High,2011,12,0,True,included
+2,Durbl,High,2012,12,0,True,included
+2,Durbl,High,2013,12,0,True,included
+2,Durbl,High,2014,12,0,True,included
+2,Durbl,High,2015,12,0,True,included
+2,Durbl,High,2016,12,0,True,included
+2,Durbl,High,2017,12,0,True,included
+2,Durbl,High,2018,12,0,True,included
+2,Durbl,High,2019,12,0,True,included
+2,Durbl,High,2020,12,0,True,included
+2,Durbl,High,2021,12,0,True,included
+2,Durbl,High,2022,12,0,True,included
+2,Durbl,High,2023,12,0,True,included
+2,Durbl,High,2024,12,0,True,included
+2,Durbl,High,2025,12,0,True,included
+2,Durbl,Low,1970,12,0,True,included
+2,Durbl,Low,1971,12,0,True,included
+2,Durbl,Low,1972,12,0,True,included
+2,Durbl,Low,1973,12,0,True,included
+2,Durbl,Low,1974,12,0,True,included
+2,Durbl,Low,1975,12,0,True,included
+2,Durbl,Low,1976,12,0,True,included
+2,Durbl,Low,1977,12,0,True,included
+2,Durbl,Low,1978,12,0,True,included
+2,Durbl,Low,1979,12,0,True,included
+2,Durbl,Low,1980,12,0,True,included
+2,Durbl,Low,1981,12,0,True,included
+2,Durbl,Low,1982,12,0,True,included
+2,Durbl,Low,1983,12,0,True,included
+2,Durbl,Low,1984,12,0,True,included
+2,Durbl,Low,1985,12,0,True,included
+2,Durbl,Low,1986,12,0,True,included
+2,Durbl,Low,1987,12,0,True,included
+2,Durbl,Low,1988,12,0,True,included
+2,Durbl,Low,1989,12,0,True,included
+2,Durbl,Low,1990,12,0,True,included
+2,Durbl,Low,1991,12,0,True,included
+2,Durbl,Low,1992,12,0,True,included
+2,Durbl,Low,1993,12,0,True,included
+2,Durbl,Low,1994,12,0,True,included
+2,Durbl,Low,1995,12,0,True,included
+2,Durbl,Low,1996,12,0,True,included
+2,Durbl,Low,1997,12,0,True,included
+2,Durbl,Low,1998,12,0,True,included
+2,Durbl,Low,1999,12,0,True,included
+2,Durbl,Low,2000,12,0,True,included
+2,Durbl,Low,2001,12,0,True,included
+2,Durbl,Low,2002,12,0,True,included
+2,Durbl,Low,2003,12,0,True,included
+2,Durbl,Low,2004,12,0,True,included
+2,Durbl,Low,2005,12,0,True,included
+2,Durbl,Low,2006,12,0,True,included
+2,Durbl,Low,2007,12,0,True,included
+2,Durbl,Low,2008,12,0,True,included
+2,Durbl,Low,2009,12,0,True,included
+2,Durbl,Low,2010,12,0,True,included
+2,Durbl,Low,2011,12,0,True,included
+2,Durbl,Low,2012,12,1,False,invalid monthly returns/cash coverage
+2,Durbl,Low,2013,12,0,True,included
+2,Durbl,Low,2014,12,0,True,included
+2,Durbl,Low,2015,12,0,True,included
+2,Durbl,Low,2016,12,0,True,included
+2,Durbl,Low,2017,12,0,True,included
+2,Durbl,Low,2018,12,0,True,included
+2,Durbl,Low,2019,12,0,True,included
+2,Durbl,Low,2020,12,0,True,included
+2,Durbl,Low,2021,12,0,True,included
+2,Durbl,Low,2022,12,0,True,included
+2,Durbl,Low,2023,12,0,True,included
+2,Durbl,Low,2024,12,0,True,included
+2,Durbl,Low,2025,12,0,True,included
+3,Manuf,All,1970,12,0,True,included
+3,Manuf,All,1971,12,0,True,included
+3,Manuf,All,1972,12,0,True,included
+3,Manuf,All,1973,12,0,True,included
+3,Manuf,All,1974,12,0,True,included
+3,Manuf,All,1975,12,0,True,included
+3,Manuf,All,1976,12,0,True,included
+3,Manuf,All,1977,12,0,True,included
+3,Manuf,All,1978,12,0,True,included
+3,Manuf,All,1979,12,0,True,included
+3,Manuf,All,1980,12,0,True,included
+3,Manuf,All,1981,12,0,True,included
+3,Manuf,All,1982,12,0,True,included
+3,Manuf,All,1983,12,0,True,included
+3,Manuf,All,1984,12,0,True,included
+3,Manuf,All,1985,12,0,True,included
+3,Manuf,All,1986,12,0,True,included
+3,Manuf,All,1987,12,0,True,included
+3,Manuf,All,1988,12,0,True,included
+3,Manuf,All,1989,12,0,True,included
+3,Manuf,All,1990,12,0,True,included
+3,Manuf,All,1991,12,0,True,included
+3,Manuf,All,1992,12,0,True,included
+3,Manuf,All,1993,12,0,True,included
+3,Manuf,All,1994,12,0,True,included
+3,Manuf,All,1995,12,0,True,included
+3,Manuf,All,1996,12,0,True,included
+3,Manuf,All,1997,12,0,True,included
+3,Manuf,All,1998,12,0,True,included
+3,Manuf,All,1999,12,0,True,included
+3,Manuf,All,2000,12,0,True,included
+3,Manuf,All,2001,12,0,True,included
+3,Manuf,All,2002,12,0,True,included
+3,Manuf,All,2003,12,0,True,included
+3,Manuf,All,2004,12,0,True,included
+3,Manuf,All,2005,12,0,True,included
+3,Manuf,All,2006,12,0,True,included
+3,Manuf,All,2007,12,0,True,included
+3,Manuf,All,2008,12,0,True,included
+3,Manuf,All,2009,12,0,True,included
+3,Manuf,All,2010,12,0,True,included
+3,Manuf,All,2011,12,0,True,included
+3,Manuf,All,2012,12,0,True,included
+3,Manuf,All,2013,12,0,True,included
+3,Manuf,All,2014,12,0,True,included
+3,Manuf,All,2015,12,0,True,included
+3,Manuf,All,2016,12,0,True,included
+3,Manuf,All,2017,12,0,True,included
+3,Manuf,All,2018,12,0,True,included
+3,Manuf,All,2019,12,0,True,included
+3,Manuf,All,2020,12,0,True,included
+3,Manuf,All,2021,12,0,True,included
+3,Manuf,All,2022,12,0,True,included
+3,Manuf,All,2023,12,0,True,included
+3,Manuf,All,2024,12,0,True,included
+3,Manuf,All,2025,12,0,True,included
+3,Manuf,High,1970,12,0,True,included
+3,Manuf,High,1971,12,0,True,included
+3,Manuf,High,1972,12,0,True,included
+3,Manuf,High,1973,12,0,True,included
+3,Manuf,High,1974,12,0,True,included
+3,Manuf,High,1975,12,0,True,included
+3,Manuf,High,1976,12,0,True,included
+3,Manuf,High,1977,12,0,True,included
+3,Manuf,High,1978,12,0,True,included
+3,Manuf,High,1979,12,0,True,included
+3,Manuf,High,1980,12,0,True,included
+3,Manuf,High,1981,12,0,True,included
+3,Manuf,High,1982,12,0,True,included
+3,Manuf,High,1983,12,0,True,included
+3,Manuf,High,1984,12,0,True,included
+3,Manuf,High,1985,12,0,True,included
+3,Manuf,High,1986,12,0,True,included
+3,Manuf,High,1987,12,0,True,included
+3,Manuf,High,1988,12,0,True,included
+3,Manuf,High,1989,12,0,True,included
+3,Manuf,High,1990,12,0,True,included
+3,Manuf,High,1991,12,0,True,included
+3,Manuf,High,1992,12,0,True,included
+3,Manuf,High,1993,12,0,True,included
+3,Manuf,High,1994,12,0,True,included
+3,Manuf,High,1995,12,0,True,included
+3,Manuf,High,1996,12,0,True,included
+3,Manuf,High,1997,12,0,True,included
+3,Manuf,High,1998,12,0,True,included
+3,Manuf,High,1999,12,0,True,included
+3,Manuf,High,2000,12,0,True,included
+3,Manuf,High,2001,12,0,True,included
+3,Manuf,High,2002,12,0,True,included
+3,Manuf,High,2003,12,0,True,included
+3,Manuf,High,2004,12,0,True,included
+3,Manuf,High,2005,12,0,True,included
+3,Manuf,High,2006,12,0,True,included
+3,Manuf,High,2007,12,0,True,included
+3,Manuf,High,2008,12,0,True,included
+3,Manuf,High,2009,12,0,True,included
+3,Manuf,High,2010,12,0,True,included
+3,Manuf,High,2011,12,0,True,included
+3,Manuf,High,2012,12,0,True,included
+3,Manuf,High,2013,12,0,True,included
+3,Manuf,High,2014,12,0,True,included
+3,Manuf,High,2015,12,0,True,included
+3,Manuf,High,2016,12,0,True,included
+3,Manuf,High,2017,12,0,True,included
+3,Manuf,High,2018,12,0,True,included
+3,Manuf,High,2019,12,0,True,included
+3,Manuf,High,2020,12,0,True,included
+3,Manuf,High,2021,12,0,True,included
+3,Manuf,High,2022,12,0,True,included
+3,Manuf,High,2023,12,0,True,included
+3,Manuf,High,2024,12,0,True,included
+3,Manuf,High,2025,12,0,True,included
+3,Manuf,Low,1970,12,0,True,included
+3,Manuf,Low,1971,12,0,True,included
+3,Manuf,Low,1972,12,0,True,included
+3,Manuf,Low,1973,12,0,True,included
+3,Manuf,Low,1974,12,0,True,included
+3,Manuf,Low,1975,12,0,True,included
+3,Manuf,Low,1976,12,0,True,included
+3,Manuf,Low,1977,12,0,True,included
+3,Manuf,Low,1978,12,0,True,included
+3,Manuf,Low,1979,12,0,True,included
+3,Manuf,Low,1980,12,0,True,included
+3,Manuf,Low,1981,12,0,True,included
+3,Manuf,Low,1982,12,0,True,included
+3,Manuf,Low,1983,12,0,True,included
+3,Manuf,Low,1984,12,0,True,included
+3,Manuf,Low,1985,12,0,True,included
+3,Manuf,Low,1986,12,0,True,included
+3,Manuf,Low,1987,12,0,True,included
+3,Manuf,Low,1988,12,0,True,included
+3,Manuf,Low,1989,12,0,True,included
+3,Manuf,Low,1990,12,0,True,included
+3,Manuf,Low,1991,12,0,True,included
+3,Manuf,Low,1992,12,0,True,included
+3,Manuf,Low,1993,12,0,True,included
+3,Manuf,Low,1994,12,0,True,included
+3,Manuf,Low,1995,12,0,True,included
+3,Manuf,Low,1996,12,0,True,included
+3,Manuf,Low,1997,12,0,True,included
+3,Manuf,Low,1998,12,0,True,included
+3,Manuf,Low,1999,12,0,True,included
+3,Manuf,Low,2000,12,0,True,included
+3,Manuf,Low,2001,12,0,True,included
+3,Manuf,Low,2002,12,0,True,included
+3,Manuf,Low,2003,12,0,True,included
+3,Manuf,Low,2004,12,0,True,included
+3,Manuf,Low,2005,12,0,True,included
+3,Manuf,Low,2006,12,0,True,included
+3,Manuf,Low,2007,12,0,True,included
+3,Manuf,Low,2008,12,0,True,included
+3,Manuf,Low,2009,12,0,True,included
+3,Manuf,Low,2010,12,0,True,included
+3,Manuf,Low,2011,12,0,True,included
+3,Manuf,Low,2012,12,0,True,included
+3,Manuf,Low,2013,12,0,True,included
+3,Manuf,Low,2014,12,0,True,included
+3,Manuf,Low,2015,12,0,True,included
+3,Manuf,Low,2016,12,0,True,included
+3,Manuf,Low,2017,12,0,True,included
+3,Manuf,Low,2018,12,0,True,included
+3,Manuf,Low,2019,12,0,True,included
+3,Manuf,Low,2020,12,0,True,included
+3,Manuf,Low,2021,12,0,True,included
+3,Manuf,Low,2022,12,0,True,included
+3,Manuf,Low,2023,12,0,True,included
+3,Manuf,Low,2024,12,0,True,included
+3,Manuf,Low,2025,12,0,True,included
+4,Enrgy,All,1970,12,0,True,included
+4,Enrgy,All,1971,12,0,True,included
+4,Enrgy,All,1972,12,0,True,included
+4,Enrgy,All,1973,12,0,True,included
+4,Enrgy,All,1974,12,0,True,included
+4,Enrgy,All,1975,12,0,True,included
+4,Enrgy,All,1976,12,0,True,included
+4,Enrgy,All,1977,12,0,True,included
+4,Enrgy,All,1978,12,0,True,included
+4,Enrgy,All,1979,12,0,True,included
+4,Enrgy,All,1980,12,0,True,included
+4,Enrgy,All,1981,12,0,True,included
+4,Enrgy,All,1982,12,0,True,included
+4,Enrgy,All,1983,12,0,True,included
+4,Enrgy,All,1984,12,0,True,included
+4,Enrgy,All,1985,12,0,True,included
+4,Enrgy,All,1986,12,0,True,included
+4,Enrgy,All,1987,12,0,True,included
+4,Enrgy,All,1988,12,0,True,included
+4,Enrgy,All,1989,12,0,True,included
+4,Enrgy,All,1990,12,0,True,included
+4,Enrgy,All,1991,12,0,True,included
+4,Enrgy,All,1992,12,0,True,included
+4,Enrgy,All,1993,12,0,True,included
+4,Enrgy,All,1994,12,0,True,included
+4,Enrgy,All,1995,12,0,True,included
+4,Enrgy,All,1996,12,0,True,included
+4,Enrgy,All,1997,12,0,True,included
+4,Enrgy,All,1998,12,0,True,included
+4,Enrgy,All,1999,12,0,True,included
+4,Enrgy,All,2000,12,0,True,included
+4,Enrgy,All,2001,12,0,True,included
+4,Enrgy,All,2002,12,0,True,included
+4,Enrgy,All,2003,12,0,True,included
+4,Enrgy,All,2004,12,0,True,included
+4,Enrgy,All,2005,12,0,True,included
+4,Enrgy,All,2006,12,0,True,included
+4,Enrgy,All,2007,12,0,True,included
+4,Enrgy,All,2008,12,0,True,included
+4,Enrgy,All,2009,12,0,True,included
+4,Enrgy,All,2010,12,0,True,included
+4,Enrgy,All,2011,12,0,True,included
+4,Enrgy,All,2012,12,0,True,included
+4,Enrgy,All,2013,12,0,True,included
+4,Enrgy,All,2014,12,0,True,included
+4,Enrgy,All,2015,12,0,True,included
+4,Enrgy,All,2016,12,0,True,included
+4,Enrgy,All,2017,12,0,True,included
+4,Enrgy,All,2018,12,0,True,included
+4,Enrgy,All,2019,12,0,True,included
+4,Enrgy,All,2020,12,0,True,included
+4,Enrgy,All,2021,12,0,True,included
+4,Enrgy,All,2022,12,0,True,included
+4,Enrgy,All,2023,12,0,True,included
+4,Enrgy,All,2024,12,0,True,included
+4,Enrgy,All,2025,12,0,True,included
+4,Enrgy,High,1970,12,0,True,included
+4,Enrgy,High,1971,12,0,True,included
+4,Enrgy,High,1972,12,0,True,included
+4,Enrgy,High,1973,12,0,True,included
+4,Enrgy,High,1974,12,0,True,included
+4,Enrgy,High,1975,12,0,True,included
+4,Enrgy,High,1976,12,0,True,included
+4,Enrgy,High,1977,12,0,True,included
+4,Enrgy,High,1978,12,0,True,included
+4,Enrgy,High,1979,12,0,True,included
+4,Enrgy,High,1980,12,0,True,included
+4,Enrgy,High,1981,12,0,True,included
+4,Enrgy,High,1982,12,0,True,included
+4,Enrgy,High,1983,12,0,True,included
+4,Enrgy,High,1984,12,0,True,included
+4,Enrgy,High,1985,12,0,True,included
+4,Enrgy,High,1986,12,0,True,included
+4,Enrgy,High,1987,12,0,True,included
+4,Enrgy,High,1988,12,0,True,included
+4,Enrgy,High,1989,12,0,True,included
+4,Enrgy,High,1990,12,0,True,included
+4,Enrgy,High,1991,12,0,True,included
+4,Enrgy,High,1992,12,0,True,included
+4,Enrgy,High,1993,12,0,True,included
+4,Enrgy,High,1994,12,0,True,included
+4,Enrgy,High,1995,12,0,True,included
+4,Enrgy,High,1996,12,0,True,included
+4,Enrgy,High,1997,12,0,True,included
+4,Enrgy,High,1998,12,0,True,included
+4,Enrgy,High,1999,12,0,True,included
+4,Enrgy,High,2000,12,0,True,included
+4,Enrgy,High,2001,12,0,True,included
+4,Enrgy,High,2002,12,0,True,included
+4,Enrgy,High,2003,12,0,True,included
+4,Enrgy,High,2004,12,0,True,included
+4,Enrgy,High,2005,12,0,True,included
+4,Enrgy,High,2006,12,0,True,included
+4,Enrgy,High,2007,12,0,True,included
+4,Enrgy,High,2008,12,0,True,included
+4,Enrgy,High,2009,12,0,True,included
+4,Enrgy,High,2010,12,0,True,included
+4,Enrgy,High,2011,12,0,True,included
+4,Enrgy,High,2012,12,0,True,included
+4,Enrgy,High,2013,12,0,True,included
+4,Enrgy,High,2014,12,0,True,included
+4,Enrgy,High,2015,12,0,True,included
+4,Enrgy,High,2016,12,0,True,included
+4,Enrgy,High,2017,12,0,True,included
+4,Enrgy,High,2018,12,0,True,included
+4,Enrgy,High,2019,12,0,True,included
+4,Enrgy,High,2020,12,0,True,included
+4,Enrgy,High,2021,12,0,True,included
+4,Enrgy,High,2022,12,0,True,included
+4,Enrgy,High,2023,12,0,True,included
+4,Enrgy,High,2024,12,0,True,included
+4,Enrgy,High,2025,12,0,True,included
+4,Enrgy,Low,1970,12,0,True,included
+4,Enrgy,Low,1971,12,0,True,included
+4,Enrgy,Low,1972,12,0,True,included
+4,Enrgy,Low,1973,12,0,True,included
+4,Enrgy,Low,1974,12,0,True,included
+4,Enrgy,Low,1975,12,0,True,included
+4,Enrgy,Low,1976,12,0,True,included
+4,Enrgy,Low,1977,12,0,True,included
+4,Enrgy,Low,1978,12,0,True,included
+4,Enrgy,Low,1979,12,0,True,included
+4,Enrgy,Low,1980,12,0,True,included
+4,Enrgy,Low,1981,12,0,True,included
+4,Enrgy,Low,1982,12,0,True,included
+4,Enrgy,Low,1983,12,0,True,included
+4,Enrgy,Low,1984,12,0,True,included
+4,Enrgy,Low,1985,12,0,True,included
+4,Enrgy,Low,1986,12,0,True,included
+4,Enrgy,Low,1987,12,0,True,included
+4,Enrgy,Low,1988,12,0,True,included
+4,Enrgy,Low,1989,12,0,True,included
+4,Enrgy,Low,1990,12,0,True,included
+4,Enrgy,Low,1991,12,0,True,included
+4,Enrgy,Low,1992,12,0,True,included
+4,Enrgy,Low,1993,12,0,True,included
+4,Enrgy,Low,1994,12,0,True,included
+4,Enrgy,Low,1995,12,0,True,included
+4,Enrgy,Low,1996,12,0,True,included
+4,Enrgy,Low,1997,12,0,True,included
+4,Enrgy,Low,1998,12,0,True,included
+4,Enrgy,Low,1999,12,0,True,included
+4,Enrgy,Low,2000,12,0,True,included
+4,Enrgy,Low,2001,12,0,True,included
+4,Enrgy,Low,2002,12,0,True,included
+4,Enrgy,Low,2003,12,0,True,included
+4,Enrgy,Low,2004,12,0,True,included
+4,Enrgy,Low,2005,12,0,True,included
+4,Enrgy,Low,2006,12,0,True,included
+4,Enrgy,Low,2007,12,0,True,included
+4,Enrgy,Low,2008,12,0,True,included
+4,Enrgy,Low,2009,12,0,True,included
+4,Enrgy,Low,2010,12,0,True,included
+4,Enrgy,Low,2011,12,0,True,included
+4,Enrgy,Low,2012,12,0,True,included
+4,Enrgy,Low,2013,12,0,True,included
+4,Enrgy,Low,2014,12,0,True,included
+4,Enrgy,Low,2015,12,0,True,included
+4,Enrgy,Low,2016,12,0,True,included
+4,Enrgy,Low,2017,12,0,True,included
+4,Enrgy,Low,2018,12,0,True,included
+4,Enrgy,Low,2019,12,0,True,included
+4,Enrgy,Low,2020,12,0,True,included
+4,Enrgy,Low,2021,12,0,True,included
+4,Enrgy,Low,2022,12,0,True,included
+4,Enrgy,Low,2023,12,0,True,included
+4,Enrgy,Low,2024,12,0,True,included
+4,Enrgy,Low,2025,12,0,True,included
+5,Chems,All,1970,12,0,True,included
+5,Chems,All,1971,12,0,True,included
+5,Chems,All,1972,12,0,True,included
+5,Chems,All,1973,12,0,True,included
+5,Chems,All,1974,12,0,True,included
+5,Chems,All,1975,12,0,True,included
+5,Chems,All,1976,12,0,True,included
+5,Chems,All,1977,12,0,True,included
+5,Chems,All,1978,12,0,True,included
+5,Chems,All,1979,12,0,True,included
+5,Chems,All,1980,12,0,True,included
+5,Chems,All,1981,12,0,True,included
+5,Chems,All,1982,12,0,True,included
+5,Chems,All,1983,12,0,True,included
+5,Chems,All,1984,12,0,True,included
+5,Chems,All,1985,12,0,True,included
+5,Chems,All,1986,12,0,True,included
+5,Chems,All,1987,12,0,True,included
+5,Chems,All,1988,12,0,True,included
+5,Chems,All,1989,12,0,True,included
+5,Chems,All,1990,12,0,True,included
+5,Chems,All,1991,12,0,True,included
+5,Chems,All,1992,12,0,True,included
+5,Chems,All,1993,12,0,True,included
+5,Chems,All,1994,12,0,True,included
+5,Chems,All,1995,12,0,True,included
+5,Chems,All,1996,12,0,True,included
+5,Chems,All,1997,12,0,True,included
+5,Chems,All,1998,12,0,True,included
+5,Chems,All,1999,12,0,True,included
+5,Chems,All,2000,12,0,True,included
+5,Chems,All,2001,12,0,True,included
+5,Chems,All,2002,12,0,True,included
+5,Chems,All,2003,12,0,True,included
+5,Chems,All,2004,12,0,True,included
+5,Chems,All,2005,12,0,True,included
+5,Chems,All,2006,12,0,True,included
+5,Chems,All,2007,12,0,True,included
+5,Chems,All,2008,12,0,True,included
+5,Chems,All,2009,12,0,True,included
+5,Chems,All,2010,12,0,True,included
+5,Chems,All,2011,12,0,True,included
+5,Chems,All,2012,12,0,True,included
+5,Chems,All,2013,12,0,True,included
+5,Chems,All,2014,12,0,True,included
+5,Chems,All,2015,12,0,True,included
+5,Chems,All,2016,12,0,True,included
+5,Chems,All,2017,12,0,True,included
+5,Chems,All,2018,12,0,True,included
+5,Chems,All,2019,12,0,True,included
+5,Chems,All,2020,12,0,True,included
+5,Chems,All,2021,12,0,True,included
+5,Chems,All,2022,12,0,True,included
+5,Chems,All,2023,12,0,True,included
+5,Chems,All,2024,12,0,True,included
+5,Chems,All,2025,12,0,True,included
+5,Chems,High,1970,12,0,True,included
+5,Chems,High,1971,12,0,True,included
+5,Chems,High,1972,12,0,True,included
+5,Chems,High,1973,12,0,True,included
+5,Chems,High,1974,12,0,True,included
+5,Chems,High,1975,12,0,True,included
+5,Chems,High,1976,12,0,True,included
+5,Chems,High,1977,12,0,True,included
+5,Chems,High,1978,12,0,True,included
+5,Chems,High,1979,12,0,True,included
+5,Chems,High,1980,12,0,True,included
+5,Chems,High,1981,12,0,True,included
+5,Chems,High,1982,12,0,True,included
+5,Chems,High,1983,12,0,True,included
+5,Chems,High,1984,12,0,True,included
+5,Chems,High,1985,12,0,True,included
+5,Chems,High,1986,12,0,True,included
+5,Chems,High,1987,12,0,True,included
+5,Chems,High,1988,12,0,True,included
+5,Chems,High,1989,12,0,True,included
+5,Chems,High,1990,12,0,True,included
+5,Chems,High,1991,12,0,True,included
+5,Chems,High,1992,12,0,True,included
+5,Chems,High,1993,12,0,True,included
+5,Chems,High,1994,12,0,True,included
+5,Chems,High,1995,12,0,True,included
+5,Chems,High,1996,12,0,True,included
+5,Chems,High,1997,12,0,True,included
+5,Chems,High,1998,12,0,True,included
+5,Chems,High,1999,12,0,True,included
+5,Chems,High,2000,12,0,True,included
+5,Chems,High,2001,12,0,True,included
+5,Chems,High,2002,12,0,True,included
+5,Chems,High,2003,12,0,True,included
+5,Chems,High,2004,12,0,True,included
+5,Chems,High,2005,12,0,True,included
+5,Chems,High,2006,12,0,True,included
+5,Chems,High,2007,12,0,True,included
+5,Chems,High,2008,12,0,True,included
+5,Chems,High,2009,12,0,True,included
+5,Chems,High,2010,12,0,True,included
+5,Chems,High,2011,12,0,True,included
+5,Chems,High,2012,12,0,True,included
+5,Chems,High,2013,12,0,True,included
+5,Chems,High,2014,12,0,True,included
+5,Chems,High,2015,12,0,True,included
+5,Chems,High,2016,12,0,True,included
+5,Chems,High,2017,12,0,True,included
+5,Chems,High,2018,12,0,True,included
+5,Chems,High,2019,12,0,True,included
+5,Chems,High,2020,12,0,True,included
+5,Chems,High,2021,12,0,True,included
+5,Chems,High,2022,12,0,True,included
+5,Chems,High,2023,12,0,True,included
+5,Chems,High,2024,12,0,True,included
+5,Chems,High,2025,12,0,True,included
+5,Chems,Low,1970,12,0,True,included
+5,Chems,Low,1971,12,0,True,included
+5,Chems,Low,1972,12,0,True,included
+5,Chems,Low,1973,12,0,True,included
+5,Chems,Low,1974,12,0,True,included
+5,Chems,Low,1975,12,0,True,included
+5,Chems,Low,1976,12,0,True,included
+5,Chems,Low,1977,12,0,True,included
+5,Chems,Low,1978,12,0,True,included
+5,Chems,Low,1979,12,0,True,included
+5,Chems,Low,1980,12,0,True,included
+5,Chems,Low,1981,12,0,True,included
+5,Chems,Low,1982,12,0,True,included
+5,Chems,Low,1983,12,0,True,included
+5,Chems,Low,1984,12,0,True,included
+5,Chems,Low,1985,12,0,True,included
+5,Chems,Low,1986,12,0,True,included
+5,Chems,Low,1987,12,0,True,included
+5,Chems,Low,1988,12,0,True,included
+5,Chems,Low,1989,12,0,True,included
+5,Chems,Low,1990,12,0,True,included
+5,Chems,Low,1991,12,0,True,included
+5,Chems,Low,1992,12,0,True,included
+5,Chems,Low,1993,12,0,True,included
+5,Chems,Low,1994,12,0,True,included
+5,Chems,Low,1995,12,0,True,included
+5,Chems,Low,1996,12,0,True,included
+5,Chems,Low,1997,12,0,True,included
+5,Chems,Low,1998,12,0,True,included
+5,Chems,Low,1999,12,0,True,included
+5,Chems,Low,2000,12,0,True,included
+5,Chems,Low,2001,12,1,False,invalid monthly returns/cash coverage
+5,Chems,Low,2002,12,0,True,included
+5,Chems,Low,2003,12,0,True,included
+5,Chems,Low,2004,12,0,True,included
+5,Chems,Low,2005,12,0,True,included
+5,Chems,Low,2006,12,1,False,invalid monthly returns/cash coverage
+5,Chems,Low,2007,12,0,True,included
+5,Chems,Low,2008,12,0,True,included
+5,Chems,Low,2009,12,0,True,included
+5,Chems,Low,2010,12,0,True,included
+5,Chems,Low,2011,12,0,True,included
+5,Chems,Low,2012,12,0,True,included
+5,Chems,Low,2013,12,0,True,included
+5,Chems,Low,2014,12,0,True,included
+5,Chems,Low,2015,12,0,True,included
+5,Chems,Low,2016,12,0,True,included
+5,Chems,Low,2017,12,0,True,included
+5,Chems,Low,2018,12,0,True,included
+5,Chems,Low,2019,12,0,True,included
+5,Chems,Low,2020,12,0,True,included
+5,Chems,Low,2021,12,0,True,included
+5,Chems,Low,2022,12,0,True,included
+5,Chems,Low,2023,12,0,True,included
+5,Chems,Low,2024,12,0,True,included
+5,Chems,Low,2025,12,0,True,included
+6,BusEq,All,1970,12,0,True,included
+6,BusEq,All,1971,12,0,True,included
+6,BusEq,All,1972,12,0,True,included
+6,BusEq,All,1973,12,0,True,included
+6,BusEq,All,1974,12,0,True,included
+6,BusEq,All,1975,12,0,True,included
+6,BusEq,All,1976,12,0,True,included
+6,BusEq,All,1977,12,0,True,included
+6,BusEq,All,1978,12,0,True,included
+6,BusEq,All,1979,12,0,True,included
+6,BusEq,All,1980,12,0,True,included
+6,BusEq,All,1981,12,0,True,included
+6,BusEq,All,1982,12,0,True,included
+6,BusEq,All,1983,12,0,True,included
+6,BusEq,All,1984,12,0,True,included
+6,BusEq,All,1985,12,0,True,included
+6,BusEq,All,1986,12,0,True,included
+6,BusEq,All,1987,12,0,True,included
+6,BusEq,All,1988,12,0,True,included
+6,BusEq,All,1989,12,0,True,included
+6,BusEq,All,1990,12,0,True,included
+6,BusEq,All,1991,12,0,True,included
+6,BusEq,All,1992,12,0,True,included
+6,BusEq,All,1993,12,0,True,included
+6,BusEq,All,1994,12,0,True,included
+6,BusEq,All,1995,12,0,True,included
+6,BusEq,All,1996,12,0,True,included
+6,BusEq,All,1997,12,0,True,included
+6,BusEq,All,1998,12,0,True,included
+6,BusEq,All,1999,12,0,True,included
+6,BusEq,All,2000,12,0,True,included
+6,BusEq,All,2001,12,0,True,included
+6,BusEq,All,2002,12,0,True,included
+6,BusEq,All,2003,12,0,True,included
+6,BusEq,All,2004,12,0,True,included
+6,BusEq,All,2005,12,0,True,included
+6,BusEq,All,2006,12,0,True,included
+6,BusEq,All,2007,12,0,True,included
+6,BusEq,All,2008,12,0,True,included
+6,BusEq,All,2009,12,0,True,included
+6,BusEq,All,2010,12,0,True,included
+6,BusEq,All,2011,12,0,True,included
+6,BusEq,All,2012,12,1,False,invalid monthly returns/cash coverage
+6,BusEq,All,2013,12,0,True,included
+6,BusEq,All,2014,12,0,True,included
+6,BusEq,All,2015,12,0,True,included
+6,BusEq,All,2016,12,0,True,included
+6,BusEq,All,2017,12,0,True,included
+6,BusEq,All,2018,12,0,True,included
+6,BusEq,All,2019,12,0,True,included
+6,BusEq,All,2020,12,0,True,included
+6,BusEq,All,2021,12,0,True,included
+6,BusEq,All,2022,12,0,True,included
+6,BusEq,All,2023,12,0,True,included
+6,BusEq,All,2024,12,0,True,included
+6,BusEq,All,2025,12,0,True,included
+6,BusEq,High,1970,12,0,True,included
+6,BusEq,High,1971,12,0,True,included
+6,BusEq,High,1972,12,0,True,included
+6,BusEq,High,1973,12,0,True,included
+6,BusEq,High,1974,12,0,True,included
+6,BusEq,High,1975,12,0,True,included
+6,BusEq,High,1976,12,0,True,included
+6,BusEq,High,1977,12,0,True,included
+6,BusEq,High,1978,12,0,True,included
+6,BusEq,High,1979,12,0,True,included
+6,BusEq,High,1980,12,0,True,included
+6,BusEq,High,1981,12,0,True,included
+6,BusEq,High,1982,12,0,True,included
+6,BusEq,High,1983,12,0,True,included
+6,BusEq,High,1984,12,0,True,included
+6,BusEq,High,1985,12,0,True,included
+6,BusEq,High,1986,12,0,True,included
+6,BusEq,High,1987,12,0,True,included
+6,BusEq,High,1988,12,0,True,included
+6,BusEq,High,1989,12,0,True,included
+6,BusEq,High,1990,12,0,True,included
+6,BusEq,High,1991,12,0,True,included
+6,BusEq,High,1992,12,0,True,included
+6,BusEq,High,1993,12,0,True,included
+6,BusEq,High,1994,12,0,True,included
+6,BusEq,High,1995,12,0,True,included
+6,BusEq,High,1996,12,0,True,included
+6,BusEq,High,1997,12,0,True,included
+6,BusEq,High,1998,12,0,True,included
+6,BusEq,High,1999,12,0,True,included
+6,BusEq,High,2000,12,0,True,included
+6,BusEq,High,2001,12,0,True,included
+6,BusEq,High,2002,12,0,True,included
+6,BusEq,High,2003,12,0,True,included
+6,BusEq,High,2004,12,0,True,included
+6,BusEq,High,2005,12,0,True,included
+6,BusEq,High,2006,12,0,True,included
+6,BusEq,High,2007,12,0,True,included
+6,BusEq,High,2008,12,0,True,included
+6,BusEq,High,2009,12,0,True,included
+6,BusEq,High,2010,12,0,True,included
+6,BusEq,High,2011,12,0,True,included
+6,BusEq,High,2012,12,0,True,included
+6,BusEq,High,2013,12,0,True,included
+6,BusEq,High,2014,12,0,True,included
+6,BusEq,High,2015,12,0,True,included
+6,BusEq,High,2016,12,0,True,included
+6,BusEq,High,2017,12,0,True,included
+6,BusEq,High,2018,12,0,True,included
+6,BusEq,High,2019,12,0,True,included
+6,BusEq,High,2020,12,0,True,included
+6,BusEq,High,2021,12,0,True,included
+6,BusEq,High,2022,12,0,True,included
+6,BusEq,High,2023,12,0,True,included
+6,BusEq,High,2024,12,0,True,included
+6,BusEq,High,2025,12,0,True,included
+6,BusEq,Low,1970,12,0,True,included
+6,BusEq,Low,1971,12,0,True,included
+6,BusEq,Low,1972,12,0,True,included
+6,BusEq,Low,1973,12,0,True,included
+6,BusEq,Low,1974,12,0,True,included
+6,BusEq,Low,1975,12,0,True,included
+6,BusEq,Low,1976,12,0,True,included
+6,BusEq,Low,1977,12,0,True,included
+6,BusEq,Low,1978,12,0,True,included
+6,BusEq,Low,1979,12,0,True,included
+6,BusEq,Low,1980,12,0,True,included
+6,BusEq,Low,1981,12,0,True,included
+6,BusEq,Low,1982,12,0,True,included
+6,BusEq,Low,1983,12,0,True,included
+6,BusEq,Low,1984,12,0,True,included
+6,BusEq,Low,1985,12,0,True,included
+6,BusEq,Low,1986,12,0,True,included
+6,BusEq,Low,1987,12,0,True,included
+6,BusEq,Low,1988,12,0,True,included
+6,BusEq,Low,1989,12,0,True,included
+6,BusEq,Low,1990,12,0,True,included
+6,BusEq,Low,1991,12,0,True,included
+6,BusEq,Low,1992,12,0,True,included
+6,BusEq,Low,1993,12,0,True,included
+6,BusEq,Low,1994,12,0,True,included
+6,BusEq,Low,1995,12,0,True,included
+6,BusEq,Low,1996,12,0,True,included
+6,BusEq,Low,1997,12,0,True,included
+6,BusEq,Low,1998,12,0,True,included
+6,BusEq,Low,1999,12,0,True,included
+6,BusEq,Low,2000,12,0,True,included
+6,BusEq,Low,2001,12,0,True,included
+6,BusEq,Low,2002,12,0,True,included
+6,BusEq,Low,2003,12,0,True,included
+6,BusEq,Low,2004,12,0,True,included
+6,BusEq,Low,2005,12,0,True,included
+6,BusEq,Low,2006,12,0,True,included
+6,BusEq,Low,2007,12,0,True,included
+6,BusEq,Low,2008,12,0,True,included
+6,BusEq,Low,2009,12,0,True,included
+6,BusEq,Low,2010,12,0,True,included
+6,BusEq,Low,2011,12,0,True,included
+6,BusEq,Low,2012,12,1,False,invalid monthly returns/cash coverage
+6,BusEq,Low,2013,12,0,True,included
+6,BusEq,Low,2014,12,0,True,included
+6,BusEq,Low,2015,12,0,True,included
+6,BusEq,Low,2016,12,0,True,included
+6,BusEq,Low,2017,12,0,True,included
+6,BusEq,Low,2018,12,0,True,included
+6,BusEq,Low,2019,12,0,True,included
+6,BusEq,Low,2020,12,0,True,included
+6,BusEq,Low,2021,12,0,True,included
+6,BusEq,Low,2022,12,0,True,included
+6,BusEq,Low,2023,12,0,True,included
+6,BusEq,Low,2024,12,0,True,included
+6,BusEq,Low,2025,12,0,True,included
+7,Telcm,All,1970,12,0,True,included
+7,Telcm,All,1971,12,0,True,included
+7,Telcm,All,1972,12,0,True,included
+7,Telcm,All,1973,12,0,True,included
+7,Telcm,All,1974,12,0,True,included
+7,Telcm,All,1975,12,0,True,included
+7,Telcm,All,1976,12,0,True,included
+7,Telcm,All,1977,12,0,True,included
+7,Telcm,All,1978,12,0,True,included
+7,Telcm,All,1979,12,0,True,included
+7,Telcm,All,1980,12,0,True,included
+7,Telcm,All,1981,12,0,True,included
+7,Telcm,All,1982,12,0,True,included
+7,Telcm,All,1983,12,0,True,included
+7,Telcm,All,1984,12,0,True,included
+7,Telcm,All,1985,12,0,True,included
+7,Telcm,All,1986,12,0,True,included
+7,Telcm,All,1987,12,0,True,included
+7,Telcm,All,1988,12,0,True,included
+7,Telcm,All,1989,12,0,True,included
+7,Telcm,All,1990,12,0,True,included
+7,Telcm,All,1991,12,0,True,included
+7,Telcm,All,1992,12,0,True,included
+7,Telcm,All,1993,12,0,True,included
+7,Telcm,All,1994,12,0,True,included
+7,Telcm,All,1995,12,0,True,included
+7,Telcm,All,1996,12,0,True,included
+7,Telcm,All,1997,12,0,True,included
+7,Telcm,All,1998,12,0,True,included
+7,Telcm,All,1999,12,0,True,included
+7,Telcm,All,2000,12,0,True,included
+7,Telcm,All,2001,12,0,True,included
+7,Telcm,All,2002,12,0,True,included
+7,Telcm,All,2003,12,0,True,included
+7,Telcm,All,2004,12,0,True,included
+7,Telcm,All,2005,12,0,True,included
+7,Telcm,All,2006,12,0,True,included
+7,Telcm,All,2007,12,0,True,included
+7,Telcm,All,2008,12,0,True,included
+7,Telcm,All,2009,12,0,True,included
+7,Telcm,All,2010,12,0,True,included
+7,Telcm,All,2011,12,0,True,included
+7,Telcm,All,2012,12,0,True,included
+7,Telcm,All,2013,12,0,True,included
+7,Telcm,All,2014,12,0,True,included
+7,Telcm,All,2015,12,0,True,included
+7,Telcm,All,2016,12,0,True,included
+7,Telcm,All,2017,12,0,True,included
+7,Telcm,All,2018,12,0,True,included
+7,Telcm,All,2019,12,0,True,included
+7,Telcm,All,2020,12,0,True,included
+7,Telcm,All,2021,12,0,True,included
+7,Telcm,All,2022,12,0,True,included
+7,Telcm,All,2023,12,0,True,included
+7,Telcm,All,2024,12,0,True,included
+7,Telcm,All,2025,12,0,True,included
+7,Telcm,High,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,1972,12,0,True,included
+7,Telcm,High,1973,12,0,True,included
+7,Telcm,High,1974,12,0,True,included
+7,Telcm,High,1975,12,0,True,included
+7,Telcm,High,1976,12,0,True,included
+7,Telcm,High,1977,12,0,True,included
+7,Telcm,High,1978,12,0,True,included
+7,Telcm,High,1979,12,0,True,included
+7,Telcm,High,1980,12,0,True,included
+7,Telcm,High,1981,12,0,True,included
+7,Telcm,High,1982,12,0,True,included
+7,Telcm,High,1983,12,0,True,included
+7,Telcm,High,1984,12,0,True,included
+7,Telcm,High,1985,12,0,True,included
+7,Telcm,High,1986,12,0,True,included
+7,Telcm,High,1987,12,0,True,included
+7,Telcm,High,1988,12,0,True,included
+7,Telcm,High,1989,12,0,True,included
+7,Telcm,High,1990,12,0,True,included
+7,Telcm,High,1991,12,0,True,included
+7,Telcm,High,1992,12,0,True,included
+7,Telcm,High,1993,12,0,True,included
+7,Telcm,High,1994,12,0,True,included
+7,Telcm,High,1995,12,0,True,included
+7,Telcm,High,1996,12,0,True,included
+7,Telcm,High,1997,12,0,True,included
+7,Telcm,High,1998,12,0,True,included
+7,Telcm,High,1999,12,0,True,included
+7,Telcm,High,2000,12,0,True,included
+7,Telcm,High,2001,12,0,True,included
+7,Telcm,High,2002,12,0,True,included
+7,Telcm,High,2003,12,0,True,included
+7,Telcm,High,2004,12,0,True,included
+7,Telcm,High,2005,12,0,True,included
+7,Telcm,High,2006,12,0,True,included
+7,Telcm,High,2007,12,0,True,included
+7,Telcm,High,2008,12,0,True,included
+7,Telcm,High,2009,12,0,True,included
+7,Telcm,High,2010,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2011,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2012,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2013,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2014,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2015,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2016,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2017,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2018,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2019,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2020,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2021,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2022,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2023,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,High,2024,12,0,True,included
+7,Telcm,High,2025,12,0,True,included
+7,Telcm,Low,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,1972,12,0,True,included
+7,Telcm,Low,1973,12,0,True,included
+7,Telcm,Low,1974,12,0,True,included
+7,Telcm,Low,1975,12,0,True,included
+7,Telcm,Low,1976,12,0,True,included
+7,Telcm,Low,1977,12,0,True,included
+7,Telcm,Low,1978,12,0,True,included
+7,Telcm,Low,1979,12,0,True,included
+7,Telcm,Low,1980,12,0,True,included
+7,Telcm,Low,1981,12,0,True,included
+7,Telcm,Low,1982,12,0,True,included
+7,Telcm,Low,1983,12,0,True,included
+7,Telcm,Low,1984,12,1,False,invalid monthly returns/cash coverage
+7,Telcm,Low,1985,12,0,True,included
+7,Telcm,Low,1986,12,0,True,included
+7,Telcm,Low,1987,12,0,True,included
+7,Telcm,Low,1988,12,0,True,included
+7,Telcm,Low,1989,12,0,True,included
+7,Telcm,Low,1990,12,0,True,included
+7,Telcm,Low,1991,12,0,True,included
+7,Telcm,Low,1992,12,0,True,included
+7,Telcm,Low,1993,12,0,True,included
+7,Telcm,Low,1994,12,0,True,included
+7,Telcm,Low,1995,12,0,True,included
+7,Telcm,Low,1996,12,0,True,included
+7,Telcm,Low,1997,12,0,True,included
+7,Telcm,Low,1998,12,0,True,included
+7,Telcm,Low,1999,12,0,True,included
+7,Telcm,Low,2000,12,0,True,included
+7,Telcm,Low,2001,12,0,True,included
+7,Telcm,Low,2002,12,0,True,included
+7,Telcm,Low,2003,12,0,True,included
+7,Telcm,Low,2004,12,0,True,included
+7,Telcm,Low,2005,12,0,True,included
+7,Telcm,Low,2006,12,0,True,included
+7,Telcm,Low,2007,12,0,True,included
+7,Telcm,Low,2008,12,0,True,included
+7,Telcm,Low,2009,12,0,True,included
+7,Telcm,Low,2010,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2011,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2012,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2013,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2014,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2015,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2016,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2017,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2018,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2019,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2020,12,0,True,included
+7,Telcm,Low,2021,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2022,0,0,False,no January portfolio under eligibility/minimum-firm rules
+7,Telcm,Low,2023,12,0,True,included
+7,Telcm,Low,2024,12,0,True,included
+7,Telcm,Low,2025,12,0,True,included
+8,Utils,All,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,All,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,All,1972,12,0,True,included
+8,Utils,All,1973,12,0,True,included
+8,Utils,All,1974,12,0,True,included
+8,Utils,All,1975,12,0,True,included
+8,Utils,All,1976,12,0,True,included
+8,Utils,All,1977,12,0,True,included
+8,Utils,All,1978,12,0,True,included
+8,Utils,All,1979,12,0,True,included
+8,Utils,All,1980,12,0,True,included
+8,Utils,All,1981,12,0,True,included
+8,Utils,All,1982,12,0,True,included
+8,Utils,All,1983,12,0,True,included
+8,Utils,All,1984,12,0,True,included
+8,Utils,All,1985,12,0,True,included
+8,Utils,All,1986,12,0,True,included
+8,Utils,All,1987,12,0,True,included
+8,Utils,All,1988,12,0,True,included
+8,Utils,All,1989,12,0,True,included
+8,Utils,All,1990,12,0,True,included
+8,Utils,All,1991,12,0,True,included
+8,Utils,All,1992,12,0,True,included
+8,Utils,All,1993,12,0,True,included
+8,Utils,All,1994,12,0,True,included
+8,Utils,All,1995,12,0,True,included
+8,Utils,All,1996,12,0,True,included
+8,Utils,All,1997,12,0,True,included
+8,Utils,All,1998,12,0,True,included
+8,Utils,All,1999,12,0,True,included
+8,Utils,All,2000,12,0,True,included
+8,Utils,All,2001,12,0,True,included
+8,Utils,All,2002,12,0,True,included
+8,Utils,All,2003,12,0,True,included
+8,Utils,All,2004,12,0,True,included
+8,Utils,All,2005,12,0,True,included
+8,Utils,All,2006,12,0,True,included
+8,Utils,All,2007,12,0,True,included
+8,Utils,All,2008,12,0,True,included
+8,Utils,All,2009,12,0,True,included
+8,Utils,All,2010,12,0,True,included
+8,Utils,All,2011,12,0,True,included
+8,Utils,All,2012,12,0,True,included
+8,Utils,All,2013,12,0,True,included
+8,Utils,All,2014,12,0,True,included
+8,Utils,All,2015,12,0,True,included
+8,Utils,All,2016,12,0,True,included
+8,Utils,All,2017,12,0,True,included
+8,Utils,All,2018,12,0,True,included
+8,Utils,All,2019,12,0,True,included
+8,Utils,All,2020,12,0,True,included
+8,Utils,All,2021,12,0,True,included
+8,Utils,All,2022,12,0,True,included
+8,Utils,All,2023,12,0,True,included
+8,Utils,All,2024,12,0,True,included
+8,Utils,All,2025,12,0,True,included
+8,Utils,High,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,High,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,High,1972,12,0,True,included
+8,Utils,High,1973,12,0,True,included
+8,Utils,High,1974,12,0,True,included
+8,Utils,High,1975,12,0,True,included
+8,Utils,High,1976,12,0,True,included
+8,Utils,High,1977,12,0,True,included
+8,Utils,High,1978,12,0,True,included
+8,Utils,High,1979,12,0,True,included
+8,Utils,High,1980,12,0,True,included
+8,Utils,High,1981,12,0,True,included
+8,Utils,High,1982,12,0,True,included
+8,Utils,High,1983,12,0,True,included
+8,Utils,High,1984,12,0,True,included
+8,Utils,High,1985,12,0,True,included
+8,Utils,High,1986,12,0,True,included
+8,Utils,High,1987,12,0,True,included
+8,Utils,High,1988,12,0,True,included
+8,Utils,High,1989,12,0,True,included
+8,Utils,High,1990,12,0,True,included
+8,Utils,High,1991,12,0,True,included
+8,Utils,High,1992,12,0,True,included
+8,Utils,High,1993,12,0,True,included
+8,Utils,High,1994,12,0,True,included
+8,Utils,High,1995,12,0,True,included
+8,Utils,High,1996,12,0,True,included
+8,Utils,High,1997,12,0,True,included
+8,Utils,High,1998,12,0,True,included
+8,Utils,High,1999,12,0,True,included
+8,Utils,High,2000,12,0,True,included
+8,Utils,High,2001,12,0,True,included
+8,Utils,High,2002,12,0,True,included
+8,Utils,High,2003,12,0,True,included
+8,Utils,High,2004,12,0,True,included
+8,Utils,High,2005,12,0,True,included
+8,Utils,High,2006,12,0,True,included
+8,Utils,High,2007,12,0,True,included
+8,Utils,High,2008,12,0,True,included
+8,Utils,High,2009,12,0,True,included
+8,Utils,High,2010,12,0,True,included
+8,Utils,High,2011,12,0,True,included
+8,Utils,High,2012,12,0,True,included
+8,Utils,High,2013,12,0,True,included
+8,Utils,High,2014,12,0,True,included
+8,Utils,High,2015,12,0,True,included
+8,Utils,High,2016,12,0,True,included
+8,Utils,High,2017,12,0,True,included
+8,Utils,High,2018,12,0,True,included
+8,Utils,High,2019,12,0,True,included
+8,Utils,High,2020,12,0,True,included
+8,Utils,High,2021,12,0,True,included
+8,Utils,High,2022,12,0,True,included
+8,Utils,High,2023,12,0,True,included
+8,Utils,High,2024,12,0,True,included
+8,Utils,High,2025,12,0,True,included
+8,Utils,Low,1970,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,Low,1971,0,0,False,no January portfolio under eligibility/minimum-firm rules
+8,Utils,Low,1972,12,0,True,included
+8,Utils,Low,1973,12,0,True,included
+8,Utils,Low,1974,12,0,True,included
+8,Utils,Low,1975,12,0,True,included
+8,Utils,Low,1976,12,0,True,included
+8,Utils,Low,1977,12,0,True,included
+8,Utils,Low,1978,12,0,True,included
+8,Utils,Low,1979,12,0,True,included
+8,Utils,Low,1980,12,0,True,included
+8,Utils,Low,1981,12,0,True,included
+8,Utils,Low,1982,12,0,True,included
+8,Utils,Low,1983,12,0,True,included
+8,Utils,Low,1984,12,0,True,included
+8,Utils,Low,1985,12,0,True,included
+8,Utils,Low,1986,12,0,True,included
+8,Utils,Low,1987,12,0,True,included
+8,Utils,Low,1988,12,0,True,included
+8,Utils,Low,1989,12,0,True,included
+8,Utils,Low,1990,12,0,True,included
+8,Utils,Low,1991,12,0,True,included
+8,Utils,Low,1992,12,0,True,included
+8,Utils,Low,1993,12,0,True,included
+8,Utils,Low,1994,12,0,True,included
+8,Utils,Low,1995,12,0,True,included
+8,Utils,Low,1996,12,0,True,included
+8,Utils,Low,1997,12,0,True,included
+8,Utils,Low,1998,12,0,True,included
+8,Utils,Low,1999,12,0,True,included
+8,Utils,Low,2000,12,0,True,included
+8,Utils,Low,2001,12,0,True,included
+8,Utils,Low,2002,12,0,True,included
+8,Utils,Low,2003,12,0,True,included
+8,Utils,Low,2004,12,0,True,included
+8,Utils,Low,2005,12,0,True,included
+8,Utils,Low,2006,12,0,True,included
+8,Utils,Low,2007,12,0,True,included
+8,Utils,Low,2008,12,0,True,included
+8,Utils,Low,2009,12,0,True,included
+8,Utils,Low,2010,12,0,True,included
+8,Utils,Low,2011,12,0,True,included
+8,Utils,Low,2012,12,0,True,included
+8,Utils,Low,2013,12,0,True,included
+8,Utils,Low,2014,12,0,True,included
+8,Utils,Low,2015,12,0,True,included
+8,Utils,Low,2016,12,0,True,included
+8,Utils,Low,2017,12,0,True,included
+8,Utils,Low,2018,12,0,True,included
+8,Utils,Low,2019,12,0,True,included
+8,Utils,Low,2020,12,0,True,included
+8,Utils,Low,2021,12,0,True,included
+8,Utils,Low,2022,12,0,True,included
+8,Utils,Low,2023,12,0,True,included
+8,Utils,Low,2024,12,0,True,included
+8,Utils,Low,2025,12,0,True,included
+9,Shops,All,1970,12,0,True,included
+9,Shops,All,1971,12,0,True,included
+9,Shops,All,1972,12,0,True,included
+9,Shops,All,1973,12,0,True,included
+9,Shops,All,1974,12,0,True,included
+9,Shops,All,1975,12,0,True,included
+9,Shops,All,1976,12,0,True,included
+9,Shops,All,1977,12,0,True,included
+9,Shops,All,1978,12,0,True,included
+9,Shops,All,1979,12,0,True,included
+9,Shops,All,1980,12,0,True,included
+9,Shops,All,1981,12,0,True,included
+9,Shops,All,1982,12,0,True,included
+9,Shops,All,1983,12,0,True,included
+9,Shops,All,1984,12,0,True,included
+9,Shops,All,1985,12,0,True,included
+9,Shops,All,1986,12,0,True,included
+9,Shops,All,1987,12,0,True,included
+9,Shops,All,1988,12,0,True,included
+9,Shops,All,1989,12,0,True,included
+9,Shops,All,1990,12,0,True,included
+9,Shops,All,1991,12,0,True,included
+9,Shops,All,1992,12,0,True,included
+9,Shops,All,1993,12,0,True,included
+9,Shops,All,1994,12,0,True,included
+9,Shops,All,1995,12,0,True,included
+9,Shops,All,1996,12,0,True,included
+9,Shops,All,1997,12,0,True,included
+9,Shops,All,1998,12,0,True,included
+9,Shops,All,1999,12,0,True,included
+9,Shops,All,2000,12,0,True,included
+9,Shops,All,2001,12,0,True,included
+9,Shops,All,2002,12,0,True,included
+9,Shops,All,2003,12,0,True,included
+9,Shops,All,2004,12,0,True,included
+9,Shops,All,2005,12,0,True,included
+9,Shops,All,2006,12,0,True,included
+9,Shops,All,2007,12,0,True,included
+9,Shops,All,2008,12,0,True,included
+9,Shops,All,2009,12,0,True,included
+9,Shops,All,2010,12,0,True,included
+9,Shops,All,2011,12,0,True,included
+9,Shops,All,2012,12,0,True,included
+9,Shops,All,2013,12,0,True,included
+9,Shops,All,2014,12,0,True,included
+9,Shops,All,2015,12,0,True,included
+9,Shops,All,2016,12,0,True,included
+9,Shops,All,2017,12,0,True,included
+9,Shops,All,2018,12,0,True,included
+9,Shops,All,2019,12,0,True,included
+9,Shops,All,2020,12,0,True,included
+9,Shops,All,2021,12,0,True,included
+9,Shops,All,2022,12,0,True,included
+9,Shops,All,2023,12,0,True,included
+9,Shops,All,2024,12,0,True,included
+9,Shops,All,2025,12,0,True,included
+9,Shops,High,1970,12,0,True,included
+9,Shops,High,1971,12,0,True,included
+9,Shops,High,1972,12,0,True,included
+9,Shops,High,1973,12,0,True,included
+9,Shops,High,1974,12,0,True,included
+9,Shops,High,1975,12,0,True,included
+9,Shops,High,1976,12,0,True,included
+9,Shops,High,1977,12,0,True,included
+9,Shops,High,1978,12,0,True,included
+9,Shops,High,1979,12,0,True,included
+9,Shops,High,1980,12,0,True,included
+9,Shops,High,1981,12,0,True,included
+9,Shops,High,1982,12,0,True,included
+9,Shops,High,1983,12,0,True,included
+9,Shops,High,1984,12,0,True,included
+9,Shops,High,1985,12,0,True,included
+9,Shops,High,1986,12,0,True,included
+9,Shops,High,1987,12,0,True,included
+9,Shops,High,1988,12,0,True,included
+9,Shops,High,1989,12,0,True,included
+9,Shops,High,1990,12,0,True,included
+9,Shops,High,1991,12,0,True,included
+9,Shops,High,1992,12,0,True,included
+9,Shops,High,1993,12,0,True,included
+9,Shops,High,1994,12,0,True,included
+9,Shops,High,1995,12,0,True,included
+9,Shops,High,1996,12,0,True,included
+9,Shops,High,1997,12,0,True,included
+9,Shops,High,1998,12,0,True,included
+9,Shops,High,1999,12,0,True,included
+9,Shops,High,2000,12,0,True,included
+9,Shops,High,2001,12,0,True,included
+9,Shops,High,2002,12,0,True,included
+9,Shops,High,2003,12,0,True,included
+9,Shops,High,2004,12,0,True,included
+9,Shops,High,2005,12,1,False,invalid monthly returns/cash coverage
+9,Shops,High,2006,12,0,True,included
+9,Shops,High,2007,12,0,True,included
+9,Shops,High,2008,12,0,True,included
+9,Shops,High,2009,12,0,True,included
+9,Shops,High,2010,12,0,True,included
+9,Shops,High,2011,12,0,True,included
+9,Shops,High,2012,12,0,True,included
+9,Shops,High,2013,12,0,True,included
+9,Shops,High,2014,12,0,True,included
+9,Shops,High,2015,12,0,True,included
+9,Shops,High,2016,12,0,True,included
+9,Shops,High,2017,12,0,True,included
+9,Shops,High,2018,12,0,True,included
+9,Shops,High,2019,12,0,True,included
+9,Shops,High,2020,12,0,True,included
+9,Shops,High,2021,12,0,True,included
+9,Shops,High,2022,12,0,True,included
+9,Shops,High,2023,12,0,True,included
+9,Shops,High,2024,12,0,True,included
+9,Shops,High,2025,12,0,True,included
+9,Shops,Low,1970,12,0,True,included
+9,Shops,Low,1971,12,0,True,included
+9,Shops,Low,1972,12,0,True,included
+9,Shops,Low,1973,12,0,True,included
+9,Shops,Low,1974,12,0,True,included
+9,Shops,Low,1975,12,0,True,included
+9,Shops,Low,1976,12,0,True,included
+9,Shops,Low,1977,12,0,True,included
+9,Shops,Low,1978,12,0,True,included
+9,Shops,Low,1979,12,0,True,included
+9,Shops,Low,1980,12,0,True,included
+9,Shops,Low,1981,12,0,True,included
+9,Shops,Low,1982,12,0,True,included
+9,Shops,Low,1983,12,0,True,included
+9,Shops,Low,1984,12,0,True,included
+9,Shops,Low,1985,12,0,True,included
+9,Shops,Low,1986,12,0,True,included
+9,Shops,Low,1987,12,0,True,included
+9,Shops,Low,1988,12,0,True,included
+9,Shops,Low,1989,12,0,True,included
+9,Shops,Low,1990,12,0,True,included
+9,Shops,Low,1991,12,0,True,included
+9,Shops,Low,1992,12,0,True,included
+9,Shops,Low,1993,12,0,True,included
+9,Shops,Low,1994,12,0,True,included
+9,Shops,Low,1995,12,0,True,included
+9,Shops,Low,1996,12,0,True,included
+9,Shops,Low,1997,12,0,True,included
+9,Shops,Low,1998,12,0,True,included
+9,Shops,Low,1999,12,0,True,included
+9,Shops,Low,2000,12,0,True,included
+9,Shops,Low,2001,12,0,True,included
+9,Shops,Low,2002,12,0,True,included
+9,Shops,Low,2003,12,0,True,included
+9,Shops,Low,2004,12,0,True,included
+9,Shops,Low,2005,12,0,True,included
+9,Shops,Low,2006,12,0,True,included
+9,Shops,Low,2007,12,0,True,included
+9,Shops,Low,2008,12,0,True,included
+9,Shops,Low,2009,12,0,True,included
+9,Shops,Low,2010,12,0,True,included
+9,Shops,Low,2011,12,0,True,included
+9,Shops,Low,2012,12,0,True,included
+9,Shops,Low,2013,12,0,True,included
+9,Shops,Low,2014,12,0,True,included
+9,Shops,Low,2015,12,0,True,included
+9,Shops,Low,2016,12,0,True,included
+9,Shops,Low,2017,12,0,True,included
+9,Shops,Low,2018,12,0,True,included
+9,Shops,Low,2019,12,0,True,included
+9,Shops,Low,2020,12,0,True,included
+9,Shops,Low,2021,12,0,True,included
+9,Shops,Low,2022,12,0,True,included
+9,Shops,Low,2023,12,0,True,included
+9,Shops,Low,2024,12,0,True,included
+9,Shops,Low,2025,12,0,True,included
+10,Hlth,All,1970,12,0,True,included
+10,Hlth,All,1971,12,0,True,included
+10,Hlth,All,1972,12,0,True,included
+10,Hlth,All,1973,12,0,True,included
+10,Hlth,All,1974,12,0,True,included
+10,Hlth,All,1975,12,0,True,included
+10,Hlth,All,1976,12,0,True,included
+10,Hlth,All,1977,12,0,True,included
+10,Hlth,All,1978,12,0,True,included
+10,Hlth,All,1979,12,0,True,included
+10,Hlth,All,1980,12,0,True,included
+10,Hlth,All,1981,12,0,True,included
+10,Hlth,All,1982,12,0,True,included
+10,Hlth,All,1983,12,0,True,included
+10,Hlth,All,1984,12,0,True,included
+10,Hlth,All,1985,12,0,True,included
+10,Hlth,All,1986,12,0,True,included
+10,Hlth,All,1987,12,0,True,included
+10,Hlth,All,1988,12,0,True,included
+10,Hlth,All,1989,12,0,True,included
+10,Hlth,All,1990,12,0,True,included
+10,Hlth,All,1991,12,0,True,included
+10,Hlth,All,1992,12,0,True,included
+10,Hlth,All,1993,12,0,True,included
+10,Hlth,All,1994,12,0,True,included
+10,Hlth,All,1995,12,0,True,included
+10,Hlth,All,1996,12,0,True,included
+10,Hlth,All,1997,12,0,True,included
+10,Hlth,All,1998,12,0,True,included
+10,Hlth,All,1999,12,0,True,included
+10,Hlth,All,2000,12,0,True,included
+10,Hlth,All,2001,12,0,True,included
+10,Hlth,All,2002,12,0,True,included
+10,Hlth,All,2003,12,0,True,included
+10,Hlth,All,2004,12,0,True,included
+10,Hlth,All,2005,12,0,True,included
+10,Hlth,All,2006,12,0,True,included
+10,Hlth,All,2007,12,0,True,included
+10,Hlth,All,2008,12,0,True,included
+10,Hlth,All,2009,12,0,True,included
+10,Hlth,All,2010,12,0,True,included
+10,Hlth,All,2011,12,0,True,included
+10,Hlth,All,2012,12,0,True,included
+10,Hlth,All,2013,12,0,True,included
+10,Hlth,All,2014,12,0,True,included
+10,Hlth,All,2015,12,0,True,included
+10,Hlth,All,2016,12,0,True,included
+10,Hlth,All,2017,12,0,True,included
+10,Hlth,All,2018,12,0,True,included
+10,Hlth,All,2019,12,0,True,included
+10,Hlth,All,2020,12,0,True,included
+10,Hlth,All,2021,12,0,True,included
+10,Hlth,All,2022,12,0,True,included
+10,Hlth,All,2023,12,0,True,included
+10,Hlth,All,2024,12,0,True,included
+10,Hlth,All,2025,12,0,True,included
+10,Hlth,High,1970,12,0,True,included
+10,Hlth,High,1971,12,0,True,included
+10,Hlth,High,1972,12,0,True,included
+10,Hlth,High,1973,12,0,True,included
+10,Hlth,High,1974,12,0,True,included
+10,Hlth,High,1975,12,0,True,included
+10,Hlth,High,1976,12,0,True,included
+10,Hlth,High,1977,12,0,True,included
+10,Hlth,High,1978,12,0,True,included
+10,Hlth,High,1979,12,0,True,included
+10,Hlth,High,1980,12,0,True,included
+10,Hlth,High,1981,12,0,True,included
+10,Hlth,High,1982,12,0,True,included
+10,Hlth,High,1983,12,0,True,included
+10,Hlth,High,1984,12,0,True,included
+10,Hlth,High,1985,12,0,True,included
+10,Hlth,High,1986,12,0,True,included
+10,Hlth,High,1987,12,0,True,included
+10,Hlth,High,1988,12,0,True,included
+10,Hlth,High,1989,12,0,True,included
+10,Hlth,High,1990,12,0,True,included
+10,Hlth,High,1991,12,0,True,included
+10,Hlth,High,1992,12,0,True,included
+10,Hlth,High,1993,12,0,True,included
+10,Hlth,High,1994,12,0,True,included
+10,Hlth,High,1995,12,0,True,included
+10,Hlth,High,1996,12,0,True,included
+10,Hlth,High,1997,12,0,True,included
+10,Hlth,High,1998,12,0,True,included
+10,Hlth,High,1999,12,0,True,included
+10,Hlth,High,2000,12,0,True,included
+10,Hlth,High,2001,12,0,True,included
+10,Hlth,High,2002,12,0,True,included
+10,Hlth,High,2003,12,0,True,included
+10,Hlth,High,2004,12,0,True,included
+10,Hlth,High,2005,12,0,True,included
+10,Hlth,High,2006,12,0,True,included
+10,Hlth,High,2007,12,0,True,included
+10,Hlth,High,2008,12,0,True,included
+10,Hlth,High,2009,12,0,True,included
+10,Hlth,High,2010,12,0,True,included
+10,Hlth,High,2011,12,0,True,included
+10,Hlth,High,2012,12,0,True,included
+10,Hlth,High,2013,12,0,True,included
+10,Hlth,High,2014,12,0,True,included
+10,Hlth,High,2015,12,0,True,included
+10,Hlth,High,2016,12,0,True,included
+10,Hlth,High,2017,12,0,True,included
+10,Hlth,High,2018,12,0,True,included
+10,Hlth,High,2019,12,0,True,included
+10,Hlth,High,2020,12,0,True,included
+10,Hlth,High,2021,12,0,True,included
+10,Hlth,High,2022,12,0,True,included
+10,Hlth,High,2023,12,0,True,included
+10,Hlth,High,2024,12,0,True,included
+10,Hlth,High,2025,12,0,True,included
+10,Hlth,Low,1970,12,0,True,included
+10,Hlth,Low,1971,12,0,True,included
+10,Hlth,Low,1972,12,0,True,included
+10,Hlth,Low,1973,12,0,True,included
+10,Hlth,Low,1974,12,0,True,included
+10,Hlth,Low,1975,12,0,True,included
+10,Hlth,Low,1976,12,0,True,included
+10,Hlth,Low,1977,12,0,True,included
+10,Hlth,Low,1978,12,0,True,included
+10,Hlth,Low,1979,12,0,True,included
+10,Hlth,Low,1980,12,0,True,included
+10,Hlth,Low,1981,12,0,True,included
+10,Hlth,Low,1982,12,0,True,included
+10,Hlth,Low,1983,12,0,True,included
+10,Hlth,Low,1984,12,0,True,included
+10,Hlth,Low,1985,12,0,True,included
+10,Hlth,Low,1986,12,0,True,included
+10,Hlth,Low,1987,12,0,True,included
+10,Hlth,Low,1988,12,0,True,included
+10,Hlth,Low,1989,12,0,True,included
+10,Hlth,Low,1990,12,0,True,included
+10,Hlth,Low,1991,12,0,True,included
+10,Hlth,Low,1992,12,0,True,included
+10,Hlth,Low,1993,12,0,True,included
+10,Hlth,Low,1994,12,0,True,included
+10,Hlth,Low,1995,12,0,True,included
+10,Hlth,Low,1996,12,0,True,included
+10,Hlth,Low,1997,12,0,True,included
+10,Hlth,Low,1998,12,0,True,included
+10,Hlth,Low,1999,12,0,True,included
+10,Hlth,Low,2000,12,0,True,included
+10,Hlth,Low,2001,12,0,True,included
+10,Hlth,Low,2002,12,0,True,included
+10,Hlth,Low,2003,12,0,True,included
+10,Hlth,Low,2004,12,0,True,included
+10,Hlth,Low,2005,12,0,True,included
+10,Hlth,Low,2006,12,0,True,included
+10,Hlth,Low,2007,12,0,True,included
+10,Hlth,Low,2008,12,0,True,included
+10,Hlth,Low,2009,12,0,True,included
+10,Hlth,Low,2010,12,0,True,included
+10,Hlth,Low,2011,12,0,True,included
+10,Hlth,Low,2012,12,0,True,included
+10,Hlth,Low,2013,12,1,False,invalid monthly returns/cash coverage
+10,Hlth,Low,2014,12,0,True,included
+10,Hlth,Low,2015,12,0,True,included
+10,Hlth,Low,2016,12,0,True,included
+10,Hlth,Low,2017,12,0,True,included
+10,Hlth,Low,2018,12,0,True,included
+10,Hlth,Low,2019,12,0,True,included
+10,Hlth,Low,2020,12,0,True,included
+10,Hlth,Low,2021,12,0,True,included
+10,Hlth,Low,2022,12,0,True,included
+10,Hlth,Low,2023,12,0,True,included
+10,Hlth,Low,2024,12,0,True,included
+10,Hlth,Low,2025,12,0,True,included
+11,Money,All,1970,12,0,True,included
+11,Money,All,1971,12,0,True,included
+11,Money,All,1972,12,0,True,included
+11,Money,All,1973,12,0,True,included
+11,Money,All,1974,12,0,True,included
+11,Money,All,1975,12,0,True,included
+11,Money,All,1976,12,0,True,included
+11,Money,All,1977,12,0,True,included
+11,Money,All,1978,12,0,True,included
+11,Money,All,1979,12,0,True,included
+11,Money,All,1980,12,0,True,included
+11,Money,All,1981,12,0,True,included
+11,Money,All,1982,12,0,True,included
+11,Money,All,1983,12,0,True,included
+11,Money,All,1984,12,0,True,included
+11,Money,All,1985,12,0,True,included
+11,Money,All,1986,12,0,True,included
+11,Money,All,1987,12,0,True,included
+11,Money,All,1988,12,0,True,included
+11,Money,All,1989,12,0,True,included
+11,Money,All,1990,12,0,True,included
+11,Money,All,1991,12,0,True,included
+11,Money,All,1992,12,0,True,included
+11,Money,All,1993,12,0,True,included
+11,Money,All,1994,12,0,True,included
+11,Money,All,1995,12,0,True,included
+11,Money,All,1996,12,0,True,included
+11,Money,All,1997,12,0,True,included
+11,Money,All,1998,12,0,True,included
+11,Money,All,1999,12,0,True,included
+11,Money,All,2000,12,0,True,included
+11,Money,All,2001,12,0,True,included
+11,Money,All,2002,12,0,True,included
+11,Money,All,2003,12,0,True,included
+11,Money,All,2004,12,0,True,included
+11,Money,All,2005,12,0,True,included
+11,Money,All,2006,12,0,True,included
+11,Money,All,2007,12,0,True,included
+11,Money,All,2008,12,0,True,included
+11,Money,All,2009,12,0,True,included
+11,Money,All,2010,12,0,True,included
+11,Money,All,2011,12,0,True,included
+11,Money,All,2012,12,0,True,included
+11,Money,All,2013,12,0,True,included
+11,Money,All,2014,12,0,True,included
+11,Money,All,2015,12,0,True,included
+11,Money,All,2016,12,0,True,included
+11,Money,All,2017,12,0,True,included
+11,Money,All,2018,12,0,True,included
+11,Money,All,2019,12,0,True,included
+11,Money,All,2020,12,0,True,included
+11,Money,All,2021,12,0,True,included
+11,Money,All,2022,12,0,True,included
+11,Money,All,2023,12,0,True,included
+11,Money,All,2024,12,0,True,included
+11,Money,All,2025,12,0,True,included
+11,Money,High,1970,12,0,True,included
+11,Money,High,1971,12,0,True,included
+11,Money,High,1972,12,0,True,included
+11,Money,High,1973,12,0,True,included
+11,Money,High,1974,12,0,True,included
+11,Money,High,1975,12,0,True,included
+11,Money,High,1976,12,0,True,included
+11,Money,High,1977,12,0,True,included
+11,Money,High,1978,12,0,True,included
+11,Money,High,1979,12,0,True,included
+11,Money,High,1980,12,0,True,included
+11,Money,High,1981,12,0,True,included
+11,Money,High,1982,12,0,True,included
+11,Money,High,1983,12,0,True,included
+11,Money,High,1984,12,0,True,included
+11,Money,High,1985,12,0,True,included
+11,Money,High,1986,12,0,True,included
+11,Money,High,1987,12,0,True,included
+11,Money,High,1988,12,0,True,included
+11,Money,High,1989,12,0,True,included
+11,Money,High,1990,12,0,True,included
+11,Money,High,1991,12,0,True,included
+11,Money,High,1992,12,0,True,included
+11,Money,High,1993,12,0,True,included
+11,Money,High,1994,12,0,True,included
+11,Money,High,1995,12,0,True,included
+11,Money,High,1996,12,0,True,included
+11,Money,High,1997,12,0,True,included
+11,Money,High,1998,12,0,True,included
+11,Money,High,1999,12,0,True,included
+11,Money,High,2000,12,0,True,included
+11,Money,High,2001,12,0,True,included
+11,Money,High,2002,12,0,True,included
+11,Money,High,2003,12,0,True,included
+11,Money,High,2004,12,0,True,included
+11,Money,High,2005,12,0,True,included
+11,Money,High,2006,12,0,True,included
+11,Money,High,2007,12,0,True,included
+11,Money,High,2008,12,0,True,included
+11,Money,High,2009,12,0,True,included
+11,Money,High,2010,12,0,True,included
+11,Money,High,2011,12,0,True,included
+11,Money,High,2012,12,0,True,included
+11,Money,High,2013,12,0,True,included
+11,Money,High,2014,12,0,True,included
+11,Money,High,2015,12,0,True,included
+11,Money,High,2016,12,0,True,included
+11,Money,High,2017,12,0,True,included
+11,Money,High,2018,12,0,True,included
+11,Money,High,2019,12,0,True,included
+11,Money,High,2020,12,0,True,included
+11,Money,High,2021,12,0,True,included
+11,Money,High,2022,12,0,True,included
+11,Money,High,2023,12,0,True,included
+11,Money,High,2024,12,0,True,included
+11,Money,High,2025,12,0,True,included
+11,Money,Low,1970,12,0,True,included
+11,Money,Low,1971,12,0,True,included
+11,Money,Low,1972,12,0,True,included
+11,Money,Low,1973,12,0,True,included
+11,Money,Low,1974,12,0,True,included
+11,Money,Low,1975,12,0,True,included
+11,Money,Low,1976,12,0,True,included
+11,Money,Low,1977,12,0,True,included
+11,Money,Low,1978,12,0,True,included
+11,Money,Low,1979,12,0,True,included
+11,Money,Low,1980,12,0,True,included
+11,Money,Low,1981,12,0,True,included
+11,Money,Low,1982,12,0,True,included
+11,Money,Low,1983,12,0,True,included
+11,Money,Low,1984,12,0,True,included
+11,Money,Low,1985,12,0,True,included
+11,Money,Low,1986,12,0,True,included
+11,Money,Low,1987,12,0,True,included
+11,Money,Low,1988,12,0,True,included
+11,Money,Low,1989,12,0,True,included
+11,Money,Low,1990,12,0,True,included
+11,Money,Low,1991,12,0,True,included
+11,Money,Low,1992,12,0,True,included
+11,Money,Low,1993,12,0,True,included
+11,Money,Low,1994,12,0,True,included
+11,Money,Low,1995,12,0,True,included
+11,Money,Low,1996,12,0,True,included
+11,Money,Low,1997,12,0,True,included
+11,Money,Low,1998,12,0,True,included
+11,Money,Low,1999,12,0,True,included
+11,Money,Low,2000,12,0,True,included
+11,Money,Low,2001,12,0,True,included
+11,Money,Low,2002,12,0,True,included
+11,Money,Low,2003,12,0,True,included
+11,Money,Low,2004,12,0,True,included
+11,Money,Low,2005,12,0,True,included
+11,Money,Low,2006,12,0,True,included
+11,Money,Low,2007,12,0,True,included
+11,Money,Low,2008,12,0,True,included
+11,Money,Low,2009,12,0,True,included
+11,Money,Low,2010,12,0,True,included
+11,Money,Low,2011,12,0,True,included
+11,Money,Low,2012,12,1,False,invalid monthly returns/cash coverage
+11,Money,Low,2013,12,0,True,included
+11,Money,Low,2014,12,0,True,included
+11,Money,Low,2015,12,0,True,included
+11,Money,Low,2016,12,0,True,included
+11,Money,Low,2017,12,0,True,included
+11,Money,Low,2018,12,0,True,included
+11,Money,Low,2019,12,0,True,included
+11,Money,Low,2020,12,0,True,included
+11,Money,Low,2021,12,0,True,included
+11,Money,Low,2022,12,0,True,included
+11,Money,Low,2023,12,0,True,included
+11,Money,Low,2024,12,0,True,included
+11,Money,Low,2025,12,0,True,included
+12,Other,All,1970,12,0,True,included
+12,Other,All,1971,12,0,True,included
+12,Other,All,1972,12,0,True,included
+12,Other,All,1973,12,0,True,included
+12,Other,All,1974,12,0,True,included
+12,Other,All,1975,12,0,True,included
+12,Other,All,1976,12,0,True,included
+12,Other,All,1977,12,0,True,included
+12,Other,All,1978,12,0,True,included
+12,Other,All,1979,12,0,True,included
+12,Other,All,1980,12,0,True,included
+12,Other,All,1981,12,0,True,included
+12,Other,All,1982,12,0,True,included
+12,Other,All,1983,12,0,True,included
+12,Other,All,1984,12,0,True,included
+12,Other,All,1985,12,0,True,included
+12,Other,All,1986,12,0,True,included
+12,Other,All,1987,12,0,True,included
+12,Other,All,1988,12,0,True,included
+12,Other,All,1989,12,0,True,included
+12,Other,All,1990,12,0,True,included
+12,Other,All,1991,12,0,True,included
+12,Other,All,1992,12,0,True,included
+12,Other,All,1993,12,0,True,included
+12,Other,All,1994,12,0,True,included
+12,Other,All,1995,12,0,True,included
+12,Other,All,1996,12,0,True,included
+12,Other,All,1997,12,0,True,included
+12,Other,All,1998,12,0,True,included
+12,Other,All,1999,12,0,True,included
+12,Other,All,2000,12,0,True,included
+12,Other,All,2001,12,0,True,included
+12,Other,All,2002,12,0,True,included
+12,Other,All,2003,12,0,True,included
+12,Other,All,2004,12,0,True,included
+12,Other,All,2005,12,0,True,included
+12,Other,All,2006,12,0,True,included
+12,Other,All,2007,12,0,True,included
+12,Other,All,2008,12,0,True,included
+12,Other,All,2009,12,0,True,included
+12,Other,All,2010,12,0,True,included
+12,Other,All,2011,12,0,True,included
+12,Other,All,2012,12,0,True,included
+12,Other,All,2013,12,0,True,included
+12,Other,All,2014,12,0,True,included
+12,Other,All,2015,12,0,True,included
+12,Other,All,2016,12,0,True,included
+12,Other,All,2017,12,0,True,included
+12,Other,All,2018,12,0,True,included
+12,Other,All,2019,12,0,True,included
+12,Other,All,2020,12,0,True,included
+12,Other,All,2021,12,0,True,included
+12,Other,All,2022,12,0,True,included
+12,Other,All,2023,12,0,True,included
+12,Other,All,2024,12,0,True,included
+12,Other,All,2025,12,0,True,included
+12,Other,High,1970,12,0,True,included
+12,Other,High,1971,12,0,True,included
+12,Other,High,1972,12,0,True,included
+12,Other,High,1973,12,0,True,included
+12,Other,High,1974,12,0,True,included
+12,Other,High,1975,12,0,True,included
+12,Other,High,1976,12,0,True,included
+12,Other,High,1977,12,0,True,included
+12,Other,High,1978,12,0,True,included
+12,Other,High,1979,12,0,True,included
+12,Other,High,1980,12,0,True,included
+12,Other,High,1981,12,0,True,included
+12,Other,High,1982,12,0,True,included
+12,Other,High,1983,12,0,True,included
+12,Other,High,1984,12,0,True,included
+12,Other,High,1985,12,0,True,included
+12,Other,High,1986,12,0,True,included
+12,Other,High,1987,12,0,True,included
+12,Other,High,1988,12,0,True,included
+12,Other,High,1989,12,0,True,included
+12,Other,High,1990,12,0,True,included
+12,Other,High,1991,12,0,True,included
+12,Other,High,1992,12,0,True,included
+12,Other,High,1993,12,0,True,included
+12,Other,High,1994,12,0,True,included
+12,Other,High,1995,12,0,True,included
+12,Other,High,1996,12,0,True,included
+12,Other,High,1997,12,0,True,included
+12,Other,High,1998,12,0,True,included
+12,Other,High,1999,12,0,True,included
+12,Other,High,2000,12,0,True,included
+12,Other,High,2001,12,0,True,included
+12,Other,High,2002,12,0,True,included
+12,Other,High,2003,12,0,True,included
+12,Other,High,2004,12,0,True,included
+12,Other,High,2005,12,0,True,included
+12,Other,High,2006,12,0,True,included
+12,Other,High,2007,12,0,True,included
+12,Other,High,2008,12,0,True,included
+12,Other,High,2009,12,0,True,included
+12,Other,High,2010,12,0,True,included
+12,Other,High,2011,12,0,True,included
+12,Other,High,2012,12,0,True,included
+12,Other,High,2013,12,0,True,included
+12,Other,High,2014,12,0,True,included
+12,Other,High,2015,12,0,True,included
+12,Other,High,2016,12,0,True,included
+12,Other,High,2017,12,0,True,included
+12,Other,High,2018,12,0,True,included
+12,Other,High,2019,12,0,True,included
+12,Other,High,2020,12,0,True,included
+12,Other,High,2021,12,0,True,included
+12,Other,High,2022,12,0,True,included
+12,Other,High,2023,12,0,True,included
+12,Other,High,2024,12,0,True,included
+12,Other,High,2025,12,0,True,included
+12,Other,Low,1970,12,0,True,included
+12,Other,Low,1971,12,0,True,included
+12,Other,Low,1972,12,0,True,included
+12,Other,Low,1973,12,0,True,included
+12,Other,Low,1974,12,0,True,included
+12,Other,Low,1975,12,0,True,included
+12,Other,Low,1976,12,0,True,included
+12,Other,Low,1977,12,0,True,included
+12,Other,Low,1978,12,0,True,included
+12,Other,Low,1979,12,0,True,included
+12,Other,Low,1980,12,0,True,included
+12,Other,Low,1981,12,0,True,included
+12,Other,Low,1982,12,0,True,included
+12,Other,Low,1983,12,0,True,included
+12,Other,Low,1984,12,0,True,included
+12,Other,Low,1985,12,0,True,included
+12,Other,Low,1986,12,0,True,included
+12,Other,Low,1987,12,0,True,included
+12,Other,Low,1988,12,0,True,included
+12,Other,Low,1989,12,0,True,included
+12,Other,Low,1990,12,0,True,included
+12,Other,Low,1991,12,0,True,included
+12,Other,Low,1992,12,0,True,included
+12,Other,Low,1993,12,0,True,included
+12,Other,Low,1994,12,0,True,included
+12,Other,Low,1995,12,0,True,included
+12,Other,Low,1996,12,0,True,included
+12,Other,Low,1997,12,0,True,included
+12,Other,Low,1998,12,0,True,included
+12,Other,Low,1999,12,0,True,included
+12,Other,Low,2000,12,0,True,included
+12,Other,Low,2001,12,0,True,included
+12,Other,Low,2002,12,0,True,included
+12,Other,Low,2003,12,0,True,included
+12,Other,Low,2004,12,0,True,included
+12,Other,Low,2005,12,0,True,included
+12,Other,Low,2006,12,0,True,included
+12,Other,Low,2007,12,0,True,included
+12,Other,Low,2008,12,0,True,included
+12,Other,Low,2009,12,0,True,included
+12,Other,Low,2010,12,0,True,included
+12,Other,Low,2011,12,0,True,included
+12,Other,Low,2012,12,0,True,included
+12,Other,Low,2013,12,0,True,included
+12,Other,Low,2014,12,0,True,included
+12,Other,Low,2015,12,0,True,included
+12,Other,Low,2016,12,0,True,included
+12,Other,Low,2017,12,0,True,included
+12,Other,Low,2018,12,0,True,included
+12,Other,Low,2019,12,0,True,included
+12,Other,Low,2020,12,0,True,included
+12,Other,Low,2021,12,0,True,included
+12,Other,Low,2022,12,0,True,included
+12,Other,Low,2023,12,0,True,included
+12,Other,Low,2024,12,0,True,included
+12,Other,Low,2025,12,0,True,included

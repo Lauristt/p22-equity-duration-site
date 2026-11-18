@@ -54,8 +54,8 @@ z
    </g>
    <g id="patch_5">
     <path d="M 70.56 99.400853 
-L 191.795984 99.400853 
-L 191.795984 121.700539 
+L 196.286206 99.400853 
+L 196.286206 121.700539 
 L 70.56 121.700539 
 z
 " clip-path="url(#p0ba5570006)" style="fill: #1f6f5f"/>
@@ -101,10 +101,10 @@ z
 " clip-path="url(#p0ba5570006)" style="fill: #b5473c"/>
    </g>
    <g id="patch_11">
-    <path d="M 191.795984 99.400853 
-L 191.795984 99.400853 
-L 191.795984 121.700539 
-L 191.795984 121.700539 
+    <path d="M 196.286206 99.400853 
+L 196.286206 99.400853 
+L 196.286206 121.700539 
+L 196.286206 121.700539 
 z
 " clip-path="url(#p0ba5570006)" style="fill: #b5473c"/>
    </g>
@@ -276,7 +276,7 @@ L 483.84 213.408
     <text style="fill: #171717; font: 9px 'DejaVu Sans'; text-anchor: start" x="200.776428" y="85.159525" transform="rotate(-0 200.776428 85.159525)">28/28</text>
    </g>
    <g id="text_15">
-    <text style="fill: #171717; font: 9px 'DejaVu Sans'; text-anchor: start" x="196.286206" y="113.034133" transform="rotate(-0 196.286206 113.034133)">27/27</text>
+    <text style="fill: #171717; font: 9px 'DejaVu Sans'; text-anchor: start" x="200.776428" y="113.034133" transform="rotate(-0 200.776428 113.034133)">28/28</text>
    </g>
    <g id="text_16">
     <text style="fill: #171717; font: 9px 'DejaVu Sans'; text-anchor: start" x="263.639531" y="140.908742" transform="rotate(-0 263.639531 140.908742)">42/42</text>
@@ -317,7 +317,7 @@ z
   </g>
   <g id="text_22">
    <text style="fill: #5e6462; font: 8px 'DejaVu Sans'" transform="translate(70.56 255.06575)">Tolerance: 0.0051 for two-decimal values; exact integer counts.</text>
-   <text style="fill: #5e6462; font: 8px 'DejaVu Sans'" transform="translate(70.56 264.024)">Table 4’s three hard-coded smoothing values are excluded.</text>
+   <text style="fill: #5e6462; font: 8px 'DejaVu Sans'" transform="translate(70.56 264.024)">Table 4’s two supplied historical smoothing values are excluded.</text>
   </g>
  </g>
  <defs>

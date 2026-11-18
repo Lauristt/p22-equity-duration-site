@@ -16,10 +16,10 @@
     },
     {
       "table": 4,
-      "recomputed_cells": 27,
-      "within_tolerance": 27,
+      "recomputed_cells": 28,
+      "within_tolerance": 28,
       "differences": 0,
-      "source_constants": 3
+      "source_constants": 2
     },
     {
       "table": 5,

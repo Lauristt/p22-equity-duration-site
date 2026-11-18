@@ -70,7 +70,7 @@ table,statistic,sample,python,published,difference,tolerance,within_tolerance,in
 4,Dividend-price AR(1),1945–2022,0.905073884513661,0.91,-0.004926115486339033,0.0051,True,True,within rounding
 4,Dividend-price AR(1),1629–1945,0.693978330779439,0.69,0.003978330779439099,0.0051,True,True,within rounding
 4,Dividend-price AR(1),1629–2022,0.790001864177144,0.79,1.8641771439842358e-06,0.0051,True,True,within rounding
-4,Smoothing*,1945–2022,0.21,0.21,0.0,0.0051,True,False,"source constant, not recomputed"
+4,Smoothing*,1945–2022,0.210907594198335,0.21,0.0009075941983349989,0.0051,True,True,within rounding
 4,Smoothing*,1629–1945,0.32,0.32,0.0,0.0051,True,False,"source constant, not recomputed"
 4,Smoothing*,1629–2022,0.31,0.31,0.0,0.0051,True,False,"source constant, not recomputed"
 5,Return slope,1945–2022,0.0862757745565731,0.09,-0.00372422544342689,0.0051,True,True,within rounding

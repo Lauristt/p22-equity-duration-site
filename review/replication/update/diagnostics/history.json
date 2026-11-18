@@ -19,5 +19,12 @@
       "payout_observations": 290
     }
   ],
-  "smoothing_status": "Three constants supplied in Table_4_Time_Series.m; missing upstream estimation file. Not independently reproduced."
+  "smoothing": {
+    "nominal": 0.21080595191209,
+    "real": 0.2255265476283895,
+    "matched_growth_years": 80,
+    "interpretation": "Nominal growth reproduces the printed post-1945 smoothing entry. Real growth is reported as a separate convention sensitivity; the paper describes the summaries as real.",
+    "historical_limitation": "Raw early earnings and the separate upstream estimation file are absent. Prewar/full-history smoothing remains supplied, not independently recomputed."
+  },
+  "smoothing_status": "Postwar nominal estimate recomputed; two historical constants remain supplied. Changed-sample full-history smoothing is unavailable."
 }

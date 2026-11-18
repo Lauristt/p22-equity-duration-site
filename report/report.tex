@@ -15,7 +15,7 @@
 \section{Purpose and findings}
 The project reproduces Golez and Koudijs (2025) and asks whether payout-related valuation decompositions persist within industries. The intended user is an equity researcher assessing whether an apparent valuation pattern reflects industry composition or unstable estimation. ER is a model-dependent expected-return contribution to log dividend-price variation, not an expected return or trading signal.
 
-The paper-sample translation reproduces 263 independently calculated numeric cells within the committed rounding tolerance. Three Table 4 smoothing constants remain unrecomputed because their estimation file is absent from the authors' package.
+The paper-sample translation reproduces 264 independently calculated numeric cells within the committed rounding tolerance. Two historical Table 4 smoothing entries remain unrecomputed because early earnings and the upstream estimation file are absent. The postwar entry is recomputed using nominal growth; the real-growth convention is reported separately.
 
 \subsection{Recent-data update}
 Post-1945 result holds through 2025: the expected-return share is 0.89 (paper sample 0.91) and the dividend-growth share is 0.12 (paper sample 0.10). The return-predictability t-statistic is 1.69 (paper sample 2.10), so returns are no longer significantly predictable at the 5\% level on their own. Strips still have a smaller expected-return share than the market (0.77 vs 0.96; paper 0.56 vs 0.96).
@@ -35,21 +35,22 @@ Cash withdrawals differ from CRSP daily dividend reinvestment. The pipeline ther
 
 
 \section{Data validation}
-7 of 7 registered checks pass. The median cash-versus-effective yield gap on dividend-paying months is 0.000175; cash withdrawals and daily dividend reinvestment are different conventions. The coverage panel records observed filter attrition, not an assumed target count. A passing identity does not establish exact equivalence to the authors' stock-selection procedure.
+8 of 8 registered checks pass. The median cash-versus-effective yield gap on dividend-paying months is 0.000175; cash withdrawals and daily dividend reinvestment are different conventions. The coverage panel records observed filter attrition, not an assumed target count. A passing identity does not establish exact equivalence to the authors' stock-selection procedure.
 
 \section{Generated results}
 All numerical results, captions containing estimates, tables and figures below are generated from pipeline artifacts. The archived forecasting exercise is a sensitivity appendix, not the consultation-agreed product.
 
+Postwar smoothing equals 0.211 using nominal growth and 0.226 using real growth, over 77 matched growth observations. The nominal convention matches the printed entry; this convention distinction remains explicit.
 
 \begin{landscape}\small
 
 \begin{longtable}{lrr}
-\caption{Paper-sample replication: Table 1. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption{Paper-sample replication: Table 1. Mean annual market return is 6.38\% versus 5.25\% for dividend strips; their different cash-flow horizons motivate the predictability comparison.} \\
 \toprule
 Statistic & Market & Dividend strips \\
 \midrule
 \endfirsthead
-\caption[]{Paper-sample replication: Table 1. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption[]{Paper-sample replication: Table 1. Mean annual market return is 6.38\% versus 5.25\% for dividend strips; their different cash-flow horizons motivate the predictability comparison.} \\
 \toprule
 Statistic & Market & Dividend strips \\
 \midrule
@@ -116,12 +117,12 @@ EDG (implied) & 0.040 & 0.436 \\
 \begin{landscape}\small
 
 \begin{longtable}{lrrr}
-\caption{Paper-sample replication: Table 4. Summary statistics distinguish historical samples. Smoothing values marked with a star are supplied constants, not independent estimates; changed-sample smoothing is unavailable.} \\
+\caption{Paper-sample replication: Table 4. Mean payout ranges from 47.3\% to 98.4\% across historical samples. Postwar smoothing is calculated from nominal growth; historical smoothing remains supplied or unavailable.} \\
 \toprule
 Statistic & 1945-2022 & 1629-1945 & 1629-2022 \\
 \midrule
 \endfirsthead
-\caption[]{Paper-sample replication: Table 4. Summary statistics distinguish historical samples. Smoothing values marked with a star are supplied constants, not independent estimates; changed-sample smoothing is unavailable.} \\
+\caption[]{Paper-sample replication: Table 4. Mean payout ranges from 47.3\% to 98.4\% across historical samples. Postwar smoothing is calculated from nominal growth; historical smoothing remains supplied or unavailable.} \\
 \toprule
 Statistic & 1945-2022 & 1629-1945 & 1629-2022 \\
 \midrule
@@ -141,7 +142,7 @@ Dividend growth SD (\%) & 6.674 & 13.291 & 12.281 \\
 Dividend-price mean (\%) & 3.242 & 4.856 & 4.539 \\
 Dividend-price SD (\%) & 1.426 & 1.271 & 1.453 \\
 Dividend-price AR(1) & 0.905 & 0.694 & 0.790 \\
-Smoothing* & 0.210 & 0.320 & 0.310 \\
+Smoothing* & 0.211 & 0.320 & 0.310 \\
 \end{longtable}
 
 
@@ -192,12 +193,12 @@ EDG (implied) & 0.091 & 0.657 & 0.597 \\
 \begin{landscape}\small
 
 \begin{longtable}{lrrrrrr}
-\caption{Paper-sample replication: Table 6. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption{Paper-sample replication: Table 6. Mean portfolio payout ranges from 31.6\% to 64.2\%; the portfolio sorts therefore create variation in the paper's duration proxy. Missing earnings constrain payout and smoothing summaries.} \\
 \toprule
 Statistic & All & Low & Medium & High & Below 0.5 & Above 0.5 \\
 \midrule
 \endfirsthead
-\caption[]{Paper-sample replication: Table 6. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption[]{Paper-sample replication: Table 6. Mean portfolio payout ranges from 31.6\% to 64.2\%; the portfolio sorts therefore create variation in the paper's duration proxy. Missing earnings constrain payout and smoothing summaries.} \\
 \toprule
 Statistic & All & Low & Medium & High & Below 0.5 & Above 0.5 \\
 \midrule
@@ -268,12 +269,12 @@ EDG (implied) & 0.161 & -0.041 & 0.200 & 0.459 & 0.000 & 0.409 \\
 \begin{landscape}\small
 
 \begin{longtable}{lrr}
-\caption{Updated data: Table 1. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption{Updated data: Table 1. Mean annual market return is 6.97\% versus 8.44\% for dividend strips; their different cash-flow horizons motivate the predictability comparison.} \\
 \toprule
 Statistic & Market & Dividend strips \\
 \midrule
 \endfirsthead
-\caption[]{Updated data: Table 1. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption[]{Updated data: Table 1. Mean annual market return is 6.97\% versus 8.44\% for dividend strips; their different cash-flow horizons motivate the predictability comparison.} \\
 \toprule
 Statistic & Market & Dividend strips \\
 \midrule
@@ -340,12 +341,12 @@ EDG (implied) & 0.044 & 0.230 \\
 \begin{landscape}\small
 
 \begin{longtable}{lrrr}
-\caption{Updated data: Table 4. Summary statistics distinguish historical samples. Smoothing values marked with a star are supplied constants, not independent estimates; changed-sample smoothing is unavailable.} \\
+\caption{Updated data: Table 4. Mean payout ranges from 47.0\% to 98.4\% across historical samples. Postwar smoothing is calculated from nominal growth; historical smoothing remains supplied or unavailable.} \\
 \toprule
 Statistic & 1945-2025 & 1629-1945 & 1629-2025 \\
 \midrule
 \endfirsthead
-\caption[]{Updated data: Table 4. Summary statistics distinguish historical samples. Smoothing values marked with a star are supplied constants, not independent estimates; changed-sample smoothing is unavailable.} \\
+\caption[]{Updated data: Table 4. Mean payout ranges from 47.0\% to 98.4\% across historical samples. Postwar smoothing is calculated from nominal growth; historical smoothing remains supplied or unavailable.} \\
 \toprule
 Statistic & 1945-2025 & 1629-1945 & 1629-2025 \\
 \midrule
@@ -365,7 +366,7 @@ Dividend growth SD (\%) & 6.548 & 13.291 & 12.235 \\
 Dividend-price mean (\%) & 3.170 & 4.856 & 4.514 \\
 Dividend-price SD (\%) & 1.447 & 1.271 & 1.474 \\
 Dividend-price AR(1) & 0.905 & 0.694 & 0.795 \\
-Smoothing* & -- & 0.320 & -- \\
+Smoothing* & 0.211 & 0.320 & -- \\
 \end{longtable}
 
 
@@ -416,12 +417,12 @@ EDG (implied) & 0.107 & 0.657 & 0.629 \\
 \begin{landscape}\small
 
 \begin{longtable}{lrrrrrr}
-\caption{Updated data: Table 6. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption{Updated data: Table 6. Mean portfolio payout ranges from 29.7\% to 63.5\%; the portfolio sorts therefore create variation in the paper's duration proxy. Missing earnings constrain payout and smoothing summaries.} \\
 \toprule
 Statistic & All & Low & Medium & High & Below 0.5 & Above 0.5 \\
 \midrule
 \endfirsthead
-\caption[]{Updated data: Table 6. Summary statistics describe the units, dispersion and eligible sample used by the predictive regressions; the update uses its explicitly reported coverage.} \\
+\caption[]{Updated data: Table 6. Mean portfolio payout ranges from 29.7\% to 63.5\%; the portfolio sorts therefore create variation in the paper's duration proxy. Missing earnings constrain payout and smoothing summaries.} \\
 \toprule
 Statistic & All & Low & Medium & High & Below 0.5 & Above 0.5 \\
 \midrule
@@ -667,6 +668,7 @@ Cash event matching failure fraction & 0.00022 & 0.001 & True \\
 Portfolio weights sum to one & 6.66e-16 & 1e-10 & True \\
 Monthly cash return identity & 2.78e-17 & 1e-10 & True \\
 Cash versus effective yield: paying months & 0.000175 & 0.001 & True \\
+Unexplained annual omissions & 0 & 0 & True \\
 \end{longtable}
 
 
@@ -1181,12 +1183,12 @@ Statistic & Market & Dividend strips \\
 \endfoot
 \bottomrule
 \endlastfoot
-Return mean (\%) & 6.377 & 6.730 \\
-Return SD (\%) & 17.080 & 15.747 \\
+Return mean (\%) & 6.377 & 6.695 \\
+Return SD (\%) & 17.080 & 15.539 \\
 Dividend growth mean (\%) & 3.320 & -- \\
 Dividend growth SD (\%) & 7.617 & -- \\
-Dividend-price mean (\%) & 1.820 & 67.213 \\
-Dividend-price SD (\%) & 0.376 & 9.892 \\
+Dividend-price mean (\%) & 1.820 & 67.023 \\
+Dividend-price SD (\%) & 0.376 & 9.765 \\
 \end{longtable}
 
 
@@ -1212,22 +1214,22 @@ Statistic & Market & Dividend strips \\
 \endfoot
 \bottomrule
 \endlastfoot
-Return slope & 0.389 & 0.619 \\
-Return t-stat (NW) & 3.539 & 7.271 \\
-Return t-stat (non-overlap) & 2.843 & 3.852 \\
-Return R-squared & 0.212 & 0.268 \\
-Dividend growth slope & -0.019 & -0.352 \\
-Dividend growth t-stat (NW) & -0.151 & -3.570 \\
-Dividend growth t-stat (non-overlap) & -0.055 & -3.754 \\
-Dividend growth R-squared & 0.003 & 0.370 \\
+Return slope & 0.389 & 0.656 \\
+Return t-stat (NW) & 3.539 & 6.538 \\
+Return t-stat (non-overlap) & 2.843 & 4.084 \\
+Return R-squared & 0.212 & 0.328 \\
+Dividend growth slope & -0.019 & -0.369 \\
+Dividend growth t-stat (NW) & -0.151 & -3.551 \\
+Dividend growth t-stat (non-overlap) & -0.055 & -3.795 \\
+Dividend growth R-squared & 0.003 & 0.388 \\
 Dividend-price slope & 0.606 & -- \\
 Dividend-price t-stat (NW) & 4.862 & -- \\
 Dividend-price t-stat (non-overlap) & 4.083 & -- \\
 Dividend-price R-squared & 0.370 & -- \\
-ER & 0.960 & 0.619 \\
-ER (implied) & 0.953 & 0.648 \\
-EDG & 0.047 & 0.352 \\
-EDG (implied) & 0.040 & 0.381 \\
+ER & 0.960 & 0.656 \\
+ER (implied) & 0.953 & 0.631 \\
+EDG & 0.047 & 0.369 \\
+EDG (implied) & 0.040 & 0.344 \\
 \end{longtable}
 
 
@@ -1330,58 +1332,575 @@ Utils & Low & 1972 & 2025 & 54 & 28 \\
 \end{landscape}
 
 
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+1 & Return mean (\%) & Market & 6.377 & 6.380 & -0.00301 & 0.0051 & True & True \\
+1 & Return mean (\%) & Dividend strips & 5.246 & 5.250 & -0.00437 & 0.0051 & True & True \\
+1 & Return SD (\%) & Market & 17.080 & 17.080 & -0.00029 & 0.0051 & True & True \\
+1 & Return SD (\%) & Dividend strips & 14.216 & 14.220 & -0.00367 & 0.0051 & True & True \\
+1 & Dividend growth mean (\%) & Market & 3.320 & 3.320 & 0.000408 & 0.0051 & True & True \\
+1 & Dividend growth mean (\%) & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+1 & Dividend growth SD (\%) & Market & 7.617 & 7.620 & -0.00288 & 0.0051 & True & True \\
+1 & Dividend growth SD (\%) & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+1 & Dividend-price mean (\%) & Market & 1.820 & 1.820 & -8.54e-05 & 0.0051 & True & True \\
+1 & Dividend-price mean (\%) & Dividend strips & 66.994 & 66.990 & 0.00397 & 0.0051 & True & True \\
+1 & Dividend-price SD (\%) & Market & 0.376 & 0.380 & -0.00395 & 0.0051 & True & True \\
+1 & Dividend-price SD (\%) & Dividend strips & 9.386 & 9.390 & -0.00438 & 0.0051 & True & True \\
+2 & Return slope & Market & 0.389 & 0.390 & -0.00116 & 0.0051 & True & True \\
+2 & Return slope & Dividend strips & 0.564 & 0.560 & 0.00368 & 0.0051 & True & True \\
+2 & Return t-stat (NW) & Market & 3.539 & 3.540 & -0.00136 & 0.0051 & True & True \\
+2 & Return t-stat (NW) & Dividend strips & 6.613 & 6.610 & 0.00254 & 0.0051 & True & True \\
+2 & Return t-stat (non-overlap) & Market & 2.843 & 2.840 & 0.00329 & 0.0051 & True & True \\
+2 & Return t-stat (non-overlap) & Dividend strips & 3.399 & 3.400 & -0.00137 & 0.0051 & True & True \\
+2 & Return R-squared & Market & 0.212 & 0.210 & 0.00193 & 0.0051 & True & True \\
+2 & Return R-squared & Dividend strips & 0.256 & 0.260 & -0.00412 & 0.0051 & True & True \\
+2 & Dividend growth slope & Market & -0.019 & -0.020 & 0.00108 & 0.0051 & True & True \\
+2 & Dividend growth slope & Dividend strips & -0.399 & -0.400 & 0.00097 & 0.0051 & True & True \\
+2 & Dividend growth t-stat (NW) & Market & -0.151 & -0.150 & -0.00141 & 0.0051 & True & True \\
+2 & Dividend growth t-stat (NW) & Dividend strips & -4.314 & -4.310 & -0.0039 & 0.0051 & True & True \\
+2 & Dividend growth t-stat (non-overlap) & Market & -0.055 & -0.060 & 0.00469 & 0.0051 & True & True \\
+2 & Dividend growth t-stat (non-overlap) & Dividend strips & -3.592 & -3.590 & -0.00247 & 0.0051 & True & True \\
+2 & Dividend growth R-squared & Market & 0.003 & 0.000 & 0.00252 & 0.0051 & True & True \\
+2 & Dividend growth R-squared & Dividend strips & 0.447 & 0.450 & -0.00335 & 0.0051 & True & True \\
+2 & Dividend-price slope & Market & 0.606 & 0.610 & -0.00432 & 0.0051 & True & True \\
+2 & Dividend-price slope & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+2 & Dividend-price t-stat (NW) & Market & 4.862 & 4.860 & 0.00192 & 0.0051 & True & True \\
+2 & Dividend-price t-stat (NW) & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+2 & Dividend-price t-stat (non-overlap) & Market & 4.083 & 4.080 & 0.00269 & 0.0051 & True & True \\
+2 & Dividend-price t-stat (non-overlap) & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+2 & Dividend-price R-squared & Market & 0.370 & 0.370 & 0.000193 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+2 & Dividend-price R-squared & Dividend strips & -- & -- & -- & 0.0051 & True & True \\
+2 & ER & Market & 0.960 & 0.960 & 0.000269 & 0.0051 & True & True \\
+2 & ER & Dividend strips & 0.564 & 0.560 & 0.00368 & 0.0051 & True & True \\
+2 & ER (implied) & Market & 0.953 & 0.950 & 0.00328 & 0.0051 & True & True \\
+2 & ER (implied) & Dividend strips & 0.601 & 0.600 & 0.00097 & 0.0051 & True & True \\
+2 & EDG & Market & 0.047 & 0.050 & -0.00328 & 0.0051 & True & True \\
+2 & EDG & Dividend strips & 0.399 & 0.400 & -0.00097 & 0.0051 & True & True \\
+2 & EDG (implied) & Market & 0.040 & 0.040 & -0.000269 & 0.0051 & True & True \\
+2 & EDG (implied) & Dividend strips & 0.436 & 0.440 & -0.00368 & 0.0051 & True & True \\
+4 & Payout (\%) & 1945-2022 & 47.264 & 47.260 & 0.00444 & 0.0051 & True & True \\
+4 & Payout (\%) & 1629-1945 & 98.410 & 98.410 & -7.08e-05 & 0.0051 & True & True \\
+4 & Payout (\%) & 1629-2022 & 86.114 & 86.110 & 0.00363 & 0.0051 & True & True \\
+4 & Return mean (\%) & 1945-2022 & 6.560 & 6.560 & 7.47e-05 & 0.0051 & True & True \\
+4 & Return mean (\%) & 1629-1945 & 5.864 & 5.860 & 0.00361 & 0.0051 & True & True \\
+4 & Return mean (\%) & 1629-2022 & 6.001 & 6.000 & 0.000765 & 0.0051 & True & True \\
+4 & Return SD (\%) & 1945-2022 & 16.910 & 16.910 & 0.000236 & 0.0051 & True & True \\
+4 & Return SD (\%) & 1629-1945 & 14.122 & 14.120 & 0.00168 & 0.0051 & True & True \\
+4 & Return SD (\%) & 1629-2022 & 14.692 & 14.690 & 0.00185 & 0.0051 & True & True \\
+4 & DY/RET & 1945-2022 & 0.406 & 0.410 & -0.00359 & 0.0051 & True & True \\
+4 & DY/RET & 1629-1945 & 0.688 & 0.690 & -0.00242 & 0.0051 & True & True \\
+4 & DY/RET & 1629-2022 & 0.625 & 0.630 & -0.00483 & 0.0051 & True & True \\
+4 & Dividend growth mean (\%) & 1945-2022 & 2.373 & 2.370 & 0.00328 & 0.0051 & True & True \\
+4 & Dividend growth mean (\%) & 1629-1945 & 0.809 & 0.810 & -0.00104 & 0.0051 & True & True \\
+4 & Dividend growth mean (\%) & 1629-2022 & 1.117 & 1.120 & -0.00298 & 0.0051 & True & True \\
+4 & Dividend growth SD (\%) & 1945-2022 & 6.674 & 6.670 & 0.004 & 0.0051 & True & True \\
+4 & Dividend growth SD (\%) & 1629-1945 & 13.291 & 13.290 & 0.000538 & 0.0051 & True & True \\
+4 & Dividend growth SD (\%) & 1629-2022 & 12.281 & 12.280 & 0.00135 & 0.0051 & True & True \\
+4 & Dividend-price mean (\%) & 1945-2022 & 3.242 & 3.240 & 0.00192 & 0.0051 & True & True \\
+4 & Dividend-price mean (\%) & 1629-1945 & 4.856 & 4.860 & -0.00447 & 0.0051 & True & True \\
+4 & Dividend-price mean (\%) & 1629-2022 & 4.539 & 4.540 & -0.00124 & 0.0051 & True & True \\
+4 & Dividend-price SD (\%) & 1945-2022 & 1.426 & 1.430 & -0.00412 & 0.0051 & True & True \\
+4 & Dividend-price SD (\%) & 1629-1945 & 1.271 & 1.270 & 0.000621 & 0.0051 & True & True \\
+4 & Dividend-price SD (\%) & 1629-2022 & 1.453 & 1.450 & 0.00253 & 0.0051 & True & True \\
+4 & Dividend-price AR(1) & 1945-2022 & 0.905 & 0.910 & -0.00493 & 0.0051 & True & True \\
+4 & Dividend-price AR(1) & 1629-1945 & 0.694 & 0.690 & 0.00398 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+4 & Dividend-price AR(1) & 1629-2022 & 0.790 & 0.790 & 1.86e-06 & 0.0051 & True & True \\
+4 & Smoothing* & 1945-2022 & 0.211 & 0.210 & 0.000908 & 0.0051 & True & True \\
+4 & Smoothing* & 1629-1945 & 0.320 & 0.320 & 0 & 0.0051 & True & False \\
+4 & Smoothing* & 1629-2022 & 0.310 & 0.310 & 0 & 0.0051 & True & False \\
+5 & Return slope & 1945-2022 & 0.086 & 0.090 & -0.00372 & 0.0051 & True & True \\
+5 & Return slope & 1629-1945 & 0.109 & 0.110 & -0.00143 & 0.0051 & True & True \\
+5 & Return slope & 1629-2022 & 0.067 & 0.070 & -0.00286 & 0.0051 & True & True \\
+5 & Return t-stat (NW) & 1945-2022 & 2.105 & 2.100 & 0.00475 & 0.0051 & True & True \\
+5 & Return t-stat (NW) & 1629-1945 & 3.225 & 3.220 & 0.0047 & 0.0051 & True & True \\
+5 & Return t-stat (NW) & 1629-2022 & 2.703 & 2.700 & 0.00272 & 0.0051 & True & True \\
+5 & Return difference t-stat & 1945-2022 & -- & -- & -- & 0.0051 & True & True \\
+5 & Return difference t-stat & 1629-1945 & 0.420 & 0.420 & 0.000225 & 0.0051 & True & True \\
+5 & Return difference t-stat & 1629-2022 & -- & -- & -- & 0.0051 & True & True \\
+5 & Return R-squared & 1945-2022 & 0.053 & 0.050 & 0.00297 & 0.0051 & True & True \\
+5 & Return R-squared & 1629-1945 & 0.036 & 0.040 & -0.0037 & 0.0051 & True & True \\
+5 & Return R-squared & 1629-2022 & 0.026 & 0.030 & -0.0043 & 0.0051 & True & True \\
+5 & Dividend growth slope & 1945-2022 & -0.009 & -0.010 & 0.000565 & 0.0051 & True & True \\
+5 & Dividend growth slope & 1629-1945 & -0.198 & -0.200 & 0.00208 & 0.0051 & True & True \\
+5 & Dividend growth slope & 1629-2022 & -0.092 & -0.090 & -0.00168 & 0.0051 & True & True \\
+5 & Dividend growth t-stat (NW) & 1945-2022 & -0.408 & -0.410 & 0.0017 & 0.0051 & True & True \\
+5 & Dividend growth t-stat (NW) & 1629-1945 & -5.298 & -5.300 & 0.00215 & 0.0051 & True & True \\
+5 & Dividend growth t-stat (NW) & 1629-2022 & -4.137 & -4.140 & 0.00322 & 0.0051 & True & True \\
+5 & Dividend growth difference t-stat & 1945-2022 & -- & -- & -- & 0.0051 & True & True \\
+5 & Dividend growth difference t-stat & 1629-1945 & -4.291 & -4.290 & -0.000872 & 0.0051 & True & True \\
+5 & Dividend growth difference t-stat & 1629-2022 & -- & -- & -- & 0.0051 & True & True \\
+5 & Dividend growth R-squared & 1945-2022 & 0.004 & 0.000 & 0.00407 & 0.0051 & True & True \\
+5 & Dividend growth R-squared & 1629-1945 & 0.136 & 0.140 & -0.0038 & 0.0051 & True & True \\
+5 & Dividend growth R-squared & 1629-2022 & 0.069 & 0.070 & -0.00144 & 0.0051 & True & True \\
+5 & Dividend-price slope & 1945-2022 & 0.932 & 0.930 & 0.00173 & 0.0051 & True & True \\
+5 & Dividend-price slope & 1629-1945 & 0.715 & 0.720 & -0.00452 & 0.0051 & True & True \\
+5 & Dividend-price slope & 1629-2022 & 0.869 & 0.870 & -0.000873 & 0.0051 & True & True \\
+5 & Dividend-price t-stat (NW) & 1945-2022 & 21.748 & 21.750 & -0.00166 & 0.0051 & True & True \\
+5 & Dividend-price t-stat (NW) & 1629-1945 & 15.745 & 15.750 & -0.00471 & 0.0051 & True & True \\
+5 & Dividend-price t-stat (NW) & 1629-2022 & 27.792 & 27.790 & 0.00162 & 0.0051 & True & True \\
+5 & Dividend-price difference t-stat & 1945-2022 & -- & -- & -- & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+5 & Dividend-price difference t-stat & 1629-1945 & -3.462 & -3.460 & -0.00222 & 0.0051 & True & True \\
+5 & Dividend-price difference t-stat & 1629-2022 & -- & -- & -- & 0.0051 & True & True \\
+5 & Dividend-price R-squared & 1945-2022 & 0.856 & 0.860 & -0.00351 & 0.0051 & True & True \\
+5 & Dividend-price R-squared & 1629-1945 & 0.521 & 0.520 & 0.000891 & 0.0051 & True & True \\
+5 & Dividend-price R-squared & 1629-2022 & 0.750 & 0.750 & -0.000468 & 0.0051 & True & True \\
+5 & ER & 1945-2022 & 0.909 & 0.910 & -0.000685 & 0.0051 & True & True \\
+5 & ER & 1629-1945 & 0.343 & 0.340 & 0.00285 & 0.0051 & True & True \\
+5 & ER & 1629-2022 & 0.403 & 0.400 & 0.00299 & 0.0051 & True & True \\
+5 & ER (implied) & 1945-2022 & 0.901 & 0.900 & 0.000562 & 0.0051 & True & True \\
+5 & ER (implied) & 1629-1945 & 0.375 & 0.370 & 0.00499 & 0.0051 & True & True \\
+5 & ER (implied) & 1629-2022 & 0.450 & 0.450 & -0.000272 & 0.0051 & True & True \\
+5 & EDG & 1945-2022 & 0.099 & 0.100 & -0.000562 & 0.0051 & True & True \\
+5 & EDG & 1629-1945 & 0.625 & 0.630 & -0.00499 & 0.0051 & True & True \\
+5 & EDG & 1629-2022 & 0.550 & 0.550 & 0.000272 & 0.0051 & True & True \\
+5 & EDG (implied) & 1945-2022 & 0.091 & 0.090 & 0.000685 & 0.0051 & True & True \\
+5 & EDG (implied) & 1629-1945 & 0.657 & 0.660 & -0.00285 & 0.0051 & True & True \\
+5 & EDG (implied) & 1629-2022 & 0.597 & 0.600 & -0.00299 & 0.0051 & True & True \\
+6 & Number of stocks: mean & All & 724.782 & 724.780 & 0.00205 & 0.0051 & True & True \\
+6 & Number of stocks: mean & Low & 241.244 & 241.240 & 0.00359 & 0.0051 & True & True \\
+6 & Number of stocks: mean & Medium & 241.974 & 241.970 & 0.00436 & 0.0051 & True & True \\
+6 & Number of stocks: mean & High & 241.564 & 241.560 & 0.0041 & 0.0051 & True & True \\
+6 & Number of stocks: mean & Below 0.5 & 445.590 & 445.590 & -0.000256 & 0.0051 & True & True \\
+6 & Number of stocks: mean & Above 0.5 & 279.192 & 279.190 & 0.00231 & 0.0051 & True & True \\
+6 & Number of stocks: min & All & 206.000 & 206.000 & 0 & 0 & True & True \\
+6 & Number of stocks: min & Low & 68.000 & 68.000 & 0 & 0 & True & True \\
+6 & Number of stocks: min & Medium & 69.000 & 69.000 & 0 & 0 & True & True \\
+6 & Number of stocks: min & High & 69.000 & 69.000 & 0 & 0 & True & True \\
+6 & Number of stocks: min & Below 0.5 & 12.000 & 12.000 & 0 & 0 & True & True \\
+6 & Number of stocks: min & Above 0.5 & 155.000 & 155.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & All & 1211.000 & 1211.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & Low & 403.000 & 403.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & Medium & 404.000 & 404.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & High & 404.000 & 404.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & Below 0.5 & 951.000 & 951.000 & 0 & 0 & True & True \\
+6 & Number of stocks: max & Above 0.5 & 409.000 & 409.000 & 0 & 0 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+6 & Payout (\%) & All & 48.698 & 48.700 & -0.00227 & 0.0051 & True & True \\
+6 & Payout (\%) & Low & 31.602 & 31.600 & 0.00206 & 0.0051 & True & True \\
+6 & Payout (\%) & Medium & 47.541 & 47.540 & 0.000983 & 0.0051 & True & True \\
+6 & Payout (\%) & High & 64.183 & 64.180 & 0.00332 & 0.0051 & True & True \\
+6 & Payout (\%) & Below 0.5 & 39.875 & 39.880 & -0.00493 & 0.0051 & True & True \\
+6 & Payout (\%) & Above 0.5 & 63.343 & 63.340 & 0.00258 & 0.0051 & True & True \\
+6 & Return mean (\%) & All & 6.488 & 6.490 & -0.00248 & 0.0051 & True & True \\
+6 & Return mean (\%) & Low & 6.788 & 6.790 & -0.00227 & 0.0051 & True & True \\
+6 & Return mean (\%) & Medium & 6.780 & 6.780 & 5.29e-05 & 0.0051 & True & True \\
+6 & Return mean (\%) & High & 5.786 & 5.790 & -0.00394 & 0.0051 & True & True \\
+6 & Return mean (\%) & Below 0.5 & 6.966 & 6.970 & -0.00388 & 0.0051 & True & True \\
+6 & Return mean (\%) & Above 0.5 & 6.283 & 6.280 & 0.00299 & 0.0051 & True & True \\
+6 & Return SD (\%) & All & 15.392 & 15.390 & 0.00246 & 0.0051 & True & True \\
+6 & Return SD (\%) & Low & 17.833 & 17.830 & 0.00293 & 0.0051 & True & True \\
+6 & Return SD (\%) & Medium & 15.746 & 15.750 & -0.00402 & 0.0051 & True & True \\
+6 & Return SD (\%) & High & 14.341 & 14.340 & 0.000698 & 0.0051 & True & True \\
+6 & Return SD (\%) & Below 0.5 & 16.950 & 16.950 & -9.43e-05 & 0.0051 & True & True \\
+6 & Return SD (\%) & Above 0.5 & 14.242 & 14.240 & 0.00154 & 0.0051 & True & True \\
+6 & DY/RET & All & 0.453 & 0.450 & 0.00258 & 0.0051 & True & True \\
+6 & DY/RET & Low & 0.294 & 0.290 & 0.00445 & 0.0051 & True & True \\
+6 & DY/RET & Medium & 0.419 & 0.420 & -0.000882 & 0.0051 & True & True \\
+6 & DY/RET & High & 0.633 & 0.630 & 0.00303 & 0.0051 & True & True \\
+6 & DY/RET & Below 0.5 & 0.356 & 0.360 & -0.004 & 0.0051 & True & True \\
+6 & DY/RET & Above 0.5 & 0.590 & 0.590 & 0.000341 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & All & 2.356 & 2.360 & -0.00384 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & Low & 3.165 & 3.160 & 0.00496 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & Medium & 2.779 & 2.780 & -0.00121 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & High & 1.132 & 1.130 & 0.00159 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & Below 0.5 & 3.081 & 3.080 & 0.00111 & 0.0051 & True & True \\
+6 & Dividend growth mean (\%) & Above 0.5 & 1.729 & 1.730 & -0.00129 & 0.0051 & True & True \\
+6 & Dividend growth SD (\%) & All & 6.292 & 6.290 & 0.00201 & 0.0051 & True & True \\
+6 & Dividend growth SD (\%) & Low & 9.230 & 9.230 & 0.000288 & 0.0051 & True & True \\
+6 & Dividend growth SD (\%) & Medium & 6.010 & 6.010 & -0.000431 & 0.0051 & True & True \\
+6 & Dividend growth SD (\%) & High & 9.031 & 9.030 & 0.00142 & 0.0051 & True & True \\
+6 & Dividend growth SD (\%) & Below 0.5 & 7.064 & 7.060 & 0.0039 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+6 & Dividend growth SD (\%) & Above 0.5 & 7.794 & 7.790 & 0.00394 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & All & 3.482 & 3.480 & 0.00234 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & Low & 2.436 & 2.440 & -0.0038 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & Medium & 3.366 & 3.370 & -0.00378 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & High & 4.379 & 4.380 & -0.000789 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & Below 0.5 & 2.976 & 2.980 & -0.00418 & 0.0051 & True & True \\
+6 & Dividend-price mean (\%) & Above 0.5 & 4.364 & 4.360 & 0.00399 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & All & 1.255 & 1.260 & -0.00492 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & Low & 1.289 & 1.290 & -0.000885 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & Medium & 1.155 & 1.160 & -0.00453 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & High & 1.354 & 1.350 & 0.00358 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & Below 0.5 & 1.262 & 1.260 & 0.00214 & 0.0051 & True & True \\
+6 & Dividend-price SD (\%) & Above 0.5 & 1.490 & 1.490 & -0.000238 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & All & 0.881 & 0.880 & 0.00149 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & Low & 0.910 & 0.910 & 0.000247 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & Medium & 0.868 & 0.870 & -0.00164 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & High & 0.842 & 0.840 & 0.0024 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & Below 0.5 & 0.882 & 0.880 & 0.00155 & 0.0051 & True & True \\
+6 & Dividend-price AR(1) & Above 0.5 & 0.875 & 0.870 & 0.00495 & 0.0051 & True & True \\
+6 & Smoothing & All & 0.322 & 0.320 & 0.00161 & 0.0051 & True & True \\
+6 & Smoothing & Low & 0.501 & 0.500 & 0.00102 & 0.0051 & True & True \\
+6 & Smoothing & Medium & 0.308 & 0.310 & -0.00157 & 0.0051 & True & True \\
+6 & Smoothing & High & 0.176 & 0.180 & -0.00386 & 0.0051 & True & True \\
+6 & Smoothing & Below 0.5 & 0.421 & 0.420 & 0.00107 & 0.0051 & True & True \\
+6 & Smoothing & Above 0.5 & 0.145 & 0.140 & 0.00496 & 0.0051 & True & True \\
+7 & Return slope & All & 0.099 & 0.100 & -0.001 & 0.0051 & True & True \\
+7 & Return slope & Low & 0.093 & 0.090 & 0.00281 & 0.0051 & True & True \\
+7 & Return slope & Medium & 0.105 & 0.110 & -0.00452 & 0.0051 & True & True \\
+7 & Return slope & High & 0.088 & 0.090 & -0.00216 & 0.0051 & True & True \\
+7 & Return slope & Below 0.5 & 0.114 & 0.110 & 0.00381 & 0.0051 & True & True \\
+7 & Return slope & Above 0.5 & 0.085 & 0.080 & 0.00474 & 0.0051 & True & True \\
+7 & Return t-stat (NW) & All & 2.439 & 2.440 & -0.00094 & 0.0051 & True & True \\
+7 & Return t-stat (NW) & Low & 2.385 & 2.380 & 0.00482 & 0.0051 & True & True \\
+7 & Return t-stat (NW) & Medium & 2.494 & 2.490 & 0.00421 & 0.0051 & True & True \\
+7 & Return t-stat (NW) & High & 1.970 & 1.970 & -0.00043 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+7 & Return t-stat (NW) & Below 0.5 & 2.618 & 2.620 & -0.00217 & 0.0051 & True & True \\
+7 & Return t-stat (NW) & Above 0.5 & 1.770 & 1.770 & 0.000316 & 0.0051 & True & True \\
+7 & Return R-squared & All & 0.053 & 0.050 & 0.00326 & 0.0051 & True & True \\
+7 & Return R-squared & Low & 0.069 & 0.070 & -0.000994 & 0.0051 & True & True \\
+7 & Return R-squared & Medium & 0.052 & 0.050 & 0.0024 & 0.0051 & True & True \\
+7 & Return R-squared & High & 0.035 & 0.040 & -0.00482 & 0.0051 & True & True \\
+7 & Return R-squared & Below 0.5 & 0.075 & 0.070 & 0.00461 & 0.0051 & True & True \\
+7 & Return R-squared & Above 0.5 & 0.037 & 0.040 & -0.00276 & 0.0051 & True & True \\
+7 & Dividend growth slope & All & -0.020 & -0.020 & -3.22e-05 & 0.0051 & True & True \\
+7 & Dividend growth slope & Low & 0.001 & 0.000 & 0.00134 & 0.0051 & True & True \\
+7 & Dividend growth slope & Medium & -0.027 & -0.030 & 0.00283 & 0.0051 & True & True \\
+7 & Dividend growth slope & High & -0.076 & -0.080 & 0.00438 & 0.0051 & True & True \\
+7 & Dividend growth slope & Below 0.5 & -0.002 & 0.000 & -0.00221 & 0.0051 & True & True \\
+7 & Dividend growth slope & Above 0.5 & -0.062 & -0.060 & -0.0017 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & All & -0.851 & -0.850 & -0.00134 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & Low & 0.061 & 0.060 & 0.00101 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & Medium & -1.225 & -1.220 & -0.00492 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & High & -1.944 & -1.940 & -0.00395 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & Below 0.5 & -0.111 & -0.110 & -0.00112 & 0.0051 & True & True \\
+7 & Dividend growth t-stat (NW) & Above 0.5 & -1.971 & -1.970 & -0.00104 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & All & 0.013 & 0.010 & 0.00305 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & Low & 0.000 & 0.000 & 5.39e-05 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & Medium & 0.024 & 0.020 & 0.00387 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & High & 0.066 & 0.070 & -0.00427 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & Below 0.5 & 0.000 & 0.000 & 0.000161 & 0.0051 & True & True \\
+7 & Dividend growth R-squared & Above 0.5 & 0.066 & 0.070 & -0.00408 & 0.0051 & True & True \\
+7 & Dividend-price slope & All & 0.911 & 0.910 & 0.000856 & 0.0051 & True & True \\
+7 & Dividend-price slope & Low & 0.930 & 0.930 & 0.00039 & 0.0051 & True & True \\
+7 & Dividend-price slope & Medium & 0.896 & 0.900 & -0.00418 & 0.0051 & True & True \\
+7 & Dividend-price slope & High & 0.873 & 0.870 & 0.00261 & 0.0051 & True & True \\
+7 & Dividend-price slope & Below 0.5 & 0.910 & 0.910 & 0.000412 & 0.0051 & True & True \\
+7 & Dividend-price slope & Above 0.5 & 0.892 & 0.890 & 0.00194 & 0.0051 & True & True \\
+7 & Dividend-price t-stat (NW) & All & 20.778 & 20.780 & -0.00185 & 0.0051 & True & True \\
+7 & Dividend-price t-stat (NW) & Low & 21.905 & 21.910 & -0.00461 & 0.0051 & True & True \\
+7 & Dividend-price t-stat (NW) & Medium & 19.395 & 19.400 & -0.00477 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{rllrrllrr}
+\caption{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endfirsthead
+\caption[]{Cell-by-cell replication acceptance. Numeric cells are compared with the frozen printed-value tolerance; supplied historical smoothing constants are explicitly excluded from independent evidence.} \\
+\toprule
+table & statistic & sample & python & published & difference & tolerance & within\_tolerance & independent \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+7 & Dividend-price t-stat (NW) & High & 14.983 & 14.980 & 0.00278 & 0.0051 & True & True \\
+7 & Dividend-price t-stat (NW) & Below 0.5 & 21.195 & 21.200 & -0.00482 & 0.0051 & True & True \\
+7 & Dividend-price t-stat (NW) & Above 0.5 & 17.850 & 17.850 & 0.0004 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & All & 0.816 & 0.820 & -0.00369 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & Low & 0.864 & 0.860 & 0.00414 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & Medium & 0.790 & 0.790 & -0.00018 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & High & 0.750 & 0.750 & 0.000439 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & Below 0.5 & 0.816 & 0.820 & -0.00366 & 0.0051 & True & True \\
+7 & Dividend-price R-squared & Above 0.5 & 0.786 & 0.790 & -0.00364 & 0.0051 & True & True \\
+7 & ER & All & 0.839 & 0.840 & -0.000835 & 0.0051 & True & True \\
+7 & ER & Low & 1.041 & 1.040 & 0.000805 & 0.0051 & True & True \\
+7 & ER & Medium & 0.800 & 0.800 & 0.000491 & 0.0051 & True & True \\
+7 & ER & High & 0.541 & 0.540 & 0.000862 & 0.0051 & True & True \\
+7 & ER & Below 0.5 & 1.000 & 1.000 & -0.000374 & 0.0051 & True & True \\
+7 & ER & Above 0.5 & 0.591 & 0.590 & 0.000533 & 0.0051 & True & True \\
+7 & ER (implied) & All & 0.830 & 0.830 & 0.000197 & 0.0051 & True & True \\
+7 & ER (implied) & Low & 1.015 & 1.020 & -0.00495 & 0.0051 & True & True \\
+7 & ER (implied) & Medium & 0.794 & 0.790 & 0.00381 & 0.0051 & True & True \\
+7 & ER (implied) & High & 0.534 & 0.530 & 0.0044 & 0.0051 & True & True \\
+7 & ER (implied) & Below 0.5 & 0.981 & 0.980 & 0.000621 & 0.0051 & True & True \\
+7 & ER (implied) & Above 0.5 & 0.570 & 0.570 & 4.76e-05 & 0.0051 & True & True \\
+7 & EDG & All & 0.170 & 0.170 & -0.000197 & 0.0051 & True & True \\
+7 & EDG & Low & -0.015 & -0.020 & 0.00495 & 0.0051 & True & True \\
+7 & EDG & Medium & 0.206 & 0.210 & -0.00381 & 0.0051 & True & True \\
+7 & EDG & High & 0.466 & 0.470 & -0.0044 & 0.0051 & True & True \\
+7 & EDG & Below 0.5 & 0.019 & 0.020 & -0.000621 & 0.0051 & True & True \\
+7 & EDG & Above 0.5 & 0.430 & 0.430 & -4.76e-05 & 0.0051 & True & True \\
+7 & EDG (implied) & All & 0.161 & 0.160 & 0.000835 & 0.0051 & True & True \\
+7 & EDG (implied) & Low & -0.041 & -0.040 & -0.000805 & 0.0051 & True & True \\
+7 & EDG (implied) & Medium & 0.200 & 0.200 & -0.000491 & 0.0051 & True & True \\
+7 & EDG (implied) & High & 0.459 & 0.460 & -0.000862 & 0.0051 & True & True \\
+7 & EDG (implied) & Below 0.5 & 0.000 & 0.000 & 0.000374 & 0.0051 & True & True \\
+7 & EDG (implied) & Above 0.5 & 0.409 & 0.410 & -0.000533 & 0.0051 & True & True \\
+\end{longtable}
+
+
+\end{landscape}
+
+
+\begin{landscape}\small
+
+\begin{longtable}{llr}
+\caption{Annual coverage reasons. Counts distinguish eligibility failures, incomplete calendar years and invalid monthly observations; unexplained omissions stop the pipeline.} \\
+\toprule
+portfolio & reason & portfolio\_years \\
+\midrule
+\endfirsthead
+\caption[]{Annual coverage reasons. Counts distinguish eligibility failures, incomplete calendar years and invalid monthly observations; unexplained omissions stop the pipeline.} \\
+\toprule
+portfolio & reason & portfolio\_years \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Above 0.5 & included & 56 \\
+All & included & 725 \\
+All & invalid monthly returns/cash coverage & 1 \\
+All & no January portfolio under eligibility/minimum-firm rules & 2 \\
+Below 0.5 & included & 56 \\
+High & included & 804 \\
+High & incomplete calendar months or missing industry sleeve & 1 \\
+High & invalid monthly returns/cash coverage & 1 \\
+High & no January portfolio under eligibility/minimum-firm rules & 34 \\
+Low & included & 798 \\
+Low & incomplete calendar months or missing industry sleeve & 3 \\
+Low & invalid monthly returns/cash coverage & 7 \\
+Low & no January portfolio under eligibility/minimum-firm rules & 32 \\
+Medium & included & 56 \\
+\end{longtable}
+
+
+\end{landscape}
+
+
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_0.png}
-\caption{7 of 7 registered checks pass. The median cash-versus-effective yield gap on dividend-paying months is 0.000175; cash withdrawals and daily dividend reinvestment are different conventions. The coverage panel records observed filter attrition, not an assumed target count. A passing identity does not establish exact equivalence to the authors' stock-selection procedure.}\end{figure}
+\caption{8 of 8 registered checks pass. The median cash-versus-effective yield gap on dividend-paying months is 0.000175; cash withdrawals and daily dividend reinvestment are different conventions. The coverage panel records observed filter attrition, not an assumed target count. A passing identity does not establish exact equivalence to the authors' stock-selection procedure.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_1.png}
-\caption{Generated forecasts. This diagnostic distinguishes estimated results from uncertainty and source limitations; see the associated tables.}\end{figure}
+\caption{The Historical mean has the lowest out-of-sample RMSE (16.33 log percentage points); the payout-interaction RMSE is 18.28. This legacy exercise does not establish a forecasting improvement from the interaction.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_2.png}
-\caption{Generated loss. This diagnostic distinguishes estimated results from uncertainty and source limitations; see the associated tables.}\end{figure}
+\caption{The Historical mean has the lowest out-of-sample RMSE (16.33 log percentage points); the payout-interaction RMSE is 18.28. This legacy exercise does not establish a forecasting improvement from the interaction.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_3.png}
-\caption{Generated validation. This diagnostic distinguishes estimated results from uncertainty and source limitations; see the associated tables.}\end{figure}
+\caption{10 of 10 legacy forecast input/timing checks pass. This supports alignment of inputs, not the forecasting value of payout.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_4.png}
-\caption{Trailing payout and dividend-price ratios document the valuation environment; the horizontal axis reports the calendar endpoint of each window.}\end{figure}
+\caption{Trailing payout changes from 68.5\% in 1880 to 41.5\% in 2022; trailing D/P changes from 6.1\% to 1.8\%. These endpoint comparisons describe the shift in payouts and valuation.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_5.png}
-\caption{Payout and ER are compared descriptively across available historical and portfolio samples; the fitted relationship does not identify causation.}\end{figure}
+\caption{ER ranges from 0.343 to 1.041 across the plotted samples. Payout and ER are compared descriptively; mixed time-series and portfolio points do not identify causation.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_6.png}
-\caption{Generated figure 3 author summary. This diagnostic distinguishes estimated results from uncertainty and source limitations; see the associated tables.}\end{figure}
+\caption{ER ranges from 0.340 to 1.040 across the plotted samples. Payout and ER are compared descriptively; mixed time-series and portfolio points do not identify causation. This is the supplied author-summary sensitivity, not independent numerical replication.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_7.png}
-\caption{Generated validation. This diagnostic distinguishes estimated results from uncertainty and source limitations; see the associated tables.}\end{figure}
+\caption{264 independently computed numeric cells meet the published-value tolerance; 2 supplied historical constants remain excluded. Passing the computed cells is not a complete-replication claim.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_8.png}
-\caption{Trailing payout and dividend-price ratios document the valuation environment; the horizontal axis reports the calendar endpoint of each window.}\end{figure}
+\caption{Trailing payout changes from 68.5\% in 1880 to 38.8\% in 2025; trailing D/P changes from 6.1\% to 1.6\%. These endpoint comparisons describe the shift in payouts and valuation.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_9.png}
-\caption{Payout and ER are compared descriptively across available historical and portfolio samples; the fitted relationship does not identify causation.}\end{figure}
+\caption{ER ranges from 0.343 to 0.893 across the plotted samples. Payout and ER are compared descriptively; mixed time-series and portfolio points do not identify causation.}\end{figure}
 
 
 \begin{figure}[p]\centering
 \includegraphics[width=\linewidth,height=.78\textheight,keepaspectratio]{figures/figure_10.png}
-\caption{Industry estimates and uncertainty show whether valuation comparisons are stable enough to interpret; wide intervals preclude ranking.}\end{figure}
+\caption{Industry-neutral low-minus-high ER is 0.117, with interval [-1.567, 3.816]. The interval spans zero, so this sample does not establish a payout ordering within industries.}\end{figure}
 
 \clearpage\section{References}Golez, Benjamin, and Peter Koudijs (2025), Equity duration and predictability, Journal of Financial Economics 172, 104114. Replication package: \url{https://doi.org/10.17632/fp6fryn7h3.1}. CRSP methodology and data definitions: \url{https://www.crsp.org/}.\end{document}
