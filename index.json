@@ -1,6 +1,6 @@
 {
   "schema": "chartbook/index/v1",
-  "generated_at": "2026-11-18T06:27:41Z",
+  "generated_at": "2026-11-18T06:35:12Z",
   "generator": {
     "name": "chartbook",
     "version": "0.4.0"
@@ -81,7 +81,7 @@
         "index_toc.md",
         "project_overview.md"
       ],
-      "code_changed_at": "2026-11-18T06:27:33Z"
+      "code_changed_at": "2026-11-18T06:33:14Z"
     },
     {
       "kind": "Dataframe",
@@ -98,7 +98,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_decomposition.csv",
-        "modified_at": "2026-11-18T06:27:11Z"
+        "modified_at": "2026-11-18T06:34:48Z"
       },
       "content_hash": "sha256:43b1bd1d9331d7c4d53ecbf6678bc094ea90e6480e3dc981ccf86ed718d6ae1e",
       "size_bytes": 463,
@@ -210,7 +210,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/cash_reconciliation.csv",
-        "modified_at": "2026-11-18T06:25:19Z"
+        "modified_at": "2026-11-18T06:34:52Z"
       },
       "content_hash": "sha256:346d6c2fee97086312356b5dd4aa93cc6bb9b047175087ba6f29f3b23324cd56",
       "size_bytes": 4606,
@@ -332,7 +332,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/coverage.csv",
-        "modified_at": "2026-11-18T06:25:19Z"
+        "modified_at": "2026-11-18T06:34:52Z"
       },
       "content_hash": "sha256:4485e5c3d9537969a41b012e3c117f59658821e4aed7e1824d0028c8307c46a6",
       "size_bytes": 1952,
@@ -473,7 +473,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_checks.csv",
-        "modified_at": "2026-11-18T06:25:19Z"
+        "modified_at": "2026-11-18T06:34:52Z"
       },
       "content_hash": "sha256:d0a11e3533a9c159364575a3b911acf3f66d51282e8673682c48988b2ebec86a",
       "size_bytes": 886,
@@ -615,7 +615,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/payout_history.csv",
-        "modified_at": "2026-11-18T06:27:08Z"
+        "modified_at": "2026-11-18T06:33:58Z"
       },
       "content_hash": "sha256:c9df3c063411904c5fc68eb2039307364788ddf584851787019a26484674f632",
       "size_bytes": 6343,
@@ -708,7 +708,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/portfolio_overlap.csv",
-        "modified_at": "2026-11-18T06:25:32Z"
+        "modified_at": "2026-11-18T06:35:05Z"
       },
       "content_hash": "sha256:518295571fac1440bbc28c25de3e3928ef0531eec287f32dd9b89895332e8449",
       "size_bytes": 728,
@@ -926,7 +926,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_annual.csv",
-        "modified_at": "2026-11-18T06:25:16Z"
+        "modified_at": "2026-11-18T06:34:47Z"
       },
       "content_hash": "sha256:532a296489e821c4154b477e026e52edf0add95c8f5aa7a17640417c09954663",
       "size_bytes": 753309,
@@ -1333,7 +1333,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_comparison.csv",
-        "modified_at": "2026-11-18T06:25:26Z"
+        "modified_at": "2026-11-18T06:34:59Z"
       },
       "content_hash": "sha256:95efe427238a5353415cdbb8b5a4395d87f29a9592687334dbcb48269e74a8d5",
       "size_bytes": 339,
@@ -1569,7 +1569,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_estimates.csv",
-        "modified_at": "2026-11-18T06:25:26Z"
+        "modified_at": "2026-11-18T06:34:59Z"
       },
       "content_hash": "sha256:dd2fca995386e374003de2511b2082a097c6cf575405dc09005a0eca600925a8",
       "size_bytes": 1392008,
@@ -2166,7 +2166,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_1.csv",
-        "modified_at": "2026-11-18T06:27:10Z"
+        "modified_at": "2026-11-18T06:33:59Z"
       },
       "content_hash": "sha256:0a40ca6e4e0eb306da5f81c1e93cb91d07278a8c4f5a0e58a01994c6733d643d",
       "size_bytes": 329,
@@ -2244,7 +2244,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_2.csv",
-        "modified_at": "2026-11-18T06:27:10Z"
+        "modified_at": "2026-11-18T06:33:59Z"
       },
       "content_hash": "sha256:5331b4118e6b5031792d0abed3ceb1f00457178aee8b2a5acef50510101c0d97",
       "size_bytes": 877,
@@ -2322,7 +2322,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_4.csv",
-        "modified_at": "2026-11-18T06:27:06Z"
+        "modified_at": "2026-11-18T06:33:55Z"
       },
       "content_hash": "sha256:3b0893adb242a6efc15a8e3b45c3f82ec6361ed90f955c66172f4bda17c214de",
       "size_bytes": 700,
@@ -2389,7 +2389,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_5.csv",
-        "modified_at": "2026-11-18T06:27:06Z"
+        "modified_at": "2026-11-18T06:33:56Z"
       },
       "content_hash": "sha256:93a1db307086abba864aa5ae8d85f89e8c3d1f372b8f1b96d24ab551c7b97cf6",
       "size_bytes": 1137,
@@ -2456,7 +2456,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_6.csv",
-        "modified_at": "2026-11-18T06:27:09Z"
+        "modified_at": "2026-11-18T06:33:58Z"
       },
       "content_hash": "sha256:31100790efa803530f7641b1d993a2b6e46bff47305693b025740c06b463822d",
       "size_bytes": 1473,
@@ -2595,7 +2595,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/table_7.csv",
-        "modified_at": "2026-11-18T06:27:09Z"
+        "modified_at": "2026-11-18T06:33:58Z"
       },
       "content_hash": "sha256:a6d7e75a161df268556f2e4ccf493257694481073c0e47efd996f5cacbf1f051",
       "size_bytes": 1704,
@@ -2734,7 +2734,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_decomposition.csv",
-        "modified_at": "2026-11-18T06:25:32Z"
+        "modified_at": "2026-11-18T06:35:05Z"
       },
       "content_hash": "sha256:d84e52cb5202113ea36500fe3596abac0a1468077c437938b7146eb4e568b692",
       "size_bytes": 464,
@@ -2857,7 +2857,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_payout_history.csv",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:7139e966febedcb8547e38e5de20748983ff3ed6f17090c50e659c8cb5b6e0aa",
       "size_bytes": 6477,
@@ -2957,7 +2957,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_1.csv",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:58eb9b16ad45a54c34f142d2be02427bb75755d6fb7d47c458bfdda8b857718a",
       "size_bytes": 328,
@@ -3048,7 +3048,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_2.csv",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:1b974d04259a8f93bb305d901563b3459321359aa30341096d94401b4f75200d",
       "size_bytes": 874,
@@ -3139,7 +3139,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_4.csv",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:a8b9b12d5022949dd1b0fed898853a254cd880e9d36ad61afcfea8d1f9a99ac5",
       "size_bytes": 693,
@@ -3219,7 +3219,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_5.csv",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:6f28c7bd301789bc835cb00858f43b560e681431ce8780960deddd1b96411b7f",
       "size_bytes": 1131,
@@ -3299,7 +3299,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_6.csv",
-        "modified_at": "2026-11-18T06:25:32Z"
+        "modified_at": "2026-11-18T06:35:05Z"
       },
       "content_hash": "sha256:7eda3f3e0b129f246a99d0420c831140ae4afc965ca8597e158c226032faa5c7",
       "size_bytes": 1481,
@@ -3451,7 +3451,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_table_7.csv",
-        "modified_at": "2026-11-18T06:25:32Z"
+        "modified_at": "2026-11-18T06:35:05Z"
       },
       "content_hash": "sha256:0a57d0ce65bd1ccb9289ea5f3f40f5d7c594600e017eb76763eb2514ffd2121a",
       "size_bytes": 1691,
@@ -3603,7 +3603,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_decomposition.svg",
-        "modified_at": "2026-11-18T06:27:11Z"
+        "modified_at": "2026-11-18T06:34:49Z"
       },
       "content_hash": "sha256:ffa820f2a93cf51c90c10d9c035187e24e3fe9ee9421dbb47d55616578b37a61",
       "size_bytes": 13437,
@@ -3630,7 +3630,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/baseline_payout.svg",
-        "modified_at": "2026-11-18T06:27:09Z"
+        "modified_at": "2026-11-18T06:33:58Z"
       },
       "content_hash": "sha256:bfaa8877a166de32daa8589efde902560b83c2ce4bd45ec2feab372f09608c8a",
       "size_bytes": 22944,
@@ -3657,7 +3657,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_validation.svg",
-        "modified_at": "2026-11-18T06:25:20Z"
+        "modified_at": "2026-11-18T06:34:52Z"
       },
       "content_hash": "sha256:c4da7bdfcacf242d58b34d6c91fdcac4f6d3c2542d04e2912409915577641486",
       "size_bytes": 24975,
@@ -3684,7 +3684,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/sector_comparison.svg",
-        "modified_at": "2026-11-18T06:25:30Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:50210a7218b7b35dacf82ae5fec82a037a112464bf97f0dbd04397798aa3ab09",
       "size_bytes": 7362,
@@ -3711,7 +3711,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_decomposition.svg",
-        "modified_at": "2026-11-18T06:25:32Z"
+        "modified_at": "2026-11-18T06:35:05Z"
       },
       "content_hash": "sha256:330ae4670e2da241c777b43dff4394ae08819cf23f5a9ecbc085b84aecafa9eb",
       "size_bytes": 12977,
@@ -3738,7 +3738,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/updated_payout.svg",
-        "modified_at": "2026-11-18T06:25:31Z"
+        "modified_at": "2026-11-18T06:35:04Z"
       },
       "content_hash": "sha256:381d599515d602a896d3963939302428b2b1d48ed75862d47fd45e81fa48cd6a",
       "size_bytes": 23049,
@@ -3766,7 +3766,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/data_tour.ipynb",
-        "modified_at": "2026-11-18T06:27:37Z"
+        "modified_at": "2026-11-18T06:35:08Z"
       },
       "content_hash": "sha256:b4197fda0076ddcca41852d8624da75e01771c796ce42c1aa53bc13e28095b6f",
       "size_bytes": 19802
@@ -3832,7 +3832,7 @@
       "location": {
         "kind": "file",
         "path": "_output/publication/report.pdf",
-        "modified_at": "2026-11-18T06:27:41Z"
+        "modified_at": "2026-11-18T06:35:12Z"
       },
       "content_hash": "sha256:dcce018dd2e805cefdbefe2c6b86009968733ad60802a197d904b9aa246e8b45",
       "size_bytes": 984312,

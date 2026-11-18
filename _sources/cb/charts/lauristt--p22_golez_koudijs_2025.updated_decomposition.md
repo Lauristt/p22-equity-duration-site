@@ -1,5 +1,5 @@
 ---
-date: "2026-11-18 01:25:32"
+date: "2026-11-18 01:35:05"
 tags: "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1, WRDS CRSP monthly CIZ and cash distributions, WRDS Compustat annual fundamentals, CRSP-Compustat link history, Kenneth French SIC industry mapping, FRED CPIAUCSL"
 ---
 
@@ -8,7 +8,7 @@ tags: "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1, WRDS CRSP mont
 
 
 ```{raw} html
-<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:25:32+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:25:32+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time></p>
+<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:35:05+00:00" title="2026-11-18 06:35 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:35:05+00:00" title="2026-11-18 06:35 UTC">2026-11-18</time></p>
 ```
 
 

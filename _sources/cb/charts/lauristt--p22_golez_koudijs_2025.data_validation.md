@@ -1,5 +1,5 @@
 ---
-date: "2026-11-18 01:25:20"
+date: "2026-11-18 01:34:52"
 tags: "WRDS CRSP monthly CIZ and cash distributions, WRDS Compustat annual fundamentals, CRSP-Compustat link history, Kenneth French SIC industry mapping, FRED CPIAUCSL"
 ---
 
@@ -8,7 +8,7 @@ tags: "WRDS CRSP monthly CIZ and cash distributions, WRDS Compustat annual funda
 
 
 ```{raw} html
-<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:25:20+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:25:19+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time></p>
+<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:34:52+00:00" title="2026-11-18 06:34 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:34:52+00:00" title="2026-11-18 06:34 UTC">2026-11-18</time></p>
 ```
 
 

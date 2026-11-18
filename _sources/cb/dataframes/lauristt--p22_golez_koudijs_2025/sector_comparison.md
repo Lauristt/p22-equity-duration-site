@@ -2,7 +2,7 @@
 
 
 ```{raw} html
-<p class="cb-freshness">Data updated <time class="cb-relative-time" datetime="2026-11-18T06:25:26+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time></p>
+<p class="cb-freshness">Data updated <time class="cb-relative-time" datetime="2026-11-18T06:34:59+00:00" title="2026-11-18 06:34 UTC">2026-11-18</time></p>
 ```
 
 

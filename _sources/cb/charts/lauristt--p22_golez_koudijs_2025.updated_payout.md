@@ -1,5 +1,5 @@
 ---
-date: "2026-11-18 01:25:31"
+date: "2026-11-18 01:35:04"
 tags: "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1, Goyal Data2025.xlsx; config/update_sources.json"
 ---
 
@@ -8,7 +8,7 @@ tags: "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1, Goyal Data2025
 
 
 ```{raw} html
-<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:25:31+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:25:31+00:00" title="2026-11-18 06:25 UTC">2026-11-18</time></p>
+<p class="cb-freshness">Chart updated <time class="cb-relative-time" datetime="2026-11-18T06:35:04+00:00" title="2026-11-18 06:35 UTC">2026-11-18</time> · Data updated <time class="cb-relative-time" datetime="2026-11-18T06:35:04+00:00" title="2026-11-18 06:35 UTC">2026-11-18</time></p>
 ```
 
 

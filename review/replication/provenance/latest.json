@@ -1,7 +1,7 @@
 {
-  "built_at_utc": "2026-11-18T01:27:33-05:00",
+  "built_at_utc": "2026-11-18T01:33:14-05:00",
   "python": "3.12.11",
-  "git_commit": "01e5f92632163cfa769aa6d43ec3a7de4fd8f59e",
+  "git_commit": "48447b7b4c909788f4f1a34a9d7daed4c8168b81",
   "settings": {
     "baseline_end_year": 2022,
     "baseline_strip_months": 324,
@@ -38,7 +38,7 @@
     "authors/original/olsnw.m": "d77bf4e48b812ff94da5a21ae9b16655f46bb5896d8cef21051bf47548d15e7b"
   },
   "code_and_config_hashes": {
-    "dodo.py": "8e123428d4bf605a998db5dd3069ecebd7024980fedd2d036ff6a047671fbe32",
+    "dodo.py": "be83a5a2a2541332d1ee19677df5c476226890190e1da30e5f5bca86ae35b8d1",
     "pyproject.toml": "86a3fe57c213c30abb74973321b327fc69a5341ae583e1b2d05d691bbeef6842",
     "uv.lock": "d24f2cb8d79d61d1fc23a2ec000f91de7d32e81e7f58552c1f4f934a9cdb07b4",
     "src/p22/__init__.py": "ef22bb80f42c7d3336392f88af694d4d12338197d5f950206b2041a0a6a463ad",
@@ -67,7 +67,7 @@
     "src/p22/sector/data.py": "c00223458ec379ea3a7ea28250b04bcb9c2849faf32c5cf8574a698d92f4d904",
     "src/p22/sector/estimate.py": "ae57186efb641cb5f15dc9fb644c8bd2022e2664b92b02bac3add5fb5cc4686f",
     "src/p22/sector/investigate.py": "0c6884f5494934dd8778bc4145630c38630c5d02530a8fb5ed0dfbf272a090ef",
-    "src/p22/sector/report.py": "6ff8e03fb0b05ed1f2432a88aa8129bd2a9d8f5be6995163964de0e64b4d8ffc",
+    "src/p22/sector/report.py": "b7220afe1b2b81fa92b3dd9d671d7e130bdfd8c34aa0f489fb6437fc24a3792b",
     "src/p22/sector/robustness.py": "c2c647a9cf1e2defde85486e32fb664e63b45a7a76a54a86dcfc482680f6c831",
     "src/p22/strip_construction.py": "f7b0df9a0fd28b0276a9ded26d4528b63c154d1f40041f65c6e2dad55caff83e",
     "src/p22/strips.py": "bed7d9e389cdcdb6bcfb2c87fa705d85b267c7447a146116f9c5d8d6783a4f4e",
@@ -93,7 +93,7 @@
     "extension/loss.png": "c181ca22a2034ace08d5f3b2bac43029b1c5d3be22eaae6166960ed2a8a6bfec",
     "extension/loss.svg": "8039dabf45dfa2d9398bf24dc6c3be118b5cb2b0bc87f934f77a2c3d6374e73b",
     "extension/loss_comparisons.csv": "2b3dc91df0fab6969dd945299dacfe1edcca3ccc0ca38566052c4b360f6f8e65",
-    "extension/manifest.json": "f3c9b99f55a84b04734ca1c533b6afb3d23c41b9aadcc63f890be668f87f29c1",
+    "extension/manifest.json": "a433a25ff0e9f298fa5771516d8cf0fac7d97f8e81bc589c43a2b6bae17fa2d5",
     "extension/metrics.csv": "f00f502bf4dbe77c6b753825c3a4e43cc761da2af6f19dd5d9394bc4cb62a928",
     "extension/validation.csv": "4f7092278515dad35e1a4ed3a1417e85bb57ff4c6f974d548219d47f22911668",
     "extension/validation.png": "975d28a5993fd98b4aa8ae007a922431b1ce77b409b5d2286d7d491bce0b5029",

@@ -1,0 +1,13 @@
+industry_id,industry_code,industry_name,definition
+1,NoDur,Consumer Nondurables,"Consumer Nondurables -- Food, Tobacco, Textiles, Apparel, Leather, Toys"
+2,Durbl,Consumer Durables,"Consumer Durables -- Cars, TVs, Furniture, Household Appliances"
+3,Manuf,Manufacturing,"Manufacturing -- Machinery, Trucks, Planes, Off Furn, Paper, Com Printing"
+4,Enrgy,"Oil, Gas, and Coal Extraction and Products","Oil, Gas, and Coal Extraction and Products"
+5,Chems,Chemicals and Allied Products,Chemicals and Allied Products
+6,BusEq,Business Equipment,"Business Equipment -- Computers, Software, and Electronic Equipment"
+7,Telcm,Telephone and Television Transmission,Telephone and Television Transmission
+8,Utils,Utilities,Utilities
+9,Shops,"Wholesale, Retail, and Some Services (Laundries, Repair Shops)","Wholesale, Retail, and Some Services (Laundries, Repair Shops)"
+10,Hlth,"Healthcare, Medical Equipment, and Drugs","Healthcare, Medical Equipment, and Drugs"
+11,Money,Finance,Finance
+12,Other,Other,"Other -- Mines, Constr, BldMt, Trans, Hotels, Bus Serv, Entertainment"
