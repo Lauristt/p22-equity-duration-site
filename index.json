@@ -1,6 +1,6 @@
 {
   "schema": "chartbook/index/v1",
-  "generated_at": "2026-11-18T15:46:12Z",
+  "generated_at": "2026-11-18T15:52:04Z",
   "generator": {
     "name": "chartbook",
     "version": "0.4.0"
@@ -86,7 +86,7 @@
       ],
       "docs": {
         "path": "./README.md",
-        "content_hash": "sha256:5f90fbaf8165923843853ffc4834e81395df6e68b1dabf91fda209a9890b37a2"
+        "content_hash": "sha256:f9ad222a906da120d0213238a85c0a0b0b77a8a071374861dab9ada8253c73a5"
       },
       "site_dir": {
         "path": "docs_src/site"
@@ -95,7 +95,7 @@
         "index_toc.md",
         "project_overview.md"
       ],
-      "code_changed_at": "2026-11-18T15:46:11Z"
+      "code_changed_at": "2026-11-18T15:46:25Z"
     },
     {
       "kind": "Dataframe",
