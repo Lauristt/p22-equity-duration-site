@@ -2,7 +2,7 @@
 
 
 ```{raw} html
-<p class="cb-freshness">Code updated <time class="cb-relative-time" datetime="2026-11-18T07:05:21+00:00" title="2026-11-18 07:05 UTC">2026-11-18</time></p>
+<p class="cb-freshness">Code updated <time class="cb-relative-time" datetime="2026-11-18T15:46:11+00:00" title="2026-11-18 15:46 UTC">2026-11-18</time></p>
 ```
 
 
@@ -31,7 +31,6 @@ Cleaned data and Sector ER Tracker tour <cb/notebooks/lauristt--p22_golez_koudij
 ```{toctree}
 :maxdepth: 1
 :caption: Notes 📝
-cb/direction_audit.md
 cb/methodology.md
 ```
 
@@ -107,7 +106,7 @@ cb/files/lauristt--p22_golez_koudijs_2025/final_report.md
 | Contributors                    | Lauris Li, Yiyao Wang, Gary Miao, Luke Zhu |
 | Repository                     | https://github.com/Lauristt/p22_golez_koudijs_2025                  |
 | Pipeline Web Page               | <a href="https://lauristt.github.io/p22-equity-duration-site/">Pipeline Web Page</a> |
-| Date of Last Code Update        | 2026-11-18 07:05:21 UTC           |
+| Date of Last Code Update        | 2026-11-18 15:46:11 UTC           |
 | OS Compatibility                | Windows, Linux, macOS |
 | Linked Dataframes               |  [lauristt/p22_golez_koudijs_2025:annual_coverage](cb/dataframes/lauristt--p22_golez_koudijs_2025/annual_coverage.md)<br>  [lauristt/p22_golez_koudijs_2025:author_summary](cb/dataframes/lauristt--p22_golez_koudijs_2025/author_summary.md)<br>  [lauristt/p22_golez_koudijs_2025:baseline_decomposition](cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.md)<br>  [lauristt/p22_golez_koudijs_2025:cash_reconciliation](cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.md)<br>  [lauristt/p22_golez_koudijs_2025:coverage](cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.md)<br>  [lauristt/p22_golez_koudijs_2025:data_checks](cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.md)<br>  [lauristt/p22_golez_koudijs_2025:forecast_ledger](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_ledger.md)<br>  [lauristt/p22_golez_koudijs_2025:forecast_loss_comparisons](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_loss_comparisons.md)<br>  [lauristt/p22_golez_koudijs_2025:forecast_metrics](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_metrics.md)<br>  [lauristt/p22_golez_koudijs_2025:forecast_validation](cb/dataframes/lauristt--p22_golez_koudijs_2025/forecast_validation.md)<br>  [lauristt/p22_golez_koudijs_2025:industry_reference](cb/dataframes/lauristt--p22_golez_koudijs_2025/industry_reference.md)<br>  [lauristt/p22_golez_koudijs_2025:payout_history](cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.md)<br>  [lauristt/p22_golez_koudijs_2025:portfolio_overlap](cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.md)<br>  [lauristt/p22_golez_koudijs_2025:published_comparison](cb/dataframes/lauristt--p22_golez_koudijs_2025/published_comparison.md)<br>  [lauristt/p22_golez_koudijs_2025:sector_annual](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.md)<br>  [lauristt/p22_golez_koudijs_2025:sector_comparison](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.md)<br>  [lauristt/p22_golez_koudijs_2025:sector_estimates](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.md)<br>  [lauristt/p22_golez_koudijs_2025:table_1](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_1.md)<br>  [lauristt/p22_golez_koudijs_2025:table_2](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_2.md)<br>  [lauristt/p22_golez_koudijs_2025:table_4](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_4.md)<br>  [lauristt/p22_golez_koudijs_2025:table_5](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_5.md)<br>  [lauristt/p22_golez_koudijs_2025:table_6](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.md)<br>  [lauristt/p22_golez_koudijs_2025:table_7](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_7.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_decomposition](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_payout_history](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_1](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_2](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_4](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_5](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_6](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.md)<br>  [lauristt/p22_golez_koudijs_2025:updated_table_7](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.md)<br>  [lauristt/p22_golez_koudijs_2025:validation_summary](cb/dataframes/lauristt--p22_golez_koudijs_2025/validation_summary.md)<br>  [lauristt/p22_golez_koudijs_2025:var_sensitivity](cb/dataframes/lauristt--p22_golez_koudijs_2025/var_sensitivity.md)<br>  |
 
@@ -190,4 +189,4 @@ Retain `.cruft.json`, which records initialization with `cruft create https://gi
 
 The source repository remains private. The generated site is published separately at https://lauristt.github.io/p22-equity-duration-site/ from the public `Lauristt/p22-equity-duration-site` repository. After building and inspecting locally, run `uv run doit publish` with Git/gh authentication to update only its `gh-pages` branch. No WRDS credentials are needed in GitHub Actions, and no raw caches are uploaded. Publication is explicit, never part of an ordinary build. Substantive source changes remain on the feature branch and require teammate review; the graded main-branch snapshot must be merged by the team before its deadline. Do not rewrite shared history or overwrite a teammate's Git identity.
 
-[Direction audit](docs_src/research/sector_direction_audit.md) · [Sector methodology](docs_src/research/sector_tracker.md) · [Rubric status](docs_src/research/rubric_status.md)
+[Sector methodology](docs_src/research/sector_tracker.md) · [Rubric status](docs_src/research/rubric_status.md)

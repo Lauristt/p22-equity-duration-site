@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Chart List" href="charts.html" />
-    <link rel="prev" title="Why the first Sector ER Tracker reversed the paper’s direction" href="direction_audit.html" /> 
+    <link rel="prev" title="Equity duration: a reproducible data tour" href="notebooks/lauristt--p22_golez_koudijs_2025/data_tour.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
@@ -179,7 +179,6 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Notes 📝</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="direction_audit.html">Why the first Sector ER Tracker reversed the paper’s direction</a></li>
 <li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Sector ER Tracker</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Charts 📈</span></p>
@@ -461,7 +460,7 @@
 <h2>Estimation and validation<a class="headerlink" href="#estimation-and-validation" title="Link to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">estimate.py</span></code> uses matching consecutive annual pairs in return, dividend-growth and dividend-price regressions. Full-sample and 20/30/40-year windows are declared in configuration. Both payout comparisons use exactly the same outcome years. Conditional intervals use 500 paired stationary-block draws, expected block length five, fixed seed, and restarts at calendar gaps. Short observed runs remain eligible for resampling. Shares outside zero and one are retained; denominator and terminal-condition failures are flagged.</p>
 <p><code class="docutils literal notranslate"><span class="pre">robustness.py</span></code> adds a two-state VAR with lagged dividend growth. This is specification sensitivity, not a separate significance test. <code class="docutils literal notranslate"><span class="pre">data_quality.py</span></code> evaluates predeclared numerical gates on actual data and produces a coverage/reconciliation figure and table. <code class="docutils literal notranslate"><span class="pre">cross_update.py</span></code> compares rebuilt portfolios with authors’ portfolios on overlapping years; discrepancies remain visible and are not claimed as exact replication.</p>
-<p>See the generated report and website for current results, coverage and uncertainty. The historical <code class="docutils literal notranslate"><span class="pre">sector_direction_audit.md</span></code> documents the earlier effective-distribution prototype; it does not describe the current primary construction.</p>
+<p>See the generated report and website for current results, coverage and uncertainty.</p>
 </section>
 </section>
 
@@ -480,12 +479,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="direction_audit.html"
+       href="notebooks/lauristt--p22_golez_koudijs_2025/data_tour.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Why the first Sector ER Tracker reversed the paper’s direction</p>
+        <p class="prev-next-title">Equity duration: a reproducible data tour</p>
       </div>
     </a>
     <a class="right-next"

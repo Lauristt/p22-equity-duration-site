@@ -1,6 +1,6 @@
 {
   "schema": "chartbook/index/v1",
-  "generated_at": "2026-11-18T07:05:31Z",
+  "generated_at": "2026-11-18T15:46:12Z",
   "generator": {
     "name": "chartbook",
     "version": "0.4.0"
@@ -81,13 +81,12 @@
         "lauristt/p22_golez_koudijs_2025:chart/updated_decomposition",
         "lauristt/p22_golez_koudijs_2025:chart/updated_payout",
         "lauristt/p22_golez_koudijs_2025:notebook/data_tour",
-        "lauristt/p22_golez_koudijs_2025:note/direction_audit",
         "lauristt/p22_golez_koudijs_2025:note/methodology",
         "lauristt/p22_golez_koudijs_2025:file/final_report"
       ],
       "docs": {
         "path": "./README.md",
-        "content_hash": "sha256:d6e43f3e76dcff217ca2f57bfca62f73d5a664cc8601a77d709d7eec2144d4b2"
+        "content_hash": "sha256:5f90fbaf8165923843853ffc4834e81395df6e68b1dabf91fda209a9890b37a2"
       },
       "site_dir": {
         "path": "docs_src/site"
@@ -96,7 +95,7 @@
         "index_toc.md",
         "project_overview.md"
       ],
-      "code_changed_at": "2026-11-18T07:05:21Z"
+      "code_changed_at": "2026-11-18T15:46:11Z"
     },
     {
       "kind": "Dataframe",
@@ -5488,29 +5487,6 @@
     {
       "kind": "Note",
       "version": "chartbook/v1",
-      "id": "lauristt/p22_golez_koudijs_2025:note/direction_audit",
-      "ref": {
-        "scope": "lauristt",
-        "pipeline": "p22_golez_koudijs_2025",
-        "kind": "note",
-        "name": "direction_audit"
-      },
-      "pipeline": "lauristt/p22_golez_koudijs_2025",
-      "location": {
-        "kind": "file",
-        "path": "docs_src/research/sector_direction_audit.md",
-        "modified_at": "2026-11-18T05:44:18Z"
-      },
-      "content_hash": "sha256:2c63da834276d31f3fdac226becc81631f5e468335b0185e71c4c5f988876257",
-      "size_bytes": 6410,
-      "docs": {
-        "path": "docs_src/research/sector_direction_audit.md",
-        "content_hash": "sha256:2c63da834276d31f3fdac226becc81631f5e468335b0185e71c4c5f988876257"
-      }
-    },
-    {
-      "kind": "Note",
-      "version": "chartbook/v1",
       "id": "lauristt/p22_golez_koudijs_2025:note/methodology",
       "ref": {
         "scope": "lauristt",
@@ -5522,13 +5498,13 @@
       "location": {
         "kind": "file",
         "path": "docs_src/research/sector_tracker.md",
-        "modified_at": "2026-11-18T06:22:09Z"
+        "modified_at": "2026-11-18T15:46:11Z"
       },
-      "content_hash": "sha256:6349d0fb2d735a499f4f552dea770772b1d83cb79c99afb6fb15a68a9c8f8cb7",
-      "size_bytes": 3466,
+      "content_hash": "sha256:337e6b546955de4de4163e219820c11902379d8ac5c9db6182a3a0c29838257d",
+      "size_bytes": 3312,
       "docs": {
         "path": "docs_src/research/sector_tracker.md",
-        "content_hash": "sha256:6349d0fb2d735a499f4f552dea770772b1d83cb79c99afb6fb15a68a9c8f8cb7"
+        "content_hash": "sha256:337e6b546955de4de4163e219820c11902379d8ac5c9db6182a3a0c29838257d"
       }
     },
     {

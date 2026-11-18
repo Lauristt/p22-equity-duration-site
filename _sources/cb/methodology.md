@@ -20,4 +20,4 @@ January portfolios use lagged capitalization and accounting available after a co
 
 `robustness.py` adds a two-state VAR with lagged dividend growth. This is specification sensitivity, not a separate significance test. `data_quality.py` evaluates predeclared numerical gates on actual data and produces a coverage/reconciliation figure and table. `cross_update.py` compares rebuilt portfolios with authors' portfolios on overlapping years; discrepancies remain visible and are not claimed as exact replication.
 
-See the generated report and website for current results, coverage and uncertainty. The historical `sector_direction_audit.md` documents the earlier effective-distribution prototype; it does not describe the current primary construction.
+See the generated report and website for current results, coverage and uncertainty.
