@@ -456,7 +456,7 @@
                 <article class="bd-article">
                    <section class="tex2jax_ignore mathjax_ignore" id="p22-equity-duration-and-predictability">
 <h1>P22: Equity Duration and Predictability<a class="headerlink" href="#p22-equity-duration-and-predictability" title="Link to this heading">#</a></h1>
-<p class="cb-freshness">Code updated <time class="cb-relative-time" datetime="2026-11-18T15:46:25+00:00" title="2026-11-18 15:46 UTC">2026-11-18</time></p><p>Last updated: 2026-11-18 15:52:07 UTC</p>
+<p class="cb-freshness">Code updated <time class="cb-relative-time" datetime="2026-11-18T16:00:48+00:00" title="2026-11-18 16:00 UTC">2026-11-18</time></p><p>Last updated: 2026-11-18 16:01:46 UTC</p>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project guide</span></p>
 <ul>
@@ -566,7 +566,7 @@
 <td><p><a href="https://lauristt.github.io/p22-equity-duration-site/">Pipeline Web Page</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Date of Last Code Update</p></td>
-<td><p>2026-11-18 15:46:25 UTC</p></td>
+<td><p>2026-11-18 16:00:48 UTC</p></td>
 </tr>
 <tr class="row-even"><td><p>OS Compatibility</p></td>
 <td><p>Windows, Linux, macOS</p></td>
@@ -600,8 +600,8 @@ uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </sp
 </pre></div>
 </div>
 <p>Open <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> for ChartBook, <code class="docutils literal notranslate"><span class="pre">/sector/</span></code> for the agreed extension, and <code class="docutils literal notranslate"><span class="pre">/report/report.pdf</span></code> for the complete generated report. Nothing depends on the original author’s local filesystem. For pip users: create a Python 3.12 virtual environment, install <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>, and run <code class="docutils literal notranslate"><span class="pre">doit</span></code>.</p>
-<p>The default <code class="docutils literal notranslate"><span class="pre">doit</span></code> target is <code class="docutils literal notranslate"><span class="pre">submission</span></code>: fetch → clean → replicate/update/extend → enforce validation → generate LaTeX/PDF and execute the notebook → stage aggregate publication outputs → build ChartBook. A repeat run skips unchanged analytical tasks; source-integrity and acceptance gates still run. <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">site</span></code> builds the same full review site. With no WRDS access, <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">replicate</span> <span class="pre">checks</span></code> runs the public original-sample replication and tests, but is <strong>not</strong> the complete submission. CI uses that public command and synthetic licensed-workflow tests.</p>
-<p>Raw downloads are cached and resumed; an initial full WRDS build can take time. A missing subscription or failed validation stops the dependent work rather than substituting data. The PDF build stops with an installation instruction if <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> is absent.</p>
+<p>The default <code class="docutils literal notranslate"><span class="pre">doit</span></code> target is <code class="docutils literal notranslate"><span class="pre">submission</span></code>: fetch → clean → replicate/update/extend → enforce validation → generate LaTeX/PDF and execute the notebook → stage aggregate publication outputs → build ChartBook. A repeat run skips unchanged analytical tasks; source-integrity and acceptance gates still run. <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">site</span></code> builds the same full review site. With no WRDS access, <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">replicate</span> <span class="pre">checks</span></code> runs the public original-sample replication and tests, but is <strong>not</strong> the complete submission. CI runs independent offline tests and registry checks in one job, and live-source replication/acceptance plus integration tests in another. A source outage fails the replication job while allowing the offline tests to report their results.</p>
+<p>Raw downloads are cached and resumed; an initial full WRDS build can take time. The author-package downloader retries transient HTTP/network errors up to four attempts and validates all required member hashes before accepting an archive. If Mendeley remains unavailable, replication stops explicitly; run <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">pytest</span> <span class="pre">-q</span></code> to check independent code using the inputs available locally. Do not bypass source hashes or loosen tolerances to work around an outage. A missing subscription or failed validation stops the dependent work rather than substituting data. The PDF build stops with an installation instruction if <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> is absent.</p>
 </section>
 <section id="what-the-pipeline-delivers">
 <h2>What the pipeline delivers<a class="headerlink" href="#what-the-pipeline-delivers" title="Link to this heading">#</a></h2>

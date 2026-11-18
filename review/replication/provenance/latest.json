@@ -1,7 +1,7 @@
 {
-  "built_at_utc": "2026-11-18T01:41:43-05:00",
+  "built_at_utc": "2026-11-18T11:00:48-05:00",
   "python": "3.12.11",
-  "git_commit": "e52643d2f298ba856402a4759181c17636a10031",
+  "git_commit": "d6da54fe1b8df7dd21d9fd7b203534fe9a1d8767",
   "settings": {
     "baseline_end_year": 2022,
     "baseline_strip_months": 324,
@@ -51,7 +51,7 @@
     "src/p22/extension.py": "ee57b16d34586582018f9e4507f959578d8137cc2644fdfb5eb2c7ce473c4132",
     "src/p22/extension_inputs.py": "c97a9d83784e4927c84a3bf2564ddfe4b33d60718c9c4a285a1147ce5152688e",
     "src/p22/extension_report.py": "1a83d3c7519e903343730c6f2f3dc60dbcc85f428b7327cb46fc0fd48b67bda4",
-    "src/p22/fetch.py": "a436c8f39e8791a57edf5c30614599c81f3db818e609beb1f345cd23b540686a",
+    "src/p22/fetch.py": "e1b8391c19d0ea535045e10a80df6e7a215ad367965b5c65f8aaf84f62eec54d",
     "src/p22/figures.py": "7dcddeb456e8000a7580fb27f114b942454b2e37c85c88f630b759b8ce10144a",
     "src/p22/history.py": "7eae80926928be1bc79552ee5a230398269ca9ee9246f7fd992e44ab01c37cd3",
     "src/p22/ingest.py": "c424ed780658ca3a6267e0da5c7b5f3977a1e3aeed4e8ade1fdd94930f0b8b89",
