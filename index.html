@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>P22: Equity Duration and Predictability &#8212; P22: Equity Duration and Predictability</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=1e83680c" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="_static/documentation_options.js?v=b9472d72"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/chartbook-freshness.js?v=8268199e"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Equity duration: replication, update and Sector ER Tracker" href="project_overview.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+     
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="P22: Equity Duration and Predictability - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="P22: Equity Duration and Predictability - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    P22: Equity Duration and Predictability
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project guide</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Equity duration: replication, update and Sector ER Tracker</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks 📖</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cb/notebooks/lauristt--p22_golez_koudijs_2025/data_tour.html">Cleaned data and Sector ER Tracker tour</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notes 📝</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cb/direction_audit.html">Why the first Sector ER Tracker reversed the paper’s direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/methodology.html">Sector ER Tracker</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Charts 📈</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cb/charts.html">Chart List</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Dataframes 📊</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:baseline_decomposition</span></code> - Baseline decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:cash_reconciliation</span></code> - Cash reconciliation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:coverage</span></code> - Coverage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:data_checks</span></code> - Data checks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:payout_history</span></code> - Payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:portfolio_overlap</span></code> - Portfolio overlap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_annual</span></code> - Sector annual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_comparison</span></code> - Sector comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_estimates</span></code> - Sector estimates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_1</span></code> - Table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_2</span></code> - Table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_4</span></code> - Table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_5</span></code> - Table 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_6</span></code> - Table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_7</span></code> - Table 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_decomposition</span></code> - Updated decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_payout_history</span></code> - Updated payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_1</span></code> - Updated table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_2</span></code> - Updated table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_4</span></code> - Updated table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_5</span></code> - Updated table 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_6</span></code> - Updated table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_7</span></code> - Updated table 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Files 🗂️</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cb/files/lauristt--p22_golez_koudijs_2025/final_report.html">Files: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:file/final_report</span></code> - Complete generated LaTeX report</a></li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__tagcloud">
+  <link
+    rel="stylesheet"
+    href="_static/ablog/tagcloud.css"
+    type="text/css"
+  />
+  <h3><a href="cb/charts/index/tag.html">Tags</a></h3>
+  <ul class="ablog-cloud">
+     
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="cb/charts/index/tag/crsp-compustat-link-history.html">CRSP-Compustat link history</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="cb/charts/index/tag/fred-cpiaucsl.html">FRED CPIAUCSL</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="cb/charts/index/tag/goyal-data2025xlsx-configupdate_sourcesjson.html">Goyal Data2025.xlsx; config/update_sources.json</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="cb/charts/index/tag/kenneth-french-sic-industry-mapping.html">Kenneth French SIC industry mapping</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-5">
+      <a href="cb/charts/index/tag/mendeley-version-1-httpsdoiorg1017632fp6fryn7h31.html">Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="cb/charts/index/tag/wrds-crsp-monthly-ciz-and-cash-distributions.html">WRDS CRSP monthly CIZ and cash distributions</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="cb/charts/index/tag/wrds-compustat-annual-fundamentals.html">WRDS Compustat annual fundamentals</a>
+    </li>
+     
+  </ul>
+</div>
+</div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button type="button" class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>P22: Equity Duration and Predictability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-specs">Pipeline Specs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-complete-submission">Build the complete submission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pipeline-delivers">What the pipeline delivers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-sector-er-tracker-is-for">What Sector ER Tracker is for</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-and-scientific-limitations">Validation and scientific limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-reproducibility-and-sources">Configuration, reproducibility and sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publication-and-collaboration">Publication and collaboration</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <section class="tex2jax_ignore mathjax_ignore" id="p22-equity-duration-and-predictability">
+<h1>P22: Equity Duration and Predictability<a class="headerlink" href="#p22-equity-duration-and-predictability" title="Link to this heading">#</a></h1>
+<p class="cb-freshness">Code updated <time class="cb-relative-time" datetime="2026-11-18T06:27:33+00:00" title="2026-11-18 06:27 UTC">2026-11-18</time></p><p>Last updated: 2026-11-18 06:27:44 UTC</p>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Equity duration: replication, update and Sector ER Tracker</a></li>
+</ul>
+</div>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks 📖</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cb/notebooks/lauristt--p22_golez_koudijs_2025/data_tour.html">Cleaned data and Sector ER Tracker tour</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notes 📝</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cb/direction_audit.html">Why the first Sector ER Tracker reversed the paper’s direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/methodology.html">Sector ER Tracker</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Charts 📈</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cb/charts.html">Chart List</a></li>
+</ul>
+</div>
+<ul class="postlist-style-none postlist simple">
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.baseline_decomposition.html">Chart: Baseline decomposition</a></p></li>
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.baseline_payout.html">Chart: Baseline payout</a></p></li>
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.updated_decomposition.html">Chart: Updated decomposition</a></p></li>
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.updated_payout.html">Chart: Updated payout</a></p></li>
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.sector_comparison.html">Chart: Sector comparison</a></p></li>
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="cb/charts/lauristt--p22_golez_koudijs_2025.data_validation.html">Chart: Data validation</a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Dataframes 📊</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:baseline_decomposition</span></code> - Baseline decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:cash_reconciliation</span></code> - Cash reconciliation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:coverage</span></code> - Coverage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:data_checks</span></code> - Data checks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:payout_history</span></code> - Payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:portfolio_overlap</span></code> - Portfolio overlap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_annual</span></code> - Sector annual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_comparison</span></code> - Sector comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_estimates</span></code> - Sector estimates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_1</span></code> - Table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_2</span></code> - Table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_4</span></code> - Table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_5</span></code> - Table 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_6</span></code> - Table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_7</span></code> - Table 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_decomposition</span></code> - Updated decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_payout_history</span></code> - Updated payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_1</span></code> - Updated table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_2</span></code> - Updated table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_4</span></code> - Updated table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_5</span></code> - Updated table 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_6</span></code> - Updated table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_7</span></code> - Updated table 7</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Files 🗂️</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cb/files/lauristt--p22_golez_koudijs_2025/final_report.html">Files: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:file/final_report</span></code> - Complete generated LaTeX report</a></li>
+</ul>
+</div>
+</section>
+<section id="pipeline-specs">
+<h2>Pipeline Specs<a class="headerlink" href="#pipeline-specs" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Pipeline Name</p></th>
+<th class="head"><p>P22: Equity Duration and Predictability</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pipeline ID</p></td>
+<td><p><a class="reference internal" href="#"><span class="std std-doc">lauristt/p22_golez_koudijs_2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Maintainer</p></td>
+<td><p>Lauris Li</p></td>
+</tr>
+<tr class="row-even"><td><p>Contributors</p></td>
+<td><p>Lauris Li, Yiyao Wang, Gary Miao, Luke Zhu</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repository</p></td>
+<td><p><a class="github reference external" href="https://github.com/Lauristt/p22_golez_koudijs_2025">Lauristt/p22_golez_koudijs_2025</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Pipeline Web Page</p></td>
+<td><p><a href="https://lauristt.github.io/p22-equity-duration-site/">Pipeline Web Page</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Date of Last Code Update</p></td>
+<td><p>2026-11-18 06:27:33 UTC</p></td>
+</tr>
+<tr class="row-even"><td><p>OS Compatibility</p></td>
+<td><p>Windows, Linux, macOS</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linked Dataframes</p></td>
+<td><p><a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:baseline_decomposition</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:cash_reconciliation</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:coverage</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:data_checks</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:payout_history</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:portfolio_overlap</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_annual</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_comparison</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_estimates</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_1.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_1</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_2.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_2</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_4.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_4</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_5.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_5</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_6</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/table_7.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_7</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_decomposition</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_payout_history</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_1</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_2</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_4</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_5</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_6</span></a><br>  <a class="reference internal" href="cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_7</span></a><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Build Commands:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">doit</span>
+</pre></div>
+</div>
+<p>Replication and update of Golez and Koudijs (2025), <em>Equity duration and predictability</em>, Journal of Financial Economics <strong>172</strong>, 104114, plus <strong>Sector ER Tracker</strong>, the consultation-agreed extension confirmed by the team on November 18, 2026. <a class="reference external" href="https://doi.org/10.1016/j.jfineco.2025.104114">Paper DOI</a>.</p>
+<p>Team: Yuting Li (Lauris Li; Lauristt), Yiyao Wang (PriscillaWyy), Gary Miao (garymmmjw), and Luke Zhu (1143051639Luke). Each contributor uses their own Git identity.</p>
+</section>
+<section id="build-the-complete-submission">
+<h2>Build the complete submission<a class="headerlink" href="#build-the-complete-submission" title="Link to this heading">#</a></h2>
+<p>Requires Git, <a class="reference external" href="https://docs.astral.sh/uv/">uv</a>, Python 3.12, and a TeX distribution providing <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> and standard packages (<code class="docutils literal notranslate"><span class="pre">booktabs</span></code>, <code class="docutils literal notranslate"><span class="pre">longtable</span></code>, <code class="docutils literal notranslate"><span class="pre">pdflscape</span></code>, <code class="docutils literal notranslate"><span class="pre">lmodern</span></code>, <code class="docutils literal notranslate"><span class="pre">hyperref</span></code>). TeX Live works on Linux/Windows; MacTeX works on macOS. The full build needs your own WRDS access to CRSP, Compustat, CCM and OptionMetrics. No credentials or licensed input files are shipped.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:Lauristt/p22_golez_koudijs_2025.git
+<span class="nb">cd</span><span class="w"> </span>p22_golez_koudijs_2025
+<span class="c1"># While this work is under review:</span>
+git<span class="w"> </span>switch<span class="w"> </span>feature/sector-er-tracker
+uv<span class="w"> </span>sync<span class="w"> </span>--frozen
+cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+<span class="c1"># Edit WRDS_USERNAME in .env and configure your own WRDS ~/.pgpass.</span>
+uv<span class="w"> </span>run<span class="w"> </span>doit
+uv<span class="w"> </span>run<span class="w"> </span>doit<span class="w"> </span>checks
+uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>src/serve_review.py
+</pre></div>
+</div>
+<p>Open <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> for ChartBook, <code class="docutils literal notranslate"><span class="pre">/sector/</span></code> for the agreed extension, and <code class="docutils literal notranslate"><span class="pre">/report/report.pdf</span></code> for the complete generated report. Nothing depends on the original author’s local filesystem. For pip users: create a Python 3.12 virtual environment, install <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>, and run <code class="docutils literal notranslate"><span class="pre">doit</span></code>.</p>
+<p>The default <code class="docutils literal notranslate"><span class="pre">doit</span></code> target is <code class="docutils literal notranslate"><span class="pre">submission</span></code>: fetch → clean → replicate/update/extend → enforce validation → generate LaTeX/PDF and execute the notebook → stage aggregate publication outputs → build ChartBook. A repeat run skips unchanged tasks. <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">site</span></code> builds the same full review site. With no WRDS access, <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">replicate</span> <span class="pre">checks</span></code> runs the public original-sample replication and tests, but is <strong>not</strong> the complete submission. CI uses that public command and synthetic licensed-workflow tests.</p>
+<p>Raw downloads are cached and resumed; an initial full WRDS build can take time. A missing subscription or failed validation stops the dependent work rather than substituting data. The PDF build stops with an installation instruction if <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> is absent.</p>
+</section>
+<section id="what-the-pipeline-delivers">
+<h2>What the pipeline delivers<a class="headerlink" href="#what-the-pipeline-delivers" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Assigned baseline Tables <strong>1, 2, 4, 5, 6, 7</strong> and Figures <strong>1, 3</strong>. Tables 8/9 are outside scope.</p></li>
+<li><p>Recent-data versions of the same exhibits. Annual outcomes end in <strong>2025</strong>; accessible OptionMetrics SPX data end in <strong>August 2025</strong>, and the stock cache reaches <strong>September 2026</strong>. Partial 2026 data are not treated as full-year outcomes.</p></li>
+<li><p>A paper-aligned stock-level cross-section using established dividend payers, January portfolio formation, terciles and absolute 0.5 payout groups. The available ten-year historical screen limits this reconstruction to <strong>1970–2025</strong>; it is compared against the authors’ portfolios over common years rather than silently spliced onto incompatible units.</p></li>
+<li><p>The agreed <strong>Sector ER Tracker</strong>: historical SIC industries, within-industry payout groups, identical monthly industry weights on both sides, common-sample comparison with market-wide sorts, full-sample and trailing-window estimates, joint uncertainty and a richer two-state VAR sensitivity.</p></li>
+<li><p>Independent data checks, an explanatory validation table and coverage/reconciliation figure, an executed data-tour notebook, and one generated LaTeX document containing displayed results tables and all publication figures.</p></li>
+<li><p>Registered ChartBook dataframes, charts, notebook and report, with source metadata and raw-to-result lineage. Publication staging contains aggregate derived outputs, never individual stock/accounting records or source workbooks.</p></li>
+</ul>
+<p>The former PayoutForecast proposal remains an explicitly labeled historical sensitivity appendix. It does not replace Sector ER Tracker.</p>
+</section>
+<section id="what-sector-er-tracker-is-for">
+<h2>What Sector ER Tracker is for<a class="headerlink" href="#what-sector-er-tracker-is-for" title="Link to this heading">#</a></h2>
+<p>An equity researcher can use it to assess whether payout-related valuation decomposition differences persist within industries and whether those comparisons survive uncertainty and specification changes. ER is a contribution to variation in log dividend-price ratios; it is <strong>not</strong> a return forecast, R-squared, Treasury-duration estimate or trading recommendation. A null result or wide interval is an informative product output.</p>
+<p>The primary universe requires positive dividends in all ten preceding calendar years and ten available fiscal observations, plus usable earnings and time-valid CCM links. Negative cumulative earners are excluded. The broad nonpayer prototype and its controlled direction audit are documented separately; the original reversed ordering was not an exact replication of the paper’s selection rules.</p>
+<p>Cash dividends use ex-date amounts and cumulative share factors to adjust for splits. Monthly portfolio units withdraw cash, and annual returns include those withdrawals. Stock weights drift between January formations; terminal delisting proceeds are reinvested pro rata in survivors. Industry sleeves are recombined with identical equal weights each month. Accounts become usable at the latest of fiscal date plus six months, preliminary date, and final date; records older than two years are not carried forward. Historical revisions remain, so this is pseudo-real-time.</p>
+</section>
+<section id="validation-and-scientific-limitations">
+<h2>Validation and scientific limitations<a class="headerlink" href="#validation-and-scientific-limitations" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">config/published_benchmarks.json</span></code> retains the original published-rounding rule: absolute tolerance <strong>0.0051</strong>, exact integer counts, no fitting to target cells. The baseline has reproduced <strong>263</strong> independently computed numeric cells. <strong>Three Table 4 smoothing entries are author-supplied constants</strong>, because the separate estimation file is absent; they are excluded from independent acceptance counts. This is an unresolved replication limitation, not a claimed full-score result.</p>
+<p><code class="docutils literal notranslate"><span class="pre">config/data_validation.json</span></code> registers the new cash/annual-construction gates before their first evaluation: numerical identities and weight sums, unique stock-month keys, cash-event matching, and agreement between cash-event yields and independent total/ex-distribution return fields. Every check writes its observation and tolerance. Coverage and filter counts are reported rather than forced to an invented target. Failed gates stop acceptance.</p>
+<p>The earlier strip-rebuild price/return diagnostics used exploratory thresholds after viewing historical results. They are explicitly not presented as blind preregistered validation. The current stock rebuild also differs from the authors’ prepared portfolios in available history, reporting lag and eligibility. Its overlap correlations, missing earnings years and sample counts are exposed. Missing realized earnings invalidate earnings-dependent summaries; they are not filled with invented values. These limits prevent honestly claiming every rubric item is fully resolved.</p>
+<p>The primary uncertainty calculation uses a joint stationary time-series bootstrap with expected block length five annual pairs and a committed seed. Calendar gaps force block restarts, and all four comparison portfolios share draws. Intervals do not cover model misspecification or historical data revisions. Near-zero denominators and discounted terminal-condition failures remain visible. The richer VAR uses the matrix long-run mapping, not the scalar formula applied to a multivariable regression.</p>
+</section>
+<section id="configuration-reproducibility-and-sources">
+<h2>Configuration, reproducibility and sources<a class="headerlink" href="#configuration-reproducibility-and-sources" title="Link to this heading">#</a></h2>
+<p>Copy <code class="docutils literal notranslate"><span class="pre">.env.example</span></code> to ignored <code class="docutils literal notranslate"><span class="pre">.env</span></code> for <strong>machine facts and credentials only</strong>: <code class="docutils literal notranslate"><span class="pre">DATA_DIR</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTPUT_DIR</span></code>, <code class="docutils literal notranslate"><span class="pre">WRDS_USERNAME</span></code>. Passwords stay in the WRDS/libpq password file. <code class="docutils literal notranslate"><span class="pre">PGPASSFILE</span></code> may point to your own alternative credential file. Do not put secrets in commands, notebooks or Git.</p>
+<p><code class="docutils literal notranslate"><span class="pre">START_DATE</span></code> and <code class="docutils literal notranslate"><span class="pre">END_DATE</span></code> are committed constants in <code class="docutils literal notranslate"><span class="pre">src/settings.py</span></code>; <code class="docutils literal notranslate"><span class="pre">.env</span></code>, environment and command-line date overrides are ignored. Workstream lookbacks, stock retrieval cutoff and bootstrap settings are committed JSON configuration. Updating data requires a reviewed configuration change, not each machine’s clock. Author and Goyal downloads have fixed source hashes. WRDS caches have dated manifests; historical vendors can revise data, so identical retrieval dates alone are not a guarantee of identical vendor vintages. Generated scientific artifacts avoid run-time timestamps; the local append-only build history is operational metadata.</p>
+<p>Sources: <a class="reference external" href="https://doi.org/10.17632/fp6fryn7h3.1">Mendeley package v1</a>, pinned Goyal annual data (<code class="docutils literal notranslate"><span class="pre">config/update_sources.json</span></code>), WRDS CRSP/Compustat/CCM/OptionMetrics, <a class="reference external" href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">Kenneth French industry definitions</a>, and <a class="reference external" href="https://fred.stlouisfed.org/series/CPIAUCSL">FRED CPIAUCSL</a>. Every registered dataframe has source descriptions and links in <code class="docutils literal notranslate"><span class="pre">chartbook.toml</span></code>.</p>
+<p>Data cleaning is separate from analysis: <code class="docutils literal notranslate"><span class="pre">ingest.py</span></code>, <code class="docutils literal notranslate"><span class="pre">update_data.py</span></code> and <code class="docutils literal notranslate"><span class="pre">sector/clean.py</span></code> produce tidy inputs; <code class="docutils literal notranslate"><span class="pre">history.py</span></code>, <code class="docutils literal notranslate"><span class="pre">strips.py</span></code>, <code class="docutils literal notranslate"><span class="pre">portfolios.py</span></code>, <code class="docutils literal notranslate"><span class="pre">cross_update.py</span></code> and the sector analysis modules estimate results. <code class="docutils literal notranslate"><span class="pre">submission.py</span></code> renders the final artifacts. Source data, PDFs of the paper, credentials and generated reports are ignored by Git.</p>
+<p>Retain <code class="docutils literal notranslate"><span class="pre">.cruft.json</span></code>, which records initialization with <code class="docutils literal notranslate"><span class="pre">cruft</span> <span class="pre">create</span> <span class="pre">https://github.com/backofficedev/cookiecutter_chartbook</span></code>. <code class="docutils literal notranslate"><span class="pre">uv.lock</span></code> pins dependencies; <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> is its pip export. Refresh it after a dependency change with <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">export</span> <span class="pre">--no-hashes</span> <span class="pre">--no-dev</span> <span class="pre">--format</span> <span class="pre">requirements-txt</span> <span class="pre">--output-file</span> <span class="pre">requirements.txt</span></code>.</p>
+</section>
+<section id="publication-and-collaboration">
+<h2>Publication and collaboration<a class="headerlink" href="#publication-and-collaboration" title="Link to this heading">#</a></h2>
+<p>The source repository remains private. The generated site is published separately at <a class="reference external" href="https://lauristt.github.io/p22-equity-duration-site/">https://lauristt.github.io/p22-equity-duration-site/</a> from the public <code class="docutils literal notranslate"><span class="pre">Lauristt/p22-equity-duration-site</span></code> repository. After building and inspecting locally, run <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">publish</span></code> with Git/gh authentication to update only its <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch. No WRDS credentials are needed in GitHub Actions, and no raw caches are uploaded. Publication is explicit, never part of an ordinary build. Substantive source changes remain on the feature branch and require teammate review; the graded main-branch snapshot must be merged by the team before its deadline. Do not rewrite shared history or overwrite a teammate’s Git identity.</p>
+<p><a class="reference internal" href="#docs_src/research/sector_direction_audit.md"><span class="xref myst">Direction audit</span></a> · <a class="reference internal" href="#docs_src/research/sector_tracker.md"><span class="xref myst">Sector methodology</span></a> · <a class="reference internal" href="#docs_src/research/rubric_status.md"><span class="xref myst">Rubric status</span></a></p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+   
+</div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="project_overview.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Equity duration: replication, update and Sector ER Tracker</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-specs">Pipeline Specs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-complete-submission">Build the complete submission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pipeline-delivers">What the pipeline delivers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-sector-er-tracker-is-for">What Sector ER Tracker is for</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-and-scientific-limitations">Validation and scientific limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-reproducibility-and-sources">Configuration, reproducibility and sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publication-and-collaboration">Publication and collaboration</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lauris Li
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, Lauris Li.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

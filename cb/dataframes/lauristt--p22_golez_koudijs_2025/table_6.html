@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dataframe: lauristt/p22_golez_koudijs_2025:table_6 - Table 6 &#8212; P22: Equity Duration and Predictability</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=1e83680c" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="../../../_static/documentation_options.js?v=b9472d72"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../../_static/chartbook-freshness.js?v=8268199e"></script>
+    <link rel="icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Dataframe: lauristt/p22_golez_koudijs_2025:table_7 - Table 7" href="table_7.html" />
+    <link rel="prev" title="Dataframe: lauristt/p22_golez_koudijs_2025:table_5 - Table 5" href="table_5.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+     
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="P22: Equity Duration and Predictability - Home"/>
+    <img src="../../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="P22: Equity Duration and Predictability - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../index.html">
+                    P22: Equity Duration and Predictability
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project guide</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../project_overview.html">Equity duration: replication, update and Sector ER Tracker</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks 📖</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/lauristt--p22_golez_koudijs_2025/data_tour.html">Cleaned data and Sector ER Tracker tour</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notes 📝</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../direction_audit.html">Why the first Sector ER Tracker reversed the paper’s direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../methodology.html">Sector ER Tracker</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Charts 📈</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../charts.html">Chart List</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Dataframes 📊</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="baseline_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:baseline_decomposition</span></code> - Baseline decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash_reconciliation.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:cash_reconciliation</span></code> - Cash reconciliation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coverage.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:coverage</span></code> - Coverage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_checks.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:data_checks</span></code> - Data checks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:payout_history</span></code> - Payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio_overlap.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:portfolio_overlap</span></code> - Portfolio overlap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sector_annual.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_annual</span></code> - Sector annual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sector_comparison.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_comparison</span></code> - Sector comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sector_estimates.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:sector_estimates</span></code> - Sector estimates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_1</span></code> - Table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_2</span></code> - Table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_4</span></code> - Table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_5</span></code> - Table 5</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_6</span></code> - Table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_7</span></code> - Table 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_decomposition.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_decomposition</span></code> - Updated decomposition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_payout_history.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_payout_history</span></code> - Updated payout history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_1.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_1</span></code> - Updated table 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_2.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_2</span></code> - Updated table 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_4.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_4</span></code> - Updated table 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_5.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_5</span></code> - Updated table 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_6.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_6</span></code> - Updated table 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updated_table_7.html">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:updated_table_7</span></code> - Updated table 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pipeline Files 🗂️</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../files/lauristt--p22_golez_koudijs_2025/final_report.html">Files: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:file/final_report</span></code> - Complete generated LaTeX report</a></li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__tagcloud">
+  <link
+    rel="stylesheet"
+    href="../../../_static/ablog/tagcloud.css"
+    type="text/css"
+  />
+  <h3><a href="../../charts/index/tag.html">Tags</a></h3>
+  <ul class="ablog-cloud">
+     
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="../../charts/index/tag/crsp-compustat-link-history.html">CRSP-Compustat link history</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="../../charts/index/tag/fred-cpiaucsl.html">FRED CPIAUCSL</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="../../charts/index/tag/goyal-data2025xlsx-configupdate_sourcesjson.html">Goyal Data2025.xlsx; config/update_sources.json</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="../../charts/index/tag/kenneth-french-sic-industry-mapping.html">Kenneth French SIC industry mapping</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-5">
+      <a href="../../charts/index/tag/mendeley-version-1-httpsdoiorg1017632fp6fryn7h31.html">Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="../../charts/index/tag/wrds-crsp-monthly-ciz-and-cash-distributions.html">WRDS CRSP monthly CIZ and cash distributions</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-3">
+      <a href="../../charts/index/tag/wrds-compustat-annual-fundamentals.html">WRDS Compustat annual fundamentals</a>
+    </li>
+     
+  </ul>
+</div>
+</div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button type="button" class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Dataframe: lauristt/p22_golez_koudijs_2025:table_6 - Table 6</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-glimpse">DataFrame Glimpse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provenance">Provenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-manifest">Dataframe Manifest</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-manifest">Pipeline Manifest</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <section class="tex2jax_ignore mathjax_ignore" id="dataframe-lauristt-p22-golez-koudijs-2025-table-6-table-6">
+<h1>Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_6</span></code> - Table 6<a class="headerlink" href="#dataframe-lauristt-p22-golez-koudijs-2025-table-6-table-6" title="Link to this heading">#</a></h1>
+<p class="cb-freshness">Data updated <time class="cb-relative-time" datetime="2026-11-18T06:27:09+00:00" title="2026-11-18 06:27 UTC">2026-11-18</time></p><p>Full-precision baseline Table 6; estimates use author inputs, not benchmark targets. Lineage: raw source caches -&gt; src/p22 cleaning modules -&gt; analysis modules -&gt; publication staging. Raw files and security-level observations are never published.</p>
+<section id="dataframe-glimpse">
+<h2>DataFrame Glimpse<a class="headerlink" href="#dataframe-glimpse" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Rows: 13
+Columns: 7
+$ Statistic &lt;str&gt; 'Number of stocks: mean', 'Number of stocks: min', 'Number of stocks: max', 'Payout (%)', 'Return mean (%)'
+$ All       &lt;f64&gt; 724.782051282051, 206.0, 1211.0, 48.6977319587884, 6.48752369987013
+$ Low       &lt;f64&gt; 241.24358974359, 68.0, 403.0, 31.6020646100418, 6.78773496519481
+$ Medium    &lt;f64&gt; 241.974358974359, 69.0, 404.0, 47.5409825107633, 6.78005285012987
+$ High      &lt;f64&gt; 241.564102564103, 69.0, 404.0, 64.1833245043205, 5.78605751038961
+$ Below 0.5 &lt;f64&gt; 445.589743589744, 12.0, 951.0, 39.8750743293133, 6.96611985025974
+$ Above 0.5 &lt;f64&gt; 279.192307692308, 155.0, 409.0, 63.3425839123106, 6.28298637402597
+
+
+</pre></div>
+</div>
+</section>
+<section id="provenance">
+<h2>Provenance<a class="headerlink" href="#provenance" title="Link to this heading">#</a></h2>
+<p>What this is, where it is, what made it and from what, as <code class="docutils literal notranslate"><span class="pre">index.json</span></code> records it.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>What</p></td>
+<td><p>Dataframe <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_6</span></code>, of pipeline <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Where</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">_output/publication/table_6.csv</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Content</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sha256:31100790efa803530f7641b1d993a2b6e46bff47305693b025740c06b463822d</span></code> · 1,473 bytes · 13 rows · 7 columns</p></td>
+</tr>
+<tr class="row-odd"><td><p>Built by</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">doit</span></code> in <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Series</p></td>
+<td><p>5 columns documented</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="dataframe-manifest">
+<h2>Dataframe Manifest<a class="headerlink" href="#dataframe-manifest" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dataframe Name</p></th>
+<th class="head"><p>Table 6</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dataframe ID</p></td>
+<td><p><a class="reference internal" href="#"><span class="std std-doc">table_6</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Sources</p></td>
+<td><p>Mendeley version 1: <a class="reference external" href="https://doi.org/10.17632/fp6fryn7h3.1">https://doi.org/10.17632/fp6fryn7h3.1</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Providers</p></td>
+<td><p>Golez and Koudijs</p></td>
+</tr>
+<tr class="row-odd"><td><p>Provider Links</p></td>
+<td><p><a class="reference external" href="https://doi.org/10.17632/fp6fryn7h3.1">https://doi.org/10.17632/fp6fryn7h3.1</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Dataframe Path</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">_output/publication/table_6.csv</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Linked Charts:</strong></p>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
+</section>
+<section id="pipeline-manifest">
+<h2>Pipeline Manifest<a class="headerlink" href="#pipeline-manifest" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Pipeline Name</p></th>
+<th class="head"><p>P22: Equity Duration and Predictability</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pipeline ID</p></td>
+<td><p><a class="reference internal" href="../../../index.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Maintainer</p></td>
+<td><p>Lauris Li</p></td>
+</tr>
+<tr class="row-even"><td><p>Contributors</p></td>
+<td><p>Lauris Li, Yiyao Wang, Gary Miao, Luke Zhu</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repository</p></td>
+<td><p><a class="github reference external" href="https://github.com/Lauristt/p22_golez_koudijs_2025">Lauristt/p22_golez_koudijs_2025</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Pipeline Web Page</p></td>
+<td><p><a href="https://lauristt.github.io/p22-equity-duration-site/">Pipeline Web Page</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>OS Compatibility</p></td>
+<td><p>Windows, Linux, macOS</p></td>
+</tr>
+<tr class="row-even"><td><p>Linked Dataframes</p></td>
+<td><p><a class="reference internal" href="baseline_decomposition.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:baseline_decomposition</span></a><br>  <a class="reference internal" href="cash_reconciliation.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:cash_reconciliation</span></a><br>  <a class="reference internal" href="coverage.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:coverage</span></a><br>  <a class="reference internal" href="data_checks.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:data_checks</span></a><br>  <a class="reference internal" href="payout_history.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:payout_history</span></a><br>  <a class="reference internal" href="portfolio_overlap.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:portfolio_overlap</span></a><br>  <a class="reference internal" href="sector_annual.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_annual</span></a><br>  <a class="reference internal" href="sector_comparison.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_comparison</span></a><br>  <a class="reference internal" href="sector_estimates.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:sector_estimates</span></a><br>  <a class="reference internal" href="table_1.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_1</span></a><br>  <a class="reference internal" href="table_2.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_2</span></a><br>  <a class="reference internal" href="table_4.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_4</span></a><br>  <a class="reference internal" href="table_5.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_5</span></a><br>  <a class="reference internal" href="#"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_6</span></a><br>  <a class="reference internal" href="table_7.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:table_7</span></a><br>  <a class="reference internal" href="updated_decomposition.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_decomposition</span></a><br>  <a class="reference internal" href="updated_payout_history.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_payout_history</span></a><br>  <a class="reference internal" href="updated_table_1.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_1</span></a><br>  <a class="reference internal" href="updated_table_2.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_2</span></a><br>  <a class="reference internal" href="updated_table_4.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_4</span></a><br>  <a class="reference internal" href="updated_table_5.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_5</span></a><br>  <a class="reference internal" href="updated_table_6.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_6</span></a><br>  <a class="reference internal" href="updated_table_7.html"><span class="std std-doc">lauristt/p22_golez_koudijs_2025:updated_table_7</span></a><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Build Commands:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">doit</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+   
+</div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="table_5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_5</span></code> - Table 5</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="table_7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dataframe: <code class="docutils literal notranslate"><span class="pre">lauristt/p22_golez_koudijs_2025:table_7</span></code> - Table 7</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-glimpse">DataFrame Glimpse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provenance">Provenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-manifest">Dataframe Manifest</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-manifest">Pipeline Manifest</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lauris Li
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, Lauris Li.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

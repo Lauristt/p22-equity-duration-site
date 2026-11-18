@@ -1,0 +1,11 @@
+check,passed,blocking,detail
+Required columns present,True,True,missing: []
+Years are integers,True,True,152 rows
+"Years unique, ascending and contiguous",True,True,1871-2022
+All required values finite (no silent gaps),True,True,nonfinite: []
+"Prices, dividends and CPI strictly positive",True,True,[]
+Real series = nominal / CPI with one fixed scale,True,True,scale 246.524; max relative deviation 2.22e-16
+D_nom_WG vs D_nom (payout numerator definition),True,False,max relative difference 0.00e+00; payout uses D_nom_WG / E_nom_WG
+Future data leave earlier forecasts unchanged,True,True,After 1980; maximum forecast change 0.00e+00
+All training cutoffs precede target years,True,True,Every model at every evaluation origin
+Payout windows end before forecast origin,True,True,Lag 1 year(s)

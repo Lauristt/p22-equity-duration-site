@@ -1,0 +1,9 @@
+{
+  "first_year": 1970,
+  "last_year": 2025,
+  "low_ER": 0.518825911709392,
+  "high_ER": 0.474736696154253,
+  "direction_holds": true,
+  "joint_figure_slope": -0.0052390533909156215,
+  "limitations": "Shorter available stock-history sample; conservative accounting lag and negative-earnings exclusion. Overlap discrepancies are reported, not accepted as exact stock-level replication."
+}

@@ -1,0 +1,62 @@
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>check</th>
+      <th>observed</th>
+      <th>tolerance</th>
+      <th>passed</th>
+      <th>meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inflation reconciles with CPI</td>
+      <td>0</td>
+      <td>1e-10</td>
+      <td>True</td>
+      <td>Independent CPI and reported inflation agree.</td>
+    </tr>
+    <tr>
+      <td>Author tercile counts sum to all</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>All eligible firms are allocated once.</td>
+    </tr>
+    <tr>
+      <td>Clean stock-month duplicate keys</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>A security cannot receive duplicate return weight.</td>
+    </tr>
+    <tr>
+      <td>Cash event matching failure fraction</td>
+      <td>0.00022</td>
+      <td>0.001</td>
+      <td>True</td>
+      <td>Ex-date factors and preceding prices are available for eligible cash events.</td>
+    </tr>
+    <tr>
+      <td>Portfolio weights sum to one</td>
+      <td>6.66e-16</td>
+      <td>1e-10</td>
+      <td>True</td>
+      <td>Weights conserve invested portfolio value.</td>
+    </tr>
+    <tr>
+      <td>Monthly cash return identity</td>
+      <td>2.78e-17</td>
+      <td>1e-10</td>
+      <td>True</td>
+      <td>Unit price change and withdrawn cash reconcile to the constructed holding return.</td>
+    </tr>
+    <tr>
+      <td>Cash versus effective yield: paying months</td>
+      <td>0.000175</td>
+      <td>0.001</td>
+      <td>True</td>
+      <td>Small differences are expected from ex-date reinvestment; large gaps indicate unit/action errors.</td>
+    </tr>
+  </tbody>
+</table>

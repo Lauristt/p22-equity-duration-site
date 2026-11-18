@@ -1,0 +1,7 @@
+{
+  "monthly_levels": 356,
+  "overlapping_12_month_outcomes": 344,
+  "first_month": "1996-01-31",
+  "last_month": "2025-08-29",
+  "non_overlap_hac_lags": 1
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "portfolio": "All",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  },
+  {
+    "portfolio": "Low",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  },
+  {
+    "portfolio": "Medium",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  },
+  {
+    "portfolio": "High",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  },
+  {
+    "portfolio": "Below 0.5",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  },
+  {
+    "portfolio": "Above 0.5",
+    "level_observations": 53,
+    "regression_observations": 52,
+    "first_year": 1970,
+    "last_year": 2022
+  }
+]

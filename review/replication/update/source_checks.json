@@ -1,0 +1,42 @@
+[
+  {
+    "check": "Goyal years unique and contiguous",
+    "passed": true,
+    "detail": "1871-2025"
+  },
+  {
+    "check": "Goyal covers END_DATE year 2025",
+    "passed": true,
+    "detail": "last year 2025"
+  },
+  {
+    "check": "Overlap covers the authors' full U.S. sample",
+    "passed": true,
+    "detail": "152 of 152 years"
+  },
+  {
+    "check": "P_nom equals Goyal price, 1871-2022",
+    "passed": true,
+    "detail": "max relative difference 0.00e+00 (tolerance 1e-12)"
+  },
+  {
+    "check": "D_nom_WG equals Goyal d12, 1871-2022",
+    "passed": true,
+    "detail": "max relative difference 0.00e+00 (tolerance 1e-12)"
+  },
+  {
+    "check": "E_nom_WG equals Goyal e12, 1871-2022",
+    "passed": true,
+    "detail": "max relative difference 0.00e+00 (tolerance 1e-12)"
+  },
+  {
+    "check": "Authors' CPI growth equals Goyal infl",
+    "passed": true,
+    "detail": "109 years from 1914; max absolute difference 0.00e+00"
+  },
+  {
+    "check": "New years have complete positive inputs",
+    "passed": true,
+    "detail": "3 new years"
+  }
+]

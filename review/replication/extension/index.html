@@ -1,0 +1,1832 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>PayoutForecast audit</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#fff;color:#171717;font:16px/1.65 Arial,Helvetica,sans-serif}header,main,footer{max-width:1120px;margin:auto;padding:28px 32px}header{border-bottom:1px solid #d8d8d4}nav{display:flex;gap:24px;flex-wrap:wrap}a{color:#1f6f5f;text-underline-offset:4px}h1{font-size:clamp(32px,5vw,56px);line-height:1.12;letter-spacing:-1.5px;margin:30px 0 18px}h2{font-size:27px;letter-spacing:-.5px;margin-top:56px}h3{font-size:19px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#5e6462}.lead{font-size:20px;max-width:850px}.note,figcaption{font-size:14px;color:#5e6462}figure{margin:28px 0;overflow-x:auto}img{width:100%;min-width:680px;height:auto}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14px}th,td{padding:12px 14px;text-align:right;border-bottom:1px solid #e4e7e5}th{border-top:1px solid #929995;border-bottom:1px solid #929995}td:first-child,th:first-child{text-align:left}code{background:#f5f5f2;padding:3px 6px}pre{overflow:auto;background:#f5f5f2;padding:18px}details{border-bottom:1px solid #d8d8d4;padding:16px 0}summary{cursor:pointer;font-weight:bold}input{font:inherit;padding:10px;border:1px solid #929995;max-width:100%}footer{border-top:1px solid #d8d8d4;margin-top:56px}@media(max-width:600px){header,main,footer{padding:22px 18px}th,td{padding:9px}h2{margin-top:36px}}
+</style></head><body><header><nav><a href="../../index.html">Project review</a><a href="../index.html">Replication exhibits</a></nav></header><main><p class="eyebrow">Extension / Annual forecasting audit</p><h1>Does payout information improve forecasts?</h1>
+<p class="lead">The payout-interaction model does not improve on dividend yield over 1981–2022: its out-of-sample R² against yield is -0.108.</p>
+<p>This is a historical forecasting comparison, not an investment recommendation. The paper motivates the hypothesis; it does not guarantee forecasting gains.</p>
+<nav><a href="#results">Results</a><a href="#method">Method</a><a href="#validation">Validation</a><a href="#ledger">Forecast ledger</a><a href="#downloads">Downloads</a></nav>
+<h2 id="results">Forecast accuracy</h2><p class="note">Charts and tables scroll horizontally on narrow screens.</p><p>Lower RMSE and MAE are better. Positive out-of-sample R² means lower squared error than the named benchmark. R² is reported as a proportion.</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Years</th>
+      <th>RMSE (log pp)</th>
+      <th>MAE (log pp)</th>
+      <th>OOS R² vs mean</th>
+      <th>OOS R² vs yield</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Historical mean</td>
+      <td>42</td>
+      <td>16.329</td>
+      <td>12.961</td>
+      <td>0.000</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>42</td>
+      <td>17.367</td>
+      <td>14.141</td>
+      <td>-0.131</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>42</td>
+      <td>18.283</td>
+      <td>14.336</td>
+      <td>-0.254</td>
+      <td>-0.108</td>
+    </tr>
+  </tbody>
+</table></div>
+<figure><img src="forecasts.svg" alt="Realized annual returns and the three expanding-window forecasts"><figcaption>Each forecast uses a new fit at its own origin. Returns are real log returns, not simple percentage returns.</figcaption></figure>
+<h3>How uncertain is the difference?</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Benchmark</th>
+      <th>MSE reduction (log pp²)</th>
+      <th>95% lower</th>
+      <th>95% upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Historical mean</td>
+      <td>Dividend yield</td>
+      <td>34.998</td>
+      <td>-34.925</td>
+      <td>132.037</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>Historical mean</td>
+      <td>-34.998</td>
+      <td>-132.037</td>
+      <td>34.925</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>Historical mean</td>
+      <td>-67.639</td>
+      <td>-138.786</td>
+      <td>-9.363</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>Dividend yield</td>
+      <td>-32.641</td>
+      <td>-118.936</td>
+      <td>35.971</td>
+    </tr>
+  </tbody>
+</table></div>
+<figure><img src="loss.svg" alt="Payout model mean squared-error gains and bootstrap intervals against both benchmarks"><figcaption>Dots are average loss reductions; bars are 95% percentile intervals from 2,000 paired circular moving-block resamples of 5 consecutive years (seed 2026). Intervals crossing zero do not establish a clear gain. Models are not refitted inside resamples; intervals condition on the fitted forecast sequence and are not a formal nested-model test.</figcaption></figure>
+<h2 id="method">A forecast made with earlier outcomes</h2>
+<p>Initial training uses 1946–1980 returns. At each year-end t we estimate OLS on outcomes through t, predict t+1, then expand the training window. All three models share the same 42 evaluation years.</p>
+<ul><li><strong>Historical mean:</strong> average return in the current training sample.</li><li><strong>Dividend yield:</strong> intercept plus log(D/P) at the forecast origin.</li><li><strong>Payout interaction:</strong> yield, lagged payout and their product, plus an intercept. Predictors are centered using that origin’s training sample only.</li></ul>
+<p>Payout divides summed dividends by summed earnings across 10 years ending 1 year before the origin. The target is log((next-year real price + next-year real dividends) / current real price). Forecasts are not clipped.</p>
+<details><summary>Interpretation and limitations</summary><p>The authors’ series contains revised historical data, not historical vintages. This is pseudo-out-of-sample evaluation. The 2021–2022 years were previously explored in a separate fixed-coefficient experiment. This implementation retains the agreed design, but the evaluation must not be described as entirely unseen. With a small annual sample, uncertainty is substantial. No portfolio allocation, transaction costs or trading profitability are tested.</p><p>The three supplied Table 4 smoothing constants are excluded from this extension. Instructor approval is not established by this implementation.</p></details>
+<h2 id="validation">Inputs and timing checks</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>check</th>
+      <th>passed</th>
+      <th>blocking</th>
+      <th>detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Required columns present</td>
+      <td>True</td>
+      <td>True</td>
+      <td>missing: []</td>
+    </tr>
+    <tr>
+      <td>Years are integers</td>
+      <td>True</td>
+      <td>True</td>
+      <td>152 rows</td>
+    </tr>
+    <tr>
+      <td>Years unique, ascending and contiguous</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1871-2022</td>
+    </tr>
+    <tr>
+      <td>All required values finite (no silent gaps)</td>
+      <td>True</td>
+      <td>True</td>
+      <td>nonfinite: []</td>
+    </tr>
+    <tr>
+      <td>Prices, dividends and CPI strictly positive</td>
+      <td>True</td>
+      <td>True</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>Real series = nominal / CPI with one fixed scale</td>
+      <td>True</td>
+      <td>True</td>
+      <td>scale 246.524; max relative deviation 2.22e-16</td>
+    </tr>
+    <tr>
+      <td>D_nom_WG vs D_nom (payout numerator definition)</td>
+      <td>True</td>
+      <td>False</td>
+      <td>max relative difference 0.00e+00; payout uses D_nom_WG / E_nom_WG</td>
+    </tr>
+    <tr>
+      <td>Future data leave earlier forecasts unchanged</td>
+      <td>True</td>
+      <td>True</td>
+      <td>After 1980; maximum forecast change 0.00e+00</td>
+    </tr>
+    <tr>
+      <td>All training cutoffs precede target years</td>
+      <td>True</td>
+      <td>True</td>
+      <td>Every model at every evaluation origin</td>
+    </tr>
+    <tr>
+      <td>Payout windows end before forecast origin</td>
+      <td>True</td>
+      <td>True</td>
+      <td>Lag 1 year(s)</td>
+    </tr>
+  </tbody>
+</table></div>
+<figure><img src="validation.svg" alt="Comparison of unlagged trailing payout and lagged forecasting payout"><figcaption>The forecast input shifts the trailing payout series by 1 year. The automated perturbation check changes future observations and confirms earlier forecasts remain unchanged; the table above records the result.</figcaption></figure>
+<h2 id="ledger">Inspect every forecast</h2><label for="filter">Filter by year or model</label><p><input id="filter" type="search" placeholder="For example: 2008 or Payout" aria-controls="ledger-table"></p>
+<div id="ledger-table"><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>origin_year</th>
+      <th>target_year</th>
+      <th>train_start</th>
+      <th>train_end</th>
+      <th>train_n</th>
+      <th>Actual (log %)</th>
+      <th>Forecast (log %)</th>
+      <th>Error (log pp)</th>
+      <th>payout_first_year</th>
+      <th>payout_last_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Historical mean</td>
+      <td>1980</td>
+      <td>1981</td>
+      <td>1946</td>
+      <td>1980</td>
+      <td>35</td>
+      <td>-13.515</td>
+      <td>5.530</td>
+      <td>-19.044</td>
+      <td>1970</td>
+      <td>1979</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1980</td>
+      <td>1981</td>
+      <td>1946</td>
+      <td>1980</td>
+      <td>35</td>
+      <td>-13.515</td>
+      <td>8.889</td>
+      <td>-22.403</td>
+      <td>1970</td>
+      <td>1979</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1980</td>
+      <td>1981</td>
+      <td>1946</td>
+      <td>1980</td>
+      <td>35</td>
+      <td>-13.515</td>
+      <td>16.284</td>
+      <td>-29.799</td>
+      <td>1970</td>
+      <td>1979</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1981</td>
+      <td>1982</td>
+      <td>1946</td>
+      <td>1981</td>
+      <td>36</td>
+      <td>14.779</td>
+      <td>5.000</td>
+      <td>9.779</td>
+      <td>1971</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1981</td>
+      <td>1982</td>
+      <td>1946</td>
+      <td>1981</td>
+      <td>36</td>
+      <td>14.779</td>
+      <td>12.744</td>
+      <td>2.035</td>
+      <td>1971</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1981</td>
+      <td>1982</td>
+      <td>1946</td>
+      <td>1981</td>
+      <td>36</td>
+      <td>14.779</td>
+      <td>13.027</td>
+      <td>1.752</td>
+      <td>1971</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1982</td>
+      <td>1983</td>
+      <td>1946</td>
+      <td>1982</td>
+      <td>37</td>
+      <td>16.420</td>
+      <td>5.265</td>
+      <td>11.155</td>
+      <td>1972</td>
+      <td>1981</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1982</td>
+      <td>1983</td>
+      <td>1946</td>
+      <td>1982</td>
+      <td>37</td>
+      <td>16.420</td>
+      <td>10.169</td>
+      <td>6.251</td>
+      <td>1972</td>
+      <td>1981</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1982</td>
+      <td>1983</td>
+      <td>1946</td>
+      <td>1982</td>
+      <td>37</td>
+      <td>16.420</td>
+      <td>12.502</td>
+      <td>3.918</td>
+      <td>1972</td>
+      <td>1981</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1983</td>
+      <td>1984</td>
+      <td>1946</td>
+      <td>1983</td>
+      <td>38</td>
+      <td>1.922</td>
+      <td>5.558</td>
+      <td>-3.636</td>
+      <td>1973</td>
+      <td>1982</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1983</td>
+      <td>1984</td>
+      <td>1946</td>
+      <td>1983</td>
+      <td>38</td>
+      <td>1.922</td>
+      <td>6.987</td>
+      <td>-5.065</td>
+      <td>1973</td>
+      <td>1982</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1983</td>
+      <td>1984</td>
+      <td>1946</td>
+      <td>1983</td>
+      <td>38</td>
+      <td>1.922</td>
+      <td>11.330</td>
+      <td>-9.408</td>
+      <td>1973</td>
+      <td>1982</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1984</td>
+      <td>1985</td>
+      <td>1946</td>
+      <td>1984</td>
+      <td>39</td>
+      <td>23.318</td>
+      <td>5.465</td>
+      <td>17.853</td>
+      <td>1974</td>
+      <td>1983</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1984</td>
+      <td>1985</td>
+      <td>1946</td>
+      <td>1984</td>
+      <td>39</td>
+      <td>23.318</td>
+      <td>8.087</td>
+      <td>15.231</td>
+      <td>1974</td>
+      <td>1983</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1984</td>
+      <td>1985</td>
+      <td>1946</td>
+      <td>1984</td>
+      <td>39</td>
+      <td>23.318</td>
+      <td>10.282</td>
+      <td>13.036</td>
+      <td>1974</td>
+      <td>1983</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1985</td>
+      <td>1986</td>
+      <td>1946</td>
+      <td>1985</td>
+      <td>40</td>
+      <td>15.916</td>
+      <td>5.911</td>
+      <td>10.004</td>
+      <td>1975</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1985</td>
+      <td>1986</td>
+      <td>1946</td>
+      <td>1985</td>
+      <td>40</td>
+      <td>15.916</td>
+      <td>3.468</td>
+      <td>12.448</td>
+      <td>1975</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1985</td>
+      <td>1986</td>
+      <td>1946</td>
+      <td>1985</td>
+      <td>40</td>
+      <td>15.916</td>
+      <td>8.531</td>
+      <td>7.384</td>
+      <td>1975</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1986</td>
+      <td>1987</td>
+      <td>1946</td>
+      <td>1986</td>
+      <td>41</td>
+      <td>1.172</td>
+      <td>6.155</td>
+      <td>-4.984</td>
+      <td>1976</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1986</td>
+      <td>1987</td>
+      <td>1946</td>
+      <td>1986</td>
+      <td>41</td>
+      <td>1.172</td>
+      <td>1.408</td>
+      <td>-0.236</td>
+      <td>1976</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1986</td>
+      <td>1987</td>
+      <td>1946</td>
+      <td>1986</td>
+      <td>41</td>
+      <td>1.172</td>
+      <td>8.797</td>
+      <td>-7.625</td>
+      <td>1976</td>
+      <td>1985</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1987</td>
+      <td>1988</td>
+      <td>1946</td>
+      <td>1987</td>
+      <td>42</td>
+      <td>10.816</td>
+      <td>6.037</td>
+      <td>4.779</td>
+      <td>1977</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1987</td>
+      <td>1988</td>
+      <td>1946</td>
+      <td>1987</td>
+      <td>42</td>
+      <td>10.816</td>
+      <td>2.525</td>
+      <td>8.291</td>
+      <td>1977</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1987</td>
+      <td>1988</td>
+      <td>1946</td>
+      <td>1987</td>
+      <td>42</td>
+      <td>10.816</td>
+      <td>6.554</td>
+      <td>4.262</td>
+      <td>1977</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1988</td>
+      <td>1989</td>
+      <td>1946</td>
+      <td>1988</td>
+      <td>43</td>
+      <td>22.636</td>
+      <td>6.148</td>
+      <td>16.488</td>
+      <td>1978</td>
+      <td>1987</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1988</td>
+      <td>1989</td>
+      <td>1946</td>
+      <td>1988</td>
+      <td>43</td>
+      <td>22.636</td>
+      <td>2.355</td>
+      <td>20.282</td>
+      <td>1978</td>
+      <td>1987</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1988</td>
+      <td>1989</td>
+      <td>1946</td>
+      <td>1988</td>
+      <td>43</td>
+      <td>22.636</td>
+      <td>6.401</td>
+      <td>16.235</td>
+      <td>1978</td>
+      <td>1987</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1989</td>
+      <td>1990</td>
+      <td>1946</td>
+      <td>1989</td>
+      <td>44</td>
+      <td>-9.117</td>
+      <td>6.523</td>
+      <td>-15.639</td>
+      <td>1979</td>
+      <td>1988</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1989</td>
+      <td>1990</td>
+      <td>1946</td>
+      <td>1989</td>
+      <td>44</td>
+      <td>-9.117</td>
+      <td>0.016</td>
+      <td>-9.132</td>
+      <td>1979</td>
+      <td>1988</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1989</td>
+      <td>1990</td>
+      <td>1946</td>
+      <td>1989</td>
+      <td>44</td>
+      <td>-9.117</td>
+      <td>7.298</td>
+      <td>-16.415</td>
+      <td>1979</td>
+      <td>1988</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1990</td>
+      <td>1991</td>
+      <td>1946</td>
+      <td>1990</td>
+      <td>45</td>
+      <td>23.220</td>
+      <td>6.175</td>
+      <td>17.045</td>
+      <td>1980</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1990</td>
+      <td>1991</td>
+      <td>1946</td>
+      <td>1990</td>
+      <td>45</td>
+      <td>23.220</td>
+      <td>3.738</td>
+      <td>19.481</td>
+      <td>1980</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1990</td>
+      <td>1991</td>
+      <td>1946</td>
+      <td>1990</td>
+      <td>45</td>
+      <td>23.220</td>
+      <td>6.624</td>
+      <td>16.595</td>
+      <td>1980</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1991</td>
+      <td>1992</td>
+      <td>1946</td>
+      <td>1991</td>
+      <td>46</td>
+      <td>4.311</td>
+      <td>6.546</td>
+      <td>-2.235</td>
+      <td>1981</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1991</td>
+      <td>1992</td>
+      <td>1946</td>
+      <td>1991</td>
+      <td>46</td>
+      <td>4.311</td>
+      <td>-1.523</td>
+      <td>5.834</td>
+      <td>1981</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1991</td>
+      <td>1992</td>
+      <td>1946</td>
+      <td>1991</td>
+      <td>46</td>
+      <td>4.311</td>
+      <td>2.247</td>
+      <td>2.064</td>
+      <td>1981</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1992</td>
+      <td>1993</td>
+      <td>1946</td>
+      <td>1992</td>
+      <td>47</td>
+      <td>6.767</td>
+      <td>6.498</td>
+      <td>0.269</td>
+      <td>1982</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1992</td>
+      <td>1993</td>
+      <td>1946</td>
+      <td>1992</td>
+      <td>47</td>
+      <td>6.767</td>
+      <td>-1.942</td>
+      <td>8.709</td>
+      <td>1982</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1992</td>
+      <td>1993</td>
+      <td>1946</td>
+      <td>1992</td>
+      <td>47</td>
+      <td>6.767</td>
+      <td>-1.246</td>
+      <td>8.013</td>
+      <td>1982</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1993</td>
+      <td>1994</td>
+      <td>1946</td>
+      <td>1993</td>
+      <td>48</td>
+      <td>-1.364</td>
+      <td>6.504</td>
+      <td>-7.867</td>
+      <td>1983</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1993</td>
+      <td>1994</td>
+      <td>1946</td>
+      <td>1993</td>
+      <td>48</td>
+      <td>-1.364</td>
+      <td>-2.737</td>
+      <td>1.374</td>
+      <td>1983</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1993</td>
+      <td>1994</td>
+      <td>1946</td>
+      <td>1993</td>
+      <td>48</td>
+      <td>-1.364</td>
+      <td>-3.275</td>
+      <td>1.911</td>
+      <td>1983</td>
+      <td>1992</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1994</td>
+      <td>1995</td>
+      <td>1946</td>
+      <td>1994</td>
+      <td>49</td>
+      <td>29.057</td>
+      <td>6.343</td>
+      <td>22.714</td>
+      <td>1984</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1994</td>
+      <td>1995</td>
+      <td>1946</td>
+      <td>1994</td>
+      <td>49</td>
+      <td>29.057</td>
+      <td>-1.174</td>
+      <td>30.230</td>
+      <td>1984</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1994</td>
+      <td>1995</td>
+      <td>1946</td>
+      <td>1994</td>
+      <td>49</td>
+      <td>29.057</td>
+      <td>-2.437</td>
+      <td>31.494</td>
+      <td>1984</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1995</td>
+      <td>1996</td>
+      <td>1946</td>
+      <td>1995</td>
+      <td>50</td>
+      <td>17.175</td>
+      <td>6.797</td>
+      <td>10.377</td>
+      <td>1985</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1995</td>
+      <td>1996</td>
+      <td>1946</td>
+      <td>1995</td>
+      <td>50</td>
+      <td>17.175</td>
+      <td>-5.006</td>
+      <td>22.180</td>
+      <td>1985</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1995</td>
+      <td>1996</td>
+      <td>1946</td>
+      <td>1995</td>
+      <td>50</td>
+      <td>17.175</td>
+      <td>-4.858</td>
+      <td>22.032</td>
+      <td>1985</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1996</td>
+      <td>1997</td>
+      <td>1946</td>
+      <td>1996</td>
+      <td>51</td>
+      <td>26.905</td>
+      <td>7.001</td>
+      <td>19.904</td>
+      <td>1986</td>
+      <td>1995</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1996</td>
+      <td>1997</td>
+      <td>1946</td>
+      <td>1996</td>
+      <td>51</td>
+      <td>26.905</td>
+      <td>-4.740</td>
+      <td>31.645</td>
+      <td>1986</td>
+      <td>1995</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1996</td>
+      <td>1997</td>
+      <td>1946</td>
+      <td>1996</td>
+      <td>51</td>
+      <td>26.905</td>
+      <td>-1.324</td>
+      <td>28.229</td>
+      <td>1986</td>
+      <td>1995</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1997</td>
+      <td>1998</td>
+      <td>1946</td>
+      <td>1997</td>
+      <td>52</td>
+      <td>23.350</td>
+      <td>7.384</td>
+      <td>15.967</td>
+      <td>1987</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1997</td>
+      <td>1998</td>
+      <td>1946</td>
+      <td>1997</td>
+      <td>52</td>
+      <td>23.350</td>
+      <td>-4.053</td>
+      <td>27.404</td>
+      <td>1987</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1997</td>
+      <td>1998</td>
+      <td>1946</td>
+      <td>1997</td>
+      <td>52</td>
+      <td>23.350</td>
+      <td>8.238</td>
+      <td>15.112</td>
+      <td>1987</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1998</td>
+      <td>1999</td>
+      <td>1946</td>
+      <td>1998</td>
+      <td>53</td>
+      <td>16.317</td>
+      <td>7.685</td>
+      <td>8.632</td>
+      <td>1988</td>
+      <td>1997</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1998</td>
+      <td>1999</td>
+      <td>1946</td>
+      <td>1998</td>
+      <td>53</td>
+      <td>16.317</td>
+      <td>-1.065</td>
+      <td>17.382</td>
+      <td>1988</td>
+      <td>1997</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1998</td>
+      <td>1999</td>
+      <td>1946</td>
+      <td>1998</td>
+      <td>53</td>
+      <td>16.317</td>
+      <td>20.834</td>
+      <td>-4.517</td>
+      <td>1988</td>
+      <td>1997</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>1999</td>
+      <td>2000</td>
+      <td>1946</td>
+      <td>1999</td>
+      <td>54</td>
+      <td>-12.797</td>
+      <td>7.845</td>
+      <td>-20.641</td>
+      <td>1989</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>1999</td>
+      <td>2000</td>
+      <td>1946</td>
+      <td>1999</td>
+      <td>54</td>
+      <td>-12.797</td>
+      <td>1.532</td>
+      <td>-14.329</td>
+      <td>1989</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>1999</td>
+      <td>2000</td>
+      <td>1946</td>
+      <td>1999</td>
+      <td>54</td>
+      <td>-12.797</td>
+      <td>20.088</td>
+      <td>-32.885</td>
+      <td>1989</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2000</td>
+      <td>2001</td>
+      <td>1946</td>
+      <td>2000</td>
+      <td>55</td>
+      <td>-14.153</td>
+      <td>7.469</td>
+      <td>-21.623</td>
+      <td>1990</td>
+      <td>1999</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2000</td>
+      <td>2001</td>
+      <td>1946</td>
+      <td>2000</td>
+      <td>55</td>
+      <td>-14.153</td>
+      <td>-0.712</td>
+      <td>-13.441</td>
+      <td>1990</td>
+      <td>1999</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2000</td>
+      <td>2001</td>
+      <td>1946</td>
+      <td>2000</td>
+      <td>55</td>
+      <td>-14.153</td>
+      <td>13.684</td>
+      <td>-27.837</td>
+      <td>1990</td>
+      <td>1999</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>1946</td>
+      <td>2001</td>
+      <td>56</td>
+      <td>-27.152</td>
+      <td>7.083</td>
+      <td>-34.235</td>
+      <td>1991</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>1946</td>
+      <td>2001</td>
+      <td>56</td>
+      <td>-27.152</td>
+      <td>-1.723</td>
+      <td>-25.428</td>
+      <td>1991</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>1946</td>
+      <td>2001</td>
+      <td>56</td>
+      <td>-27.152</td>
+      <td>8.227</td>
+      <td>-35.379</td>
+      <td>1991</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2002</td>
+      <td>2003</td>
+      <td>1946</td>
+      <td>2002</td>
+      <td>57</td>
+      <td>23.102</td>
+      <td>6.483</td>
+      <td>16.619</td>
+      <td>1992</td>
+      <td>2001</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2002</td>
+      <td>2003</td>
+      <td>1946</td>
+      <td>2002</td>
+      <td>57</td>
+      <td>23.102</td>
+      <td>-1.123</td>
+      <td>24.224</td>
+      <td>1992</td>
+      <td>2001</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2002</td>
+      <td>2003</td>
+      <td>1946</td>
+      <td>2002</td>
+      <td>57</td>
+      <td>23.102</td>
+      <td>0.089</td>
+      <td>23.013</td>
+      <td>1992</td>
+      <td>2001</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2003</td>
+      <td>2004</td>
+      <td>1946</td>
+      <td>2003</td>
+      <td>58</td>
+      <td>7.000</td>
+      <td>6.769</td>
+      <td>0.230</td>
+      <td>1993</td>
+      <td>2002</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2003</td>
+      <td>2004</td>
+      <td>1946</td>
+      <td>2003</td>
+      <td>58</td>
+      <td>7.000</td>
+      <td>-1.314</td>
+      <td>8.314</td>
+      <td>1993</td>
+      <td>2002</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2003</td>
+      <td>2004</td>
+      <td>1946</td>
+      <td>2003</td>
+      <td>58</td>
+      <td>7.000</td>
+      <td>2.465</td>
+      <td>4.534</td>
+      <td>1993</td>
+      <td>2002</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2004</td>
+      <td>2005</td>
+      <td>1946</td>
+      <td>2004</td>
+      <td>59</td>
+      <td>1.362</td>
+      <td>6.773</td>
+      <td>-5.411</td>
+      <td>1994</td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2004</td>
+      <td>2005</td>
+      <td>1946</td>
+      <td>2004</td>
+      <td>59</td>
+      <td>1.362</td>
+      <td>-0.444</td>
+      <td>1.806</td>
+      <td>1994</td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2004</td>
+      <td>2005</td>
+      <td>1946</td>
+      <td>2004</td>
+      <td>59</td>
+      <td>1.362</td>
+      <td>4.755</td>
+      <td>-3.393</td>
+      <td>1994</td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2005</td>
+      <td>2006</td>
+      <td>1946</td>
+      <td>2005</td>
+      <td>60</td>
+      <td>11.999</td>
+      <td>6.683</td>
+      <td>5.316</td>
+      <td>1995</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2005</td>
+      <td>2006</td>
+      <td>1946</td>
+      <td>2005</td>
+      <td>60</td>
+      <td>11.999</td>
+      <td>0.666</td>
+      <td>11.333</td>
+      <td>1995</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2005</td>
+      <td>2006</td>
+      <td>1946</td>
+      <td>2005</td>
+      <td>60</td>
+      <td>11.999</td>
+      <td>5.815</td>
+      <td>6.183</td>
+      <td>1995</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2006</td>
+      <td>2007</td>
+      <td>1946</td>
+      <td>2006</td>
+      <td>61</td>
+      <td>1.339</td>
+      <td>6.770</td>
+      <td>-5.431</td>
+      <td>1996</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2006</td>
+      <td>2007</td>
+      <td>1946</td>
+      <td>2006</td>
+      <td>61</td>
+      <td>1.339</td>
+      <td>1.112</td>
+      <td>0.227</td>
+      <td>1996</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2006</td>
+      <td>2007</td>
+      <td>1946</td>
+      <td>2006</td>
+      <td>61</td>
+      <td>1.339</td>
+      <td>7.681</td>
+      <td>-6.341</td>
+      <td>1996</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2007</td>
+      <td>2008</td>
+      <td>1946</td>
+      <td>2007</td>
+      <td>62</td>
+      <td>-45.587</td>
+      <td>6.683</td>
+      <td>-52.269</td>
+      <td>1997</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2007</td>
+      <td>2008</td>
+      <td>1946</td>
+      <td>2007</td>
+      <td>62</td>
+      <td>-45.587</td>
+      <td>1.779</td>
+      <td>-47.366</td>
+      <td>1997</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2007</td>
+      <td>2008</td>
+      <td>1946</td>
+      <td>2007</td>
+      <td>62</td>
+      <td>-45.587</td>
+      <td>7.942</td>
+      <td>-53.529</td>
+      <td>1997</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2008</td>
+      <td>2009</td>
+      <td>1946</td>
+      <td>2008</td>
+      <td>63</td>
+      <td>20.374</td>
+      <td>5.853</td>
+      <td>14.521</td>
+      <td>1998</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2008</td>
+      <td>2009</td>
+      <td>1946</td>
+      <td>2008</td>
+      <td>63</td>
+      <td>20.374</td>
+      <td>5.488</td>
+      <td>14.887</td>
+      <td>1998</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2008</td>
+      <td>2009</td>
+      <td>1946</td>
+      <td>2008</td>
+      <td>63</td>
+      <td>20.374</td>
+      <td>7.508</td>
+      <td>12.867</td>
+      <td>1998</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2009</td>
+      <td>2010</td>
+      <td>1946</td>
+      <td>2009</td>
+      <td>64</td>
+      <td>12.336</td>
+      <td>6.080</td>
+      <td>6.256</td>
+      <td>1999</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2009</td>
+      <td>2010</td>
+      <td>1946</td>
+      <td>2009</td>
+      <td>64</td>
+      <td>12.336</td>
+      <td>0.798</td>
+      <td>11.537</td>
+      <td>1999</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2009</td>
+      <td>2010</td>
+      <td>1946</td>
+      <td>2009</td>
+      <td>64</td>
+      <td>12.336</td>
+      <td>1.145</td>
+      <td>11.191</td>
+      <td>1999</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2010</td>
+      <td>2011</td>
+      <td>1946</td>
+      <td>2010</td>
+      <td>65</td>
+      <td>-0.843</td>
+      <td>6.176</td>
+      <td>-7.019</td>
+      <td>2000</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2010</td>
+      <td>2011</td>
+      <td>1946</td>
+      <td>2010</td>
+      <td>65</td>
+      <td>-0.843</td>
+      <td>0.069</td>
+      <td>-0.912</td>
+      <td>2000</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2010</td>
+      <td>2011</td>
+      <td>1946</td>
+      <td>2010</td>
+      <td>65</td>
+      <td>-0.843</td>
+      <td>0.268</td>
+      <td>-1.111</td>
+      <td>2000</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2011</td>
+      <td>2012</td>
+      <td>1946</td>
+      <td>2011</td>
+      <td>66</td>
+      <td>13.021</td>
+      <td>6.070</td>
+      <td>6.952</td>
+      <td>2001</td>
+      <td>2010</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2011</td>
+      <td>2012</td>
+      <td>1946</td>
+      <td>2011</td>
+      <td>66</td>
+      <td>13.021</td>
+      <td>1.629</td>
+      <td>11.393</td>
+      <td>2001</td>
+      <td>2010</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2011</td>
+      <td>2012</td>
+      <td>1946</td>
+      <td>2011</td>
+      <td>66</td>
+      <td>13.021</td>
+      <td>2.407</td>
+      <td>10.615</td>
+      <td>2001</td>
+      <td>2010</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2012</td>
+      <td>2013</td>
+      <td>1946</td>
+      <td>2012</td>
+      <td>67</td>
+      <td>26.314</td>
+      <td>6.173</td>
+      <td>20.141</td>
+      <td>2002</td>
+      <td>2011</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2012</td>
+      <td>2013</td>
+      <td>1946</td>
+      <td>2012</td>
+      <td>67</td>
+      <td>26.314</td>
+      <td>2.379</td>
+      <td>23.935</td>
+      <td>2002</td>
+      <td>2011</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2012</td>
+      <td>2013</td>
+      <td>1946</td>
+      <td>2012</td>
+      <td>67</td>
+      <td>26.314</td>
+      <td>3.889</td>
+      <td>22.425</td>
+      <td>2002</td>
+      <td>2011</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2013</td>
+      <td>2014</td>
+      <td>1946</td>
+      <td>2013</td>
+      <td>68</td>
+      <td>11.931</td>
+      <td>6.470</td>
+      <td>5.462</td>
+      <td>2003</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2013</td>
+      <td>2014</td>
+      <td>1946</td>
+      <td>2013</td>
+      <td>68</td>
+      <td>11.931</td>
+      <td>1.586</td>
+      <td>10.346</td>
+      <td>2003</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2013</td>
+      <td>2014</td>
+      <td>1946</td>
+      <td>2013</td>
+      <td>68</td>
+      <td>11.931</td>
+      <td>3.763</td>
+      <td>8.168</td>
+      <td>2003</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2014</td>
+      <td>2015</td>
+      <td>1946</td>
+      <td>2014</td>
+      <td>69</td>
+      <td>0.644</td>
+      <td>6.549</td>
+      <td>-5.904</td>
+      <td>2004</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2014</td>
+      <td>2015</td>
+      <td>1946</td>
+      <td>2014</td>
+      <td>69</td>
+      <td>0.644</td>
+      <td>2.045</td>
+      <td>-1.401</td>
+      <td>2004</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2014</td>
+      <td>2015</td>
+      <td>1946</td>
+      <td>2014</td>
+      <td>69</td>
+      <td>0.644</td>
+      <td>4.819</td>
+      <td>-4.175</td>
+      <td>2004</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2015</td>
+      <td>2016</td>
+      <td>1946</td>
+      <td>2015</td>
+      <td>70</td>
+      <td>9.075</td>
+      <td>6.464</td>
+      <td>2.610</td>
+      <td>2005</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2015</td>
+      <td>2016</td>
+      <td>1946</td>
+      <td>2015</td>
+      <td>70</td>
+      <td>9.075</td>
+      <td>2.944</td>
+      <td>6.130</td>
+      <td>2005</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2015</td>
+      <td>2016</td>
+      <td>1946</td>
+      <td>2015</td>
+      <td>70</td>
+      <td>9.075</td>
+      <td>5.667</td>
+      <td>3.407</td>
+      <td>2005</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2016</td>
+      <td>2017</td>
+      <td>1946</td>
+      <td>2016</td>
+      <td>71</td>
+      <td>17.474</td>
+      <td>6.501</td>
+      <td>10.973</td>
+      <td>2006</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2016</td>
+      <td>2017</td>
+      <td>1946</td>
+      <td>2016</td>
+      <td>71</td>
+      <td>17.474</td>
+      <td>2.742</td>
+      <td>14.732</td>
+      <td>2006</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2016</td>
+      <td>2017</td>
+      <td>1946</td>
+      <td>2016</td>
+      <td>71</td>
+      <td>17.474</td>
+      <td>4.771</td>
+      <td>12.703</td>
+      <td>2006</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2017</td>
+      <td>2018</td>
+      <td>1946</td>
+      <td>2017</td>
+      <td>72</td>
+      <td>-6.211</td>
+      <td>6.654</td>
+      <td>-12.865</td>
+      <td>2007</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2017</td>
+      <td>2018</td>
+      <td>1946</td>
+      <td>2017</td>
+      <td>72</td>
+      <td>-6.211</td>
+      <td>2.192</td>
+      <td>-8.403</td>
+      <td>2007</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2017</td>
+      <td>2018</td>
+      <td>1946</td>
+      <td>2017</td>
+      <td>72</td>
+      <td>-6.211</td>
+      <td>3.316</td>
+      <td>-9.527</td>
+      <td>2007</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2018</td>
+      <td>2019</td>
+      <td>1946</td>
+      <td>2018</td>
+      <td>73</td>
+      <td>24.897</td>
+      <td>6.477</td>
+      <td>18.419</td>
+      <td>2008</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2018</td>
+      <td>2019</td>
+      <td>1946</td>
+      <td>2018</td>
+      <td>73</td>
+      <td>24.897</td>
+      <td>3.326</td>
+      <td>21.571</td>
+      <td>2008</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2018</td>
+      <td>2019</td>
+      <td>1946</td>
+      <td>2018</td>
+      <td>73</td>
+      <td>24.897</td>
+      <td>4.808</td>
+      <td>20.089</td>
+      <td>2008</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2019</td>
+      <td>2020</td>
+      <td>1946</td>
+      <td>2019</td>
+      <td>74</td>
+      <td>15.252</td>
+      <td>6.726</td>
+      <td>8.526</td>
+      <td>2009</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2019</td>
+      <td>2020</td>
+      <td>1946</td>
+      <td>2019</td>
+      <td>74</td>
+      <td>15.252</td>
+      <td>2.356</td>
+      <td>12.896</td>
+      <td>2009</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2019</td>
+      <td>2020</td>
+      <td>1946</td>
+      <td>2019</td>
+      <td>74</td>
+      <td>15.252</td>
+      <td>4.235</td>
+      <td>11.017</td>
+      <td>2009</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2020</td>
+      <td>2021</td>
+      <td>1946</td>
+      <td>2020</td>
+      <td>75</td>
+      <td>18.277</td>
+      <td>6.840</td>
+      <td>11.437</td>
+      <td>2010</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2020</td>
+      <td>2021</td>
+      <td>1946</td>
+      <td>2020</td>
+      <td>75</td>
+      <td>18.277</td>
+      <td>1.584</td>
+      <td>16.692</td>
+      <td>2010</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2020</td>
+      <td>2021</td>
+      <td>1946</td>
+      <td>2020</td>
+      <td>75</td>
+      <td>18.277</td>
+      <td>3.077</td>
+      <td>15.199</td>
+      <td>2010</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td>Historical mean</td>
+      <td>2021</td>
+      <td>2022</td>
+      <td>1946</td>
+      <td>2021</td>
+      <td>76</td>
+      <td>-26.147</td>
+      <td>6.990</td>
+      <td>-33.137</td>
+      <td>2011</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td>Dividend yield</td>
+      <td>2021</td>
+      <td>2022</td>
+      <td>1946</td>
+      <td>2021</td>
+      <td>76</td>
+      <td>-26.147</td>
+      <td>0.846</td>
+      <td>-26.993</td>
+      <td>2011</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td>Payout interaction</td>
+      <td>2021</td>
+      <td>2022</td>
+      <td>1946</td>
+      <td>2021</td>
+      <td>76</td>
+      <td>-26.147</td>
+      <td>0.590</td>
+      <td>-26.737</td>
+      <td>2011</td>
+      <td>2020</td>
+    </tr>
+  </tbody>
+</table></div></div><p id="count" aria-live="polite"></p>
+<h2 id="downloads">Reproduce and inspect</h2><p><a href="forecasts.csv">forecasts</a> · <a href="coefficients.csv">coefficients</a> · <a href="features.csv">features</a> · <a href="metrics.csv">metrics</a> · <a href="loss_comparisons.csv">loss comparisons</a> · <a href="validation.csv">validation</a> · <a href="manifest.json">Source and code hashes</a></p>
+<pre>uv sync --frozen
+uv run doit site
+uv run python src/serve_review.py</pre>
+<p>Source: authors’ U.S. annual dataset, <a href="https://doi.org/10.17632/fp6fryn7h3.1">Mendeley version 1</a>. Dates and bootstrap settings live in <code>config/extension.json</code>. No credentials are needed for this build.</p>
+<script>const box=document.querySelector('#filter');const rows=[...document.querySelectorAll('#ledger-table tbody tr')];function filter(){let n=0;rows.forEach(r=>{r.hidden=!r.textContent.toLowerCase().includes(box.value.toLowerCase());if(!r.hidden)n++;});document.querySelector('#count').textContent=n+' forecast rows shown';}box.addEventListener('input',filter);filter();</script></main>
+<footer>Golez &amp; Koudijs (2025) · P22 replication and PayoutForecast · Local research review</footer></body></html>

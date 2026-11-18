@@ -1,0 +1,279 @@
+table,statistic,sample,python,published,difference,tolerance,within_tolerance,independent,status
+1,Return mean (%),Market,6.37698896227268,6.38,-0.0030110377273198097,0.0051,True,True,within rounding
+1,Return mean (%),Dividend strips,5.24562562574883,5.25,-0.004374374251169932,0.0051,True,True,within rounding
+1,Return SD (%),Market,17.0797104595826,17.08,-0.00028954041739837066,0.0051,True,True,within rounding
+1,Return SD (%),Dividend strips,14.2163286104236,14.22,-0.0036713895764002302,0.0051,True,True,within rounding
+1,Dividend growth mean (%),Market,3.32040769106925,3.32,0.0004076910692503155,0.0051,True,True,within rounding
+1,Dividend growth mean (%),Dividend strips,,,,0.0051,True,True,not applicable
+1,Dividend growth SD (%),Market,7.61711640920293,7.62,-0.0028835907970696795,0.0051,True,True,within rounding
+1,Dividend growth SD (%),Dividend strips,,,,0.0051,True,True,not applicable
+1,Dividend-price mean (%),Market,1.8199146291201,1.82,-8.537087990001524e-05,0.0051,True,True,within rounding
+1,Dividend-price mean (%),Dividend strips,66.9939710416359,66.99,0.003971041635907113,0.0051,True,True,within rounding
+1,Dividend-price SD (%),Market,0.376048057553034,0.38,-0.003951942446966006,0.0051,True,True,within rounding
+1,Dividend-price SD (%),Dividend strips,9.38561728314032,9.39,-0.004382716859680613,0.0051,True,True,within rounding
+2,Return slope,Market,0.388841948954763,0.39,-0.0011580510452370296,0.0051,True,True,within rounding
+2,Return slope,Dividend strips,0.563681650540447,0.56,0.0036816505404470012,0.0051,True,True,within rounding
+2,Return t-stat (NW),Market,3.53864342249713,3.54,-0.0013565775028698823,0.0051,True,True,within rounding
+2,Return t-stat (NW),Dividend strips,6.61253648838031,6.61,0.0025364883803096205,0.0051,True,True,within rounding
+2,Return t-stat (non-overlap),Market,2.84329424084513,2.84,0.00329424084512997,0.0051,True,True,within rounding
+2,Return t-stat (non-overlap),Dividend strips,3.39862528645256,3.4,-0.0013747135474400096,0.0051,True,True,within rounding
+2,Return R-squared,Market,0.211927806493029,0.21,0.0019278064930290106,0.0051,True,True,within rounding
+2,Return R-squared,Dividend strips,0.255876379857084,0.26,-0.004123620142916007,0.0051,True,True,within rounding
+2,Dividend growth slope,Market,-0.0189171400806116,-0.02,0.0010828599193884007,0.0051,True,True,within rounding
+2,Dividend growth slope,Dividend strips,-0.399029627301441,-0.4,0.0009703726985590411,0.0051,True,True,within rounding
+2,Dividend growth t-stat (NW),Market,-0.151409070278447,-0.15,-0.001409070278447,0.0051,True,True,within rounding
+2,Dividend growth t-stat (NW),Dividend strips,-4.31389771284393,-4.31,-0.0038977128439308117,0.0051,True,True,within rounding
+2,Dividend growth t-stat (non-overlap),Market,-0.0553080684059738,-0.06,0.0046919315940262,0.0051,True,True,within rounding
+2,Dividend growth t-stat (non-overlap),Dividend strips,-3.59247142930081,-3.59,-0.002471429300810346,0.0051,True,True,within rounding
+2,Dividend growth R-squared,Market,0.0025219269511973,0.0,0.0025219269511973,0.0051,True,True,within rounding
+2,Dividend growth R-squared,Dividend strips,0.446649044679611,0.45,-0.0033509553203890374,0.0051,True,True,within rounding
+2,Dividend-price slope,Market,0.605682539788123,0.61,-0.004317460211876956,0.0051,True,True,within rounding
+2,Dividend-price slope,Dividend strips,,,,0.0051,True,True,not applicable
+2,Dividend-price t-stat (NW),Market,4.86191727082521,4.86,0.0019172708252099824,0.0051,True,True,within rounding
+2,Dividend-price t-stat (NW),Dividend strips,,,,0.0051,True,True,not applicable
+2,Dividend-price t-stat (non-overlap),Market,4.08268980122469,4.08,0.0026898012246903136,0.0051,True,True,within rounding
+2,Dividend-price t-stat (non-overlap),Dividend strips,,,,0.0051,True,True,not applicable
+2,Dividend-price R-squared,Market,0.37019280750892,0.37,0.00019280750891997878,0.0051,True,True,within rounding
+2,Dividend-price R-squared,Dividend strips,,,,0.0051,True,True,not applicable
+2,ER,Market,0.960268612298445,0.96,0.00026861229844499235,0.0051,True,True,within rounding
+2,ER,Dividend strips,0.563681650540447,0.56,0.0036816505404470012,0.0051,True,True,within rounding
+2,ER (implied),Market,0.953282983220574,0.95,0.003282983220574076,0.0051,True,True,within rounding
+2,ER (implied),Dividend strips,0.600970372698559,0.6,0.0009703726985590411,0.0051,True,True,within rounding
+2,EDG,Market,0.0467170167794257,0.05,-0.003282983220574305,0.0051,True,True,within rounding
+2,EDG,Dividend strips,0.399029627301441,0.4,-0.0009703726985590411,0.0051,True,True,within rounding
+2,EDG (implied),Market,0.0397313877015552,0.04,-0.00026861229844479806,0.0051,True,True,within rounding
+2,EDG (implied),Dividend strips,0.436318349459553,0.44,-0.0036816505404470012,0.0051,True,True,within rounding
+4,Payout (%),1945–2022,47.264437621904,47.26,0.004437621904003208,0.0051,True,True,within rounding
+4,Payout (%),1629–1945,98.4099292061957,98.41,-7.079380429786397e-05,0.0051,True,True,within rounding
+4,Payout (%),1629–2022,86.1136263514357,86.11,0.0036263514356988935,0.0051,True,True,within rounding
+4,Return mean (%),1945–2022,6.56007470105394,6.56,7.470105394080662e-05,0.0051,True,True,within rounding
+4,Return mean (%),1629–1945,5.86360884014568,5.86,0.00360884014567997,0.0051,True,True,within rounding
+4,Return mean (%),1629–2022,6.00076452119411,6.0,0.0007645211941103014,0.0051,True,True,within rounding
+4,Return SD (%),1945–2022,16.9102357817549,16.91,0.00023578175489902264,0.0051,True,True,within rounding
+4,Return SD (%),1629–1945,14.1216805484397,14.12,0.0016805484397011128,0.0051,True,True,within rounding
+4,Return SD (%),1629–2022,14.6918518239362,14.69,0.0018518239362013134,0.0051,True,True,within rounding
+4,DY/RET,1945–2022,0.406413196515163,0.41,-0.0035868034848369756,0.0051,True,True,within rounding
+4,DY/RET,1629–1945,0.687577494544554,0.69,-0.002422505455445978,0.0051,True,True,within rounding
+4,DY/RET,1629–2022,0.625165281248281,0.63,-0.004834718751719036,0.0051,True,True,within rounding
+4,Dividend growth mean (%),1945–2022,2.37328412268755,2.37,0.00328412268754974,0.0051,True,True,within rounding
+4,Dividend growth mean (%),1629–1945,0.808955666563086,0.81,-0.0010443334369140134,0.0051,True,True,within rounding
+4,Dividend growth mean (%),1629–2022,1.11702034973849,1.12,-0.002979650261510036,0.0051,True,True,within rounding
+4,Dividend growth SD (%),1945–2022,6.67400279586609,6.67,0.004002795866090203,0.0051,True,True,within rounding
+4,Dividend growth SD (%),1629–1945,13.2905378722711,13.29,0.0005378722711011363,0.0051,True,True,within rounding
+4,Dividend growth SD (%),1629–2022,12.2813549697903,12.28,0.0013549697903005864,0.0051,True,True,within rounding
+4,Dividend-price mean (%),1945–2022,3.24191630339776,3.24,0.0019163033977598332,0.0051,True,True,within rounding
+4,Dividend-price mean (%),1629–1945,4.85552934561522,4.86,-0.004470654384780559,0.0051,True,True,within rounding
+4,Dividend-price mean (%),1629–2022,4.53875743885045,4.54,-0.0012425611495503475,0.0051,True,True,within rounding
+4,Dividend-price SD (%),1945–2022,1.42588233248443,1.43,-0.004117667515569856,0.0051,True,True,within rounding
+4,Dividend-price SD (%),1629–1945,1.27062093056529,1.27,0.000620930565290001,0.0051,True,True,within rounding
+4,Dividend-price SD (%),1629–2022,1.45253400085361,1.45,0.0025340008536101077,0.0051,True,True,within rounding
+4,Dividend-price AR(1),1945–2022,0.905073884513661,0.91,-0.004926115486339033,0.0051,True,True,within rounding
+4,Dividend-price AR(1),1629–1945,0.693978330779439,0.69,0.003978330779439099,0.0051,True,True,within rounding
+4,Dividend-price AR(1),1629–2022,0.790001864177144,0.79,1.8641771439842358e-06,0.0051,True,True,within rounding
+4,Smoothing*,1945–2022,0.21,0.21,0.0,0.0051,True,False,"source constant, not recomputed"
+4,Smoothing*,1629–1945,0.32,0.32,0.0,0.0051,True,False,"source constant, not recomputed"
+4,Smoothing*,1629–2022,0.31,0.31,0.0,0.0051,True,False,"source constant, not recomputed"
+5,Return slope,1945–2022,0.0862757745565731,0.09,-0.00372422544342689,0.0051,True,True,within rounding
+5,Return slope,1629–1945,0.108572784892079,0.11,-0.001427215107921001,0.0051,True,True,within rounding
+5,Return slope,1629–2022,0.0671437911322896,0.07,-0.0028562088677104025,0.0051,True,True,within rounding
+5,Return t-stat (NW),1945–2022,2.1047532156165,2.1,0.004753215616499773,0.0051,True,True,within rounding
+5,Return t-stat (NW),1629–1945,3.2247029430542,3.22,0.004702943054199604,0.0051,True,True,within rounding
+5,Return t-stat (NW),1629–2022,2.70272349341664,2.7,0.0027234934166400215,0.0051,True,True,within rounding
+5,Return difference t-stat,1945–2022,,,,0.0051,True,True,not applicable
+5,Return difference t-stat,1629–1945,0.420224580874705,0.42,0.00022458087470500487,0.0051,True,True,within rounding
+5,Return difference t-stat,1629–2022,,,,0.0051,True,True,not applicable
+5,Return R-squared,1945–2022,0.0529681273985002,0.05,0.002968127398500199,0.0051,True,True,within rounding
+5,Return R-squared,1629–1945,0.0363032664600397,0.04,-0.0036967335399602994,0.0051,True,True,within rounding
+5,Return R-squared,1629–2022,0.0256961705651977,0.03,-0.0043038294348023,0.0051,True,True,within rounding
+5,Dividend growth slope,1945–2022,-0.0094346442938388,-0.01,0.0005653557061612007,0.0051,True,True,within rounding
+5,Dividend growth slope,1629–1945,-0.197922817577883,-0.2,0.0020771824221170188,0.0051,True,True,within rounding
+5,Dividend growth slope,1629–2022,-0.0916827785174452,-0.09,-0.0016827785174452076,0.0051,True,True,within rounding
+5,Dividend growth t-stat (NW),1945–2022,-0.408304501442912,-0.41,0.0016954985570879488,0.0051,True,True,within rounding
+5,Dividend growth t-stat (NW),1629–1945,-5.29784509596857,-5.3,0.0021549040314301493,0.0051,True,True,within rounding
+5,Dividend growth t-stat (NW),1629–2022,-4.13678236419326,-4.14,0.003217635806739949,0.0051,True,True,within rounding
+5,Dividend growth difference t-stat,1945–2022,,,,0.0051,True,True,not applicable
+5,Dividend growth difference t-stat,1629–1945,-4.29087215884746,-4.29,-0.0008721588474598363,0.0051,True,True,within rounding
+5,Dividend growth difference t-stat,1629–2022,,,,0.0051,True,True,not applicable
+5,Dividend growth R-squared,1945–2022,0.0040664412776438,0.0,0.0040664412776438,0.0051,True,True,within rounding
+5,Dividend growth R-squared,1629–1945,0.13620188838846,0.14,-0.003798111611540006,0.0051,True,True,within rounding
+5,Dividend growth R-squared,1629–2022,0.0685634609988197,0.07,-0.0014365390011803064,0.0051,True,True,within rounding
+5,Dividend-price slope,1945–2022,0.931734979920732,0.93,0.001734979920731905,0.0051,True,True,within rounding
+5,Dividend-price slope,1629–1945,0.715482500683315,0.72,-0.004517499316684992,0.0051,True,True,within rounding
+5,Dividend-price slope,1629–2022,0.869126611461688,0.87,-0.000873388538311981,0.0051,True,True,within rounding
+5,Dividend-price t-stat (NW),1945–2022,21.7483388281775,21.75,-0.0016611718225014727,0.0051,True,True,within rounding
+5,Dividend-price t-stat (NW),1629–1945,15.7452949627772,15.75,-0.004705037222800357,0.0051,True,True,within rounding
+5,Dividend-price t-stat (NW),1629–2022,27.79161656727,27.79,0.001616567270001923,0.0051,True,True,within rounding
+5,Dividend-price difference t-stat,1945–2022,,,,0.0051,True,True,not applicable
+5,Dividend-price difference t-stat,1629–1945,-3.46222294355878,-3.46,-0.002222943558780166,0.0051,True,True,within rounding
+5,Dividend-price difference t-stat,1629–2022,,,,0.0051,True,True,not applicable
+5,Dividend-price R-squared,1945–2022,0.856489699899982,0.86,-0.00351030010001796,0.0051,True,True,within rounding
+5,Dividend-price R-squared,1629–1945,0.520890713222323,0.52,0.0008907132223230363,0.0051,True,True,within rounding
+5,Dividend-price R-squared,1629–2022,0.749531668796044,0.75,-0.00046833120395595174,0.0051,True,True,within rounding
+5,ER,1945–2022,0.909314989074389,0.91,-0.0006850109256110182,0.0051,True,True,within rounding
+5,ER,1629–1945,0.342853778478057,0.34,0.0028537784780569564,0.0051,True,True,within rounding
+5,ER,1629–2022,0.402991098729734,0.4,0.0029910987297339653,0.0051,True,True,within rounding
+5,ER (implied),1945–2022,0.900562312919633,0.9,0.0005623129196329346,0.0051,True,True,within rounding
+5,ER (implied),1629–1945,0.374994517078548,0.37,0.0049945170785479776,0.0051,True,True,within rounding
+5,ER (implied),1629–2022,0.449728068280434,0.45,-0.0002719317195660209,0.0051,True,True,within rounding
+5,EDG,1945–2022,0.099437687080367,0.1,-0.000562312919633004,0.0051,True,True,within rounding
+5,EDG,1629–1945,0.625005482921452,0.63,-0.004994517078548033,0.0051,True,True,within rounding
+5,EDG,1629–2022,0.550271931719566,0.55,0.0002719317195659654,0.0051,True,True,within rounding
+5,EDG (implied),1945–2022,0.0906850109256105,0.09,0.0006850109256105047,0.0051,True,True,within rounding
+5,EDG (implied),1629–1945,0.657146221521943,0.66,-0.002853778478057012,0.0051,True,True,within rounding
+5,EDG (implied),1629–2022,0.597008901270266,0.6,-0.002991098729734021,0.0051,True,True,within rounding
+6,Number of stocks: mean,All,724.782051282051,724.78,0.0020512820510703023,0.0051,True,True,within rounding
+6,Number of stocks: mean,Low,241.24358974359,241.24,0.0035897435899983066,0.0051,True,True,within rounding
+6,Number of stocks: mean,Medium,241.974358974359,241.97,0.004358974359007561,0.0051,True,True,within rounding
+6,Number of stocks: mean,High,241.564102564103,241.56,0.004102564102993256,0.0051,True,True,within rounding
+6,Number of stocks: mean,Below 0.5,445.589743589744,445.59,-0.00025641025598588385,0.0051,True,True,within rounding
+6,Number of stocks: mean,Above 0.5,279.192307692308,279.19,0.0023076923080225242,0.0051,True,True,within rounding
+6,Number of stocks: min,All,206.0,206.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: min,Low,68.0,68.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: min,Medium,69.0,69.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: min,High,69.0,69.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: min,Below 0.5,12.0,12.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: min,Above 0.5,155.0,155.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,All,1211.0,1211.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,Low,403.0,403.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,Medium,404.0,404.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,High,404.0,404.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,Below 0.5,951.0,951.0,0.0,0.0,True,True,within rounding
+6,Number of stocks: max,Above 0.5,409.0,409.0,0.0,0.0,True,True,within rounding
+6,Payout (%),All,48.6977319587884,48.7,-0.0022680412116002913,0.0051,True,True,within rounding
+6,Payout (%),Low,31.6020646100418,31.6,0.002064610041799142,0.0051,True,True,within rounding
+6,Payout (%),Medium,47.5409825107633,47.54,0.0009825107633005814,0.0051,True,True,within rounding
+6,Payout (%),High,64.1833245043205,64.18,0.003324504320488586,0.0051,True,True,within rounding
+6,Payout (%),Below 0.5,39.8750743293133,39.88,-0.004925670686702688,0.0051,True,True,within rounding
+6,Payout (%),Above 0.5,63.3425839123106,63.34,0.00258391231059818,0.0051,True,True,within rounding
+6,Return mean (%),All,6.48752369987013,6.49,-0.0024763001298699905,0.0051,True,True,within rounding
+6,Return mean (%),Low,6.78773496519481,6.79,-0.002265034805190247,0.0051,True,True,within rounding
+6,Return mean (%),Medium,6.78005285012987,6.78,5.2850129869774776e-05,0.0051,True,True,within rounding
+6,Return mean (%),High,5.78605751038961,5.79,-0.003942489610389899,0.0051,True,True,within rounding
+6,Return mean (%),Below 0.5,6.96611985025974,6.97,-0.003880149740259853,0.0051,True,True,within rounding
+6,Return mean (%),Above 0.5,6.28298637402597,6.28,0.002986374025970129,0.0051,True,True,within rounding
+6,Return SD (%),All,15.392456386646,15.39,0.002456386645999231,0.0051,True,True,within rounding
+6,Return SD (%),Low,17.8329266378166,17.83,0.002926637816599964,0.0051,True,True,within rounding
+6,Return SD (%),Medium,15.7459845783477,15.75,-0.004015421652299622,0.0051,True,True,within rounding
+6,Return SD (%),High,14.3406976852274,14.34,0.0006976852274007683,0.0051,True,True,within rounding
+6,Return SD (%),Below 0.5,16.9499057059851,16.95,-9.429401490024247e-05,0.0051,True,True,within rounding
+6,Return SD (%),Above 0.5,14.2415443547594,14.24,0.0015443547593996243,0.0051,True,True,within rounding
+6,DY/RET,All,0.452582143984755,0.45,0.002582143984754981,0.0051,True,True,within rounding
+6,DY/RET,Low,0.294454549970241,0.29,0.0044545499702410285,0.0051,True,True,within rounding
+6,DY/RET,Medium,0.419117886304968,0.42,-0.0008821136950319941,0.0051,True,True,within rounding
+6,DY/RET,High,0.633028832006972,0.63,0.0030288320069720154,0.0051,True,True,within rounding
+6,DY/RET,Below 0.5,0.356001276111733,0.36,-0.003998723888266997,0.0051,True,True,within rounding
+6,DY/RET,Above 0.5,0.590341416398995,0.59,0.000341416398994987,0.0051,True,True,within rounding
+6,Dividend growth mean (%),All,2.35615698233766,2.36,-0.0038430176623398538,0.0051,True,True,within rounding
+6,Dividend growth mean (%),Low,3.16496073376623,3.16,0.004960733766230074,0.0051,True,True,within rounding
+6,Dividend growth mean (%),Medium,2.77878927597403,2.78,-0.0012107240259697782,0.0051,True,True,within rounding
+6,Dividend growth mean (%),High,1.13159090948052,1.13,0.0015909094805202084,0.0051,True,True,within rounding
+6,Dividend growth mean (%),Below 0.5,3.08110544701299,3.08,0.0011054470129900906,0.0051,True,True,within rounding
+6,Dividend growth mean (%),Above 0.5,1.72870681168831,1.73,-0.0012931883116900078,0.0051,True,True,within rounding
+6,Dividend growth SD (%),All,6.29200535446985,6.29,0.0020053544698503956,0.0051,True,True,within rounding
+6,Dividend growth SD (%),Low,9.23028771882756,9.23,0.00028771882755940226,0.0051,True,True,within rounding
+6,Dividend growth SD (%),Medium,6.00956938530336,6.01,-0.00043061469663996377,0.0051,True,True,within rounding
+6,Dividend growth SD (%),High,9.03141553968923,9.03,0.0014155396892299166,0.0051,True,True,within rounding
+6,Dividend growth SD (%),Below 0.5,7.06389594746936,7.06,0.0038959474693607277,0.0051,True,True,within rounding
+6,Dividend growth SD (%),Above 0.5,7.79394351582401,7.79,0.003943515824009758,0.0051,True,True,within rounding
+6,Dividend-price mean (%),All,3.48233533982763,3.48,0.002335339827630012,0.0051,True,True,within rounding
+6,Dividend-price mean (%),Low,2.43619691459627,2.44,-0.0038030854037298667,0.0051,True,True,within rounding
+6,Dividend-price mean (%),Medium,3.36622405443367,3.37,-0.0037759455663302077,0.0051,True,True,within rounding
+6,Dividend-price mean (%),High,4.37921103403396,4.38,-0.000788965966039612,0.0051,True,True,within rounding
+6,Dividend-price mean (%),Below 0.5,2.97581947529224,2.98,-0.004180524707760203,0.0051,True,True,within rounding
+6,Dividend-price mean (%),Above 0.5,4.36399356176212,4.36,0.003993561762119846,0.0051,True,True,within rounding
+6,Dividend-price SD (%),All,1.25507639572583,1.26,-0.004923604274170046,0.0051,True,True,within rounding
+6,Dividend-price SD (%),Low,1.28911501840102,1.29,-0.0008849815989799836,0.0051,True,True,within rounding
+6,Dividend-price SD (%),Medium,1.15547172050484,1.16,-0.0045282794951599925,0.0051,True,True,within rounding
+6,Dividend-price SD (%),High,1.35358140268901,1.35,0.0035814026890099715,0.0051,True,True,within rounding
+6,Dividend-price SD (%),Below 0.5,1.26214382109748,1.26,0.0021438210974800143,0.0051,True,True,within rounding
+6,Dividend-price SD (%),Above 0.5,1.48976229430152,1.49,-0.00023770569847991752,0.0051,True,True,within rounding
+6,Dividend-price AR(1),All,0.881485822285508,0.88,0.0014858222855079761,0.0051,True,True,within rounding
+6,Dividend-price AR(1),Low,0.910246953032183,0.91,0.0002469530321829172,0.0051,True,True,within rounding
+6,Dividend-price AR(1),Medium,0.868355023147696,0.87,-0.0016449768523040253,0.0051,True,True,within rounding
+6,Dividend-price AR(1),High,0.842402214481259,0.84,0.0024022144812589907,0.0051,True,True,within rounding
+6,Dividend-price AR(1),Below 0.5,0.881546425287433,0.88,0.0015464252874329842,0.0051,True,True,within rounding
+6,Dividend-price AR(1),Above 0.5,0.874954470689837,0.87,0.0049544706898370094,0.0051,True,True,within rounding
+6,Smoothing,All,0.321614618732596,0.32,0.001614618732595996,0.0051,True,True,within rounding
+6,Smoothing,Low,0.501017739646496,0.5,0.0010177396464959854,0.0051,True,True,within rounding
+6,Smoothing,Medium,0.308429525029748,0.31,-0.0015704749702519782,0.0051,True,True,within rounding
+6,Smoothing,High,0.176137288957519,0.18,-0.003862711042480982,0.0051,True,True,within rounding
+6,Smoothing,Below 0.5,0.421065934734909,0.42,0.0010659347349090131,0.0051,True,True,within rounding
+6,Smoothing,Above 0.5,0.144960180050042,0.14,0.004960180050041979,0.0051,True,True,within rounding
+7,Return slope,All,0.0989990129856253,0.1,-0.0010009870143747046,0.0051,True,True,within rounding
+7,Return slope,Low,0.0928141925416756,0.09,0.0028141925416756003,0.0051,True,True,within rounding
+7,Return slope,Medium,0.105483883556658,0.11,-0.004516116443342003,0.0051,True,True,within rounding
+7,Return slope,High,0.0878393603395379,0.09,-0.0021606396604620937,0.0051,True,True,within rounding
+7,Return slope,Below 0.5,0.113806729605775,0.11,0.0038067296057749944,0.0051,True,True,within rounding
+7,Return slope,Above 0.5,0.084741181732626,0.08,0.004741181732625999,0.0051,True,True,within rounding
+7,Return t-stat (NW),All,2.43905957937726,2.44,-0.0009404206227401346,0.0051,True,True,within rounding
+7,Return t-stat (NW),Low,2.38481969104924,2.38,0.00481969104923996,0.0051,True,True,within rounding
+7,Return t-stat (NW),Medium,2.49420802172046,2.49,0.004208021720459865,0.0051,True,True,within rounding
+7,Return t-stat (NW),High,1.96956972315642,1.97,-0.00043027684357999085,0.0051,True,True,within rounding
+7,Return t-stat (NW),Below 0.5,2.6178339773345,2.62,-0.0021660226655000336,0.0051,True,True,within rounding
+7,Return t-stat (NW),Above 0.5,1.77031630998776,1.77,0.0003163099877598885,0.0051,True,True,within rounding
+7,Return R-squared,All,0.0532566697449205,0.05,0.003256669744920497,0.0051,True,True,within rounding
+7,Return R-squared,Low,0.0690062900649697,0.07,-0.0009937099350303125,0.0051,True,True,within rounding
+7,Return R-squared,Medium,0.0523977449510266,0.05,0.002397744951026598,0.0051,True,True,within rounding
+7,Return R-squared,High,0.035177118002618,0.04,-0.0048228819973819975,0.0051,True,True,within rounding
+7,Return R-squared,Below 0.5,0.0746091768270194,0.07,0.00460917682701939,0.0051,True,True,within rounding
+7,Return R-squared,Above 0.5,0.0372447014416417,0.04,-0.0027552985583583003,0.0051,True,True,within rounding
+7,Dividend growth slope,All,-0.0200321879962066,-0.02,-3.2187996206599345e-05,0.0051,True,True,within rounding
+7,Dividend growth slope,Low,0.0013424071796078,0.0,0.0013424071796078,0.0051,True,True,within rounding
+7,Dividend growth slope,Medium,-0.0271708811120217,-0.03,0.0028291188879783005,0.0051,True,True,within rounding
+7,Dividend growth slope,High,-0.0756157794188739,-0.08,0.0043842205811261,0.0051,True,True,within rounding
+7,Dividend growth slope,Below 0.5,-0.0022063410756929,0.0,-0.0022063410756929,0.0051,True,True,within rounding
+7,Dividend growth slope,Above 0.5,-0.0616979202078873,-0.06,-0.0016979202078873032,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),All,-0.851337291129708,-0.85,-0.0013372911297080403,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),Low,0.0610126725652824,0.06,0.0010126725652824034,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),Medium,-1.22491943919568,-1.22,-0.004919439195679942,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),High,-1.94394806734756,-1.94,-0.003948067347560036,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),Below 0.5,-0.111119946319311,-0.11,-0.0011199463193110049,0.0051,True,True,within rounding
+7,Dividend growth t-stat (NW),Above 0.5,-1.9710372292529,-1.97,-0.0010372292528999516,0.0051,True,True,within rounding
+7,Dividend growth R-squared,All,0.0130498868783474,0.01,0.0030498868783474,0.0051,True,True,within rounding
+7,Dividend growth R-squared,Low,5.38819368759436e-05,0.0,5.38819368759436e-05,0.0051,True,True,within rounding
+7,Dividend growth R-squared,Medium,0.0238671606040314,0.02,0.0038671606040313992,0.0051,True,True,within rounding
+7,Dividend growth R-squared,High,0.0657257732537042,0.07,-0.004274226746295809,0.0051,True,True,within rounding
+7,Dividend growth R-squared,Below 0.5,0.0001614535685403,0.0,0.0001614535685403,0.0051,True,True,within rounding
+7,Dividend growth R-squared,Above 0.5,0.0659198453391402,0.07,-0.0040801546608598,0.0051,True,True,within rounding
+7,Dividend-price slope,All,0.91085565540641,0.91,0.000855655406409972,0.0051,True,True,within rounding
+7,Dividend-price slope,Low,0.930389874324726,0.93,0.0003898743247259251,0.0051,True,True,within rounding
+7,Dividend-price slope,Medium,0.895820486162645,0.9,-0.004179513837355042,0.0051,True,True,within rounding
+7,Dividend-price slope,High,0.872613912055327,0.87,0.0026139120553270168,0.0051,True,True,within rounding
+7,Dividend-price slope,Below 0.5,0.91041202085437,0.91,0.0004120208543699766,0.0051,True,True,within rounding
+7,Dividend-price slope,Above 0.5,0.891937406970398,0.89,0.0019374069703980146,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),All,20.7781460139435,20.78,-0.0018539860565027766,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),Low,21.9053856804171,21.91,-0.004614319582898929,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),Medium,19.395228993895,19.4,-0.0047710061049990315,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),High,14.9827753690686,14.98,0.0027753690685994314,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),Below 0.5,21.1951774391974,21.2,-0.004822560802598019,0.0051,True,True,within rounding
+7,Dividend-price t-stat (NW),Above 0.5,17.8503998912456,17.85,0.0003998912455998038,0.0051,True,True,within rounding
+7,Dividend-price R-squared,All,0.816308725732393,0.82,-0.0036912742676069588,0.0051,True,True,within rounding
+7,Dividend-price R-squared,Low,0.864144561016345,0.86,0.004144561016344972,0.0051,True,True,within rounding
+7,Dividend-price R-squared,Medium,0.789819634419725,0.79,-0.00018036558027501037,0.0051,True,True,within rounding
+7,Dividend-price R-squared,High,0.750438928605961,0.75,0.0004389286059609532,0.0051,True,True,within rounding
+7,Dividend-price R-squared,Below 0.5,0.816338489697478,0.82,-0.003661510302521931,0.0051,True,True,within rounding
+7,Dividend-price R-squared,Above 0.5,0.78636377793347,0.79,-0.003636222066530026,0.0051,True,True,within rounding
+7,ER,All,0.83916488368263,0.84,-0.0008351163173699883,0.0051,True,True,within rounding
+7,ER,Low,1.04080534625114,1.04,0.0008053462511399267,0.0051,True,True,within rounding
+7,ER,Medium,0.800491005620552,0.8,0.000491005620551932,0.0051,True,True,within rounding
+7,ER,High,0.540862445808798,0.54,0.000862445808798018,0.0051,True,True,within rounding
+7,ER,Below 0.5,0.999626354848134,1.0,-0.0003736451518659978,0.0051,True,True,within rounding
+7,ER,Above 0.5,0.590533217768984,0.59,0.0005332177689840734,0.0051,True,True,within rounding
+7,ER (implied),All,0.830197209014739,0.83,0.00019720901473907482,0.0051,True,True,within rounding
+7,ER (implied),Low,1.01505356595926,1.02,-0.004946434040739911,0.0051,True,True,within rounding
+7,ER (implied),Medium,0.793806928493715,0.79,0.0038069284937150005,0.0051,True,True,within rounding
+7,ER (implied),High,0.534403082625569,0.53,0.004403082625568988,0.0051,True,True,within rounding
+7,ER (implied),Below 0.5,0.980620507287341,0.98,0.0006205072873409767,0.0051,True,True,within rounding
+7,ER (implied),Above 0.5,0.570047636756166,0.57,4.763675616603624e-05,0.0051,True,True,within rounding
+7,EDG,All,0.169802790985261,0.17,-0.0001972090147390193,0.0051,True,True,within rounding
+7,EDG,Low,-0.0150535659592624,-0.02,0.0049464340407376,0.0051,True,True,within rounding
+7,EDG,Medium,0.206193071506285,0.21,-0.0038069284937150005,0.0051,True,True,within rounding
+7,EDG,High,0.465596917374431,0.47,-0.004403082625568988,0.0051,True,True,within rounding
+7,EDG,Below 0.5,0.0193794927126588,0.02,-0.0006205072873411988,0.0051,True,True,within rounding
+7,EDG,Above 0.5,0.429952363243834,0.43,-4.763675616598073e-05,0.0051,True,True,within rounding
+7,EDG (implied),All,0.16083511631737,0.16,0.0008351163173699883,0.0051,True,True,within rounding
+7,EDG (implied),Low,-0.0408053462511382,-0.04,-0.000805346251138199,0.0051,True,True,within rounding
+7,EDG (implied),Medium,0.199508994379448,0.2,-0.0004910056205520152,0.0051,True,True,within rounding
+7,EDG (implied),High,0.459137554191202,0.46,-0.000862445808798018,0.0051,True,True,within rounding
+7,EDG (implied),Below 0.5,0.0003736451518662,0.0,0.0003736451518662,0.0051,True,True,within rounding
+7,EDG (implied),Above 0.5,0.409466782231016,0.41,-0.0005332177689839623,0.0051,True,True,within rounding

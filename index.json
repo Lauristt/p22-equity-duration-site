@@ -1,0 +1,3859 @@
+{
+  "schema": "chartbook/index/v1",
+  "generated_at": "2026-11-18T06:27:41Z",
+  "generator": {
+    "name": "chartbook",
+    "version": "0.4.0"
+  },
+  "root": "lauristt/p22_golez_koudijs_2025",
+  "records": [
+    {
+      "kind": "Pipeline",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025",
+      "name": "P22: Equity Duration and Predictability",
+      "description": "Paper replication, recent-data update, and the agreed Sector ER Tracker extension.",
+      "maintainer": "Lauris Li",
+      "contributors": [
+        "Lauris Li",
+        "Yiyao Wang",
+        "Gary Miao",
+        "Luke Zhu"
+      ],
+      "repo_url": "https://github.com/Lauristt/p22_golez_koudijs_2025",
+      "site_url": "https://lauristt.github.io/p22-equity-duration-site/",
+      "copyright": "2026",
+      "os_compatibility": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "location": {
+        "kind": "path"
+      },
+      "scripts": {
+        "build": "doit",
+        "test": "doit replicate checks"
+      },
+      "assets": [
+        "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+        "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+        "lauristt/p22_golez_koudijs_2025:coverage",
+        "lauristt/p22_golez_koudijs_2025:data_checks",
+        "lauristt/p22_golez_koudijs_2025:payout_history",
+        "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+        "lauristt/p22_golez_koudijs_2025:sector_annual",
+        "lauristt/p22_golez_koudijs_2025:sector_comparison",
+        "lauristt/p22_golez_koudijs_2025:sector_estimates",
+        "lauristt/p22_golez_koudijs_2025:table_1",
+        "lauristt/p22_golez_koudijs_2025:table_2",
+        "lauristt/p22_golez_koudijs_2025:table_4",
+        "lauristt/p22_golez_koudijs_2025:table_5",
+        "lauristt/p22_golez_koudijs_2025:table_6",
+        "lauristt/p22_golez_koudijs_2025:table_7",
+        "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+        "lauristt/p22_golez_koudijs_2025:updated_payout_history",
+        "lauristt/p22_golez_koudijs_2025:updated_table_1",
+        "lauristt/p22_golez_koudijs_2025:updated_table_2",
+        "lauristt/p22_golez_koudijs_2025:updated_table_4",
+        "lauristt/p22_golez_koudijs_2025:updated_table_5",
+        "lauristt/p22_golez_koudijs_2025:updated_table_6",
+        "lauristt/p22_golez_koudijs_2025:updated_table_7",
+        "lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition",
+        "lauristt/p22_golez_koudijs_2025:chart/baseline_payout",
+        "lauristt/p22_golez_koudijs_2025:chart/data_validation",
+        "lauristt/p22_golez_koudijs_2025:chart/sector_comparison",
+        "lauristt/p22_golez_koudijs_2025:chart/updated_decomposition",
+        "lauristt/p22_golez_koudijs_2025:chart/updated_payout",
+        "lauristt/p22_golez_koudijs_2025:notebook/data_tour",
+        "lauristt/p22_golez_koudijs_2025:note/direction_audit",
+        "lauristt/p22_golez_koudijs_2025:note/methodology",
+        "lauristt/p22_golez_koudijs_2025:file/final_report"
+      ],
+      "docs": {
+        "path": "./README.md",
+        "content_hash": "sha256:a6b013138b9582fb7585d251cd943223d3f95dac171aaa9f8775e952b23fee27"
+      },
+      "site_dir": {
+        "path": "docs_src/site"
+      },
+      "site_pages": [
+        "index_toc.md",
+        "project_overview.md"
+      ],
+      "code_changed_at": "2026-11-18T06:27:33Z"
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "baseline_decomposition"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Baseline decomposition",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/baseline_decomposition.csv",
+        "modified_at": "2026-11-18T06:27:11Z"
+      },
+      "content_hash": "sha256:43b1bd1d9331d7c4d53ecbf6678bc094ea90e6480e3dc981ccf86ed718d6ae1e",
+      "size_bytes": 463,
+      "row_count": 9,
+      "columns": [
+        {
+          "name": "Payout",
+          "dtype": "float64"
+        },
+        {
+          "name": "ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "Source",
+          "dtype": "string"
+        },
+        {
+          "name": "sample",
+          "dtype": "string"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Recomputed Figure 3 points linked to baseline Tables 4-7. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:fcc0982e4f6b321056af0ea77beba3158fce109e2f17da292bcec6a1081f93f1"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:baseline_decomposition#Payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "baseline_decomposition",
+        "part": "Payout"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+      "column": "Payout",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:baseline_decomposition#ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "baseline_decomposition",
+        "part": "ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+      "column": "ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:baseline_decomposition#Source",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "baseline_decomposition",
+        "part": "Source"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+      "column": "Source",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:baseline_decomposition#sample",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "baseline_decomposition",
+        "part": "sample"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:baseline_decomposition",
+      "column": "sample",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "cash_reconciliation"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Cash reconciliation",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/cash_reconciliation.csv",
+        "modified_at": "2026-11-18T06:25:19Z"
+      },
+      "content_hash": "sha256:346d6c2fee97086312356b5dd4aa93cc6bb9b047175087ba6f29f3b23324cd56",
+      "size_bytes": 4606,
+      "row_count": 67,
+      "columns": [
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "median",
+          "dtype": "float64"
+        },
+        {
+          "name": "max",
+          "dtype": "float64"
+        },
+        {
+          "name": "p95",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Paying-stock-month cash yield versus independently recorded total/ex-distribution return difference. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:ae9488454a93daf4c217b466af184a45b0f0e29175c7119d5ab2e9024a824931"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:cash_reconciliation#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "cash_reconciliation",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:cash_reconciliation#median",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "cash_reconciliation",
+        "part": "median"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+      "column": "median",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:cash_reconciliation#max",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "cash_reconciliation",
+        "part": "max"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+      "column": "max",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:cash_reconciliation#p95",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "cash_reconciliation",
+        "part": "p95"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:cash_reconciliation",
+      "column": "p95",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Coverage",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/coverage.csv",
+        "modified_at": "2026-11-18T06:25:19Z"
+      },
+      "content_hash": "sha256:4485e5c3d9537969a41b012e3c117f59658821e4aed7e1824d0028c8307c46a6",
+      "size_bytes": 1952,
+      "row_count": 67,
+      "columns": [
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "raw_stock_months",
+          "dtype": "int64"
+        },
+        {
+          "name": "valid_lagged_industry_and_cap",
+          "dtype": "int64"
+        },
+        {
+          "name": "linked_accounting",
+          "dtype": "int64"
+        },
+        {
+          "name": "ten_year_payers",
+          "dtype": "int64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Annual stock-month attrition through historical-industry, accounting and dividend-history filters. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:b71060882544763bcf80b877585f8ab7091cb30a6553ba503f819391be5062aa"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:coverage",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage#raw_stock_months",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage",
+        "part": "raw_stock_months"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:coverage",
+      "column": "raw_stock_months",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage#valid_lagged_industry_and_cap",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage",
+        "part": "valid_lagged_industry_and_cap"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:coverage",
+      "column": "valid_lagged_industry_and_cap",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage#linked_accounting",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage",
+        "part": "linked_accounting"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:coverage",
+      "column": "linked_accounting",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:coverage#ten_year_payers",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "coverage",
+        "part": "ten_year_payers"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:coverage",
+      "column": "ten_year_payers",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Data checks",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/data_checks.csv",
+        "modified_at": "2026-11-18T06:25:19Z"
+      },
+      "content_hash": "sha256:d0a11e3533a9c159364575a3b911acf3f66d51282e8673682c48988b2ebec86a",
+      "size_bytes": 886,
+      "row_count": 7,
+      "columns": [
+        {
+          "name": "check",
+          "dtype": "string"
+        },
+        {
+          "name": "observed",
+          "dtype": "float64"
+        },
+        {
+          "name": "tolerance",
+          "dtype": "float64"
+        },
+        {
+          "name": "passed",
+          "dtype": "boolean"
+        },
+        {
+          "name": "meaning",
+          "dtype": "string"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Observed numerical data gates and tolerances; config/data_validation.json records prospective policy. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:44c1cabb9593fc50b81da20029f1eea2b2f987f80bb4a1f9ce33c63570eda569"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks#check",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks",
+        "part": "check"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "column": "check",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks#observed",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks",
+        "part": "observed"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "column": "observed",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks#tolerance",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks",
+        "part": "tolerance"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "column": "tolerance",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks#passed",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks",
+        "part": "passed"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "column": "passed",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:data_checks#meaning",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "data_checks",
+        "part": "meaning"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:data_checks",
+      "column": "meaning",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:payout_history",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "payout_history"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Payout history",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/payout_history.csv",
+        "modified_at": "2026-11-18T06:27:08Z"
+      },
+      "content_hash": "sha256:c9df3c063411904c5fc68eb2039307364788ddf584851787019a26484674f632",
+      "size_bytes": 6343,
+      "row_count": 143,
+      "columns": [
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "payout",
+          "dtype": "float64"
+        },
+        {
+          "name": "dividend_price",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Clean annual trailing payout and D/P for the original Figure 1. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:1bb78450b53ef974ddb9025b58fb22045b27f67419bfc4070ffda676a1c70578"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:payout_history#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "payout_history",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:payout_history",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:payout_history#payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "payout_history",
+        "part": "payout"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:payout_history",
+      "column": "payout",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:payout_history#dividend_price",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "payout_history",
+        "part": "dividend_price"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:payout_history",
+      "column": "dividend_price",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Portfolio overlap",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/portfolio_overlap.csv",
+        "modified_at": "2026-11-18T06:25:32Z"
+      },
+      "content_hash": "sha256:518295571fac1440bbc28c25de3e3928ef0531eec287f32dd9b89895332e8449",
+      "size_bytes": 728,
+      "row_count": 6,
+      "columns": [
+        {
+          "name": "portfolio",
+          "dtype": "string"
+        },
+        {
+          "name": "years",
+          "dtype": "int64"
+        },
+        {
+          "name": "first_year",
+          "dtype": "int64"
+        },
+        {
+          "name": "last_year",
+          "dtype": "int64"
+        },
+        {
+          "name": "dp_correlation",
+          "dtype": "float64"
+        },
+        {
+          "name": "return_correlation",
+          "dtype": "float64"
+        },
+        {
+          "name": "growth_correlation",
+          "dtype": "float64"
+        },
+        {
+          "name": "missing_rebuilt_earnings_years",
+          "dtype": "int64"
+        },
+        {
+          "name": "mean_firm_count_ratio",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Independent comparison against authors supplied portfolios on common historical years. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:bc7fbda4b082bc95b07703aba391727305855e53ac664f99cec954ce98de03fa"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#portfolio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "portfolio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "portfolio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#years",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "years"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "years",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#first_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "first_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "first_year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#last_year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "last_year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "last_year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#dp_correlation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "dp_correlation"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "dp_correlation",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#return_correlation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "return_correlation"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "return_correlation",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#growth_correlation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "growth_correlation"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "growth_correlation",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#missing_rebuilt_earnings_years",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "missing_rebuilt_earnings_years"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "missing_rebuilt_earnings_years",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:portfolio_overlap#mean_firm_count_ratio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "portfolio_overlap",
+        "part": "mean_firm_count_ratio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:portfolio_overlap",
+      "column": "mean_firm_count_ratio",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Sector annual",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/sector_annual.csv",
+        "modified_at": "2026-11-18T06:25:16Z"
+      },
+      "content_hash": "sha256:532a296489e821c4154b477e026e52edf0add95c8f5aa7a17640417c09954663",
+      "size_bytes": 753309,
+      "row_count": 2495,
+      "columns": [
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "industry_name",
+          "dtype": "string"
+        },
+        {
+          "name": "portfolio",
+          "dtype": "string"
+        },
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "segment",
+          "dtype": "int64"
+        },
+        {
+          "name": "price_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "effective_distribution_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "real_price_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "start_price_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "real_earnings_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "real_distribution_unit",
+          "dtype": "float64"
+        },
+        {
+          "name": "r",
+          "dtype": "float64"
+        },
+        {
+          "name": "dp",
+          "dtype": "float64"
+        },
+        {
+          "name": "dividend_yield",
+          "dtype": "float64"
+        },
+        {
+          "name": "payout_ratio",
+          "dtype": "float64"
+        },
+        {
+          "name": "firm_count",
+          "dtype": "int64"
+        },
+        {
+          "name": "market_cap_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "accounting_cap_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Clean complete-year cash portfolio units, real returns, earnings and dividend-price ratios. Individual stock data are not staged. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:c7001b4ebcd09ccd30d996b8f7f1b175cb742918abfc682bef7fc16877718e2f"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#industry_name",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "industry_name"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "industry_name",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#portfolio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "portfolio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "portfolio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#segment",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "segment"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "segment",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#price_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "price_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "price_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#effective_distribution_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "effective_distribution_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "effective_distribution_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#real_price_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "real_price_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "real_price_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#start_price_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "start_price_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "start_price_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#real_earnings_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "real_earnings_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "real_earnings_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#real_distribution_unit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "real_distribution_unit"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "real_distribution_unit",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#r",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "r"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "r",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#dp",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "dp"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "dp",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#dividend_yield",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "dividend_yield"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "dividend_yield",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#payout_ratio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "payout_ratio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "payout_ratio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#firm_count",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "firm_count"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "firm_count",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#market_cap_coverage",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "market_cap_coverage"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "market_cap_coverage",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#accounting_cap_coverage",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "accounting_cap_coverage"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "accounting_cap_coverage",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_annual#quality_flags",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_annual",
+        "part": "quality_flags"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_annual",
+      "column": "quality_flags",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Sector comparison",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/sector_comparison.csv",
+        "modified_at": "2026-11-18T06:25:26Z"
+      },
+      "content_hash": "sha256:95efe427238a5353415cdbb8b5a4395d87f29a9592687334dbcb48269e74a8d5",
+      "size_bytes": 339,
+      "row_count": 2,
+      "columns": [
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "comparison",
+          "dtype": "string"
+        },
+        {
+          "name": "n_obs",
+          "dtype": "int64"
+        },
+        {
+          "name": "start",
+          "dtype": "int64"
+        },
+        {
+          "name": "end",
+          "dtype": "int64"
+        },
+        {
+          "name": "low_ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "high_ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "low_minus_high_ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "lower",
+          "dtype": "float64"
+        },
+        {
+          "name": "upper",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Common-year within-industry versus market-wide payout comparisons with paired intervals. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:fe203aad5586ff4bcab200fa4c521071a73d000cc1a83eb41cf135795f312ee8"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#comparison",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "comparison"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "comparison",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#n_obs",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "n_obs"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "n_obs",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#start",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "start"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "start",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#end",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "end"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "end",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#low_ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "low_ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "low_ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#high_ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "high_ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "high_ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#low_minus_high_ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "low_minus_high_ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "low_minus_high_ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#lower",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "lower"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "lower",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_comparison#upper",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_comparison",
+        "part": "upper"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_comparison",
+      "column": "upper",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Sector estimates",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/sector_estimates.csv",
+        "modified_at": "2026-11-18T06:25:26Z"
+      },
+      "content_hash": "sha256:dd2fca995386e374003de2511b2082a097c6cf575405dc09005a0eca600925a8",
+      "size_bytes": 1392008,
+      "row_count": 3592,
+      "columns": [
+        {
+          "name": "n_obs",
+          "dtype": "int64"
+        },
+        {
+          "name": "beta_return",
+          "dtype": "float64"
+        },
+        {
+          "name": "beta_growth",
+          "dtype": "float64"
+        },
+        {
+          "name": "beta_dp",
+          "dtype": "float64"
+        },
+        {
+          "name": "rho",
+          "dtype": "float64"
+        },
+        {
+          "name": "denominator",
+          "dtype": "float64"
+        },
+        {
+          "name": "ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "EDG",
+          "dtype": "float64"
+        },
+        {
+          "name": "coefficient_restriction",
+          "dtype": "float64"
+        },
+        {
+          "name": "window_start",
+          "dtype": "float64"
+        },
+        {
+          "name": "window_end",
+          "dtype": "float64"
+        },
+        {
+          "name": "bootstrap_valid_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "bootstrap_unstable_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "ER_lower",
+          "dtype": "float64"
+        },
+        {
+          "name": "ER_upper",
+          "dtype": "float64"
+        },
+        {
+          "name": "EDG_lower",
+          "dtype": "float64"
+        },
+        {
+          "name": "EDG_upper",
+          "dtype": "float64"
+        },
+        {
+          "name": "quality_flags",
+          "dtype": "string"
+        },
+        {
+          "name": "industry_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "industry_name",
+          "dtype": "string"
+        },
+        {
+          "name": "portfolio",
+          "dtype": "string"
+        },
+        {
+          "name": "window",
+          "dtype": "string"
+        },
+        {
+          "name": "estimate_asof",
+          "dtype": "int64"
+        },
+        {
+          "name": "frequency",
+          "dtype": "string"
+        },
+        {
+          "name": "firm_count",
+          "dtype": "int64"
+        },
+        {
+          "name": "market_cap_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "payout_ratio",
+          "dtype": "float64"
+        },
+        {
+          "name": "dividend_yield",
+          "dtype": "float64"
+        },
+        {
+          "name": "source_version",
+          "dtype": "string"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Annual ER/EDG estimates, block intervals, sample sizes, denominator and quality flags. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:63bd2ab2d11d82af1c04b03d64a49c28ee05de1aaeb33ba7eef6e5751656880d"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#n_obs",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "n_obs"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "n_obs",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#beta_return",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "beta_return"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "beta_return",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#beta_growth",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "beta_growth"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "beta_growth",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#beta_dp",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "beta_dp"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "beta_dp",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#rho",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "rho"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "rho",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#denominator",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "denominator"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "denominator",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#EDG",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "EDG"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "EDG",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#coefficient_restriction",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "coefficient_restriction"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "coefficient_restriction",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#window_start",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "window_start"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "window_start",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#window_end",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "window_end"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "window_end",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#bootstrap_valid_fraction",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "bootstrap_valid_fraction"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "bootstrap_valid_fraction",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#bootstrap_unstable_fraction",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "bootstrap_unstable_fraction"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "bootstrap_unstable_fraction",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#ER_lower",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "ER_lower"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "ER_lower",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#ER_upper",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "ER_upper"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "ER_upper",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#EDG_lower",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "EDG_lower"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "EDG_lower",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#EDG_upper",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "EDG_upper"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "EDG_upper",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#quality_flags",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "quality_flags"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "quality_flags",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#industry_id",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "industry_id"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "industry_id",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#industry_name",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "industry_name"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "industry_name",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#portfolio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "portfolio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "portfolio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#window",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "window"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "window",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#estimate_asof",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "estimate_asof"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "estimate_asof",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#frequency",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "frequency"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "frequency",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#firm_count",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "firm_count"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "firm_count",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#market_cap_coverage",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "market_cap_coverage"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "market_cap_coverage",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#payout_ratio",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "payout_ratio"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "payout_ratio",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#dividend_yield",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "dividend_yield"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "dividend_yield",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:sector_estimates#source_version",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "sector_estimates",
+        "part": "source_version"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:sector_estimates",
+      "column": "source_version",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_1",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_1"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 1",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_1.csv",
+        "modified_at": "2026-11-18T06:27:10Z"
+      },
+      "content_hash": "sha256:0a40ca6e4e0eb306da5f81c1e93cb91d07278a8c4f5a0e58a01994c6733d643d",
+      "size_bytes": 329,
+      "row_count": 6,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "Market",
+          "dtype": "float64"
+        },
+        {
+          "name": "Dividend strips",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 1; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:940a3d02b9f75fe6061e1c4e86dae820d4fbea76d4fecce9a14480031601a828"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_1#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_1",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_1",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_1#Market",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_1",
+        "part": "Market"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_1",
+      "column": "Market",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_2",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_2"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 2",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_2.csv",
+        "modified_at": "2026-11-18T06:27:10Z"
+      },
+      "content_hash": "sha256:5331b4118e6b5031792d0abed3ceb1f00457178aee8b2a5acef50510101c0d97",
+      "size_bytes": 877,
+      "row_count": 16,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "Market",
+          "dtype": "float64"
+        },
+        {
+          "name": "Dividend strips",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 2; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:1910cfb243913c11caadd480839abab31c86eb966181522ced1e16aa92acf12f"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_2#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_2",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_2",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_2#Market",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_2",
+        "part": "Market"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_2",
+      "column": "Market",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_4",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_4"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 4",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_4.csv",
+        "modified_at": "2026-11-18T06:27:06Z"
+      },
+      "content_hash": "sha256:3b0893adb242a6efc15a8e3b45c3f82ec6361ed90f955c66172f4bda17c214de",
+      "size_bytes": 700,
+      "row_count": 10,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "1945–2022",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–1945",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–2022",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 4; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:8dcf1a0842f77adb51888e290c79fb0f0989f861bd078c68a4b220401fa54297"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_4#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_4",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_4",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_5",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_5"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 5",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_5.csv",
+        "modified_at": "2026-11-18T06:27:06Z"
+      },
+      "content_hash": "sha256:93a1db307086abba864aa5ae8d85f89e8c3d1f372b8f1b96d24ab551c7b97cf6",
+      "size_bytes": 1137,
+      "row_count": 16,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "1945–2022",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–1945",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–2022",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 5; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:e6b34c3058c5ed78c7a2088e08b4a6703842a721d4bb18ec87d6db08d4d0469e"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_5#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_5",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_5",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 6",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_6.csv",
+        "modified_at": "2026-11-18T06:27:09Z"
+      },
+      "content_hash": "sha256:31100790efa803530f7641b1d993a2b6e46bff47305693b025740c06b463822d",
+      "size_bytes": 1473,
+      "row_count": 13,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "All",
+          "dtype": "float64"
+        },
+        {
+          "name": "Low",
+          "dtype": "float64"
+        },
+        {
+          "name": "Medium",
+          "dtype": "float64"
+        },
+        {
+          "name": "High",
+          "dtype": "float64"
+        },
+        {
+          "name": "Below 0.5",
+          "dtype": "float64"
+        },
+        {
+          "name": "Above 0.5",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 6; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:995fe654ae2de4702c063fcb701c60d2b922c5aecc2a93054337e69c91b50203"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_6",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6#All",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6",
+        "part": "All"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_6",
+      "column": "All",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6#Low",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6",
+        "part": "Low"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_6",
+      "column": "Low",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6#Medium",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6",
+        "part": "Medium"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_6",
+      "column": "Medium",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_6#High",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_6",
+        "part": "High"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_6",
+      "column": "High",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Table 7",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/table_7.csv",
+        "modified_at": "2026-11-18T06:27:09Z"
+      },
+      "content_hash": "sha256:a6d7e75a161df268556f2e4ccf493257694481073c0e47efd996f5cacbf1f051",
+      "size_bytes": 1704,
+      "row_count": 13,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "All",
+          "dtype": "float64"
+        },
+        {
+          "name": "Low",
+          "dtype": "float64"
+        },
+        {
+          "name": "Medium",
+          "dtype": "float64"
+        },
+        {
+          "name": "High",
+          "dtype": "float64"
+        },
+        {
+          "name": "Below 0.5",
+          "dtype": "float64"
+        },
+        {
+          "name": "Above 0.5",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "providers": [
+        "Golez and Koudijs"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1"
+      ],
+      "docs": {
+        "text": "Full-precision baseline Table 7; estimates use author inputs, not benchmark targets. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:034fdf6e084db43a06a22103289437b39378d1643b022b32a27004ccde444450"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_7",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7#All",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7",
+        "part": "All"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_7",
+      "column": "All",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7#Low",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7",
+        "part": "Low"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_7",
+      "column": "Low",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7#Medium",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7",
+        "part": "Medium"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_7",
+      "column": "Medium",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:table_7#High",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "table_7",
+        "part": "High"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:table_7",
+      "column": "High",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_decomposition"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated decomposition",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_decomposition.csv",
+        "modified_at": "2026-11-18T06:25:32Z"
+      },
+      "content_hash": "sha256:d84e52cb5202113ea36500fe3596abac0a1468077c437938b7146eb4e568b692",
+      "size_bytes": 464,
+      "row_count": 9,
+      "columns": [
+        {
+          "name": "Payout",
+          "dtype": "float64"
+        },
+        {
+          "name": "ER",
+          "dtype": "float64"
+        },
+        {
+          "name": "Source",
+          "dtype": "string"
+        },
+        {
+          "name": "sample",
+          "dtype": "string"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL"
+      ],
+      "docs": {
+        "text": "Updated Figure 3 points. Stock-level and historical sample coverage differ; see the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:40c65ddae35ed3bd574b7531ad80b9e3b025ce0c6746ae24f7d530fd5bb72a3f"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_decomposition#Payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_decomposition",
+        "part": "Payout"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+      "column": "Payout",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_decomposition#ER",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_decomposition",
+        "part": "ER"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+      "column": "ER",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_decomposition#Source",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_decomposition",
+        "part": "Source"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+      "column": "Source",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_decomposition#sample",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_decomposition",
+        "part": "sample"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_decomposition",
+      "column": "sample",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_payout_history",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_payout_history"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated payout history",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_payout_history.csv",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:7139e966febedcb8547e38e5de20748983ff3ed6f17090c50e659c8cb5b6e0aa",
+      "size_bytes": 6477,
+      "row_count": 146,
+      "columns": [
+        {
+          "name": "year",
+          "dtype": "int64"
+        },
+        {
+          "name": "payout",
+          "dtype": "float64"
+        },
+        {
+          "name": "dividend_price",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "Goyal Data2025.xlsx; config/update_sources.json"
+      ],
+      "docs": {
+        "text": "Updated annual payout history; author inputs plus pinned Goyal annual observations. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:46df6067b0a7663c412df928242ad3f7d27de470c9969230871296f2459a961e"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_payout_history#year",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_payout_history",
+        "part": "year"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_payout_history",
+      "column": "year",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_payout_history#payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_payout_history",
+        "part": "payout"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_payout_history",
+      "column": "payout",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_payout_history#dividend_price",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_payout_history",
+        "part": "dividend_price"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_payout_history",
+      "column": "dividend_price",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_1",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_1"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 1",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_1.csv",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:58eb9b16ad45a54c34f142d2be02427bb75755d6fb7d47c458bfdda8b857718a",
+      "size_bytes": 328,
+      "row_count": 6,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "Market",
+          "dtype": "float64"
+        },
+        {
+          "name": "Dividend strips",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 1. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:7cd330478212dd00b08e5695f13ac47a53c168e6a8574d45edf61dfb3d4d03fc"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_1#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_1",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_1",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_1#Market",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_1",
+        "part": "Market"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_1",
+      "column": "Market",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_2",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_2"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 2",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_2.csv",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:1b974d04259a8f93bb305d901563b3459321359aa30341096d94401b4f75200d",
+      "size_bytes": 874,
+      "row_count": 16,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "Market",
+          "dtype": "float64"
+        },
+        {
+          "name": "Dividend strips",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 2. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:75eeb129496264c6c1e4509e48b46d670e97856f2e20c1fc6bfe950cb7ee781f"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_2#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_2",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_2",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_2#Market",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_2",
+        "part": "Market"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_2",
+      "column": "Market",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_4",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_4"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 4",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_4.csv",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:a8b9b12d5022949dd1b0fed898853a254cd880e9d36ad61afcfea8d1f9a99ac5",
+      "size_bytes": 693,
+      "row_count": 10,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "1945–2025",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–1945",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–2025",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 4. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:7d0df63157a18a8216748a0a1c1eb9863dab74765ee371f610116c7b18392e04"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_4#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_4",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_4",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_5",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_5"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 5",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_5.csv",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:6f28c7bd301789bc835cb00858f43b560e681431ce8780960deddd1b96411b7f",
+      "size_bytes": 1131,
+      "row_count": 16,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "1945–2025",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–1945",
+          "dtype": "float64"
+        },
+        {
+          "name": "1629–2025",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 5. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:b0d6d268f3a5d2fb3e597d87b98bb52e9bb996d66444a55e274dcca10ba78167"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_5#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_5",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_5",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 6",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_6.csv",
+        "modified_at": "2026-11-18T06:25:32Z"
+      },
+      "content_hash": "sha256:7eda3f3e0b129f246a99d0420c831140ae4afc965ca8597e158c226032faa5c7",
+      "size_bytes": 1481,
+      "row_count": 13,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "All",
+          "dtype": "float64"
+        },
+        {
+          "name": "Low",
+          "dtype": "float64"
+        },
+        {
+          "name": "Medium",
+          "dtype": "float64"
+        },
+        {
+          "name": "High",
+          "dtype": "float64"
+        },
+        {
+          "name": "Below 0.5",
+          "dtype": "float64"
+        },
+        {
+          "name": "Above 0.5",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 6. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:14e5c28645f6b0a140c33aba2faf59f25519c5034ae760134b6b92df06feb19f"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6#All",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6",
+        "part": "All"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "column": "All",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6#Low",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6",
+        "part": "Low"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "column": "Low",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6#Medium",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6",
+        "part": "Medium"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "column": "Medium",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_6#High",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_6",
+        "part": "High"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_6",
+      "column": "High",
+      "declared": false
+    },
+    {
+      "kind": "Dataframe",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated table 7",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_table_7.csv",
+        "modified_at": "2026-11-18T06:25:32Z"
+      },
+      "content_hash": "sha256:0a57d0ce65bd1ccb9289ea5f3f40f5d7c594600e017eb76763eb2514ffd2121a",
+      "size_bytes": 1691,
+      "row_count": 13,
+      "columns": [
+        {
+          "name": "Statistic",
+          "dtype": "string"
+        },
+        {
+          "name": "All",
+          "dtype": "float64"
+        },
+        {
+          "name": "Low",
+          "dtype": "float64"
+        },
+        {
+          "name": "Medium",
+          "dtype": "float64"
+        },
+        {
+          "name": "High",
+          "dtype": "float64"
+        },
+        {
+          "name": "Below 0.5",
+          "dtype": "float64"
+        },
+        {
+          "name": "Above 0.5",
+          "dtype": "float64"
+        }
+      ],
+      "provider_links": [
+        "https://doi.org/10.17632/fp6fryn7h3.1",
+        "https://wrds-www.wharton.upenn.edu/",
+        "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+        "https://fred.stlouisfed.org/series/CPIAUCSL"
+      ],
+      "providers": [
+        "Golez and Koudijs",
+        "WRDS",
+        "Kenneth French",
+        "FRED"
+      ],
+      "sources": [
+        "Mendeley version 1: https://doi.org/10.17632/fp6fryn7h3.1",
+        "WRDS CRSP monthly CIZ and cash distributions",
+        "WRDS Compustat annual fundamentals",
+        "CRSP-Compustat link history",
+        "Kenneth French SIC industry mapping",
+        "FRED CPIAUCSL",
+        "Goyal Data2025.xlsx",
+        "WRDS OptionMetrics SPX"
+      ],
+      "docs": {
+        "text": "Updated Table 7. Coverage and unresolved construction differences are disclosed in the report. Lineage: raw source caches -> src/p22 cleaning modules -> analysis modules -> publication staging. Raw files and security-level observations are never published.",
+        "content_hash": "sha256:684ed5c72631aca6d74c6c1249a49a92e5dbfc6a48948d2014d68d329ed15cc2"
+      }
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7#Statistic",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7",
+        "part": "Statistic"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "column": "Statistic",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7#All",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7",
+        "part": "All"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "column": "All",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7#Low",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7",
+        "part": "Low"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "column": "Low",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7#Medium",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7",
+        "part": "Medium"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "column": "Medium",
+      "declared": false
+    },
+    {
+      "kind": "Series",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:updated_table_7#High",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "dataframe",
+        "name": "updated_table_7",
+        "part": "High"
+      },
+      "dataframe": "lauristt/p22_golez_koudijs_2025:updated_table_7",
+      "column": "High",
+      "declared": false
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "baseline_decomposition"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Baseline decomposition",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/baseline_decomposition.svg",
+        "modified_at": "2026-11-18T06:27:11Z"
+      },
+      "content_hash": "sha256:ffa820f2a93cf51c90c10d9c035187e24e3fe9ee9421dbb47d55616578b37a61",
+      "size_bytes": 13437,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:baseline_decomposition"
+      ],
+      "docs": {
+        "text": "Original Figure 3: recomputed descriptive payout/ER relationship.",
+        "content_hash": "sha256:3091791dfc8e9bdb62b70ab47ddd441dcaf33ea55bc86263235c959219b934df"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/baseline_payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "baseline_payout"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Baseline payout",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/baseline_payout.svg",
+        "modified_at": "2026-11-18T06:27:09Z"
+      },
+      "content_hash": "sha256:bfaa8877a166de32daa8589efde902560b83c2ce4bd45ec2feab372f09608c8a",
+      "size_bytes": 22944,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:payout_history"
+      ],
+      "docs": {
+        "text": "Original Figure 1: trailing payout and dividend-price history.",
+        "content_hash": "sha256:9491e47a7cc523966fe97563bc809fd03672f13bc587727e0a8f5302d69365d7"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/data_validation",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "data_validation"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Data validation",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/data_validation.svg",
+        "modified_at": "2026-11-18T06:25:20Z"
+      },
+      "content_hash": "sha256:c4da7bdfcacf242d58b34d6c91fdcac4f6d3c2542d04e2912409915577641486",
+      "size_bytes": 24975,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:cash_reconciliation"
+      ],
+      "docs": {
+        "text": "Coverage attrition and cash-event reconciliation against independent return fields.",
+        "content_hash": "sha256:f534ff3b616cf4da9a7fd68551ff555ca40fd7ec80c1d0069d873d041b2fc929"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/sector_comparison",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "sector_comparison"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Sector comparison",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/sector_comparison.svg",
+        "modified_at": "2026-11-18T06:25:30Z"
+      },
+      "content_hash": "sha256:50210a7218b7b35dacf82ae5fec82a037a112464bf97f0dbd04397798aa3ab09",
+      "size_bytes": 7362,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:sector_comparison"
+      ],
+      "docs": {
+        "text": "Payout ER differences and joint 95 percent bootstrap intervals; no return-spread interpretation.",
+        "content_hash": "sha256:1c56f0c26cedff033b24f3d2ee1283affcfb5316c46d7e9e69ad29c66660049b"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/updated_decomposition",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "updated_decomposition"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated decomposition",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_decomposition.svg",
+        "modified_at": "2026-11-18T06:25:32Z"
+      },
+      "content_hash": "sha256:330ae4670e2da241c777b43dff4394ae08819cf23f5a9ecbc085b84aecafa9eb",
+      "size_bytes": 12977,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:updated_decomposition"
+      ],
+      "docs": {
+        "text": "Updated Figure 3 with explicit shorter stock-history coverage.",
+        "content_hash": "sha256:5f2b84250ce1b8b3cf10e489d6b5723d6380d2d0ad6be79f47ff1ae1123f55e1"
+      }
+    },
+    {
+      "kind": "Chart",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:chart/updated_payout",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "chart",
+        "name": "updated_payout"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Updated payout",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/updated_payout.svg",
+        "modified_at": "2026-11-18T06:25:31Z"
+      },
+      "content_hash": "sha256:381d599515d602a896d3963939302428b2b1d48ed75862d47fd45e81fa48cd6a",
+      "size_bytes": 23049,
+      "inputs": [
+        "lauristt/p22_golez_koudijs_2025:updated_payout_history"
+      ],
+      "docs": {
+        "text": "Updated Figure 1 through the committed annual endpoint.",
+        "content_hash": "sha256:41e9de4245d70ac618b0ce93fed326914e78609731d15675b9400d874c1a9912"
+      }
+    },
+    {
+      "kind": "Notebook",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:notebook/data_tour",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "notebook",
+        "name": "data_tour"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Cleaned data and Sector ER Tracker tour",
+      "description": "Executed walkthrough of cleaned data, independent checks, the update and valuation decomposition.",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/data_tour.ipynb",
+        "modified_at": "2026-11-18T06:27:37Z"
+      },
+      "content_hash": "sha256:b4197fda0076ddcca41852d8624da75e01771c796ce42c1aa53bc13e28095b6f",
+      "size_bytes": 19802
+    },
+    {
+      "kind": "Note",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:note/direction_audit",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "note",
+        "name": "direction_audit"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "location": {
+        "kind": "file",
+        "path": "docs_src/research/sector_direction_audit.md",
+        "modified_at": "2026-11-18T05:44:18Z"
+      },
+      "content_hash": "sha256:2c63da834276d31f3fdac226becc81631f5e468335b0185e71c4c5f988876257",
+      "size_bytes": 6410,
+      "docs": {
+        "path": "docs_src/research/sector_direction_audit.md",
+        "content_hash": "sha256:2c63da834276d31f3fdac226becc81631f5e468335b0185e71c4c5f988876257"
+      }
+    },
+    {
+      "kind": "Note",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:note/methodology",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "note",
+        "name": "methodology"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "location": {
+        "kind": "file",
+        "path": "docs_src/research/sector_tracker.md",
+        "modified_at": "2026-11-18T06:22:09Z"
+      },
+      "content_hash": "sha256:6349d0fb2d735a499f4f552dea770772b1d83cb79c99afb6fb15a68a9c8f8cb7",
+      "size_bytes": 3466,
+      "docs": {
+        "path": "docs_src/research/sector_tracker.md",
+        "content_hash": "sha256:6349d0fb2d735a499f4f552dea770772b1d83cb79c99afb6fb15a68a9c8f8cb7"
+      }
+    },
+    {
+      "kind": "File",
+      "version": "chartbook/v1",
+      "id": "lauristt/p22_golez_koudijs_2025:file/final_report",
+      "ref": {
+        "scope": "lauristt",
+        "pipeline": "p22_golez_koudijs_2025",
+        "kind": "file",
+        "name": "final_report"
+      },
+      "pipeline": "lauristt/p22_golez_koudijs_2025",
+      "name": "Complete generated LaTeX report",
+      "location": {
+        "kind": "file",
+        "path": "_output/publication/report.pdf",
+        "modified_at": "2026-11-18T06:27:41Z"
+      },
+      "content_hash": "sha256:dcce018dd2e805cefdbefe2c6b86009968733ad60802a197d904b9aa246e8b45",
+      "size_bytes": 984312,
+      "file_count": 1,
+      "extensions": {
+        ".pdf": 1
+      },
+      "files": [
+        {
+          "path": "report.pdf",
+          "size_bytes": 984312,
+          "content_hash": "sha256:dcce018dd2e805cefdbefe2c6b86009968733ad60802a197d904b9aa246e8b45"
+        }
+      ],
+      "sources": [
+        "Generated from the registered pipeline artifacts; see report artifact_manifest.json."
+      ],
+      "docs": {
+        "text": "Single generated document containing the project's displayed results tables and figures.",
+        "content_hash": "sha256:d227e00f2f5e937924c3e33e62299debfd4335138c896f8d6c04f24a760cbbf9"
+      }
+    }
+  ]
+}

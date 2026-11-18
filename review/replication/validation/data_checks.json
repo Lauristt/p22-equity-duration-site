@@ -1,0 +1,42 @@
+[
+  {
+    "check": "Strip inflation reconciles to CPI",
+    "passed": true,
+    "detail": "maximum absolute difference 0"
+  },
+  {
+    "check": "Tercile counts reconcile to All",
+    "passed": true,
+    "detail": "Eligible stock counts sum in every year"
+  },
+  {
+    "check": "Threshold counts reconcile to All",
+    "passed": true,
+    "detail": "Below/above threshold counts sum in every year"
+  },
+  {
+    "check": "Portfolio dividend growth reconciles to dividend levels",
+    "passed": true,
+    "detail": "Workbook precision tolerance 1e-8; maximum absolute log-growth difference 7.37e-10"
+  },
+  {
+    "check": "Data_Netherlands_UK_1602_1812 real/nominal deflation identity",
+    "passed": true,
+    "detail": "maximum relative scaling deviation 2.22e-16"
+  },
+  {
+    "check": "Data_UK_1813_1870 real/nominal deflation identity",
+    "passed": true,
+    "detail": "maximum relative scaling deviation 2.22e-16"
+  },
+  {
+    "check": "Data_US_1871_2022 real/nominal deflation identity",
+    "passed": true,
+    "detail": "maximum relative scaling deviation 2.22e-16"
+  },
+  {
+    "check": "Figure 3 has all computed sample points",
+    "passed": true,
+    "detail": "Three historical and six portfolio points"
+  }
+]

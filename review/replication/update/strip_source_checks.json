@@ -1,0 +1,32 @@
+[
+  {
+    "check": "Rebuilt 18-month strip price tracks the authors' series, 1996-2022",
+    "passed": true,
+    "detail": "299 months; correlation 0.988 (min 0.95); median relative gap 0.027 (max 0.05)"
+  },
+  {
+    "check": "Rebuilt strip return correlation with the authors' (reported only)",
+    "passed": true,
+    "detail": "309 months; correlation 0.536"
+  },
+  {
+    "check": "CRSP S&P 500 level equals the authors' index",
+    "passed": true,
+    "detail": "max relative gap 1.23e-05 (max 0.0001)"
+  },
+  {
+    "check": "CRSP-implied monthly dividends match the authors'",
+    "passed": true,
+    "detail": "median relative gap 0.012 (max 0.05)"
+  },
+  {
+    "check": "Authors' monthly inflation equals Goyal infl (median)",
+    "passed": true,
+    "detail": "median absolute gap 0.0e+00; max 5.9e-03"
+  },
+  {
+    "check": "Rebuilt months after 2022 have prices, returns and inflation",
+    "passed": true,
+    "detail": "32 months, 2023-01 to 2025-08"
+  }
+]

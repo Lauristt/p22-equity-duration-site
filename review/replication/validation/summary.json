@@ -1,0 +1,50 @@
+{
+  "table_checks": [
+    {
+      "table": 1,
+      "recomputed_cells": 10,
+      "within_tolerance": 10,
+      "differences": 0,
+      "source_constants": 0
+    },
+    {
+      "table": 2,
+      "recomputed_cells": 28,
+      "within_tolerance": 28,
+      "differences": 0,
+      "source_constants": 0
+    },
+    {
+      "table": 4,
+      "recomputed_cells": 27,
+      "within_tolerance": 27,
+      "differences": 0,
+      "source_constants": 3
+    },
+    {
+      "table": 5,
+      "recomputed_cells": 42,
+      "within_tolerance": 42,
+      "differences": 0,
+      "source_constants": 0
+    },
+    {
+      "table": 6,
+      "recomputed_cells": 78,
+      "within_tolerance": 78,
+      "differences": 0,
+      "source_constants": 0
+    },
+    {
+      "table": 7,
+      "recomputed_cells": 78,
+      "within_tolerance": 78,
+      "differences": 0,
+      "source_constants": 0
+    }
+  ],
+  "data_checks_passed": true,
+  "benchmark_tolerance": 0.0051,
+  "baseline_end_year": 2022,
+  "note": "Benchmark differences are reported, not optimized away. The strict acceptance command fails on any independently calculated discrepancy."
+}

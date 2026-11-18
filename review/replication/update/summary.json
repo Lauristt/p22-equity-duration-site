@@ -1,0 +1,7 @@
+{
+  "end_year": 2025,
+  "post_1945_result_holds": true,
+  "return_tstat_update": 1.68968001135931,
+  "strip_er_below_market_er": true,
+  "verdict": "Post-1945 result holds through 2025: the expected-return share is 0.89 (paper sample 0.91) and the dividend-growth share is 0.12 (paper sample 0.10). The return-predictability t-statistic is 1.69 (paper sample 2.10), so returns are no longer significantly predictable at the 5% level on their own. Strips still have a smaller expected-return share than the market (0.77 vs 0.96; paper 0.56 vs 0.96)."
+}

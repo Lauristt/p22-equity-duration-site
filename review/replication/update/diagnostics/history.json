@@ -1,0 +1,23 @@
+{
+  "samples": [
+    {
+      "sample": "1945\u20132025",
+      "level_observations": 81,
+      "regression_observations": 80,
+      "payout_observations": 72
+    },
+    {
+      "sample": "1629\u20131945",
+      "level_observations": 317,
+      "regression_observations": 314,
+      "payout_observations": 218
+    },
+    {
+      "sample": "1629\u20132025",
+      "level_observations": 397,
+      "regression_observations": 394,
+      "payout_observations": 290
+    }
+  ],
+  "smoothing_status": "Three constants supplied in Table_4_Time_Series.m; missing upstream estimation file. Not independently reproduced."
+}

@@ -1,0 +1,65 @@
+{
+  "protocol": {
+    "train_start": 1946,
+    "evaluation_start": 1981,
+    "evaluation_end": 2022,
+    "payout_window": 10,
+    "payout_lag": 1,
+    "bootstrap_block_years": 5,
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 2026,
+    "interval_level": 0.95
+  },
+  "models": {
+    "Historical mean": [
+      "intercept"
+    ],
+    "Dividend yield": [
+      "intercept",
+      "dp_log"
+    ],
+    "Payout interaction": [
+      "intercept",
+      "dp_log",
+      "payout",
+      "interaction"
+    ]
+  },
+  "source": {
+    "name": "Data_US_1871_2022.parquet",
+    "sha256": "f1d0d89bd65cc6aadbefa4d860d6c02bca208ba5e0f64d2b478b9e2a11553374",
+    "doi": "10.17632/fp6fryn7h3.1",
+    "raw_name": "Data_US_1871_2022.xls",
+    "raw_sha256": "cefdf848dafd0ae13c32eeba7d475d80980129ca8dcd18d790138fbe99ecc647"
+  },
+  "code_sha256": {
+    "config/extension.json": "13aa987421a132a894898f802b616a1c4a5f429f798b3128e29c8585ec6d0ffa",
+    "dodo.py": "8e123428d4bf605a998db5dd3069ecebd7024980fedd2d036ff6a047671fbe32",
+    "src/settings.py": "0f999e18751aeace82ab980e74639449538f1ea33640cfb24875c63608df1e07",
+    "src/p22/extension.py": "ee57b16d34586582018f9e4507f959578d8137cc2644fdfb5eb2c7ce473c4132",
+    "src/p22/extension_inputs.py": "c97a9d83784e4927c84a3bf2564ddfe4b33d60718c9c4a285a1147ce5152688e",
+    "src/p22/extension_report.py": "1a83d3c7519e903343730c6f2f3dc60dbcc85f428b7327cb46fc0fd48b67bda4",
+    "src/p22/common.py": "60fd1b349778e479aad822a583b0ec151647cec11556ceb77b83c069b92e45f5"
+  },
+  "output_sha256": {
+    "coefficients.csv": "0d3c609b88f3f21d9054fae934a86ddafd0fca35e3f3198c345af9341788b200",
+    "features.csv": "3664ac3860bdb2442539143d926126e5d2a4461753c23f66edb899b36a0f5a8e",
+    "forecasts.csv": "514d1d9f7523a05452cf3d087a345b8a782c7fd41804073fe52887a938840bde",
+    "forecasts.png": "eab46dbd7a43802972ca6e848aa622c86140e3d03831d7bf24ab0e7a793e02f8",
+    "forecasts.svg": "bd580d94b7ba8648d527f7b89195d618e11c92047281b71a92967e437ea13483",
+    "index.html": "4a6bf5dbaa2e88da4bc33798a4d894ab503f37a48e368c24ca1388810497c8a0",
+    "loss.png": "c181ca22a2034ace08d5f3b2bac43029b1c5d3be22eaae6166960ed2a8a6bfec",
+    "loss.svg": "8039dabf45dfa2d9398bf24dc6c3be118b5cb2b0bc87f934f77a2c3d6374e73b",
+    "loss_comparisons.csv": "2b3dc91df0fab6969dd945299dacfe1edcca3ccc0ca38566052c4b360f6f8e65",
+    "metrics.csv": "f00f502bf4dbe77c6b753825c3a4e43cc761da2af6f19dd5d9394bc4cb62a928",
+    "validation.csv": "4f7092278515dad35e1a4ed3a1417e85bb57ff4c6f974d548219d47f22911668",
+    "validation.png": "975d28a5993fd98b4aa8ae007a922431b1ce77b409b5d2286d7d491bce0b5029",
+    "validation.svg": "1d6b65213f97f56702d7792665a458119e34e98b44439c92383160997ef0039b"
+  },
+  "limitations": [
+    "Revised data; pseudo-out-of-sample, not historical vintages",
+    "2021\u20132022 were previously explored in a separate experiment",
+    "Conditional circular block intervals; no bootstrap refitting or nested-model test",
+    "No trading strategy, transaction costs, or alpha claim"
+  ]
+}

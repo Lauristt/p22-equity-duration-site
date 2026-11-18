@@ -1,0 +1,32 @@
+Name,Metadata Complete,Object Type,Identifier,Pipeline,Missing Fields,Page Link
+P22: Equity Duration and Predictability,True,pipeline,lauristt/p22_golez_koudijs_2025,lauristt/p22_golez_koudijs_2025,,../index.html
+Baseline decomposition,False,dataframe,baseline_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html
+Cash reconciliation,False,dataframe,cash_reconciliation,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html
+Coverage,False,dataframe,coverage,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/coverage.html
+Data checks,False,dataframe,data_checks,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html
+Payout history,False,dataframe,payout_history,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html
+Portfolio overlap,False,dataframe,portfolio_overlap,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html
+Sector annual,False,dataframe,sector_annual,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html
+Sector comparison,False,dataframe,sector_comparison,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html
+Sector estimates,False,dataframe,sector_estimates,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html
+Table 1,False,dataframe,table_1,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_1.html
+Table 2,False,dataframe,table_2,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_2.html
+Table 4,False,dataframe,table_4,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_4.html
+Table 5,False,dataframe,table_5,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_5.html
+Table 6,False,dataframe,table_6,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_6.html
+Table 7,False,dataframe,table_7,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/table_7.html
+Updated decomposition,False,dataframe,updated_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.html
+Updated payout history,False,dataframe,updated_payout_history,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.html
+Updated table 1,False,dataframe,updated_table_1,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.html
+Updated table 2,False,dataframe,updated_table_2,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.html
+Updated table 4,False,dataframe,updated_table_4,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.html
+Updated table 5,False,dataframe,updated_table_5,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html
+Updated table 6,False,dataframe,updated_table_6,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html
+Updated table 7,False,dataframe,updated_table_7,lauristt/p22_golez_koudijs_2025,"description, tags, pull_method",./dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html
+Baseline decomposition,False,chart,baseline_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.baseline_decomposition.html
+Baseline payout,False,chart,baseline_payout,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.baseline_payout.html
+Data validation,False,chart,data_validation,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.data_validation.html
+Sector comparison,False,chart,sector_comparison,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.sector_comparison.html
+Updated decomposition,False,chart,updated_decomposition,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.updated_decomposition.html
+Updated payout,False,chart,updated_payout,lauristt/p22_golez_koudijs_2025,"description, tags, frequency, observation_period, release_lag, release_timing, units",./charts/lauristt--p22_golez_koudijs_2025.updated_payout.html
+Complete generated LaTeX report,False,file,final_report,lauristt/p22_golez_koudijs_2025,"description, providers, tags",./files/lauristt--p22_golez_koudijs_2025/final_report.html

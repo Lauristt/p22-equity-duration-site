@@ -1,0 +1,29 @@
+% Generated; requires booktabs.
+% 12-month outcomes, monthly observations. HAC t-statistics use 12 lags without a small-sample correction. Non-overlapping t-statistics average 12 offset regressions, each using one HAC lag, as in the supplied code. Blank cells are not applicable. Validation: paper sample with strip prices and returns rebuilt from OptionMetrics; 25 missing 18-month prices interpolated.
+\begin{table}
+\caption{Table 2: Market and dividend strips: predictability.}
+\label{tab:replication_2}
+\begin{tabular}{lrr}
+\toprule
+ & Market & Dividend strips \\
+Statistic &  &  \\
+\midrule
+Return slope & 0.39 & 0.62 \\
+Return t-stat (NW) & 3.54 & 7.27 \\
+Return t-stat (non-overlap) & 2.84 & 3.85 \\
+Return R-squared & 0.21 & 0.27 \\
+Dividend growth slope & -0.02 & -0.35 \\
+Dividend growth t-stat (NW) & -0.15 & -3.57 \\
+Dividend growth t-stat (non-overlap) & -0.06 & -3.75 \\
+Dividend growth R-squared & 0.00 & 0.37 \\
+Dividend-price slope & 0.61 & -- \\
+Dividend-price t-stat (NW) & 4.86 & -- \\
+Dividend-price t-stat (non-overlap) & 4.08 & -- \\
+Dividend-price R-squared & 0.37 & -- \\
+ER & 0.96 & 0.62 \\
+ER (implied) & 0.95 & 0.65 \\
+EDG & 0.05 & 0.35 \\
+EDG (implied) & 0.04 & 0.38 \\
+\bottomrule
+\end{tabular}
+\end{table}

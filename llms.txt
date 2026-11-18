@@ -1,0 +1,52 @@
+# P22: Equity Duration and Predictability
+
+> A ChartBook pipeline, `lauristt/p22_golez_koudijs_2025`.
+
+What it says of itself: “Paper replication, recent-data update, and the agreed Sector ER Tracker extension.”
+
+Each line links a page of this site, relative to this file, then gives the record's ID and, in quotation marks, what its owner wrote of it. Every record, with its fields, inputs and content hashes, is in [index.json](index.json).
+
+An ID is `pipeline:name` for a dataframe, `pipeline:chart/name` for a chart, `pipeline:model/name` for a model and `pipeline:file/name` for files. Inside that pipeline, an asset is named without the pipeline (`chartbook path name`, `chartbook path model/name`, `data.load("name")`, `assets.files("file/name")`); in another pipeline that declares it in `[dependencies]` and has pinned it, by the dependency's key, a colon and the name. Through a catalog that lists it: `data.load(pipeline="pipeline", dataframe="name", catalog_path="...")`.
+
+## Pipelines
+
+- [P22: Equity Duration and Predictability](index.html): `lauristt/p22_golez_koudijs_2025`. “Paper replication, recent-data update, and the agreed Sector ER Tracker extension.”
+
+## Dataframes
+
+- [Baseline decomposition](cb/dataframes/lauristt--p22_golez_koudijs_2025/baseline_decomposition.html): `lauristt/p22_golez_koudijs_2025:baseline_decomposition`.
+- [Cash reconciliation](cb/dataframes/lauristt--p22_golez_koudijs_2025/cash_reconciliation.html): `lauristt/p22_golez_koudijs_2025:cash_reconciliation`.
+- [Coverage](cb/dataframes/lauristt--p22_golez_koudijs_2025/coverage.html): `lauristt/p22_golez_koudijs_2025:coverage`.
+- [Data checks](cb/dataframes/lauristt--p22_golez_koudijs_2025/data_checks.html): `lauristt/p22_golez_koudijs_2025:data_checks`.
+- [Payout history](cb/dataframes/lauristt--p22_golez_koudijs_2025/payout_history.html): `lauristt/p22_golez_koudijs_2025:payout_history`.
+- [Portfolio overlap](cb/dataframes/lauristt--p22_golez_koudijs_2025/portfolio_overlap.html): `lauristt/p22_golez_koudijs_2025:portfolio_overlap`.
+- [Sector annual](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_annual.html): `lauristt/p22_golez_koudijs_2025:sector_annual`.
+- [Sector comparison](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_comparison.html): `lauristt/p22_golez_koudijs_2025:sector_comparison`.
+- [Sector estimates](cb/dataframes/lauristt--p22_golez_koudijs_2025/sector_estimates.html): `lauristt/p22_golez_koudijs_2025:sector_estimates`.
+- [Table 1](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_1.html): `lauristt/p22_golez_koudijs_2025:table_1`.
+- [Table 2](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_2.html): `lauristt/p22_golez_koudijs_2025:table_2`.
+- [Table 4](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_4.html): `lauristt/p22_golez_koudijs_2025:table_4`.
+- [Table 5](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_5.html): `lauristt/p22_golez_koudijs_2025:table_5`.
+- [Table 6](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_6.html): `lauristt/p22_golez_koudijs_2025:table_6`.
+- [Table 7](cb/dataframes/lauristt--p22_golez_koudijs_2025/table_7.html): `lauristt/p22_golez_koudijs_2025:table_7`.
+- [Updated decomposition](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_decomposition.html): `lauristt/p22_golez_koudijs_2025:updated_decomposition`.
+- [Updated payout history](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_payout_history.html): `lauristt/p22_golez_koudijs_2025:updated_payout_history`.
+- [Updated table 1](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_1.html): `lauristt/p22_golez_koudijs_2025:updated_table_1`.
+- [Updated table 2](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_2.html): `lauristt/p22_golez_koudijs_2025:updated_table_2`.
+- [Updated table 4](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_4.html): `lauristt/p22_golez_koudijs_2025:updated_table_4`.
+- [Updated table 5](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_5.html): `lauristt/p22_golez_koudijs_2025:updated_table_5`.
+- [Updated table 6](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_6.html): `lauristt/p22_golez_koudijs_2025:updated_table_6`.
+- [Updated table 7](cb/dataframes/lauristt--p22_golez_koudijs_2025/updated_table_7.html): `lauristt/p22_golez_koudijs_2025:updated_table_7`.
+
+## Charts
+
+- [Baseline decomposition](cb/charts/lauristt--p22_golez_koudijs_2025.baseline_decomposition.html): `lauristt/p22_golez_koudijs_2025:chart/baseline_decomposition`.
+- [Baseline payout](cb/charts/lauristt--p22_golez_koudijs_2025.baseline_payout.html): `lauristt/p22_golez_koudijs_2025:chart/baseline_payout`.
+- [Data validation](cb/charts/lauristt--p22_golez_koudijs_2025.data_validation.html): `lauristt/p22_golez_koudijs_2025:chart/data_validation`.
+- [Sector comparison](cb/charts/lauristt--p22_golez_koudijs_2025.sector_comparison.html): `lauristt/p22_golez_koudijs_2025:chart/sector_comparison`.
+- [Updated decomposition](cb/charts/lauristt--p22_golez_koudijs_2025.updated_decomposition.html): `lauristt/p22_golez_koudijs_2025:chart/updated_decomposition`.
+- [Updated payout](cb/charts/lauristt--p22_golez_koudijs_2025.updated_payout.html): `lauristt/p22_golez_koudijs_2025:chart/updated_payout`.
+
+## Files
+
+- [Complete generated LaTeX report](cb/files/lauristt--p22_golez_koudijs_2025/final_report.html): `lauristt/p22_golez_koudijs_2025:file/final_report`.

@@ -1,0 +1,8 @@
+check,observed,tolerance,passed,meaning
+Inflation reconciles with CPI,0.0,1e-10,True,Independent CPI and reported inflation agree.
+Author tercile counts sum to all,0.0,0.0,True,All eligible firms are allocated once.
+Clean stock-month duplicate keys,0.0,0.0,True,A security cannot receive duplicate return weight.
+Cash event matching failure fraction,0.00022036846463086143,0.001,True,Ex-date factors and preceding prices are available for eligible cash events.
+Portfolio weights sum to one,6.661338147750939e-16,1e-10,True,Weights conserve invested portfolio value.
+Monthly cash return identity,2.7755575615628914e-17,1e-10,True,Unit price change and withdrawn cash reconcile to the constructed holding return.
+Cash versus effective yield: paying months,0.00017452588701897392,0.001,True,Small differences are expected from ex-date reinvestment; large gaps indicate unit/action errors.

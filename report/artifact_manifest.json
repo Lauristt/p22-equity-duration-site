@@ -1,0 +1,197 @@
+[
+  {
+    "kind": "table",
+    "path": "replication/tables/table_1.csv",
+    "sha256": "0a40ca6e4e0eb306da5f81c1e93cb91d07278a8c4f5a0e58a01994c6733d643d"
+  },
+  {
+    "kind": "table",
+    "path": "replication/tables/table_2.csv",
+    "sha256": "5331b4118e6b5031792d0abed3ceb1f00457178aee8b2a5acef50510101c0d97"
+  },
+  {
+    "kind": "table",
+    "path": "replication/tables/table_4.csv",
+    "sha256": "3b0893adb242a6efc15a8e3b45c3f82ec6361ed90f955c66172f4bda17c214de"
+  },
+  {
+    "kind": "table",
+    "path": "replication/tables/table_5.csv",
+    "sha256": "93a1db307086abba864aa5ae8d85f89e8c3d1f372b8f1b96d24ab551c7b97cf6"
+  },
+  {
+    "kind": "table",
+    "path": "replication/tables/table_6.csv",
+    "sha256": "31100790efa803530f7641b1d993a2b6e46bff47305693b025740c06b463822d"
+  },
+  {
+    "kind": "table",
+    "path": "replication/tables/table_7.csv",
+    "sha256": "a6d7e75a161df268556f2e4ccf493257694481073c0e47efd996f5cacbf1f051"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_1.csv",
+    "sha256": "58eb9b16ad45a54c34f142d2be02427bb75755d6fb7d47c458bfdda8b857718a"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_2.csv",
+    "sha256": "1b974d04259a8f93bb305d901563b3459321359aa30341096d94401b4f75200d"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_4.csv",
+    "sha256": "a8b9b12d5022949dd1b0fed898853a254cd880e9d36ad61afcfea8d1f9a99ac5"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_5.csv",
+    "sha256": "6f28c7bd301789bc835cb00858f43b560e681431ce8780960deddd1b96411b7f"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_6.csv",
+    "sha256": "7eda3f3e0b129f246a99d0420c831140ae4afc965ca8597e158c226032faa5c7"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/tables/table_7.csv",
+    "sha256": "0a57d0ce65bd1ccb9289ea5f3f40f5d7c594600e017eb76763eb2514ffd2121a"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/author_common/tables/table_6.csv",
+    "sha256": "e64d1505b25a10d97adfac979ee68a546ef0ce0bd8ba00d089344bdaf1b825b3"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/author_common/tables/table_7.csv",
+    "sha256": "5e17a19f2eed067ee189494b40eb380aebbe75a5554894fd394f8bc27ac64354"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/rebuild_common/tables/table_6.csv",
+    "sha256": "6ba7d1971dde58598b44bb461eabe9ba2e1462a5484bef02024bcc95db5e145b"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/rebuild_common/tables/table_7.csv",
+    "sha256": "f8b94912965a339d5196d53c5dd01a9783fdc8a3d803481a1f43ea6e22ca8f54"
+  },
+  {
+    "kind": "table",
+    "path": "quality/checks.csv",
+    "sha256": "d0a11e3533a9c159364575a3b911acf3f66d51282e8673682c48988b2ebec86a"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/cross_source_checks.csv",
+    "sha256": "518295571fac1440bbc28c25de3e3928ef0531eec287f32dd9b89895332e8449"
+  },
+  {
+    "kind": "table",
+    "path": "sector/comparison.csv",
+    "sha256": "95efe427238a5353415cdbb8b5a4395d87f29a9592687334dbcb48269e74a8d5"
+  },
+  {
+    "kind": "table",
+    "path": "sector/var_sensitivity.csv",
+    "sha256": "5863a128a720811a88ff89779e1e595e87ad09611752202d30e0c3dc13dcf690"
+  },
+  {
+    "kind": "table",
+    "path": "replication/extension/metrics.csv",
+    "sha256": "f00f502bf4dbe77c6b753825c3a4e43cc761da2af6f19dd5d9394bc4cb62a928"
+  },
+  {
+    "kind": "table",
+    "path": "sector/estimates.csv",
+    "sha256": "dd2fca995386e374003de2511b2082a097c6cf575405dc09005a0eca600925a8"
+  },
+  {
+    "kind": "table",
+    "path": "replication/extension/loss_comparisons.csv",
+    "sha256": "2b3dc91df0fab6969dd945299dacfe1edcca3ccc0ca38566052c4b360f6f8e65"
+  },
+  {
+    "kind": "table",
+    "path": "replication/extension/validation.csv",
+    "sha256": "4f7092278515dad35e1a4ed3a1417e85bb57ff4c6f974d548219d47f22911668"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/comparison.csv",
+    "sha256": "25ccefc0ed51d6c343a9fd63d58479c0ce7fd137baa7ac17a2c49b55e15e319d"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/strip_rebuild_1996_2022/tables/table_1.csv",
+    "sha256": "ca05b608699715a765ab8cacf431f66a4a0de6d43a394cfd428b80337c29882a"
+  },
+  {
+    "kind": "table",
+    "path": "replication/update/strip_rebuild_1996_2022/tables/table_2.csv",
+    "sha256": "34718d060b3d6a07dc2c0ba5021b6874a33d8dbbfcfc0f3c228a4fc68067c54a"
+  },
+  {
+    "kind": "table",
+    "path": "sector/annual.csv",
+    "sha256": "532a296489e821c4154b477e026e52edf0add95c8f5aa7a17640417c09954663"
+  },
+  {
+    "kind": "figure",
+    "path": "quality/figures/data_validation.png",
+    "sha256": "39ae8969465bc385620b36bc925accb792492f8675e0d5bb00184e29dd35f3b3"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/extension/forecasts.png",
+    "sha256": "eab46dbd7a43802972ca6e848aa622c86140e3d03831d7bf24ab0e7a793e02f8"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/extension/loss.png",
+    "sha256": "c181ca22a2034ace08d5f3b2bac43029b1c5d3be22eaae6166960ed2a8a6bfec"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/extension/validation.png",
+    "sha256": "975d28a5993fd98b4aa8ae007a922431b1ce77b409b5d2286d7d491bce0b5029"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/figures/figure_1.png",
+    "sha256": "ad6e070adb3a06a1ef76c2a29ddd8c423ad8860df081782f81d33d026bc4aabb"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/figures/figure_3.png",
+    "sha256": "8f50a963b90f7875e691e7fd895df9fa4b7b139ad541f885f100141b7c4004e4"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/figures/figure_3_author_summary.png",
+    "sha256": "99bec7e274e5d0b5e19867807bcf4bda511efd4db029fa2254289fcf102250df"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/figures/validation.png",
+    "sha256": "7878a39d35092d1fbe380752110ad09602fe068bc1962c5ec530633917dd4e9f"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/update/figures/figure_1.png",
+    "sha256": "9a4e564cc5dfb784d3721683ed866ef9018f1d8420fd0bcb5bef25feeb8829ae"
+  },
+  {
+    "kind": "figure",
+    "path": "replication/update/figures/figure_3.png",
+    "sha256": "d6da9dbc80d9acfe4aa158b91bbe865d3d936c9f4977ef52e8c6091bcc89a22a"
+  },
+  {
+    "kind": "figure",
+    "path": "sector/figures/sector_comparison.png",
+    "sha256": "0e9c77e896cac5e123521cb9602565d361782f2f553f6ae510486aaa7775ecfd"
+  }
+]
